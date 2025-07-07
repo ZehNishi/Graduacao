@@ -1,0 +1,17 @@
+.\rvmdk\tasks.o: ..\..\Source\tasks.c
+.\rvmdk\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\rvmdk\tasks.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\tasks.o: .\FreeRTOSConfig.h
+.\rvmdk\tasks.o: ..\..\Source\include\projdefs.h
+.\rvmdk\tasks.o: ..\..\Source\include\portable.h
+.\rvmdk\tasks.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\tasks.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\tasks.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\tasks.o: ..\..\Source\include\task.h
+.\rvmdk\tasks.o: ..\..\Source\include\list.h
+.\rvmdk\tasks.o: ..\..\Source\include\timers.h
+.\rvmdk\tasks.o: ..\..\Source\include\StackMacros.h
+.\rvmdk\tasks.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

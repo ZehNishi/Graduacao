@@ -1,0 +1,123 @@
+"
+5.4 Modelo de um receptor AM
+
+	Com o objetivo de avaliar os efeitos do ruido no desempenho de um receptor AM considera-se o modelo abaixo,que consiste de um filtro equivalente de FI
+	(representando o efeito serie das seções de RF e FI) e um demodulador. O filtro FI possui largura de faixa suficiente para acomodar o espectro do sinal modulado.
+
+		       _______      ________
+		+     |	      |x(t)|        |    y(t)
+	s(t) --->O--->|filtro |--->|  DEM.  |--->
+		 ^+   |_______|    |________|     SNRo
+		 |
+	     n(t)|          B=2W
+	
+5.4.1 Efeito do Ruido na Modulação DSB/SC
+
+	Em DSB/SC o sinal presente na entrada do demodulador será(após o filtro)
+		
+	x(t) = s(t) +n(t) = Ac.cos(2.pi.fc.t) + nc(t).cos(2.pi.fc.t) - ns(t)cos(2.pi.fc.t) 
+
+	Onde o ruido é representado por suas componentes em fase e quadratura.
+
+	Tal sinal é demodulado usando um detector coerente.
+
+	(...) 
+
+	Figura de merito = 1
+
+	Conclui-se que o DSB/SC não fornece qualquer melhoramento em termos de SNR em relação ao sistema de comunicação em banda base(SNR iguais)
+
+5.4.2 Efeito do Ruido na Modulaçao SSB
+
+	Neste caso:
+
+	s(t) = (Ac/2).m(t)cos(2.pi.fc.t) +- (Ac/2).m(t).sen(2.pi.fc.t)
+	
+	x(t) = (...)
+
+	Figura de merito = 1
+
+	Conclui-se que SSB e DSB/SC possuem o mesmo desempenho.
+
+5.4.3 Efeito do Ruido na Modulaçao AM-DSB
+
+	Neste caso:
+
+	s(t) = Ac.[1+ka.m(t)].cos(2.pi.fc.t)
+
+	x(t) = (...)	
+
+	Entretanto o sinal recebido é aplicado a um detector de envoltória.	
+	
+	Figura de merito = ((Ka^2).Pm)/(1+(ka^2).Pm) < 1
+
+	Ou seja, o desempenho do receptor AM-DSB é sempre inferior ao desempenho do DSB/SC e do SSB (resultado da transmissão da portadora)
+
+5.5 Modelo de um receptor FM
+	
+	Considere o modelo abaixo:
+
+		       _______      _________	   _____________      ______
+		+     |	      |x(t)|         |    | 		|v(t)|      |
+	s(t) --->O--->|filtro |--->|limitador|--->|discriminador|--->|FPB W |--->
+		 ^+   |_______|    |_________|    |_____________|    |______|   SNRo
+		 |
+	    n(t) |          
+
+	O limitador remove as variações de amplitude(ruido indesejado) do sinal FM.
+	O discriminador produz um sinal de saída cuja amplitude é proporcional a frequencia instantanea da portadora.
+
+5.5.1 Ruido na Recepção FM
+
+	(dedução longa...não copiei..se cair ja era...)
+
+	Figura de mérito = (3(Kf^2).Pm)/w^2
+
+	Conclui-se que a figura de mérito pode ser maior que a unidade
+
+Comparação dos desempenhos dos Sinais Modulados AM-DSB e FM
+
+	Para AM-DSB tonal com u=1 tem-se figura de merito = 1/3
+
+	Usando FM é possivel melhorar o desempenho frente ao ruido se fig de merito (FM) > Fig de merito(Am-DSB)
+
+	Ou seja:
+
+			(3/2).Beta > 1/3 que fornece Beta > 0.5 (FM banda larga)
+
+5.5.2 Efeito Limiar em FM
+
+	Assumindo-se uma SNR alta observa-se que as componentes de sinal ruido na saida do discriminador FM são aditivas.
+	Em geral esta condição não é correta.
+	Para baixos valores de SNR as componentes de sinal e ruido apresentam-se tão interligadas que é impossivel distinguir o sinal desejado do ruido  (devido a nao linearidade do processo de demodulação).
+	Existe um valor especifico para SNRc, abaixo do qual, este fenomeno ocorre e o receptor FM deixa de funcionar (efeito limiar).
+	A literatura mostra que SNR de limiar é dada por:
+
+	SNR_limiar =~ 20.(Beta+1)
+
+	Esta expressãop permite calcular o maximo valor permitido de Beta de modo a assegura que o sistema trabalha acima do limiar.
+
+5.5.3 Pré Ênfase e De-Ênfase em FM
+
+	(..)
+
+	isto significa que para baixas frequencias o desempenho da demodulação FM é melhor do que para altas frequencias. 
+	O metodo de pre(de)-enfase permite equalisar o desempenho ao longo de toda faixa de frequencia, conforme mostrado abaixo:
+
+	     _______      _______           ______      _______
+	    |filtro |    |       |   +     |      |    |filtro |   m(t)+n(t)
+	--->|pre    |--->|Tx FM  |--->O--->|Rx FM |--->|de     |--->
+            |enfase |    |_______|    ^    |______|    |enfase |
+                                      |
+                                  n(t)|
+
+	As componentes de alat ferquencia de m(t) são artificialmente enfatizadas antes da modulação, e antes que o ruido seja introduzido. Na saida do discriminadorrealiza-se uma operação inversa atenuando as componentes de alta frequencia e, assim, aumentando a SNR de saida do sistema.
+	No sistema FM comercial utilizam-se filtros RC (1a ordem) passa-baixa para de-enfase e passa alta para pré enfase.
+
+		H_de = 1/(1-j(f/fo))
+
+		H_pre = 1+ j(f/fo)
+
+	Como os efeitos dos filtros são cancelados, a potência de m(t) permanece inalterada e deve-se considerar somente o efeito de filtragem (FPB) sobre o ruido recebido.
+	
+	(...)

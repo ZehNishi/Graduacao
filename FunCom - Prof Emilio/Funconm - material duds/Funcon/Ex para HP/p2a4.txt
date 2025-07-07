@@ -1,0 +1,47 @@
+Pretentede-se usar um oscilador Hartley, com L1=L2=700 MicroH para produzir um sinal modulado FM. Este sinal deve apresentar como frequencias instantanias maxima e minima os seguintes valores fi(t)max=1000kHz e fi(t)min=900kHz. O sinal modulante eh m(t)=2*cos(2*pi*10k*t).A potencia media do sinal modulado deve ser de 50 Watts. Pede-se
+a-Os valores de fc e deltaf(c/ unidades)
+b-Os valores de Kc e Beta(c/ unidades)
+c-Os valores de Ac e Bt(c/ unidades)
+d-Dentre os varicaps, cuja curva Capacitancia x tensao reversa eh mostrada, qual voce escolheria para a montagem? Justifique. Qual a tensao reversa a ser utilizada? Justifique
+
+Grafico do capeta,tenham imaginacao agora
+eixo x varia de 16 a 30 variando de 2 em 2 [C em pF]
+eixo y varia de 2 a 8 variando de 2 em 2 [Vr em V]
+A reta 1 sai de P1a(2,28) ateh P1b(8,16)
+A reta 2 sai de P2b(2,22) ateh P2b(8,16)
+
+a-
+fi(t)=fc+kf*m(t)
+1000k=fc+2*kf
+900k=fc-2*kf
+Somando as equacoes
+2*fc=1900k
+fc=950kHz
+
+1000k=950k+kf
+50k/2=Kf=25k
+
+Deltaf=Kf*Am
+Deltaf=25k*2=50kHz
+
+b-
+
+Beta=deltaf/fm=50k/10k
+Beta=5
+fc(t)=1/[((L1+L2)*C0)^1/2]
+(950k*2pi)^2=1/[((L1+L2)*C0)^1/2]
+3,56*10^3=1/(1400Micro*Co)
+Co=20pF
+
+c-
+P=50=(Ac^2)/2
+Ac=10
+Bt=2*(Beta+1)*fm=2*(deltaf+fm)
+Bt=2*(50k+10k)=120k
+
+d-
+Kf=-Kc*fc/(2*Co)
+-Kc=2*Co*Kf/fc
+-Kc=2*20*(10^-12)*25*(10^3)
+Kc=-1,05 pF/V
+Analisando as curvas dos varicaps, seria escolhida a curva debaixo, pois ela apresenta a capacitãncia(Co) desejada com a menor tensão reversa possível que no caso eh 4V.

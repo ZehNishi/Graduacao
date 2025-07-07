@@ -1,0 +1,18 @@
+%%HP: T(1)A(D)F(.);
+
+"[INICIO]
+
+1.3 MODULAÇÃO
+
+A maioria dos sinais de entrada, da maneira como são fornecidos pelo transdutor, não podem ser enviados diretamente através do canal. 
+
+Consequentemente, uma ONDA PORTADORA cujas propriedades são mais convenientes ao meio de transmissão em questão é modificada para representar a mensagem. A onda portadora é um sinal elétrico de referência com parâmetros fixos. 
+
+A MODULACAO é a alteração sistemática de uma, ou mais, características da onda portadora de acordo com a mensagem.
+
+É interessante notar que muitas formas não elétricas de comunicação também envolvem um processo de modulação; a fala constitui um bom exemplo. Quando uma pessoa fala, os movimentos da boca são realizados em taxas baixas de freqüência, não
+podendo efetivamente produzir ondas acústicas propagáveis. 
+
+A transmissão da voz através do ar é conseguida pela geração de tons de alta freqüência nas cordas vocais que são modulados pelos movimentos da cavidade bucal. O que o ouvido interpreta como fala é, portanto, uma onda acústica modulada, similar em muitos casos a uma onda elétrica modulada.
+
+[FIM]."

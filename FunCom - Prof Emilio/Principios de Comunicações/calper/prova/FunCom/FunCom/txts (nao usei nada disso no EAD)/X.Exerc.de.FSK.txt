@@ -1,0 +1,32 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+1. Escreve B(f)
+
+2. Escreve Tb (bps)
+
+3. Calcula Rb (1/Tb)
+
+4. Escreve f0 (bit 0) e f1 (bit 1)
+
+5. Escreve equacao de Tp(f)
+
+6) Calcula Tp0 e Tp1 (atraso de fase)
+
+7) Desenhe os grafico de envio de 0 1 0 1
+Cada tempo tera Rb.
+
+8) Depois desenhe com os atrasos de fase.
+
+Ex: '0' -> cos(2pi.2000.t) -> CANAL -> cos[2pi.2000(t-Tp0ms)]
+
+'1' -> cos(2pi.1000.t) -> CANAL -> cos[2pi.1000(t-Rb-Tp1ms)]
+
+9) ISI = |Tp1-Tp0|/Tb
+
+Toleravel até 10% (caso nao for dito nada)
+
+
+
+[FIM]."

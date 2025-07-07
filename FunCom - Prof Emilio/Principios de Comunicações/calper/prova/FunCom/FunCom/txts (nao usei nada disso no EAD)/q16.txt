@@ -1,0 +1,25 @@
+"
+16-
+Determine a expressão do sinal modulado DSB/Sc, a expressão do espectro e a potência media, caso o sinal modulante seja m(t)=Am*cos(2*pi*fm*t).
+
+Solução
+-------------------------------------------------
+o sinal modulante é tonal
+-------------------------------------------------
+espessão do sinal modulado
+
+s(t)=Ac*Am/2*[cos*(2*pi(fc-fm)t)+cos(2*pi(fc+fm)t)]
+
+-------------------------------------------------
+espressão do espectro
+
+s(f)=Ac*Am/4*[d(f-fc+fm)+d(f+fc-fm)+d(f-fc+fm)+d(f+fc+fm)]
+
+-------------------------------------------------
+potencia media
+
+P=(Ac^2*Am^2)/4
+
+desenhar espectro
+
+"

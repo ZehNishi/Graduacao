@@ -1,0 +1,67 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+6.5 MULTIPLEXAÇÃO
+------------------------------
+Um único meio de transmissão é compartilhado por vários processos de comunicação ao mesmo tempo.
+
+------------------------------
+6.5.1 Sistema FDM
+------------------------------
+FDM - Multiplexação por Divisão de Freqüência
+
+a) Canal Telefônico
+
+Estudos estatísticos mostram que se o sinal de voz for limitado a 4 KHz perde-se de 5 a 10% da inteligibilidade e potência do sinal.
+
+
+b) Esquema básico (International Telecommunications Union – Telecommunications
+Standardization Sector)
+
+
+Para a multiplexação de 3 canais. Os canais são transladados para as frequências de 12, 16 e 20 KHz, sendo aproveitados os espectros nas faixas de frequência 12-16, 16-20 e 20-24 KHz (este conjunto é dito pré-grupo básico).
+
+ 4kHz
+  /| 
+ /1|
+/__| -> DSB/SC -> FPF ->
+         ^     12-16kHz
+         |
+        12k
+
+  /|  /|  /|
+ /1| /2| /3|  (meio)
+/__|/__|/__|   multiplexado
+12     20
+   16      24
+	
+- > FPF -> DSB/SC -> 1
+  12-16      ^
+             |
+           12kHz
+
+- > FPF -> DSB/SC -> 2
+  16-20      ^
+             |
+           16kHz
+
+- > FPF -> DSB/SC -> 3
+  20-24      ^
+             |
+           20kHz
+
+------------------------------
+c)FDM d alta capacidade (ITU-T)
+------------------------------
+Empregam-se sucessivos estagios de translação.
+
+- Grupo básico = 4 pré-grupos-básicos de 12 canais (60-180 KHz).
+
+- Super grupo básico = 5 grupos-básicos de 60 canais (312-552 KHz).
+
+- Grupo mestre = 5 Super grupos-básicos de 300 canais (812-2044 KHz).
+
+- Super grupo mestre = 3 grupos-mestre 900 canais (8516-12388 KHz).
+
+
+[FIM]."

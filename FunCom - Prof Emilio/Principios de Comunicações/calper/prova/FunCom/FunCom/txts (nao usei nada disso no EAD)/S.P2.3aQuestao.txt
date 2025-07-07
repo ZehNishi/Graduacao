@@ -1,0 +1,52 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+3) A POTENCIA MEDIA DE RUIDO POR UNIDADE DE FAIXA (No) MEDIDA NA ENTRADA DE UM RECEPTOR FM EH 10^-8W/Hz. 
+A MODULACAO EH TONAL COM B=2, fm=20KHz. 
+A POTENCIA DO SINAL MODULADO EH IGUAL A 20W. 
+O SISTEMA NAO USA CIRCUITO DE PRE(DE)ENFASE. 
+
+PEDE-SE:
+
+a) DETERMINE A RELACAO SINAL RUIDO DE SAIDA SNRo(em dB)
+
+b) DE QUANTOS DECIBEIS PODE-SE REDUZIR A RELACAO SINAL RUIDO DE CANAL SNRc DE MODO A QUE O SISTEMA OPERE POUCO ACIMA DA RELACAO SINAL RUIDO DE LIMIAR?
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+No = 10^-8 W/Hz
+B = 2
+fm = 20 KHz
+Pm = 20 W
+
+
+a) SNRc = Pr/W.No
+  20/(20k.10^-8) = 100k (50dB)
+
+
+Fm=SNRo/SNRc
+
+Fm=(3/2).B^2
+  Fm = 6
+
+SNRo = SNRc.Fm
+  SNRo = 100k.6 = 600K (58dB)
+
+
+
+b) 
+  Limiar:
+
+  SNRcl = 20(B+1)
+  SNRcl = 20.(2+1) = 60 (18dB)
+
+
+Pode-se reduzir de 50dB para 18dB, ou seja, diminui-se 32dB.
+
+
+[FIM]."

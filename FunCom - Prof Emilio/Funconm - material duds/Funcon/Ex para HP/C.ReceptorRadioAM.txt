@@ -1,0 +1,41 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+3.2 RECEPTOR DE RADIO AM
+
+
+Utiliza a faixa de frequencias de 535 a 1605 KHz para transmissão de voz e música. 
+
+As frequências portadoras variam entre 540 a 1600 KHz espaçadas de 10 Khz.
+
+O sinal de mensagem é limitado em 5 KHz. O receptor usado para a recepção de sinais AM é chamado receptor super-heteródino. 
+
+E é formado por: uma antena, um amplificador sintonizado de radio frequencia (RF), um mixer, um oscilador local, um amplificador de frequencia intermediaria (FI), um detetor de envoltória, um sistema automático de controle de volume, um amplificador de áudio, e um auto-falante.
+
+
+     [OSCILADOR LOCAL] ->
+[AMPLIFICADOR RF] -> [MIXER] -> [AMPLIFICADOR DE FI] -> [DETECTOR DE ENVOLTORIA] -> [AMPLIFICADOR DE AUDIO]
+
+
+Um capacitor variável seleciona a estação a ser recebida bem como ajusta a freqüência do oscilador local. 
+
+Cada estação sintonizada é deslocada no espectro para uma freqüência intermediaria de 455 KHz (graças ao mixer). 
+
+Esta conversão de freqüências (heterodinagem) permite o uso de um único amplificador sintonizado de FI para qualquer estação selecionada. O amplificador de FI é o responsável pelas características de sensibilidade e seletividade do receptor; e amplifica sinais em uma faixa de 10 KHz 
+
+A freqüência do oscilador local é: fLO = fC + fIF. 
+
+O range de freqüências do oscilador local é 995-2055 KHz. Na saída do mixer obtém-se duas componentes: fIF e 2.fC + fIF. 
+
+A primeira componente é amplificada pelo amplificador de FI. 
+
+A sinal obtido após o amplificador de FI é aplicado ao detetor de envoltória de modo a reproduzir sinal de mensagem. 
+Este é amplificado e aplicado ao auto-falante. 
+
+O sistema automático de controle de volume (AVC) ajusta o ganho do amplificador de FI baseado no nível de potência do sinal no detetor de envoltória. Nota-se que na entrada do amplificador de RF estão presentes todas as estações captadas pela antena. 
+
+Considere-se as conversões da estação em fC e aquela em fc' = fLO + fIF (chamada freqüência imagem). Ambos sinais convertidos serão deslocados para a freqüência fIF, causando interferência mútua. De modo a rejeitar a freqüência imagem é suficiente fixar a largura de faixa do amplificador de RF de modo que: BRF < 2.fIF.
+
+
+[FIM]."

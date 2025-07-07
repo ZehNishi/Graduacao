@@ -1,0 +1,18 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+Ex.32) Uma sequencia de digitos binarios, a taxa de 56kbps, deve ser transmitida atraves de um canal limitado em 42 kHz. 
+Qual eh o fator de ROLL-OFF a ser usado neste caso?
+
+[SOLUCAO]
+
+  rb = 56 kbps
+  B = 42 kHz
+  p?
+
+B = (1+p).rb/2
+
+p = 0,5
+
+
+[FIM]."

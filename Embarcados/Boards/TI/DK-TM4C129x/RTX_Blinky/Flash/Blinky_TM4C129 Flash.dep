@@ -1,0 +1,41 @@
+Dependencies for Project 'Blinky', Target 'TM4C129 Flash': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\LED.c)(0x53106F22)(-c --cpu Cortex-M4.fp.sp -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_Flash-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC-IC:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="536" -D_RTE_ -DTM4C129XNCZAD -D_RTE_-o .\flash\led.o --omf_browse .\flash\led.crf --depend .\flash\led.d)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129XNCZAD.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025BE2E)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0453A)
+I (LED.h)(0x53106F22)
+F (.\Blinky.c)(0x53106F22)(-c --cpu Cortex-M4.fp.sp -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_Flash-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC-IC:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="536" -D_RTE_ -DTM4C129XNCZAD -D_RTE_-o .\flash\blinky.o --omf_browse .\flash\blinky.crf --depend .\flash\blinky.d)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025BE2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025BE2E)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129XNCZAD.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0453A)
+I (LED.h)(0x53106F22)
+F (.\Abstract.txt)(0x53106F22)()
+F (RTE\CMSIS\RTX_Conf_CM.c)(0x553E5744)(-c --cpu Cortex-M4.fp.sp -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_Flash-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC-IC:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="536" -D_RTE_ -DTM4C129XNCZAD -D_RTE_-o .\flash\rtx_conf_cm.o --omf_browse .\flash\rtx_conf_cm.crf --depend .\flash\rtx_conf_cm.d)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025BE2E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025BE2E)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC\RTX_CM_lib.h)(0x60D48392)
+F (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib)(0x60D48392)()
+F (RTE\Device\TM4C129XNCZAD\startup_TM4C129.s)(0x53106F22)(--cpu Cortex-M4.fp.sp --pd "__RTX SETA 1" --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C129_Flash-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC-IC:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "TM4C129XNCZAD SETA 1" --pd "_RTE_ SETA 1"--list .\flash\startup_tm4c129.lst --xref -o .\flash\startup_tm4c129.o --depend .\flash\startup_tm4c129.d)
+F (RTE\Device\TM4C129XNCZAD\system_TM4C129.c)(0x53106F22)(-c --cpu Cortex-M4.fp.sp -D__RTX -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_Flash-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\INC-IC:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="536" -D_RTE_ -DTM4C129XNCZAD -D_RTE_-o .\flash\system_tm4c129.o --omf_browse .\flash\system_tm4c129.crf --depend .\flash\system_tm4c129.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025BE2E)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129XNCZAD.h)(0x530F3946)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm4.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D48392)
+I (C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0453A)

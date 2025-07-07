@@ -1,0 +1,47 @@
+"
+
+14-Dada uma onda portadora de 10Vpp e frequencia de 1MHz e uma modulante cossenoidal de 5Vpp e 1kHz,
+considerando ka = 0,2 , determine:
+
+a- A expressão do sinal modulado AM-DSB.
+b- A expressão do espectro do sinal modulado
+c- A potencia media do sinal modulado.
+d- A largura do espectro do sinal modulado
+e- O sinal AM-DSB é demodulado com o uso de um detector de envoltouria.
+Determine a constante RC de modo a minimizar a distorção de corte diagonal.
+
+Solução
+-------------------------------------------------
+a - 
+s(t) = Ac*[1+mi*cos(2*pi*fm*t)]cos(2*pi*fc*t)
+
+Ac = 10/5 e Am = 5/2 =2,5
+
+sendo mi = ka.Am = 0,2*2,5 = 0,5
+
+s(t) = 5[1+0,5cos(2*pi*1k*t)].cos(2*pi*10M*t)
+
+--------------------------------------------------
+sendo d = delta
+
+b - 
+s(f) = (Ac/2)*[d(f-fc)+d(f+fc)]+
+	 + (mi*Ac/4)*[d(f-fc-fm)+d(f+fc+fm)]
+	 + (mi*Ac/4)*[d(f-fc+fm)+d(f+fc-fm)]
+	
+	soh substiruir os valores
+-------------------------------------------------
+c- 
+P= (Ac^2)/2 + (mi^2*Ac^2/8) + (mi^2*Ac^2/8) 
+ = (2 + mi^2)*(Ac^2)/2 = 28,125
+		
+
+-------------------------------------------------
+
+d- Bt = 2W = 2*fm = 2*1k = 2kHz
+
+-------------------------------------------------
+
+e- R*C<=[sqrt(1+mi^2)]/2*pi*fm*mi <= 356u
+
+"

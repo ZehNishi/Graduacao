@@ -1,0 +1,14 @@
+Determine a transformade de fourier do seguinte pulso
+
+g(t)=A*cos[(pi*t)/tal]
+-p/ -tal/2<=t<=tal/2
+
+dica:
+int()e^(ax)*cos(bx)*dx=e^(ax)*[a*cos(bx)+b*sen(bx)]/(a^2+b^2)
+
+G(f)=int(-inf a +inf)g(t)*exp(-j*2*pi*f*t)*dt
+=int(-tal/2 a tal/2)A*cos(pi*t/tal)*exp(-j*2*pi*f*t)
+=A*exp(-j*2*pi*f*t)*[-j*2*pi*f*cos(pi*t/tal)+(pi/tal)*sen(pi*t/tal)]/[(-j*2*pi*f)^2+(pi/tal)^2]|(substituir de -tal/2 a tal/2)
+=2*A*(pi/tal)*cos(pi*f*t)/[-(j*2*pi*f)^2+(pi/tal)^2]
+Multiplicando em cima e embaixo por (tal/pi)^2
+=2*A*tal*cos(pi*f*tal)/[pi-(2ftal)^2]

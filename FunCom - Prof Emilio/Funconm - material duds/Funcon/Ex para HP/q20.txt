@@ -1,0 +1,20 @@
+Esbocar os sinais modulados FM e PM com os seguintes dados:
+Am=1
+fm=10kHz(senoidal)
+fc=1mmkHz
+kf=1kHz/V
+kp=0,1 rad/V
+
+-FM
+fi(t)min=fc+Kf*m(t)min=100k+1k*(-1)=99kHz
+fi(t)max=fc+Kf*m(t)max=100k+1k=101kHz
+
+-PM
+fi(t)min=fc+[Kp/(2pi)]*[dm(t)/dt]/min
+=100k+[0,1/(2*pi)]*2*pi*10k*cos(2*pi*10k*t)/min
+=100k+1k(-1)=99k
+fi(t)max=fc+[Kp/(2pi)]*[dm(t)/dt]/max
+100k+[0,1/(2*pi)]*2*pi*10k*cos(2*pi*10k*t)/max
+=100k+1k=101k
+
+Graficos:

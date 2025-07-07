@@ -1,0 +1,60 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+3 MODULAÇÃO ANALÓGICA EM AMPLITUDE
+
+Um grande número de fontes de informação são fontes analógicas. 
+
+Sinais analógicos podem ser modulados e transmitidos diretamente ou convertidos para sinais digitais e transmitidos usando técnicas de modulação digital. Voz, imagem, e vídeo são exemplos de fontes analógicas de informações. Cada uma destas fontes é caracterizada por sua largura de espectro, range dinâmico, e natureza do sinal.
+
+Apesar da tendência geral em direção à transmissão digital de sinais analógicos, ainda existe hoje uma quantidade significativa de transmissão de sinais analógicos, especialmente em broadcast de áudio e vídeo.
+
+
+MODULACAO: é a alteração sistemática de alguma característica de um sinal, denominado portadora, em função de um segundo sinal denominado modulante ou mensagem.
+
+OBJETIVO: é conduzir a informação através de um sinal modulado cujas propriedades sejam as mais convenientes ao processo de comunicação considerado.
+
+-----------------
+POR QUE MODULAR?
+-----------------
+
+* Modulação para FACILIDADE DE IRRADIACAO: 
+
+Uma irradiação eletromagnética eficiente necessita de antenas com dimensões físicas da ordem de meio comprimento de onda.
+
+Muitos sinais, especialmente os sinais de áudio, possuem componentes de freqüência baixa necessitando de antenas de grande dimensão para uma irradiação direta. 
+
+Utilizando a propriedade da translação em freqüência da modulação, estes sinais podem ser sobrepostos em uma portadora de alta freqüência, com conseqüente redução no tamanho da antena.
+
+
+-----------------
+* Modulação para REDUCAO DE RUIDO E INTERFERENCIA:
+
+Certos tipos de modulação possuem a propriedade de reduzir efeitos causados pelo ruído e pela interferência.
+
+Esta propriedade, entretanto, é obtida à custa de uma largura de faixa para a transmissão do sinal maior que a necessária para o sinal original.
+
+
+-----------------
+* Modulação para DESIGNACAO DE FREQUENCIA:
+
+A seleção e separação de uma estação,em um rádio ou televisão, é possível porque cada uma tem uma diferente freqüência
+portadora de designação (atribuída). 
+
+Duas ou mais estações transmitindo diretamente no mesmo meio, sem modulação, produziriam uma superposição de sinais
+interferentes.
+
+
+-----------------
+* Modulação para MULTIPLEXACAO:
+
+As técnicas de multiplexação, inerentemente formas de modulação, permitem a transmissão de múltiplos sinais através de um
+mesmo canal, de modo que cada sinal pode ser separado no extremo de recepção.
+
+
+-----------------
+* Modulação para SUPERAR LIMITACOES DE PROJETOS:
+
+A modulação pode ser utilizada para transladar um sinal até a porção do espectro de freqüência onde as necessidades de projeto são mais facilmente satisfeitas.
+
+[FIM]."

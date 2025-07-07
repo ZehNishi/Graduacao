@@ -1,0 +1,53 @@
+Determine a TF do pulso triangular usando diferenciacoes sucessivas
+     |
+    /|\
+   / | \
+__/__|__\__
+  1     2
+
+1=-tal/2
+2=tal/2
+
+g(t)=
+p/ -tal/2<=t<=0
+A+(2*A*t)/tal
+p/ 0<=t<=tal/2
+A-(2*A*t)/tal
+
+Resposta
+
+Derivando uma vez temos
+
+   __|
+__|__|____
+  1  |__|
+        2 
+
+1=-tal/2
+2=tal/2
+
+dg(t)/dt=
+p/ -tal/2<=t<=0
+(2*A)/tal ->amplitude parte +
+p/ 0<=t<=tal/2
+-(2*A)/tal ->amplitude parte -
+
+Derivando mais uma vez temos os impulsos
+
+  /\    /\
+__|__|__|__
+  1  |  2
+     |  
+     \/
+     3
+
+1=-tal/2 ->amplitude=2A/tal
+2=tal/2 ->amplitude=2A/tal
+3=0 ->amplitude=-4A/tal
+
+[d^2g(t)]/[dt^2]=[2A/tal]*impulso[t+tal/2]+[2A/tal]*impulso[t-tal/2]-[4A/tal]*impulso(t)
+F{[d^2g(t)]/[dt^2]}=[2A/tal]*e^(j*2*pi*f*(tal/2))+[2A/tal]*e^(-j*2*pi*f*(tal/2))-[4A/tal]*exp(0)
+F{[d^2g(t)]/[dt^2]}=[2A/tal]*{e(j*2*pi*f*(tal/2))+e(j*2*pi*f*(tal/2))-2}
+F{[d^2g(t)]/[dt^2]}=[-8A*sen^2(pi*f*t/2)]/tal
+G(f)={[-8A*sen^2(pi*f*t/2)]/tal}/(j*w*pi*f)^2
+G(f)={A*tal*sinc^2(f*tal*2)}/2

@@ -1,0 +1,66 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+--------------------
+2.4 SÉRIE TRIGONOMÉTRICA DE FOURIER
+
+Um sinal periódico pode ser representado como uma soma infinita de termos em senos e cossenos harmonicamente relacionadas com a freqüência fundamental (1/T0) do sinal.
+
+
+--------------------
+2.5 SÉRIE EXPONÊNCIAL COMPLEXA DE FOURIER
+
+Nesta representação, um sinal periódico possui componentes de freqüências positivas e negativas. A presença de freqüências negativas é resultado do fato de que o modelo matemático de representação do sinal requer freqüências negativas.
+
+
+--------------------
+2.6 TRANSFORMADA DE FOURIER (sinais aperiódicos).
+
+A Transformada de Fourier consiste em uma ferramenta matemática que permite descrever um sinal g(t) através de suas componentes exponenciais que ocupam o intervalo inteiro de freqüências. Assim, a transformada G(f) define a representação do sinal no domínio da freqüência especificando amplitudes relativas das várias componentes em freqüência que compõem o sinal.
+
+
+--------------------
+2.7 DENSIDADE ESPECTRAL DE ENERGIA
+
+A densidade espectral de energia (DEE), em J/Hz, mostra como a energia de um sinal se distribui ao longo do espectro de freqüências.
+
+
+--------------------
+2.8 DENSIDADE ESPECTRAL DE POTÊNCIA
+
+A densidade espectral de potência (DEP), em W/Hz, mostra como a potência de um sinal periódico se distribui ao longo do espectro.
+
+
+--------------------
+2.9 FUNÇÃO AUTOCORRELAÇÃO
+
+Fornece uma medida de similaridade ou coerência, entre um dado sinal e sua própria versão conjugada deslocada no tempo.
+
+
+--------------------
+2.10 FUNÇÃO DE CROSS-CORRELAÇÃO
+
+Fornece uma medida de similaridade ou coerência, entre um sinal e uma versão conjugada deslocada de uma quantidade variável de um segundo sinal.
+
+----------------
+AUTO-CORRELACAO:
+----------------
+
+Uma ferramenta poderosa:
+
+Para um sinal g(t), a densidade espectral de energia (DEE), que é igual a|G(f)|2, pode ser determinada também pela transformada de Fourier (TF) de sua função autocorrelação.
+
+Se a transformada de Fourier de um sinal é suficiente para determinar a DEE, então porquê complicar desnecessariamente nossas vidas estudando funções auto-correlação?
+
+A TF é válida somente para sinais determinísticos, que podem ser definidos em função do tempo. Sinais aleatórios que ocorrem em problemas de comunicações não podem ser descritos desta forma, e é impossível determinar suas TF.
+
+Entretanto, a função auto-correlação para tais sinais pode ser determinada a partir de sua informação estatística. Isto permite determinar a densidade espectral de potência (DEP) de tais sinais. De fato, pode-se considerar a abordagem pela auto-correlação como uma generalização da análise de Fourier para sinais aleatórios e de potência.
+
+
+--------------------
+2.11 TRANSFORMADA DE HILBERT
+
+Esta rede produz um desvio de fase de -90° em todas as freqüências positivas do sinal g(t), e do +90° em todas as freqüências negativas. As amplitudes não são alteradas.
+
+
+[FIM]."

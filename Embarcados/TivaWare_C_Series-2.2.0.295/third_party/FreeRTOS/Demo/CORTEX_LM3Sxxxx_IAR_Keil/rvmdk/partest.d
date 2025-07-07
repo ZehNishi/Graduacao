@@ -1,0 +1,13 @@
+.\rvmdk\partest.o: ParTest\ParTest.c
+.\rvmdk\partest.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\partest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\partest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\partest.o: .\FreeRTOSConfig.h
+.\rvmdk\partest.o: ..\..\Source\include\projdefs.h
+.\rvmdk\partest.o: ..\..\Source\include\portable.h
+.\rvmdk\partest.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\partest.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\partest.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\partest.o: ..\..\Source\include\task.h
+.\rvmdk\partest.o: ..\..\Source\include\list.h
+.\rvmdk\partest.o: ..\Common\include\partest.h

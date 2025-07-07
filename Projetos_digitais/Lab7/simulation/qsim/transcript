@@ -1,0 +1,169 @@
+# do Lab7.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:36:15 on Dec 05,2022
+# vcom -work work Lab7.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package fiftyfivenm_atom_pack
+# -- Loading package fiftyfivenm_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Compiling entity Lab7
+# -- Compiling architecture structure of Lab7
+# End time: 08:36:15 on Dec 05,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:36:15 on Dec 05,2022
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Lab7_vhd_vec_tst
+# -- Compiling architecture Lab7_arch of Lab7_vhd_vec_tst
+# ** Warning: Waveform.vwf.vht(36): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(36): near "0": (vcom-1576) expecting IDENTIFIER.
+# ** Warning: Waveform.vwf.vht(37): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(39): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(40): near "0e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(41): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(43): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(44): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(45): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(46): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(47): near "2e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(48): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(49): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(50): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(52): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(53): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(54): near "3e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(55): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(56): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(61): near "4e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(63): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(64): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(66): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(67): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(68): near "5e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(70): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: Waveform.vwf.vht(122): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(122): (vcom-1136) Unknown identifier "a".
+# ** Warning: Waveform.vwf.vht(123): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(123): (vcom-1136) Unknown identifier "b".
+# ** Warning: Waveform.vwf.vht(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(124): (vcom-1136) Unknown identifier "c".
+# ** Warning: Waveform.vwf.vht(125): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(125): (vcom-1136) Unknown identifier "d".
+# ** Error: Waveform.vwf.vht(126): near "0e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(127): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(127): (vcom-1136) Unknown identifier "f".
+# ** Warning: Waveform.vwf.vht(128): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(128): (vcom-1136) Unknown identifier "g".
+# ** Warning: Waveform.vwf.vht(129): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(129): (vcom-1136) Unknown identifier "a".
+# ** Warning: Waveform.vwf.vht(130): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(130): (vcom-1136) Unknown identifier "b".
+# ** Warning: Waveform.vwf.vht(131): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(131): (vcom-1136) Unknown identifier "c".
+# ** Warning: Waveform.vwf.vht(132): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(132): (vcom-1136) Unknown identifier "d".
+# ** Error: Waveform.vwf.vht(133): near "2e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(134): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(134): (vcom-1136) Unknown identifier "f".
+# ** Warning: Waveform.vwf.vht(135): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(135): (vcom-1136) Unknown identifier "g".
+# ** Warning: Waveform.vwf.vht(136): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(136): (vcom-1136) Unknown identifier "a".
+# ** Warning: Waveform.vwf.vht(137): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(137): (vcom-1136) Unknown identifier "b".
+# ** Warning: Waveform.vwf.vht(138): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(138): (vcom-1136) Unknown identifier "c".
+# ** Warning: Waveform.vwf.vht(139): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(139): (vcom-1136) Unknown identifier "d".
+# ** Error: Waveform.vwf.vht(140): near "3e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(141): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(141): (vcom-1136) Unknown identifier "f".
+# ** Warning: Waveform.vwf.vht(142): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(142): (vcom-1136) Unknown identifier "g".
+# ** Warning: Waveform.vwf.vht(143): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(143): (vcom-1136) Unknown identifier "a".
+# ** Warning: Waveform.vwf.vht(144): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(144): (vcom-1136) Unknown identifier "b".
+# ** Warning: Waveform.vwf.vht(145): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(145): (vcom-1136) Unknown identifier "c".
+# ** Warning: Waveform.vwf.vht(146): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(146): (vcom-1136) Unknown identifier "d".
+# ** Error: Waveform.vwf.vht(147): near "4e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(148): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(148): (vcom-1136) Unknown identifier "f".
+# ** Warning: Waveform.vwf.vht(149): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(149): (vcom-1136) Unknown identifier "g".
+# ** Warning: Waveform.vwf.vht(150): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(150): (vcom-1136) Unknown identifier "a".
+# ** Warning: Waveform.vwf.vht(151): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(151): (vcom-1136) Unknown identifier "b".
+# ** Warning: Waveform.vwf.vht(152): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(152): (vcom-1136) Unknown identifier "c".
+# ** Warning: Waveform.vwf.vht(153): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(153): (vcom-1136) Unknown identifier "d".
+# ** Error: Waveform.vwf.vht(154): near "5e": (vcom-111) No digits found in exponent part of abstract literal.
+# ** Warning: Waveform.vwf.vht(155): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(155): (vcom-1136) Unknown identifier "f".
+# ** Warning: Waveform.vwf.vht(156): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Error: Waveform.vwf.vht(156): (vcom-1136) Unknown identifier "g".
+# ** Error: Waveform.vwf.vht(122): (vcom-1454) Formal "\0a\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(123): (vcom-1454) Formal "\0b\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(124): (vcom-1454) Formal "\0c\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(125): (vcom-1454) Formal "\0d\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(126): (vcom-1454) Formal "\0e\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(127): (vcom-1454) Formal "\0f\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(128): (vcom-1454) Formal "\0g\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(129): (vcom-1454) Formal "\2a\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(130): (vcom-1454) Formal "\2b\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(131): (vcom-1454) Formal "\2c\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(132): (vcom-1454) Formal "\2d\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(133): (vcom-1454) Formal "\2e\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(134): (vcom-1454) Formal "\2f\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(135): (vcom-1454) Formal "\2g\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(136): (vcom-1454) Formal "\3a\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(137): (vcom-1454) Formal "\3b\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(138): (vcom-1454) Formal "\3c\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(139): (vcom-1454) Formal "\3d\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(140): (vcom-1454) Formal "\3e\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(141): (vcom-1454) Formal "\3f\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(142): (vcom-1454) Formal "\3g\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(143): (vcom-1454) Formal "\4a\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(144): (vcom-1454) Formal "\4b\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(145): (vcom-1454) Formal "\4c\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(146): (vcom-1454) Formal "\4d\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(147): (vcom-1454) Formal "\4e\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(148): (vcom-1454) Formal "\4f\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(149): (vcom-1454) Formal "\4g\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(150): (vcom-1454) Formal "\5a\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(151): (vcom-1454) Formal "\5b\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(152): (vcom-1454) Formal "\5c\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(153): (vcom-1454) Formal "\5d\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(154): (vcom-1454) Formal "\5e\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(155): (vcom-1454) Formal "\5f\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(156): (vcom-1454) Formal "\5g\" of mode OUT cannot be associated with an expression.
+# ** Error: Waveform.vwf.vht(188): VHDL Compiler exiting
+# End time: 08:36:15 on Dec 05,2022, Elapsed time: 0:00:00
+# Errors: 77, Warnings: 60
+# ** Error: c:/intelfpga_lite/18.1/modelsim_ase/win32aloem/vcom failed.
+# Executing ONERROR command at macro ./Lab7.do line 4

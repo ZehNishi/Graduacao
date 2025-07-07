@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'A'
+Slack : -11.271
+TNS   : -1562.404
+
+Type  : Slow 1200mV 85C Model Setup 'B'
+Slack : -11.003
+TNS   : -1594.217
+
+Type  : Slow 1200mV 85C Model Setup 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -5.136
+TNS   : -468.031
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -4.747
+TNS   : -70.640
+
+Type  : Slow 1200mV 85C Model Hold 'A'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'B'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.641
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'B'
+Slack : -3.000
+TNS   : -318.675
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'A'
+Slack : -3.000
+TNS   : -317.272
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -1.403
+TNS   : -136.091
+
+Type  : Slow 1200mV 0C Model Setup 'A'
+Slack : -10.167
+TNS   : -1407.603
+
+Type  : Slow 1200mV 0C Model Setup 'B'
+Slack : -9.908
+TNS   : -1436.935
+
+Type  : Slow 1200mV 0C Model Setup 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -4.656
+TNS   : -423.103
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -4.351
+TNS   : -61.179
+
+Type  : Slow 1200mV 0C Model Hold 'A'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'B'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'B'
+Slack : -3.000
+TNS   : -318.675
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'A'
+Slack : -3.000
+TNS   : -317.272
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -1.403
+TNS   : -136.091
+
+Type  : Fast 1200mV 0C Model Setup 'A'
+Slack : -3.983
+TNS   : -512.976
+
+Type  : Fast 1200mV 0C Model Setup 'B'
+Slack : -3.796
+TNS   : -532.275
+
+Type  : Fast 1200mV 0C Model Setup 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -1.566
+TNS   : -139.159
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -1.549
+TNS   : -11.234
+
+Type  : Fast 1200mV 0C Model Hold 'A'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'B'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'B'
+Slack : -3.000
+TNS   : -248.171
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'A'
+Slack : -3.000
+TNS   : -237.731
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -37.143
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Placar_Basquete:inst39|Timing_Reference:inst7|tmp'
+Slack : -1.000
+TNS   : -97.000
+
+------------------------------------------------------------

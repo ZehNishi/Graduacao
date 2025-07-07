@@ -1,0 +1,9 @@
+Sobremodulacao
+
+Quando a amplitude ka do modulador eh grando o suficiente, e a condicao |ka*m(t)|<1 nao for satisfeita, havera sobremodulacao, onde ocorre reversao de fase quando a envoltoria vale 0. A onda modulada exibe um adistorcao no envoltorio, para evitar a sobremodulacao, uma relacao de 1:1 eh mantida entre o envelope da onda AM e a onda modulada para todos os valores de tempo.
+Ocorre em AMDSB
+
+
+Metodo da discriminacao em frequencia
+
+O sistema para obtencao do sinal SSB consiste em um modulador tipo produto mais um filtro projetado para rejeitar uma das bandas laterais. Neste metodo a menor frequencia do sinal modulante (fm) deve ser maior que zero para a correta atuacao de filtro FPF de alta seletividade. Obs. por este motivo a modulacao SSB nao eh utilizada na transmissao de sinais que possuem componentes significativas de baixa frequencia. Ex: video.

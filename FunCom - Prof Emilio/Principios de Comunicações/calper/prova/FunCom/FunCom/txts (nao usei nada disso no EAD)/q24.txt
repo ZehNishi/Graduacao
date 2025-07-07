@@ -1,0 +1,45 @@
+Dados o circuito e grafico abaixo.Calcular: fo,kf,Beta,equacao de fi(t), Bt(Carson+Curva);sabendo que Lq=L2=650 microH.
+
+       C_______ 
+   __B|/      | 
+  |   |\E     |
+  |_L1__|_L2__|
+  |           |
+  |____|>||___|
+  |           |
+  |_m(t)_-4V+_|
+
+C(pF) 
+      |
+  20,4|---\
+      |----\
+      |-----\
+  19,8|------\
+      |__________ Vr
+          2345
+x|y
+2|20,4
+3|20,2
+4|20,0
+5|19,8
+
+a-
+fc=1/[2*pi*((L1+L2)*Co)^1/2]
+
+b-
+Kf=-Kc*fc/(2*Co)=-(-0,2p)*987k/(2*20)=4,935 kHz/V
+Kc=deltaC/deltaVr=(19,8p-20,2p)/(5-3)=-0,2 pF/V
+
+c-
+Beta=Kf*Am/fm=4,935k*1/1k=4,935
+
+d-
+fi(t)=fc+Kf*m(t)
+fi(t)=987k+4,935k*cos[2*pi*(10^3)*t]
+
+e-
+Carson:
+Bt=2*(deltaf+fm)=2*(Kf*Am+fm)=2*(4,935k+1k)=11,87kHz
+Curva Universal:
+Bt/deltaf=3,2
+Bt=3,2*4,935k=15,79kHz

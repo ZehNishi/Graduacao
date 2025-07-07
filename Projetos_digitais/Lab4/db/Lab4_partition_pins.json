@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Fa",
+					"strict" : false
+				},
+				{
+					"name" : "Fb",
+					"strict" : false
+				},
+				{
+					"name" : "Fc",
+					"strict" : false
+				},
+				{
+					"name" : "Fd",
+					"strict" : false
+				},
+				{
+					"name" : "Fe",
+					"strict" : false
+				},
+				{
+					"name" : "Ff",
+					"strict" : false
+				},
+				{
+					"name" : "Fg",
+					"strict" : false
+				},
+				{
+					"name" : "Inv",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

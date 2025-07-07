@@ -1,0 +1,945 @@
+|Lab2
+0Fa <= Dec7Inv:inst.OFa
+CLR => inst65.IN0
+Clock => inst101.CLK
+Clock => inst102.CLK
+Clock => inst103.CLK
+Clock => inst104.CLK
+Clock => inst7.CLK
+Clock => inst6.CLK
+Clock => inst8.CLK
+Clock => inst9.CLK
+Clock => inst14.CLK
+Clock => inst15.CLK
+Clock => inst16.CLK
+Clock => inst17.CLK
+Clock => inst22.CLK
+Clock => inst23.CLK
+Clock => inst24.CLK
+Clock => inst25.CLK
+Clock => inst30.CLK
+Clock => inst31.CLK
+Clock => inst32.CLK
+Clock => inst33.CLK
+Clock => inst38.CLK
+Clock => inst39.CLK
+Clock => inst40.CLK
+Clock => inst41.CLK
+In3 => inst101.DATAIN
+In2 => inst102.DATAIN
+In1 => inst103.DATAIN
+In0 => inst104.DATAIN
+0Fb <= Dec7Inv:inst.OFb
+0Fc <= Dec7Inv:inst.OFc
+0Fd <= Dec7Inv:inst.Ofd
+0Fe <= Dec7Inv:inst.OFe
+0Ff <= Dec7Inv:inst.OFf
+0Fg <= Dec7Inv:inst.Ofg
+1Fa <= Dec7Inv:inst1.OFa
+1Fb <= Dec7Inv:inst1.OFb
+1Fc <= Dec7Inv:inst1.OFc
+1Fd <= Dec7Inv:inst1.Ofd
+1Fe <= Dec7Inv:inst1.OFe
+1Ff <= Dec7Inv:inst1.OFf
+1Fg <= Dec7Inv:inst1.Ofg
+2Fa <= Dec7Inv:inst2.OFa
+2Fb <= Dec7Inv:inst2.OFb
+2Fc <= Dec7Inv:inst2.OFc
+2Fd <= Dec7Inv:inst2.Ofd
+2Fe <= Dec7Inv:inst2.OFe
+2Ff <= Dec7Inv:inst2.OFf
+2Fg <= Dec7Inv:inst2.Ofg
+3Fa <= Dec7Inv:inst3.OFa
+3Fb <= Dec7Inv:inst3.OFb
+3Fc <= Dec7Inv:inst3.OFc
+3Fd <= Dec7Inv:inst3.Ofd
+3Fe <= Dec7Inv:inst3.OFe
+3Ff <= Dec7Inv:inst3.OFf
+3Fg <= Dec7Inv:inst3.Ofg
+4Fa <= Dec7Inv:inst4.OFa
+PB1 => inst48.CLK
+Ci => Som4Digitos:inst46.Ci
+4Fb <= Dec7Inv:inst4.OFb
+4Fc <= Dec7Inv:inst4.OFc
+4Fd <= Dec7Inv:inst4.Ofd
+4Fe <= Dec7Inv:inst4.OFe
+4Ff <= Dec7Inv:inst4.OFf
+4Fg <= Dec7Inv:inst4.Ofg
+5Fa <= Dec7Inv:inst105.OFa
+5Fb <= Dec7Inv:inst105.OFb
+5Fc <= Dec7Inv:inst105.OFc
+5Fd <= Dec7Inv:inst105.Ofd
+5Fe <= Dec7Inv:inst105.OFe
+5Ff <= Dec7Inv:inst105.OFf
+5Fg <= Dec7Inv:inst105.Ofg
+
+
+|Lab2|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst1
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst1|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst1|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst2
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst2|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst3
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst3|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst3|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst4
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst4|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst4|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Som4Digitos:inst46
+S0 <= Somador:inst.S
+Ci => Somador:inst.Ci
+Ci => inst5.IN0
+Ci => inst6.IN0
+Ci => inst7.IN0
+Ci => inst8.IN0
+B0 => inst5.IN1
+A0 => Somador:inst.A
+S1 <= Somador:inst2.S
+B1 => inst6.IN1
+A1 => Somador:inst2.A
+S2 <= Somador:inst3.S
+B2 => inst7.IN1
+A2 => Somador:inst3.A
+Co <= Somador:inst4.Co
+B3 => inst8.IN1
+A3 => Somador:inst4.A
+S3 <= Somador:inst4.S
+
+
+|Lab2|Som4Digitos:inst46|Somador:inst
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst13.IN0
+A => inst8.IN0
+A => inst9.IN0
+A => inst4.IN1
+A => inst3.IN1
+B => inst12.IN0
+B => inst9.IN1
+B => inst7.IN2
+B => inst5.IN1
+B => inst3.IN0
+Ci => inst6.IN2
+Ci => inst11.IN0
+Ci => inst9.IN2
+Ci => inst4.IN0
+Ci => inst5.IN0
+Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab2|Som4Digitos:inst46|Somador:inst2
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst13.IN0
+A => inst8.IN0
+A => inst9.IN0
+A => inst4.IN1
+A => inst3.IN1
+B => inst12.IN0
+B => inst9.IN1
+B => inst7.IN2
+B => inst5.IN1
+B => inst3.IN0
+Ci => inst6.IN2
+Ci => inst11.IN0
+Ci => inst9.IN2
+Ci => inst4.IN0
+Ci => inst5.IN0
+Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab2|Som4Digitos:inst46|Somador:inst3
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst13.IN0
+A => inst8.IN0
+A => inst9.IN0
+A => inst4.IN1
+A => inst3.IN1
+B => inst12.IN0
+B => inst9.IN1
+B => inst7.IN2
+B => inst5.IN1
+B => inst3.IN0
+Ci => inst6.IN2
+Ci => inst11.IN0
+Ci => inst9.IN2
+Ci => inst4.IN0
+Ci => inst5.IN0
+Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab2|Som4Digitos:inst46|Somador:inst4
+S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst13.IN0
+A => inst8.IN0
+A => inst9.IN0
+A => inst4.IN1
+A => inst3.IN1
+B => inst12.IN0
+B => inst9.IN1
+B => inst7.IN2
+B => inst5.IN1
+B => inst3.IN0
+Ci => inst6.IN2
+Ci => inst11.IN0
+Ci => inst9.IN2
+Ci => inst4.IN0
+Ci => inst5.IN0
+Co <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab2|Dec7Inv:inst105
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Lab2|Dec7Inv:inst105|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2
+Fa <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= 5or:inst51.Out
+Fc <= 5or:inst52.Out
+Fd <= 5or:inst53.Out
+Fe <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= 5or:inst54.Out
+Fg <= 5or:inst55.Out
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Lab2|Dec7Inv:inst105|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+

@@ -1,0 +1,2633 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Jose Albuquerque, UTFPR, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Jose\Documents\Embarcados\Elevador\Elevador.uvprojx
+Project File Date:  06/15/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'EK-TM4C1294XL'
+assembling startup_TM4C129.s...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+51 warnings generated.
+compiling freertos_evr.c...
+RTE/Device/TM4C1294NCPDT/system_TM4C129.c(14): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+51 warnings generated.
+compiling system_TM4C129.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/list.c(30): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+51 warnings generated.
+compiling list.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(33): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(227): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxCriticalNesting == ~0UL );
+                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(291): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+                                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(296): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+                                                          ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(297): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+                                                          ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(337): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == __NVIC_PRIO_BITS );
+                                                                                                          ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(346): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == configPRIO_BITS );
+                                                                                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(357): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+                *pucFirstUserPriorityRegister = ulOriginalPriority;
+                                              ~ ^~~~~~~~~~~~~~~~~~
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(399): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxCriticalNesting == 1000UL );
+                                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(415): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+                                                                                    ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(422): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxCriticalNesting );
+                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(754): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+                                                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/GCC/ARM_CM4F/port.c(770): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+                                                                                                 ^
+63 warnings generated.
+compiling port.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/MemMang/heap_1.c(43): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/portable/MemMang/heap_1.c(130): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pv == NULL );
+                                  ^
+52 warnings generated.
+compiling heap_1.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(36): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(115): warning: padding struct 'struct QueueDefinition' with 2 bytes to align 'pxQueueSetContainer' [-Wpadded]
+                struct QueueDefinition *pxQueueSetContainer;
+                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(251): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(273): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        queueYIELD_IF_USING_PREEMPTION();
+                                                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(364): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+                                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(579): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxMutex );
+                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(634): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxMutex );
+                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(703): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxMaxCount != 0 );
+                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(704): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxInitialCount <= uxMaxCount );
+                                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(731): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(732): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(733): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(736): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(766): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                        queueYIELD_IF_USING_PREEMPTION();
+                                                                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(785): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                                queueYIELD_IF_USING_PREEMPTION();
+                                                                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(798): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                        queueYIELD_IF_USING_PREEMPTION();
+                                                                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(900): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(929): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(930): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(931): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1086): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1090): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue->uxItemSize == 0 );
+                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1095): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->pxMutexHolder != NULL ) ) );
+                                                                                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1246): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( pxQueue ) );
+                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1250): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                          ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1255): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1286): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                queueYIELD_IF_USING_PREEMPTION();
+                                                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1345): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1392): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( pxQueue ) );
+                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1396): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue->uxItemSize == 0 );
+                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1401): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1449): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                queueYIELD_IF_USING_PREEMPTION();
+                                                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1473): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                configASSERT( xInheritanceOccurred == pdFALSE );
+                                                                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1537): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1608): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( pxQueue ) );
+                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1612): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                          ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1617): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1654): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                queueYIELD_IF_USING_PREEMPTION();
+                                                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1714): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1756): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1757): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1848): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1849): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1850): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue->uxItemSize != 0 ); /* Can't peek a semaphore. */
+                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1899): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xQueue );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1917): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1933): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xQueue );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(1945): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueue );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(2282): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xQueue );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(2321): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xQueue );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(2853): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxQueueSetContainer );
+                                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/queue.c(2854): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxQueueSetContainer->uxMessagesWaiting < pxQueueSetContainer->uxLength );
+                                                                                                      ^
+102 warnings generated.
+compiling queue.c...
+main.c(10): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(51): warning: 'WATCHDOG0_BASE' macro redefined [-Wmacro-redefined]
+#define WATCHDOG0_BASE          0x40000000  // Watchdog0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1915): note: previous definition is here
+#define WATCHDOG0_BASE                  0x40000000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(52): warning: 'WATCHDOG1_BASE' macro redefined [-Wmacro-redefined]
+#define WATCHDOG1_BASE          0x40001000  // Watchdog1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1916): note: previous definition is here
+#define WATCHDOG1_BASE                  0x40001000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(57): warning: 'SSI0_BASE' macro redefined [-Wmacro-redefined]
+#define SSI0_BASE               0x40008000  // SSI0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1917): note: previous definition is here
+#define SSI0_BASE                       0x40008000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(58): warning: 'SSI1_BASE' macro redefined [-Wmacro-redefined]
+#define SSI1_BASE               0x40009000  // SSI1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1918): note: previous definition is here
+#define SSI1_BASE                       0x40009000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(59): warning: 'SSI2_BASE' macro redefined [-Wmacro-redefined]
+#define SSI2_BASE               0x4000A000  // SSI2
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1919): note: previous definition is here
+#define SSI2_BASE                       0x4000A000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(60): warning: 'SSI3_BASE' macro redefined [-Wmacro-redefined]
+#define SSI3_BASE               0x4000B000  // SSI3
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1920): note: previous definition is here
+#define SSI3_BASE                       0x4000B000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(61): warning: 'UART0_BASE' macro redefined [-Wmacro-redefined]
+#define UART0_BASE              0x4000C000  // UART0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1921): note: previous definition is here
+#define UART0_BASE                      0x4000C000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(62): warning: 'UART1_BASE' macro redefined [-Wmacro-redefined]
+#define UART1_BASE              0x4000D000  // UART1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1922): note: previous definition is here
+#define UART1_BASE                      0x4000D000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(63): warning: 'UART2_BASE' macro redefined [-Wmacro-redefined]
+#define UART2_BASE              0x4000E000  // UART2
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1923): note: previous definition is here
+#define UART2_BASE                      0x4000E000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(64): warning: 'UART3_BASE' macro redefined [-Wmacro-redefined]
+#define UART3_BASE              0x4000F000  // UART3
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1924): note: previous definition is here
+#define UART3_BASE                      0x4000F000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(65): warning: 'UART4_BASE' macro redefined [-Wmacro-redefined]
+#define UART4_BASE              0x40010000  // UART4
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1925): note: previous definition is here
+#define UART4_BASE                      0x40010000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(66): warning: 'UART5_BASE' macro redefined [-Wmacro-redefined]
+#define UART5_BASE              0x40011000  // UART5
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1926): note: previous definition is here
+#define UART5_BASE                      0x40011000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(67): warning: 'UART6_BASE' macro redefined [-Wmacro-redefined]
+#define UART6_BASE              0x40012000  // UART6
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1927): note: previous definition is here
+#define UART6_BASE                      0x40012000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(68): warning: 'UART7_BASE' macro redefined [-Wmacro-redefined]
+#define UART7_BASE              0x40013000  // UART7
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1928): note: previous definition is here
+#define UART7_BASE                      0x40013000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(69): warning: 'I2C0_BASE' macro redefined [-Wmacro-redefined]
+#define I2C0_BASE               0x40020000  // I2C0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1929): note: previous definition is here
+#define I2C0_BASE                       0x40020000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(70): warning: 'I2C1_BASE' macro redefined [-Wmacro-redefined]
+#define I2C1_BASE               0x40021000  // I2C1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1930): note: previous definition is here
+#define I2C1_BASE                       0x40021000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(71): warning: 'I2C2_BASE' macro redefined [-Wmacro-redefined]
+#define I2C2_BASE               0x40022000  // I2C2
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1931): note: previous definition is here
+#define I2C2_BASE                       0x40022000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(72): warning: 'I2C3_BASE' macro redefined [-Wmacro-redefined]
+#define I2C3_BASE               0x40023000  // I2C3
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1932): note: previous definition is here
+#define I2C3_BASE                       0x40023000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(77): warning: 'PWM0_BASE' macro redefined [-Wmacro-redefined]
+#define PWM0_BASE               0x40028000  // Pulse Width Modulator (PWM)
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1933): note: previous definition is here
+#define PWM0_BASE                       0x40028000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(79): warning: 'QEI0_BASE' macro redefined [-Wmacro-redefined]
+#define QEI0_BASE               0x4002C000  // QEI0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1934): note: previous definition is here
+#define QEI0_BASE                       0x4002C000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(81): warning: 'TIMER0_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER0_BASE             0x40030000  // Timer0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1935): note: previous definition is here
+#define TIMER0_BASE                     0x40030000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(82): warning: 'TIMER1_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER1_BASE             0x40031000  // Timer1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1936): note: previous definition is here
+#define TIMER1_BASE                     0x40031000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(83): warning: 'TIMER2_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER2_BASE             0x40032000  // Timer2
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1937): note: previous definition is here
+#define TIMER2_BASE                     0x40032000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(84): warning: 'TIMER3_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER3_BASE             0x40033000  // Timer3
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1938): note: previous definition is here
+#define TIMER3_BASE                     0x40033000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(85): warning: 'TIMER4_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER4_BASE             0x40034000  // Timer4
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1939): note: previous definition is here
+#define TIMER4_BASE                     0x40034000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(86): warning: 'TIMER5_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER5_BASE             0x40035000  // Timer5
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1940): note: previous definition is here
+#define TIMER5_BASE                     0x40035000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(89): warning: 'ADC0_BASE' macro redefined [-Wmacro-redefined]
+#define ADC0_BASE               0x40038000  // ADC0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1941): note: previous definition is here
+#define ADC0_BASE                       0x40038000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(90): warning: 'ADC1_BASE' macro redefined [-Wmacro-redefined]
+#define ADC1_BASE               0x40039000  // ADC1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1942): note: previous definition is here
+#define ADC1_BASE                       0x40039000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(91): warning: 'COMP_BASE' macro redefined [-Wmacro-redefined]
+#define COMP_BASE               0x4003C000  // Analog comparators
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1943): note: previous definition is here
+#define COMP_BASE                       0x4003C000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(93): warning: 'CAN0_BASE' macro redefined [-Wmacro-redefined]
+#define CAN0_BASE               0x40040000  // CAN0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1944): note: previous definition is here
+#define CAN0_BASE                       0x40040000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(94): warning: 'CAN1_BASE' macro redefined [-Wmacro-redefined]
+#define CAN1_BASE               0x40041000  // CAN1
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1945): note: previous definition is here
+#define CAN1_BASE                       0x40041000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(99): warning: 'USB0_BASE' macro redefined [-Wmacro-redefined]
+#define USB0_BASE               0x40050000  // USB 0 Controller
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1946): note: previous definition is here
+#define USB0_BASE                       0x40050000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(121): warning: 'EEPROM_BASE' macro redefined [-Wmacro-redefined]
+#define EEPROM_BASE             0x400AF000  // EEPROM memory
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1962): note: previous definition is here
+#define EEPROM_BASE                     0x400AF000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(123): warning: 'I2C8_BASE' macro redefined [-Wmacro-redefined]
+#define I2C8_BASE               0x400B8000  // I2C8
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1963): note: previous definition is here
+#define I2C8_BASE                       0x400B8000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(124): warning: 'I2C9_BASE' macro redefined [-Wmacro-redefined]
+#define I2C9_BASE               0x400B9000  // I2C9
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1964): note: previous definition is here
+#define I2C9_BASE                       0x400B9000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(125): warning: 'I2C4_BASE' macro redefined [-Wmacro-redefined]
+#define I2C4_BASE               0x400C0000  // I2C4
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1965): note: previous definition is here
+#define I2C4_BASE                       0x400C0000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(126): warning: 'I2C5_BASE' macro redefined [-Wmacro-redefined]
+#define I2C5_BASE               0x400C1000  // I2C5
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1966): note: previous definition is here
+#define I2C5_BASE                       0x400C1000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(127): warning: 'I2C6_BASE' macro redefined [-Wmacro-redefined]
+#define I2C6_BASE               0x400C2000  // I2C6
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1967): note: previous definition is here
+#define I2C6_BASE                       0x400C2000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(128): warning: 'I2C7_BASE' macro redefined [-Wmacro-redefined]
+#define I2C7_BASE               0x400C3000  // I2C7
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1968): note: previous definition is here
+#define I2C7_BASE                       0x400C3000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(129): warning: 'EPI0_BASE' macro redefined [-Wmacro-redefined]
+#define EPI0_BASE               0x400D0000  // EPI0
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1969): note: previous definition is here
+#define EPI0_BASE                       0x400D0000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(130): warning: 'TIMER6_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER6_BASE             0x400E0000  // General-Purpose Timers
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1970): note: previous definition is here
+#define TIMER6_BASE                     0x400E0000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(131): warning: 'TIMER7_BASE' macro redefined [-Wmacro-redefined]
+#define TIMER7_BASE             0x400E1000  // General-Purpose Timers
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1971): note: previous definition is here
+#define TIMER7_BASE                     0x400E1000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(132): warning: 'EMAC0_BASE' macro redefined [-Wmacro-redefined]
+#define EMAC0_BASE              0x400EC000  // Ethernet Controller
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1972): note: previous definition is here
+#define EMAC0_BASE                      0x400EC000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(133): warning: 'SYSEXC_BASE' macro redefined [-Wmacro-redefined]
+#define SYSEXC_BASE             0x400F9000  // System Exception Module
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1973): note: previous definition is here
+#define SYSEXC_BASE                     0x400F9000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(134): warning: 'HIB_BASE' macro redefined [-Wmacro-redefined]
+#define HIB_BASE                0x400FC000  // Hibernation Module
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1974): note: previous definition is here
+#define HIB_BASE                        0x400FC000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(135): warning: 'FLASH_CTRL_BASE' macro redefined [-Wmacro-redefined]
+#define FLASH_CTRL_BASE         0x400FD000  // FLASH Controller
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1975): note: previous definition is here
+#define FLASH_CTRL_BASE                 0x400FD000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(136): warning: 'SYSCTL_BASE' macro redefined [-Wmacro-redefined]
+#define SYSCTL_BASE             0x400FE000  // System Control
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1976): note: previous definition is here
+#define SYSCTL_BASE                     0x400FE000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(137): warning: 'UDMA_BASE' macro redefined [-Wmacro-redefined]
+#define UDMA_BASE               0x400FF000  // uDMA Controller
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1977): note: previous definition is here
+#define UDMA_BASE                       0x400FF000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(138): warning: 'CCM0_BASE' macro redefined [-Wmacro-redefined]
+#define CCM0_BASE               0x44030000  // Cyclical Redundancy Check (CRC)
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1978): note: previous definition is here
+#define CCM0_BASE                       0x44030000UL
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(145): warning: 'ITM_BASE' macro redefined [-Wmacro-redefined]
+#define ITM_BASE                0xE0000000  // Instrumentation Trace Macrocell
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1551): note: previous definition is here
+#define ITM_BASE            (0xE0000000UL)                            /*!< ITM Base Address */
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(146): warning: 'DWT_BASE' macro redefined [-Wmacro-redefined]
+#define DWT_BASE                0xE0001000  // Data Watchpoint and Trace
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1552): note: previous definition is here
+#define DWT_BASE            (0xE0001000UL)                            /*!< DWT Base Address */
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(148): warning: 'NVIC_BASE' macro redefined [-Wmacro-redefined]
+#define NVIC_BASE               0xE000E000  // Nested Vectored Interrupt Ctrl
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1556): note: previous definition is here
+#define NVIC_BASE           (SCS_BASE +  0x0100UL)                    /*!< NVIC Base Address */
+        ^
+main.c(20): warning: In file included from...
+../TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(149): warning: 'TPIU_BASE' macro redefined [-Wmacro-redefined]
+#define TPIU_BASE               0xE0040000  // Trace Port Interface Unit
+        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include\core_cm4.h(1553): note: previous definition is here
+#define TPIU_BASE           (0xE0040000UL)                            /*!< TPIU Base Address */
+        ^
+main.c(88): warning: no previous extern declaration for non-static variable 'task1Handle' [-Wmissing-variable-declarations]
+TaskHandle_t task1Handle = NULL;
+             ^
+main.c(88): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TaskHandle_t task1Handle = NULL;
+^
+main.c(89): warning: no previous extern declaration for non-static variable 'task2Handle' [-Wmissing-variable-declarations]
+TaskHandle_t task2Handle = NULL;
+             ^
+main.c(89): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TaskHandle_t task2Handle = NULL;
+^
+main.c(90): warning: no previous extern declaration for non-static variable 'task3Handle' [-Wmissing-variable-declarations]
+TaskHandle_t task3Handle = NULL;
+             ^
+main.c(90): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+TaskHandle_t task3Handle = NULL;
+^
+main.c(105): warning: no previous extern declaration for non-static variable 'newTarget' [-Wmissing-variable-declarations]
+bool newTarget=0,hit = 1;
+     ^
+main.c(105): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+bool newTarget=0,hit = 1;
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(105): warning: no previous extern declaration for non-static variable 'hit' [-Wmissing-variable-declarations]
+bool newTarget=0,hit = 1;
+                 ^
+main.c(105): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+bool newTarget=0,hit = 1;
+^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(128): warning: passing 'char [25]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                UARTStringSend("Failed to create Semaph\n",24);
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(137): warning: passing 'char [25]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                UARTStringSend("Failed to create Semaph\n",24);
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(153): warning: passing 'char [25]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        UARTStringSend("Failed to create Task 1\n",24);
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(160): warning: passing 'char [25]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        UARTStringSend("Failed to create Task 2\n",24);
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(167): warning: passing 'char [25]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        UARTStringSend("Failed to create Task 3\n",24);
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(173): warning: passing 'char [5]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+        UARTStringSend("Erro",4);
+                       ^~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(182): warning: use of GNU empty initializer extension [-Wgnu-empty-initializer]
+        char recebidos_in[16]={},recebidos_up[15]={},recebidos_down[15]={},receivedChar,msgBuffer[50]={};
+                              ^
+main.c(182): warning: use of GNU empty initializer extension [-Wgnu-empty-initializer]
+        char recebidos_in[16]={},recebidos_up[15]={},recebidos_down[15]={},receivedChar,msgBuffer[50]={};
+                                                  ^
+main.c(182): warning: use of GNU empty initializer extension [-Wgnu-empty-initializer]
+        char recebidos_in[16]={},recebidos_up[15]={},recebidos_down[15]={},receivedChar,msgBuffer[50]={};
+                                                                        ^
+main.c(182): warning: use of GNU empty initializer extension [-Wgnu-empty-initializer]
+        char recebidos_in[16]={},recebidos_up[15]={},recebidos_down[15]={},receivedChar,msgBuffer[50]={};
+                                                                                                      ^
+main.c(193): warning: passing 'char [50]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                                UARTStringSend(msgBuffer,4);
+                                                                               ^~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(257): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+                                                                if(abs(recebidos_in[i]-andar)>0 && recebidos_in[i]!=20) target = recebidos_in[i];
+                                                                   ^
+main.c(257): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+main.c(180): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void vTask1(void *pvParameters)
+                  ^
+main.c(181): warning: function 'vTask1' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(281): warning: use of GNU empty initializer extension [-Wgnu-empty-initializer]
+        char msgBuffer[50]={};
+                           ^
+main.c(292): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                                UARTStringSend(tx,3);
+                                                                               ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(306): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                                UARTStringSend(tx,3);
+                                                                               ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(317): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                        UARTStringSend(tx,3);
+                                                                       ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(331): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                UARTStringSend(tx,3);
+                                                               ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(339): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                                UARTStringSend(tx,3);
+                                                                               ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(350): warning: passing 'char [50]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                                        UARTStringSend(msgBuffer,4);
+                                                                       ^~~~~~~~~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(280): warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+main.c(278): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void vTask2(void *pvParameters)
+                  ^
+main.c(279): warning: function 'vTask2' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(375): warning: passing 'char [4]' to parameter of type 'const uint8_t *' (aka 'const unsigned char *') converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                        UARTStringSend(tx,3);
+                                                       ^~
+main.c(81): note: passing argument to parameter 'String' here
+void UARTStringSend(const uint8_t *String, uint32_t tamanho);
+                                   ^
+main.c(779): warning: declaration shadows a local variable [-Wshadow]
+                        for(char i=0;i<16;i++){
+                                 ^
+main.c(363): note: previous declaration is here
+                int i=0, temp=0;
+                    ^
+main.c(780): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(btc_in[i]){
+                                         ^~
+main.c(782): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                        btc_in[i] = 0;
+                                              ^~
+main.c(785): warning: declaration shadows a local variable [-Wshadow]
+                        for(char i=0;i<15;i++){
+                                 ^
+main.c(363): note: previous declaration is here
+                int i=0, temp=0;
+                    ^
+main.c(786): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(btc_up[i]){
+                                         ^~
+main.c(789): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                        btc_up[i] = 0;
+                                              ^~
+main.c(792): warning: declaration shadows a local variable [-Wshadow]
+                        for(char i=0;i<15;i++){
+                                 ^
+main.c(363): note: previous declaration is here
+                int i=0, temp=0;
+                    ^
+main.c(793): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                if(btc_down[i]){
+                                           ^~
+main.c(796): warning: array subscript is of type 'char' [-Wchar-subscripts]
+                                        btc_down[i] = 0;
+                                                ^~
+main.c(361): warning: unused parameter 'pvParameters' [-Wunused-parameter]
+void vTaskUARTRead(void *pvParameters)
+                         ^
+main.c(362): warning: function 'vTaskUARTRead' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+main.c(65): warning: no previous extern declaration for non-static variable 'rx' [-Wmissing-variable-declarations]
+char rx[13],tx[4];
+     ^
+main.c(65): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char rx[13],tx[4];
+^
+main.c(65): warning: no previous extern declaration for non-static variable 'tx' [-Wmissing-variable-declarations]
+char rx[13],tx[4];
+            ^
+main.c(65): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char rx[13],tx[4];
+^
+main.c(68): warning: no previous extern declaration for non-static variable 'SysClock' [-Wmissing-variable-declarations]
+uint32_t SysClock;
+         ^
+main.c(68): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t SysClock;
+^
+main.c(71): warning: no previous extern declaration for non-static variable 'xTargetMutex' [-Wmissing-variable-declarations]
+SemaphoreHandle_t xTargetMutex;
+                  ^
+main.c(71): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t xTargetMutex;
+^
+main.c(73): warning: no previous extern declaration for non-static variable 'xUARTMutex' [-Wmissing-variable-declarations]
+SemaphoreHandle_t xUARTMutex;
+                  ^
+main.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+SemaphoreHandle_t xUARTMutex;
+^
+main.c(76): warning: no previous extern declaration for non-static variable 'xUartQueue' [-Wmissing-variable-declarations]
+QueueHandle_t xUartQueue;
+              ^
+main.c(76): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+QueueHandle_t xUartQueue;
+^
+main.c(98): warning: no previous extern declaration for non-static variable 'andar' [-Wmissing-variable-declarations]
+char andar;                   //Andar atual
+     ^
+main.c(98): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char andar;                   //Andar atual
+^
+main.c(99): warning: no previous extern declaration for non-static variable 'btc_up' [-Wmissing-variable-declarations]
+char btc_up[15];              //Botões do corredor up
+     ^
+main.c(99): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char btc_up[15];              //Botões do corredor up
+^
+main.c(100): warning: no previous extern declaration for non-static variable 'btc_down' [-Wmissing-variable-declarations]
+char btc_down[15];            //Botões do corredor down
+     ^
+main.c(100): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char btc_down[15];            //Botões do corredor down
+^
+main.c(101): warning: no previous extern declaration for non-static variable 'btc_in' [-Wmissing-variable-declarations]
+char btc_in[16];              //Botões da cabine interna
+     ^
+main.c(101): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char btc_in[16];              //Botões da cabine interna
+^
+main.c(102): warning: no previous extern declaration for non-static variable 'porta' [-Wmissing-variable-declarations]
+char porta;                   //Porta aberta (0) ou fechada (1)
+     ^
+main.c(102): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char porta;                   //Porta aberta (0) ou fechada (1)
+^
+main.c(103): warning: no previous extern declaration for non-static variable 'estado' [-Wmissing-variable-declarations]
+char estado;
+     ^
+main.c(103): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char estado;
+^
+main.c(104): warning: no previous extern declaration for non-static variable 'target' [-Wmissing-variable-declarations]
+char target;
+     ^
+main.c(104): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char target;
+^
+158 warnings generated.
+compiling main.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(38): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(348): warning: no previous extern declaration for non-static variable 'pxCurrentTCB' [-Wmissing-variable-declarations]
+PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(348): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(297): warning: padding struct 'struct tskTaskControlBlock' with 2 bytes to align 'uxBasePriority' [-Wpadded]
+                UBaseType_t             uxBasePriority;         /*< The priority last assigned to the task - used by the priority inheritance mechanism. */
+                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(269): warning: padding size of 'struct tskTaskControlBlock' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct tskTaskControlBlock
+               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(867): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+                                                                                                                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1084): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxNewTCB );
+                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1096): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD_IF_USING_PREEMPTION();
+                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1125): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1189): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( uxSchedulerSuspended == 0 );
+                                                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1190): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                portYIELD_WITHIN_API();
+                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1209): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxPreviousWakeTime );
+                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1210): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( ( xTimeIncrement > 0U ) );
+                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1211): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxSchedulerSuspended == 0 );
+                                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1275): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        portYIELD_WITHIN_API();
+                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1295): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( uxSchedulerSuspended == 0 );
+                                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1320): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        portYIELD_WITHIN_API();
+                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1339): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxTCB );
+                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1472): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( ( uxNewPriority < configMAX_PRIORITIES ) );
+                                                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1601): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1610): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        taskYIELD_IF_USING_PREEMPTION();
+                                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1646): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1698): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( uxSchedulerSuspended == 0 );
+                                                                         ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1699): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                portYIELD_WITHIN_API();
+                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1740): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTask );
+                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1782): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTaskToResume );
+                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1797): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1805): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                taskYIELD_IF_USING_PREEMPTION();
+                                                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1837): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTaskToResume );
+                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(1878): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2012): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+                                                                                ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxSchedulerSuspended );
+                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2134): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2196): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        taskYIELD_IF_USING_PREEMPTION();
+                                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2276): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTCB );
+                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2611): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskSWITCH_DELAYED_LISTS();
+                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2676): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2896): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskSELECT_HIGHEST_PRIORITY_TASK();
+                                                  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2912): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxEventList );
+                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2929): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxEventList );
+                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2933): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxSchedulerSuspended != 0 );
+                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(2955): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( pxEventList );
+                                           ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3003): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxUnblockedTCB );
+                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3009): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxUnblockedTCB );
+                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3058): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxSchedulerSuspended != pdFALSE );
+                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3066): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxUnblockedTCB );
+                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3073): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        prvAddTaskToReadyList( pxUnblockedTCB );
+                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3088): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTimeOut );
+                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3110): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTimeOut );
+                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3111): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTicksToWait );
+                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3266): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                taskYIELD();
+                                           ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3225): warning: function 'prvIdleTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3834): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                taskRESET_READY_PRIORITY( pxMutexHolderTCB->uxPriority );
+                                                                                                        ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3843): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxMutexHolderTCB );
+                                                                                 ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3899): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( pxTCB == pxCurrentTCB );
+                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3900): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( pxTCB->uxMutexesHeld );
+                                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3917): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3933): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(3978): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( pxTCB->uxMutexesHeld );
+                                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4005): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        configASSERT( pxTCB != pxCurrentTCB );
+                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4035): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                        taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                                                                     ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4042): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                prvAddTaskToReadyList( pxTCB );
+                                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4436): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4509): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4569): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTaskToNotify );
+                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4622): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                prvAddTaskToReadyList( pxTCB );
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4625): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4647): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        taskYIELD_IF_USING_PREEMPTION();
+                                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4676): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTaskToNotify );
+                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4747): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4752): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4799): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( xTaskToNotify );
+                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4837): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                                             ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/tasks.c(4842): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        prvAddTaskToReadyList( pxTCB );
+                                                                      ^
+123 warnings generated.
+compiling tasks.c...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(36): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/include\FreeRTOS.h(56): warning: In file included from...
+./RTE/RTOS\FreeRTOSConfig.h(45): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129\TM4C129.h(26): warning: In file included from...
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(279): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(319): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(671): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(687): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(732): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(737): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(839): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(852): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(859): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(864): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(871): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(877): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(884): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(891): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(896): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(903): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(909): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(916): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(923): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(928): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(935): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(941): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(948): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(955): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(960): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(967): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(973): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(980): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(987): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(992): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(999): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1005): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1012): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1019): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1024): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1031): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1037): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1044): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1051): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1056): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1063): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1069): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1260): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1267): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1303): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1308): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1313): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1318): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1323): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129/TM4C1294NCPDT.h(1328): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(271): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xReturn );
+                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(360): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+                                                   ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(386): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(428): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+                                                    ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(437): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(447): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(457): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(484): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( xResult );
+                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(503): warning: function 'prvTimerTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(582): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        portYIELD_WITHIN_API();
+                                                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(765): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                                        configASSERT( xResult );
+                                                                               ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(788): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+                                                                                            ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(878): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                configASSERT( xResult );
+                                                       ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(950): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(971): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+C:/Users/Jose/AppData/Local/Arm/Packs/ARM/CMSIS-FreeRTOS/10.0.1/Source/timers.c(987): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTimer );
+                              ^
+67 warnings generated.
+compiling timers.c...
+linking...
+Program Size: Code=16544 RO-data=2116 RW-data=1644 ZI-data=5144  
+".\Objects\Elevador.axf" - 0 Error(s), 718 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM.CMSIS.6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.0.1.pack
+                ARM.CMSIS-FreeRTOS.10.0.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.0.1
+   * Component: Core Version: 10.0.1
+   * Component: Heap Variant: Heap_1 Version: 10.0.1
+   * Component: Timers Version: 10.0.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\RTOS
+  .\RTE\_EK-TM4C1294XL
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\CMSIS\RTOS2\FreeRTOS\Include
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\portable\GCC\ARM_CM4F
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include
+  C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.0.1
+      Include file:  Config\ARMCM\FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:10.0.1
+      Include file:  Source\include\FreeRTOS.h
+      Include file:  Source\include\semphr.h
+      Source file:   Source\queue.c
+      Source file:   Source\tasks.c
+      Include file:  Source\include\queue.h
+      Include file:  Source\include\task.h
+      Source file:   Source\list.c
+      Source file:   Source\portable\GCC\ARM_CM4F\port.c
+      Source file:   CMSIS\RTOS2\FreeRTOS\Source\freertos_evr.c
+      Include file:  CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_1:10.0.1
+      Source file:   Source\portable\MemMang\heap_1.c
+
+   * Component: ARM.FreeRTOS::RTOS:Timers:10.0.1
+      Include file:  Source\include\timers.h
+      Source file:   Source\timers.c
+
+   * Component: ARM::CMSIS:CORE:6.0.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_TM4C129.s
+      Source file:   Device\Source\system_TM4C129.c
+      Include file:  Device\Include\TM4C129\TM4C129.h
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

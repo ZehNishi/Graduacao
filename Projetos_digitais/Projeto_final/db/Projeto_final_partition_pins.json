@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "0a",
+					"strict" : false
+				},
+				{
+					"name" : "0b",
+					"strict" : false
+				},
+				{
+					"name" : "0c",
+					"strict" : false
+				},
+				{
+					"name" : "0d",
+					"strict" : false
+				},
+				{
+					"name" : "0e",
+					"strict" : false
+				},
+				{
+					"name" : "0f",
+					"strict" : false
+				},
+				{
+					"name" : "0g",
+					"strict" : false
+				},
+				{
+					"name" : "1a",
+					"strict" : false
+				},
+				{
+					"name" : "1b",
+					"strict" : false
+				},
+				{
+					"name" : "1d",
+					"strict" : false
+				},
+				{
+					"name" : "1e",
+					"strict" : false
+				},
+				{
+					"name" : "1f",
+					"strict" : false
+				},
+				{
+					"name" : "1g",
+					"strict" : false
+				},
+				{
+					"name" : "2a",
+					"strict" : false
+				},
+				{
+					"name" : "2b",
+					"strict" : false
+				},
+				{
+					"name" : "2c",
+					"strict" : false
+				},
+				{
+					"name" : "2d",
+					"strict" : false
+				},
+				{
+					"name" : "2e",
+					"strict" : false
+				},
+				{
+					"name" : "2f",
+					"strict" : false
+				},
+				{
+					"name" : "2g",
+					"strict" : false
+				},
+				{
+					"name" : "3a",
+					"strict" : false
+				},
+				{
+					"name" : "3b",
+					"strict" : false
+				},
+				{
+					"name" : "3c",
+					"strict" : false
+				},
+				{
+					"name" : "3d",
+					"strict" : false
+				},
+				{
+					"name" : "3e",
+					"strict" : false
+				},
+				{
+					"name" : "3f",
+					"strict" : false
+				},
+				{
+					"name" : "3g",
+					"strict" : false
+				},
+				{
+					"name" : "4a",
+					"strict" : false
+				},
+				{
+					"name" : "4b",
+					"strict" : false
+				},
+				{
+					"name" : "4c",
+					"strict" : false
+				},
+				{
+					"name" : "4d",
+					"strict" : false
+				},
+				{
+					"name" : "4e",
+					"strict" : false
+				},
+				{
+					"name" : "4f",
+					"strict" : false
+				},
+				{
+					"name" : "4g",
+					"strict" : false
+				},
+				{
+					"name" : "5a",
+					"strict" : false
+				},
+				{
+					"name" : "5b",
+					"strict" : false
+				},
+				{
+					"name" : "5c",
+					"strict" : false
+				},
+				{
+					"name" : "5d",
+					"strict" : false
+				},
+				{
+					"name" : "5e",
+					"strict" : false
+				},
+				{
+					"name" : "5f",
+					"strict" : false
+				},
+				{
+					"name" : "5g",
+					"strict" : false
+				},
+				{
+					"name" : "1c",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "Frequencia",
+					"strict" : false
+				},
+				{
+					"name" : "Controle1",
+					"strict" : false
+				},
+				{
+					"name" : "Controle2",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

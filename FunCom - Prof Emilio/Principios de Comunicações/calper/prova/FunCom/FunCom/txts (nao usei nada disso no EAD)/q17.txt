@@ -1,0 +1,29 @@
+"
+17-
+O sinal v(t),abaixo, foi obtido no processo de detecção coerente para sinais DSB/SC.Supondo que este sinal é filtrado com uso de um FPB tipo Butterworth de 1a ordem,determine o valor de fc para que as componentes indesejadas de v(t) sejam atenuadas em pelo menos 20dB.Considere f3dB=1,5*fm
+
+v(t)=cos(2*pi*fm*t)*cos(2*pi*2*fc*t)+cos(2*pi*fm*t)
+
+|H(f)|=1/sqrt(1+(fx/f3dB)^2)
+
+Solução
+-------------------------------------------------
+calcular o valor do modulo de H que não pode ser em dB
+
+H_db=20log(H)=>-20=20log(H)
+H=0,1
+
+-------------------------------------------------
+igualar H=0,1 a espressão do filtro
+
+-0,1=1/sqrt(1+(fx/f3dB)^2)
+
+fx/f3dB=10 => fx=10*f3dB => fx=15*fm  
+
+-------------------------------------------------
+do espectro temos
+
+fx=2*fc -fm => 15*fm =2*fc-fm => fc=8*fm
+
+
+"

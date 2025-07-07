@@ -1,0 +1,20 @@
+Considere o pulso g(t)=-exp(-alfa*t)*Mi(t),determine:
+a- A sua energia total, chamada Et
+b- A parcela de energia contida no intervalo de freq |f|<=alfa, chamada EP
+c-A Razao Ep/Et
+Dados:
+G(f)=1/(alfa+j*2*pi*f)
+Int(indef)dx/[a^2+(xb)^2]=[1/(a*b)]*arctb(b*x/a)
+
+a-
+Et=int(-inf a +inf)|g(t)|^2*dt
+Et=int(0 a +inf)exp^(-2*alfa*t)*dt=1/(2*alfa)
+
+b-
+|G(f)|^2=1/[a^2+(2*pi*f)^2]
+Ep=int(-inf a +inf)|G(f)|^2*dt
+Ep=int(-alfa a +alfa)df/[a^2+(2*pi*f)^2]
+Ep=1,413/(alfa*pi)
+
+c-
+Ep/Et=0,9

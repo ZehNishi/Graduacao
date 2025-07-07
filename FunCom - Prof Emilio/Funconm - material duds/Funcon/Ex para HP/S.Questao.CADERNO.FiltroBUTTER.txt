@@ -1,0 +1,58 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+Ex.26) O sinal g(t)=cos(40.pi.t) eh amostrado de forma idela com frequencia de amostragaem igual a 60Hz, pede-se:
+
+a) Det. e esboce o espectro do sinal amostrado.
+b) Eh possivel recuperar o sinal original g(t)? Como?
+c) Det. o menor valor da freq de amostrag. p/ a recuperacao de g(t) com o uso de um FPB tipo Butterworth de 1a. ordem. As componentes indesejadas devem ser atenuadas em pelo menos 20dB.
+
+[RESOLUCAO]
+
+g(t) = cos(2.pi.20.t)
+fs = 60Hz
+==============================
+a) Gj(f) = 1/Ts SOMAT G(f-n/Ts)
+
+G(f) = 1/2 J(f-20) + 1/2 J(f+20)
+
+Gj(f)=60/2 SOMAT{J(f-20-60n) + 
+                 J(f+20-60n)}
+
+         Gj(f)|
+              |30
+  ^   ^   ^   |   ^   ^   ^
+  |   |   |   |   |   |   |
+__|___|___|___|___|___|___|____
+-80  -40 -20      20  40  80  f
+
+
+==============================
+b) 20 < |f3dB| < 40  [Hz]
+
+
+ |Gj(f)
+ |30
+ |   ^         ^   ^
+ |   |         |   |
+_|___|_________|___|____
+    20         fx  fs
+fs=fx+20
+
+|H(f)|=1/([1+(f/f3dB)^2]^.5)
+
+-20dB/dec = 20.log(G) => G=.1
+
+|H(f)|=0.1
+
+... fx ~ 10.f3dB
+
+fs-20 ~ 10.f3dB
+fs ~10.f3dB + 20
+
+Se f3dB = 20 Hz
+   fs = 220 Hz
+   fs >> 2.W  (60Hz)
+
+------------------------------
+[FIM]."

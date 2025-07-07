@@ -1,0 +1,66 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+ENTITY Contadorx8 IS
+PORT(
+	clock		:IN STD_LOGIC;
+	reset		:IN STD_LOGIC;
+	enable	:IN STD_LOGIC;
+	d_s		:OUT STD_LOGIC);
+end Contadorx8;
+
+architecture funcionamento of Contadorx8 is 
+	type state_type is (s0,s1,s2,s3,s4,s5,s6,s7);
+	signal estado	: state_type;
+begin
+	process (clock, reset)
+	begin
+		if reset='1' then
+			estado <=s0;
+		elsif ((clock'event and clock='1')) then
+		if (enable='1') then
+			case estado is
+				when s0=>
+					estado <= s1;
+				when s1=>					
+					estado <= s2;
+				when s2=>			
+					estado <= s3;
+				when s3=>
+					estado <= s4;
+				when s4=>
+					estado <= s5;
+				when s5=>					
+					estado <= s6;
+				when s6=>					
+					estado <= s7;
+				when s7=>
+					estado <= s0;
+			end case;
+		end if;
+		end if;
+	end process;
+	process(estado)
+	begin
+		case estado is
+			when s0=>
+				d_s<='0';
+			when s1=>
+				d_s<='0';
+			when s2=>
+				d_s<='0';
+			when s3=>
+				d_s<='0';
+			when s4=>
+				d_s<='0';
+			when s5=>
+				d_s<='0';
+			when s6=>
+				d_s<='0';
+			when s7=>
+				d_s<='1';
+		end case;
+	end process;
+end funcionamento;

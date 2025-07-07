@@ -1,0 +1,54 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+Last Ex.Resolvido sala Caderno
+-----------------------------
+
+Ex) A potencia media de ruido por unidade de faixa (No) na entrada do demod. AM-DSB eh 10^-3 W/Hz.
+O Sinal recebido eh tonal com u=0,4, fm = 5kHz e Pc=60kW
+
+Assumindo detecao de envoltoria, determ. SNRo.
+De quantos dB o sistema eh inferior ao DSB/SC?
+
+Figura de Merito p/AM-DSB : 
+
+  Fm = u^2 / 2+u^2
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+
+SNRc=Ac^2.[1+ka^2.Pm]/2.W.No
+
+ = Pc[1+ka^2.Pm]/2.W.No
+
+Pm = Am^2/2 = u^2/2.ka^2
+
+
+SNRc=(Pc/W.No).[1+u^2/2] = 
+
+    = 12960 = 41dB!
+
+
+Fm = u^2 / 2+u^2b=b0,074
+
+
+p/ AM-DSB:
+----------
+SNRo = Fm.SNRc = 960 = 29,8dB
+
+
+p/ AM-DSB:
+----------
+SNRo = Fm.SNRc = 1.SNRc=41dB
+
+
+O AM-DSB eh inferior ao DSB/SC em (41-29,8) = 11,2dB
+
+
+
+
+
+[FIM]."

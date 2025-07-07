@@ -1,0 +1,71 @@
+Título: Analise do uso de informações de profundidade para classificação de objetos de linhas de transmissão.
+
+Resumo:
+	Mudar de , além de
+aproveitar sensores já presentes no projeto de um robô de inspeção para aproveitar no robo
+	
+Palavres-chave: inteligência-artificial, linhas de transmissão, inspeção, classificação.
+
+Objetivo Geral: Montar cenas para levantar dados para o treinamento dos modelos de apredizado de máquina, avaliar diferentes modelos para cada sensor, comparar acurácia com quantidade de infomação(tempo de processamento) entre os sensores.
+
+Objetivos Específicos:
+	Cenas: Montar cenas simuladas pelo CoppeliaSim, onde os sensores etarão acoplados ao robô e o mesmo percorrerá a linha de transmissão, coletando os dados enquanto anda.
+		Montar ambientes controlados no laboratório, com os sensores soltos e presos ao robô, simulando diferentes cenários para a obtenção de dados.
+	Avaliação: Usando os dados coletados treinar modelos de apredizado de máquina e tirar seus resultados.
+	Comparação: Comparar os resutados considerando a acurácia e o tempo de processamento dos modelos treinados.
+	
+Descrição de funcionamento: 
+	RaspBerry: rodando o ROS(Explicar o ros), vai receber e armazenar todos os dados dos sensores. O ROS faz o controle dos sensores atraves da RaspBerry, contendos os drivers e códigos responsaveis pelo funcionamento.(A raspberry está rodando o ROS, onde scripts controlam os sensores que estão ligados a raspberry)
+	Sensor LIDAR: (Explicação do que é), usado para capturar dados em apenas uma dimensão do objeto.
+	RealSense: (Explicar), usado para capturar os dados em uma matriz de valores do objeto.
+	Funcionamento: Os sensores funcionam como publicadores de mensagens no ROS, ficam a todo momento jogando os valores lidos, na raspberry é então criado um código para capturar esses valores e amazernar para o uso do treinamento dos modelos. Com os dados salvos são treinados diferentes modelos para realizar a classificação.
+	
+Justificativa resumida: Participação da criação de um robô que seja capaz de realizar inspeções em linhas de transmissão e para isso ele deve ser capaz de superar obstaculos presentes nas linhas. Usando sensores que já estavam no projeto era necessário classificar os objetos que poderiam ser encontrados. Método usual de realizar a classficação é usando imagens RBG que tem as vantagens: 		Informação Rica em Textura e Cor:
+    		Permite capturar detalhes visuais como padrões, texturas e cores, essenciais para distinguir objetos visualmente semelhantes.
+	Ampla Disponibilidade de Modelos e Ferramentas:
+    		A maioria dos modelos de aprendizado de máquina e redes neurais (e.g., CNNs) foram inicialmente desenvolvidos para imagens RGB.
+	Resolução Elevada:
+    		Fornece imagens detalhadas com alta resolução, permitindo identificar pequenas variações entre classes.
+Desvantagens:
+    Sensível às Condições de Iluminação:
+        O desempenho pode ser comprometido por sombras, reflexos e variações de luz no ambiente.
+    Dependência de Aparência Externa:
+        Objetos com cores ou texturas semelhantes podem ser difíceis de distinguir.
+    Necessidade de Processamento Mais Complexo:
+        Pode exigir algoritmos adicionais para lidar com mudanças de perspectiva e condições ambientais.
+        
+Dados de Profundidade Vantagens:
+	Invariante à Iluminação:
+    		Os dados de profundidade são menos sensíveis a variações de luz, sombras ou reflexos.
+	Captura de Forma e Geometria:
+    		Permite distinguir objetos com base em sua forma tridimensional, mesmo se forem visualmente semelhantes.
+	Relevância para Ambientes Estruturados:
+    		Útil em aplicações como robótica e navegação, onde a geometria do ambiente é mais importante do que a aparência.
+	Redução de Informações Desnecessárias:
+    		Elimina informações irrelevantes como texturas e cores, focando em características estruturais.
+Desvantagens:
+    Menor Resolução Espacial:
+        Sensores de profundidade frequentemente capturam dados com menor resolução em comparação com sensores RGB.
+    Dados Incompletos ou Ruidosos:
+        Reflexões, superfícies translúcidas ou ângulos oblíquos podem causar lacunas ou ruídos nos dados.
+    Menor Suporte para Modelos Preexistentes:
+        Embora existam modelos para lidar com nuvens de pontos ou mapas de profundidade, o suporte não é tão amplo quanto para imagens RGB.
+        
+Como os sensores de profundidade já estavam no escopo do projeto eles foram utilizados para realizar a classificação.
+
+3.2 Resultados Esperados
+3.2.1 Tecnológicos
+	Espera-se desenvolver um método eficiente de classificação de objetos de linhas de transmissão utilizando dados de profundidade, aproveitando sensores LIDAR e RealSense já presentes no projeto. Este trabalho resultará na criação de pipelines de coleta e processamento de dados no ROS, integrando os sensores a um sistema robótico funcional. Além disso, espera-se otimizar o tempo de processamento e a acurácia dos modelos de aprendizado de máquina para aplicações em ambientes reais e simulados. Essa abordagem pode ser estendida a outras áreas que demandem classificação baseada em profundidade.
+3.2.2 Científicos
+	Do ponto de vista científico, este projeto contribuirá com estudos inéditos comparando o uso de diferentes tipos de sensores (LIDAR e RealSense) para classificação de objetos baseando-se em informações de profundidade. A análise dos resultados fornecerá insights sobre as limitações e os potenciais desses sensores em cenários específicos. Além disso, o projeto ajudará a expandir o uso de aprendizado de máquina aplicado a dados de profundidade, que ainda é menos explorado em relação ao uso de imagens RGB.
+3.2.3 Econômicos
+	O uso de sensores já presentes no projeto, como LIDAR e RealSense, para funções adicionais de classificação reduz custos relacionados à aquisição de novos dispositivos. Isso representa uma solução mais econômica para empresas que desenvolvem robôs de inspeção. Além disso, a automação do processo de classificação de objetos pode gerar economia operacional, ao minimizar a necessidade de intervenção humana nas inspeções de linhas de transmissão.
+3.2.4 Sociais
+	O projeto tem o potencial de melhorar a segurança e a eficiência em inspeções de linhas de transmissão, reduzindo o risco de acidentes para trabalhadores em condições adversas. A automação desse processo também pode contribuir para a expansão de redes de energia elétrica em locais de difícil acesso, promovendo o desenvolvimento de comunidades remotas e aumentando a confiabilidade do fornecimento de energia.
+
+Metodologia:
+	Avaliar a reposta dos sensores para a aplicação do projeto
+	Construção dos códigos de controle dos sensores
+	Contrução dos ambientes usados para os testes
+	Realizar as aquisição de dados nos ambientes simulados
+	Realizar o treinamento dos modelos

@@ -1,0 +1,59 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+6.6.1 Famílias de Códigos de Linha
+------------------------------
+==============================
+a) Não Retorno a Zero
+==============================
+É o caso mais simples de codificação PCM. Utiliza dois níveis de tensão para representar os dígitos binários. O nível de tensão é constante durante o intervalo de duração do bit, não existe transição (não retorna a zero). 
+
+O NRZ é usado extensivamente em lógica digital. Pode-se considerar que um nível de tensão negativo representa o bit 1, e positivo representa o bit 0. 
+
+O NRZI (NRZ Invert on ones) é uma variação do NRZ, onde uma transição no inicio do tempo de bit indica um bit 1 na seqüência original (ausência de transição indica o bit 0). O NRZI é um exemplo de codificação diferencial, onde o sinal é decodificado pela comparação da polaridade dos pulsos adjacentes (é mais seguro detectar uma transição do que comparar uma amostra de sinal a uma referência).
+
+[Vantagens:] simplicidade, largura de espectro reduzida.
+
+[Desvantagens:] componente contínua, falta de capacidade de sincronização.
+
+[Conclusão:] não é usado para transmissão digital.
+
+==============================
+b) Multinível Binário
+==============================
+Este código utiliza mais de dois níveis de tensão. 
+No caso do AMI (Alternative Mark Inversion) bipolar, o bit 0 é representado pelo nível zero, e o bit 1 é representado por um pulso positivo ou negativo (ou seja, altera-se sequencialmente a polaridade do sinal na representação do bit 1). 
+
+No caso do código Pseudo-Ternário o bit 1 é representado pelo nível zero, alterando-se a polaridade do sinal na representação do bit 0.
+
+[Vantagens:] não existe componente contínua, largura de espectro reduzida, detecção de
+erro (a eliminação ou adição de um pulso viola a regra da alteração de polaridade).
+
+[Desvantagens:] existe perda de sincronismo para seqüência longa de 0´s (AMI) e 1´s
+(pseudo-ternário). 
+Sinais multinível binários necessitam 3 dB mais potência que sinais binários para a mesma probabilidade de erro de bit.
+
+[Conclusão:] conveniente para transmissão digital.
+
+==============================
+c) Bi-fase
+==============================
+Supera as limitações dos códigos NRZ. 
+No código Manchester uma transição ascendente representa o bit 1, e uma transição descendente representa o bit 0. 
+
+As transições ocorrem no centro de cada tempo de bit. No Manchester Diferencial a
+codificação do bit 0 é representada pela presença de transição no inicio do tempo de bit
+(bit 1 ausência de transição).
+
+[Vantagens:] não existe componente contínua, detecção de erro (pela ausência de uma
+transição esperada), não existe perda de sincronismo.
+
+[Desvantagens:] largura de espectro é duas vezes maior se comparada ao NRZ (devido à
+taxa de sinalização maior).
+
+[Conclusão:] Manchester é padronizado IEEE 802.3 (LAN CSMA/CD em cabo coaxial e
+par trançado - Ethernet), Manchester Diferencial é padronizado IEEE 802.5 (LAN
+Token Ring em par trançado aterrado).
+
+
+[FIM]."

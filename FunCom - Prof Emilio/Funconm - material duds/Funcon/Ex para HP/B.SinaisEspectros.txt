@@ -1,0 +1,22 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+1.2 SINAIS E ESPECTROS
+
+A descrição usual de um sinal v(t) é no DOMINIO DO TEMPO, onde a variável independente é t. Porém, em comunicações, normalmente é mais conveniente descrever os sinais no DOMINIO DA FREQUENCIA, onde a variável independente é f.
+
+Estritamente falando, uma função temporal é composta de várias componentes em freqüência, cada uma delas com amplitude e fase apropriadas. 
+
+Consequentemente, enquanto o sinal existe fisicamente no domínio do tempo, pode-se afirmar que ele consiste nessas componentes em sua descrição no domínio da freqüência, descrição esta chamada espectro.
+
+Neste trabalho considera-se LARGURA DE ESPECTRO a faixa de freqüências pertencentes a um SINAL.
+
+E LARGURA DE FAIXA a faixa de freqüências que um sistema pode transmitir com fidelidade.
+
+A análise espectral, baseada nas séries e transformadas de Fourier, é uma ferramenta poderosa em engenharia de comunicações.
+
+Escolhe-se estas técnicas em relação a outras pelos seguintes motivos. Em primeiro lugar, é razoável restringir a atenção ao comportamento em estado estacionário (regime permanente) de um sistema de comunicação; as soluções detalhadas de transientes seria uma tarefa impossível. 
+
+Em segundo lugar, a abordagem pelo espectro permite tratar de classes inteiras de sinais possuidoras de propriedades similares no domínio da freqüência. Em terceiro lugar, muitos componentes de um sistema de comunicação podem ser classificados como dispositivos lineares e invariantes no tempo; quando isto ocorre, podemos descrevê-los por suas características de resposta em freqüência.
+
+[FIM]."

@@ -1,0 +1,16 @@
+.\rvmdk\queueset.o: ..\Common\Minimal\QueueSet.c
+.\rvmdk\queueset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\queueset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+.\rvmdk\queueset.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\queueset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\queueset.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\queueset.o: .\FreeRTOSConfig.h
+.\rvmdk\queueset.o: ..\..\Source\include\projdefs.h
+.\rvmdk\queueset.o: ..\..\Source\include\portable.h
+.\rvmdk\queueset.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\queueset.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\queueset.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\queueset.o: ..\..\Source\include\task.h
+.\rvmdk\queueset.o: ..\..\Source\include\list.h
+.\rvmdk\queueset.o: ..\..\Source\include\queue.h
+.\rvmdk\queueset.o: ..\Common\include\QueueSet.h

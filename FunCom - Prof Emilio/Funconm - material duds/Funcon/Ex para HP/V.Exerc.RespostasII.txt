@@ -1,0 +1,40 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2) Quais as caracteristicas que um canal de comunicacao deve possuir para que se tenh uma transmissao sem distorcoes?
+Descreva detalhadamente cada um delas.
+
+
+Temos uma transmissao sem distorcao quando o sinal de saida de um canal de comunicacao eh uma copia do sinal de entrada - exceto por um atraso constante de tempo ou uma possivel mudanca de amplitude.
+
+Para isto, a funcao de transferencia do canal deve satisfazer as condicoes:
+
+a) A resposta em amplitude |H(f)| eh constante para todas as frequencias.
+
+  |H(F)| = K
+
+b) A fase B(f) eh linear com a frequencia, e passa por um zero ou multiplo de PI na freqüência zero.
+
+  B(t) = -2PIft0 +- nPI
+
+
+(Se o espectro do sinal transmitido eh limitado a uma faixa de freqüências, as condições citadas devem ser satisfeitas por esta faixa de freqüências.)
+
+
+Na pratica sempre ha certa quantidade de distorção no sinal de saída. 
+
+E podem ocorrer:
+
+---------------------
+a) DISTORCAO DE AMPLITUDE
+
+Se |H(f)| nao for constante na faixa desejada, as frequencias que compoem o sinal de entrada serao transmitidas com quantidades diferentes de ganho ou atenuacao. 
+
+---------------------
+b) DISTORCAO DE RETARDO
+
+Se B(f) nao for linear na faixa desejada, as freqüências que compõem o sinal serão transmitidas com diferentes atrasos. O sinal resultante terah forma diferente do sinal de entrada.
+
+
+
+[FIM]."

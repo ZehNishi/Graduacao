@@ -1,0 +1,41 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+Exerc 22 no caderno.
+
+-----------------------------
+Ex.22) Dados o circuito e grafico abaixo. 
+Calcular: f0, kf, B(beta), eq. de fi(t), Bt(Curva + Carson); sabendo que L1 = L2 = 650 microH
+
+Dado : m(t)=1.cos(2.pi.103.t)
+Entao : Am =1 e fm = 103
+
+Fonte no oscilador é 4V.
+Vai no grafico, 4V - > 20pF
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+
+f0=fc=1/(2.pi.raiz[(L1+L2).C0])
+
+Kc = deltaC/deltaVr = -0,2pF/V
+
+Kf = -Kc.f0/2.C0 = ...
+
+B = Kf.Am/fm
+
+fi(t)=fc+Kf.m(t)
+
+deltaf=Kf.Am
+
+Bt=2(Deltaf+fm)
+
+Bt/deltaf = 
+
+
+
+
+[FIM]."

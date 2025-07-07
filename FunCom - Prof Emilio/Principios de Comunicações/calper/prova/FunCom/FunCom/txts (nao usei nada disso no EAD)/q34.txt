@@ -1,0 +1,66 @@
+34)Um sistema TDM-PCM tem 4 canais, quantizacao de 8 niveis e frequencia do amostrador de 8kHz. Os sinais a serem multiplexados sao limitados em 3,2kHz. Uma porcao do sinal multiplexado presente no ponto A eh apresentada, bem como a funcao de transferencia do quantizador. Pede-se:
+a)A frequencia de amostragem eh adequada?
+b)A largura de espectro do sinal multiplexado (ponto A, antes do quantizador).
+c)Um esboco do sinal obtido apos o quantizador (ponto B, entre quantizador e codificador).
+d)Um esboco do sinal obtido apos o codificador (ponto C, apos o codificador).
+e)A largura de espectro do sinal codificado.
+f)A taxa de transmissao do sistema em bps.
+
+----
+   |
+   \/    A           B             C
+-->  ____>Quantizador->Codificador->
+--> 
+    ^
+   /|\
+-----
+
+grafico1
+         |   
+(111)3,5-|        --
+(110)2,5-|      --
+         |     |
+(101)1,5-|    -- 
+         |   |
+(100)0,5-|--- 
+         |
+     	 ---------------
+             |  |  |  |	
+      	     1  2  3  4			 
+
+grafico2
+         |   
+     2,3-|   |-|     
+     2,0-|   | | |-|
+         |   | | | |
+     1,8-|   | |-  |
+         |   | | | |
+     1,2-|   | | | |-|
+         |   | | | | |
+     	 ---------------
+             |  |  |  |	
+       	     1  2  3  4				 
+			 
+R.a):fs >= 2.3,2kHz -> fs = 8kHz >= 6,4kHz -> OK!
+
+R.b): Bmux = 1/tal = N/Ts = N.fs = 32kHz
+
+R.c): comparar a anplitude do grafico 2 com na linha x do grafico 1 e ler o valor de y no grafico 1
+
+ex. 2,3 no grafico 1 tem uma amplitude de 2,5
+    quando cair em uma transição pega a maior. 
+
+R.d): Q = 2^v -> v = 3 dígitos (1 de polaridade + 2 de amplitude)
+Tb = tal/v = Ts/N.v = 1/fs.N.v = 1/96k = 10,4us RESPOSTA
+Gráfico cada 1 dos 4 canais será representado por uma sequencia de 3 bits, sendo o primeiro de polaridade (1) e os demais de amplitude. Portanto, 110, 101, 110, 101. O comprimento de cada bit é Tb, a soma de cada 3 é o tal.
+
+R.e): Bcod = 1/Tb = 96kHz.
+
+R.f): rb = 1/Tb = 96kbps.
+
+<<FIM>>
+
+
+
+
+

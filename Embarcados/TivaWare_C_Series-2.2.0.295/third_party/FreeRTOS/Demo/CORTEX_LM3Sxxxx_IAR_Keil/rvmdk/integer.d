@@ -1,0 +1,14 @@
+.\rvmdk\integer.o: ..\Common\Minimal\integer.c
+.\rvmdk\integer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\integer.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\integer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\integer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\integer.o: .\FreeRTOSConfig.h
+.\rvmdk\integer.o: ..\..\Source\include\projdefs.h
+.\rvmdk\integer.o: ..\..\Source\include\portable.h
+.\rvmdk\integer.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\integer.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\integer.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\integer.o: ..\..\Source\include\task.h
+.\rvmdk\integer.o: ..\..\Source\include\list.h
+.\rvmdk\integer.o: ..\Common\include\integer.h

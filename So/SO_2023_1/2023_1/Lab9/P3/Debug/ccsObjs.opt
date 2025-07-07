@@ -1,0 +1,12 @@
+"./disp.obj"
+"./hello.obj"
+"./ppos_core.obj"
+"./queue.obj"
+"./startup_ccs.obj"
+"./ucontext.obj"
+"./ucontext_asm.obj"
+"./drivers/pinout.obj"
+"./utils/uartstdio.obj"
+"../hello_ccs.cmd"
+-llibc.a
+-l"C:/ti/tivaware_c_series_2_1_4_178/driverlib/ccs/Debug/driverlib.lib"

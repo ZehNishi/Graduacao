@@ -1,0 +1,33 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+4) Considerando o FPB abaixo, determine a maxima do frequencia admitida, f*, para o sinal de entrada de modo que o atraso de grupo seja menor do que 5% ou seja, Tg(f*) >= 0,95.Tg(0)
+
+-----------------------
+Dados:
+
+H(f) = 1 / 1 + j2piRCf
+
+B(f) = -arctg[B(f)/A(f)]
+
+d/df (arctg m) = (1 / (1+m^2)) dm/df
+
+obs: A(f) e B(f) correspondem as partes real e imaginaria de H(f), respectivamente.
+
+(Tg eh o atraso de grupo!)
+
+-----------------------
+[Resolucao]
+
+B(f) = -arctg(2piRCf)
+
+Tg(f) = -(1/2pi) dB(f)/df = (RC)/(1+(2piRCf)^2)
+
+Tg(f*)/Tg(0) = 1 / (1+ (2piRCf*)^2) >= 0,95
+
+f* <= 0,0365 / RC
+
+
+
+
+[FIM]."

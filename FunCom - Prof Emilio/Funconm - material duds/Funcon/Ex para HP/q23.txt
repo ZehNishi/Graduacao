@@ -1,0 +1,31 @@
+Dado uma onda portadora de 40Vpp e frequencia de 1 Mhz e uma modulante cossenoidal de 4Vpp w 10kHz,considerando kf=15kHz/V,determine:
+a-A expressao do sinal modulado FM
+b-A expressao do espectro do sinal modulado
+c-A potencia media do sinal modulado
+d-A largura de espectro do sinal modulado(Carson e Curva Universal)
+
+a-
+-Portadora
+40 Vpp e 1Mhz
+-Modulante Cosseinodal
+4Vpp e 10kHz
+
+Ac=40/2=20
+Am=4/2=2
+Beta=Kf*Am/fm=15k*2/10k=3
+
+s(t)=20*cos[2*pi*10^6*t+3*sen(2*pi*10^4*t)]
+
+b-
+S(f)=(Ac/2)*Somatorio(-inf a +inf)Jn(Beta)*[impulso(f-fc-n*fm)+impulso(f+fc+nfm)]
+S(f)=10*Somatario(-inf a +inf)Jn(3)*[impulso(f-10^6-n*10^4)+impulso(f+10^6+n*10^4)]
+
+c-
+P=(Ac^2)/2=(40^2)/2=800W 
+
+d-
+Carson:
+Bt=2(deltaf+fm)=2*(15k*2+10k)=80kHz
+Curva Universal
+Bt/deltaf=4
+Bt=4*30k=120kHz

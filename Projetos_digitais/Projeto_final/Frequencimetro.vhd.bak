@@ -1,0 +1,26 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+ENTITY Frequencimetro IS
+PORT(
+	clock					:IN STD_LOGIC;
+	reset					:IN STD_LOGIC;
+	saida					:OUT STD_LOGIC_VECTOR(23 downto 0));
+end Frequencimetro;
+
+architecture i of Frequencimetro is 
+
+	begin
+		process (clock, reset)
+		variable contagem		:integer range 0 to 2^24;
+		begin
+			if reset='1' then
+				contagem:=0;
+			elsif (clock'event and clock='1') then			
+					contagem:=contagem + 1;
+			end if;
+			saida<= conv_std_logic_vector(contagem,24);
+		end process;		
+	end i;

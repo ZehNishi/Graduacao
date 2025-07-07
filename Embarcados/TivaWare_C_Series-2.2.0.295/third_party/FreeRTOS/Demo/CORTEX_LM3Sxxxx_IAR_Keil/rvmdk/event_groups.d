@@ -1,0 +1,15 @@
+.\rvmdk\event_groups.o: ..\..\Source\event_groups.c
+.\rvmdk\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\event_groups.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\event_groups.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\event_groups.o: .\FreeRTOSConfig.h
+.\rvmdk\event_groups.o: ..\..\Source\include\projdefs.h
+.\rvmdk\event_groups.o: ..\..\Source\include\portable.h
+.\rvmdk\event_groups.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\event_groups.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\event_groups.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\event_groups.o: ..\..\Source\include\task.h
+.\rvmdk\event_groups.o: ..\..\Source\include\list.h
+.\rvmdk\event_groups.o: ..\..\Source\include\timers.h
+.\rvmdk\event_groups.o: ..\..\Source\include\event_groups.h

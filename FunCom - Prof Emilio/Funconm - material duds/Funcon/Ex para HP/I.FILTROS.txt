@@ -1,0 +1,47 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2.2.1 FILTROS
+
+São sistemas com a capacidade de selecionar e/ou descartar componentes de frequência presentes no sinal aplicado a sua entrada. 
+
+
+--------------------
+Um filtro ideal possui como características: 
+
+(1) faixa de passagem plana, 
+(2) faixa de transição nula, e 
+(3) resposta em fase proporcional à frequência 
+(4) (tal filtro é um modelo teórico). 
+
+
+--------------------
+Um filtro real possui como características: 
+
+(1) faixa de passagem com ondulações, 
+(2) faixa de transição, e 
+(3) resposta em fase não proporcional à frequência 
+(4) (tal filtro pode ser construído na prática com uso das funções de aproximação tipo Butterworth, Chebyshev, Bessel, Cauer, etc ). 
+
+
+--------------------
+Os filtros são, ainda, classificados em: 
+passa-baixa (FPB), 
+passa-alta (FPA), 
+passa-faixa (FPF), e 
+corta-faixa (FCF). 
+
+
+A figura a seguir mostra as funções de transferência de diversos filtros (filtros ideais em pontilhado). 
+
+Outra característica dos filtros reais é sua ordem, ou seja, o número de pólos em sua função característica. Quanto maior a ordem, mais próximo do ideal está o filtro.
+
+
+
+Grafico H(f) x f.
+Tipo FPF, com risco tracejado supondo um filtro e largura B.
+Bem no centro do filtro ha a f(central).
+
+Corte, transicao e passagem.
+
+[FIM]."

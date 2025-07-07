@@ -1,0 +1,23 @@
+
+  A potência média do ruido por unidade de faixa (No) medida na entrada de um receptor FM é
+  10^-8 w/Hz. A modulação é tonal com Beta = 2, fm = 20kHz.
+  A potência do sinal modulado é igual a 20W. O sistema não usa circuitos de pre(de) enfase.
+  Pede-se
+
+  a) Determine a relação sinal-ruido de saida SNRo (em db)
+  b) De quantos decibés pode-se reduzir a relação sinal-ruido de canal SNRc de modo a que o 
+     sistema opere pouco acima da relação sinal-ruido de limiar?
+
+Resposta a
+
+  Fm = SNRo/SNRc = (3/2)Beta^2 = 6 
+
+  calculando SNRc = Pr/(W.No) = 20/(20k.10^-8) = 100k (50dB)
+
+  assim SNRo = Fm.SNRc = 600k (57,78dB)
+
+Resposta b
+
+  SNRc_limiar = 20(Beta+1) = 60 (17,78dB)
+
+  Pode-se reduzir de 50dB para 17,78dB = 32,22dB  

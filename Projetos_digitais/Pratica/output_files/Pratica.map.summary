@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Oct 17 19:18:27 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Pratica
+Top-level Entity Name : Pratica
+Family : MAX 10
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

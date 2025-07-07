@@ -1,0 +1,26 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+6.4 MODUL. ANALÓGICA DE PULSOS
+------------------------------
+Vantagem: A potência média do sinal modulado é proporcional à relação T/Ts.
+
+------------------------------
+a)Modul.por Amplit.de Pulso(PAM)
+------------------------------
+A amplitude dos pulsos retangulares regularmente espaçados varia em função dos valores das amostras de um sinal de mensagem contínuo.
+
+------------------------------
+b)Modul.por Duracao d Pulso(PDM)
+------------------------------
+A duração dos pulsos individuais varia em função dos valores das amostras do sinal de mensagem contínuo.
+
+------------------------------
+c)Modul.por Posição d Pulso(PPM)
+------------------------------
+A posição do pulso, em relação à sua ocorrência na portadora (trem de pulsos), varia em função dos valores das amostras do sinal de mensagem contínuo.
+
+OBS: As amostras devem representar o sinal de mensagem -> satisfazer o teorema da amostragem.
+
+
+[FIM]."

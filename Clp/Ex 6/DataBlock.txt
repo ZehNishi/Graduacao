@@ -1,0 +1,35 @@
+VB0    'TD'                        //
+VB2    16#10                       //Set Language to English, set Update to as fast as possible 
+VB3    16#80                       //Set the display to 20 character mode; Enter key V3.1; Up key V3.2; Down key V3.3;
+VB4    4                           //Set the number of messages
+VB5    16#1E                       //Set the Function Keys notification bits to M30.0 - M30.7, F-Keys configured to set M-bits
+VW6    24                          //Set the starting address for messages to  VB24
+VW8    14                          //Set the starting address for message enable bits to VB14
+VW10   65535                       //Global Password (if enabled)
+VW12   2                           //Character Set = Latin 1 (Bold)
+//MESSAGE 1
+//Message Enable Bit V14.7 
+VB24   'PARTIDA LT1 ==> F1  '      //
+//MESSAGE 2
+//Message Enable Bit V14.6 
+VB44   'PARTIDA LT2 ==> F2  '      //
+//MESSAGE 3
+//Message Enable Bit V14.5 
+VB64   'LT1=ON  >F7'               //
+VB75   16#0                        //No Edit;No Acknowledgement;No Password;
+VB76   16#10                       //Signed Word; 0 Digits to the right of the decimal;
+VW77   16#0                        //Embedded Data Value: Move data for display here.
+VB79   ' CXS '                     //
+//MESSAGE 4
+//Message Enable Bit V14.4 
+VB84   'LT2=ON  >F8'               //
+VB95   16#0                        //No Edit;No Acknowledgement;No Password;
+VB96   16#10                       //Signed Word; 0 Digits to the right of the decimal;
+VW97   16#0                        //Embedded Data Value: Move data for display here.
+VB99   ' CXS '                     //
+//END TD200_BLOCK ------------------------------
+//
+//DATA PAGE COMMENTS
+//
+//Press F1 for help and example data page
+//

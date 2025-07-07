@@ -1,0 +1,25 @@
+"
+
+28)Obter a figura de merito para a modulacao FM tonal(em funcao de ß)
+R.:ß = indice de modulacao = delta(f)/fm = Kf.Am/fm;
+
+Pm = Am^2/2; 
+
+Fm = 3Kf^2.Pm/W^2;
+
+Deltaf = kf.Am
+
+Beta = deltaf/fm
+
+w = fm;
+
+Fm = (3/2).kf^2.(Am^2/fm^2) 
+
+RESPOSTA: Fm = (3/2)ß^2 
+
+<<FIM>> 
+
+"
+
+
+

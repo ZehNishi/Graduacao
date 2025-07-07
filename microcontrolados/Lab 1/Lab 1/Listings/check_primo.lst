@@ -1,0 +1,97 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ; ------------------------------------------------------
+                       -------------------------
+    2 00000000         ; Área de Código - Tudo abaixo da diretiva a seguir será
+                        armazenado na memória de 
+    3 00000000         ;                  código
+    4 00000000                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+    5 00000000         
+    6 00000000         ; Se alguma função do arquivo for chamada em outro arqui
+                       vo 
+    7 00000000                 EXPORT           primo
+    8 00000000         
+    9 00000000         
+   10 00000000         primo
+   11 00000000 E92D 1FFE       PUSH             {R1-R12}
+   12 00000004 F04F 0402       MOV              R4, #2      ;R4 é o divisor, R4
+                                                             = 2
+   13 00000008         
+   14 00000008         check_primo
+   15 00000008 FBB0 F5F4       UDIV             R5, R0, R4  ;Salvou em R5 a div
+                                                            isão R2/R4, o numer
+                                                            o é arredondado par
+                                                            a baixo caso não se
+                                                            ja inteiro
+   16 0000000C FB04 0615       MLS              R6, R4, R5, R0 ;R6 = R2 - R4*R5
+                                                            
+   17 00000010 2E00            CMP              R6, #0      ;Se R6 for diferent
+                                                            e de zero, R4 não é
+                                                             divisor de R2
+   18 00000012 BF04 E8BD 
+              1FFC             POPEQ            {R2-R12}
+   19 00000018 4770            BXEQ             LR          ;pulo para não_prim
+                                                            o se R6 = 0
+   20 0000001A F104 0401       ADD              R4, #1      ;se R6 não for zero
+                                                            , incrementa 1 em R
+                                                            4 -> divisor
+   21 0000001E 4284            CMP              R4, R0      ;compara R2 com R4,
+                                                             se for igual o loo
+                                                            p se encerra
+   22 00000020 BF02 2000       MOVEQ            R0,#0       ;se for primo, salv
+                                                            a R1 na lista de pr
+                                                            imos no endereço ap
+                                                            ontado por R7 e inc
+                                                            rementa o R7 
+   23 00000024 E8BD 1FFE       POPEQ            {R1-R12}
+   24 00000028 4770            BXEQ             LR
+   25 0000002A E7ED            B                check_primo
+   26 0000002C         
+   27 0000002C         
+   28 0000002C                 ALIGN                        ; garante que o fim
+                                                             da seção está alin
+                                                            hada 
+   29 0000002C                 END                          ; fim do arquivo
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\objects\check_primo.d -o.\objects\check_primo.o -IE:\Document
+s\Jose_Micro\GPIO2\RTE -IC:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.1.0\Device\Include
+\TM4C129 -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__EVAL SETA 1" --predefine
+="__UVISION_VERSION SETA 518" --predefine="TM4C1294NCPDT SETA 1" --list=.\listi
+ngs\check_primo.lst Check_primo.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 4 in file Check_primo.s
+   Uses
+      None
+Comment: .text unused
+check_primo 00000008
+
+Symbol: check_primo
+   Definitions
+      At line 14 in file Check_primo.s
+   Uses
+      At line 25 in file Check_primo.s
+Comment: check_primo used once
+primo 00000000
+
+Symbol: primo
+   Definitions
+      At line 10 in file Check_primo.s
+   Uses
+      At line 7 in file Check_primo.s
+Comment: primo used once
+3 symbols
+337 symbols in table

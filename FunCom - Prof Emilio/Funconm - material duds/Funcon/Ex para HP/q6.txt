@@ -1,0 +1,15 @@
+Calcular a energia total do sinal g(t)=(e^-t)*u(t),fazendo os calculos no dominio da freq.
+g(t)=>G(f)=>psi(f)=>E
+
+g(t)=(e^-t)*u(t)
+entao,
+G(f)=1/(1+j*2*pi*f)
+multiplica-se por (1-j*2*pi*f) em cima e embaixo
+|G(f)|^2=1/[1+(2*pi*f)^2]
+mas,
+psi(f)=|G(f)|^2
+e,
+E=int(-inf a +inf)psi[g(f)]*df
+E=int(-inf a +inf)df/[1+(2*pi*f)^2]
+E=[1/(2pi)]*arctg(2pif)|(de -inf a +inf)
+E=[1/(2pi)]*[pi/2-(-pi/2)]=1/2

@@ -1,0 +1,14 @@
+35)Dois sinais, um limitado em 1kHz e outro limitado em 4kHz, são multiplexados por um sistema TDM de 2 canais. Determine a minima frequencia permitida para o amostrador.
+
+
+
+<<FIM>>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+EE = Economia de Espectro
+RBF = Resposta em baixa freq.
+SD = Simplificade demodulacao
+
+_________________________
+         | EE | RBF | SD |
+_________________________|
+DSB      | N  |  S  |  S |
+DSB/SC   | N  |  S  |  N |
+SSB      | S  |  N  |  N |
+VSB      | S  |  S  |  N |
+VSB+Port | S  |  S  |  S |
+_________|____|_____|____|
+
+
+[AM-DSB] = Radiodifusao. Eh o mais utilizado atualmente, mesmo sendo um dos que mais gastem potencia da fonte, porem a demodulacao é mais simples e barato no detino.
+
+
+[AM-DSB/SC] = Sinal inicial para geracao de outros sinais modulados, multiplxacao, FM estereofonico, informacao de cor em TV.
+
+
+[SSB] = Telefonia em longa distancia (FDM+SSB), comunicacao maritima.
+
+
+[VSB] = Transmissao de TV
+
+
+[FIM]."

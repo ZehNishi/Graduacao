@@ -1,0 +1,10 @@
+%Imagem
+img = imread('gDSC04422m16.png');
+nr = size(img,1);%Número de linhas
+nc = size(img,2);%Número de colunas
+N = nr*nc;%Número de pixels
+
+hist = imhist(img);
+hist_norm = hist/N;
+
+cdf = cumsum(hist_norm);

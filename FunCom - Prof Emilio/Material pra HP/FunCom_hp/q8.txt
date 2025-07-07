@@ -1,0 +1,27 @@
+Determine a potencia media para o trem de pulsos retangulares no intervalo |nfo|<=1/2.Usar Parcebal.
+obs:no grafico T=tal
+
+             ^ gp(t)
+             |
+  _____    __|__A   _____
+_|     |__|  |  |__|     |__> t(s)
+        -T/2   T/2
+-Dados:
+A=1V
+To=2tal
+-Resposta:
+n*fo=1/tal
+n/To=1/tal
+n=To/tal=2
+
+cn=(tal*A/To)*sinc(n*tal/To)
+cn=(1/2)*sinc(n/2)
+
+Usa a formula ateh n=2
+P=|co|^2+2[(c1)^2+(c2)^2]
+P=(1/4)*sinc^2(0)+ (1/2)*sinc^2(1/2)+ (1/2)sinc^2(1)
+P=0,4525W
+
+obs:
+sinc(t)=[sen(pi*t)]/(pi*t)
+sinc(1/2)=[sen(pi*2)]/(pi*2)=0,6366

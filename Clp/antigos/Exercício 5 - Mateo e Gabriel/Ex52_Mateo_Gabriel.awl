@@ -1,0 +1,155 @@
+ORGANIZATION_BLOCK MAIN:OB1
+TITLE=PROGRAM COMMENTS
+BEGIN
+Network 1 
+LD     SM0.1
+S      M0.0, 1
+S      M1.0, 1
+R      M0.1, 3
+R      M1.1, 3
+R      M10.0, 8
+Network 2 
+LD     SM0.0
+CALL   SBR0
+CALL   SBR1
+CALL   SBR2
+CALL   SBR3
+END_ORGANIZATION_BLOCK
+SUBROUTINE_BLOCK ETAPA_1:SBR0
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     M0.0
+A      M10.0
+S      M0.1, 1
+R      M0.0, 1
+R      M10.0, 1
+Network 2 
+LD     I0.6
+A      M0.1
+S      M0.2, 1
+R      M0.1, 1
+Network 3 
+LDW>=  C0, 5
+A      M0.2
+S      M0.3, 1
+R      M0.2, 1
+Network 4 
+LD     M10.6
+A      M0.3
+S      M0.1, 1
+R      M0.3, 1
+R      M10.6, 1
+END_SUBROUTINE_BLOCK
+SUBROUTINE_BLOCK ETAPA_2:SBR1
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     M1.0
+A      M10.0
+S      M1.1, 1
+R      M1.0, 1
+R      M10.0, 1
+Network 2 
+LD     I0.7
+A      M1.1
+S      M1.2, 1
+R      M1.1, 1
+Network 3 
+LDW>=  C1, 8
+A      M1.2
+S      M1.3, 1
+R      M1.2, 1
+Network 4 
+LD     M10.7
+A      M1.3
+S      M1.1, 1
+R      M1.3, 1
+R      M10.7, 1
+END_SUBROUTINE_BLOCK
+SUBROUTINE_BLOCK CONTADORES:SBR2
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     I0.6
+ED
+A      M0.2
+LD     M0.1
+EU
+CTU    C0, 5
+Network 2 
+LD     I0.7
+ED
+A      M1.2
+LD     M1.1
+EU
+CTU    C1, 8
+END_SUBROUTINE_BLOCK
+SUBROUTINE_BLOCK ACIONAMENTOS:SBR3
+TITLE=SUBROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+LD     M0.0
+=      V14.7
+=      V14.6
+Network 2 
+LD     M0.1
+S      Q0.0, 1
+Network 3 
+LD     M0.1
+O      M0.1
+=      V14.5
+Network 4 
+LD     M0.3
+=      V14.3
+R      Q0.0, 1
+Network 5 
+LD     M0.1
+O      M0.2
+MOVW   C0, VW76
+Network 6 
+LD     M1.1
+S      Q0.1, 1
+Network 7 
+LD     M1.1
+O      M1.2
+=      V14.4
+Network 8 
+LD     M1.3
+=      V14.2
+R      Q0.1, 1
+Network 9 
+LD     M1.1
+O      M1.2
+MOVW   C1, VW96
+Network 10 
+LDN    T33
+TON    T33, 300
+Network 11 
+LDW>=  T37, 275
+LD     M0.1
+O      M0.2
+ALD
+EU
+=      Q0.2
+Network 12 
+LDN    T34
+TON    T34, 1000
+Network 13 
+LDW>=  T34, 975
+LD     M1.1
+O      M1.2
+ALD
+EU
+=      Q0.3
+END_SUBROUTINE_BLOCK
+INTERRUPT_BLOCK INT_0:INT0
+TITLE=INTERRUPT ROUTINE COMMENTS
+BEGIN
+Network 1 // Network Title
+// Network Comment
+END_INTERRUPT_BLOCK

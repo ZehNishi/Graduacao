@@ -1,0 +1,12 @@
+Considere uma estacao FM comercial(deltaf=75kHz e W=15kHz). Determine Bt usando a lei de Carson e a Curva Universal.
+
+a-Carson
+Bt=2*(deltaf+W)
+Bt=2*(75k+15k)=180kHz
+
+b-Curva Universal
+Precisa do grafico da Curva Universal
+Beta=deltaf/W=75k/15k=5
+Analisa na curva onde Beta=5(eixo x)
+Bt/deltaf=3,2
+Bt=3,2*75k=240kHz

@@ -1,0 +1,15 @@
+.\rvmdk\blockq.o: ..\Common\Minimal\BlockQ.c
+.\rvmdk\blockq.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\blockq.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\blockq.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\blockq.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\blockq.o: .\FreeRTOSConfig.h
+.\rvmdk\blockq.o: ..\..\Source\include\projdefs.h
+.\rvmdk\blockq.o: ..\..\Source\include\portable.h
+.\rvmdk\blockq.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\blockq.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\blockq.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\blockq.o: ..\..\Source\include\task.h
+.\rvmdk\blockq.o: ..\..\Source\include\list.h
+.\rvmdk\blockq.o: ..\..\Source\include\queue.h
+.\rvmdk\blockq.o: ..\Common\include\BlockQ.h

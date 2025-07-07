@@ -1,0 +1,28 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+ENTITY Contadorx256 IS
+PORT(
+	clock					:IN STD_LOGIC;
+	reset,enable		:IN STD_LOGIC;
+	saida					:OUT STD_LOGIC_VECTOR(7 downto 0));
+end Contadorx256;
+
+architecture i of Contadorx256 is 
+
+	begin
+		process (clock, reset)
+		variable contagem		:integer range 0 to 256;
+		begin
+			if reset='1' then
+				contagem:=0;
+			elsif (clock'event and clock='1') then
+				if (enable='1') then
+					contagem:=contagem + 1;
+				end if;
+			end if;
+			saida<= conv_std_logic_vector(contagem,8);
+		end process;		
+	end i;

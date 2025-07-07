@@ -1,0 +1,17 @@
+DENSIDADE ESPECTRAL DE ENERGIA
+- Dada em [J/Hz], mostra como a energia de um sinal se distribui ao longo do espectro de frequencias. A area total sob a curva de DEE corresponde a energia total do sinal, em J.
+
+DENSIDADE ESPECTRAL DE POTENCIA
+- Dada em [W/Hz], mostra como a potencia de um sinal se distribui ao longo do espectro de frequencias. A area total sob a curva de DEP corresponde a energia total do sinal, em W. Pode-se utilizar o teorema da potencia de Parceval.
+
+FUNCAO AUTOCORRELACAO:
+- Fornece uma medida de similaridade ou coerencia, entre um dado sinal e sua propria versao conjugada deslocada no tempo.
+
+FUNCAO DE CROSSCORRELACAO:
+- Fornece uma medida de similaridade ou coerencia, entre um sinal e uma versao conjugada deslocada de uma quantidade variavel de um segundo sinal.
+
+* A TF só vale para sinais deterministicos, que podem ser definidos em funcao do tempo. Sinais aleatorios que ocorrem em problemas de com nao podem ser descritos assim, sendo impossivel ter suas TF. Para esses casos, a funcao autocorrelacao pode ser determinada a partir de sua informacao estatistica. Isso permite ter a DEP desses sinais. Pode-se considerar a autocorrelacao como uma generalizacao da analise de Fourier para sinais aleatorios e de potencia.
+
+TRANSFORMADA DE HILBERT
+
+Esta rede produz um desvio de fase de -90° em todas as freqüências positivas do sinal g(t), e do +90° em todas as freqüências negativas. As amplitudes não são alteradas.

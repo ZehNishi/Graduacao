@@ -1,0 +1,20 @@
+37)Dada a sequencia binaria a ser transmitida 1000010110000000001, determine o sinal de linha nos formatos:
+a)AMI
+b)Manchester
+c)HDB3
+
+R.a): O AMI(Alternative Mark Inversion) bipolar caracteriza-se por o bit 0 ser representado pelo nivel zero e o bit 1 ser representado por um pulso positivo ou negativo. Ou seja, altera-se sequencialmente a polaridade do sinal na representaçao do bit 1. Por exemplo, o primeiro bit é representado por positivo, o 2º por negativo, o 3º por positivo e assim sucessivamente.
+
+R.b): No código Manchester uma transicao ascendente representa o bit 1, enquanto que uma transicao descendente representa o bit 0. As transições ocorrem no centro de cada tempo de bit. Por exemplo, na sequencia 1000, parte-se de -5V, sobe-se para 5V no centro de tempo de bit, permanece em 5V ate o proximo centro de bit e cai para -5V. Ao terminar o tempo de bit atual (permace meio tempo em -5V), sobe para 5V e cai novamente para -5V no proximo centro de bit.
+
+R.c): A codificacao HDB3(High-Density Bipolar - 3 zeros) segue a regra de alternancia de polaridade como no AMI. No HDB3, sequencias de quatro zeros são substituidas por sequencias contendo 1 ou 2 pulsos, 000V ou B00V, onde B eh um pulso positivo ou negativo e V eh uma violacao a regra de alternacia de polaridade. Para esse caso, temos +5,0,0,0,+5,-5,0,+5,-5,0,0,0,-5,+5,0,0,+5,0,-5
+
+<<FIM>>
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+SISTEMA DE COMUNICACOES
+
+- COMUNICACAO: processo de transmissao da informacao de forma confiavel de um ponto, no espaco tempo, chamado fonte, para outro ponto, o destino.
+- MENSAGEM: manifestacoes fisicas da informacao produzida pela fonte
+- SINAL: grandeza eletrica variavel no tempo, tal como uma corrente ou tensao, que representa a mensagem.
+- SISTEMA: elemento fisico que modifica os sinais a ele aplicados.
+
+FONTE->TRANSMISSOR->CANAL->RECEPTOR->TRANSDUTOR+DESTINO
+
+OBS.: No canal podem aparecer ruido + interferencia+ distorcao.
+
+-TRANSDUTOR: converte a mensagem em sinal eletrico
+- TRANSMISSOR: acopla o sinal ao canal de transmissao
+- CANAL eh o meio fisico entre transmissor e receptor
+- RECEPTOR extrai o sinal desejado do canal e fornece ao transdutor de saida
+- TRANSDUTOR FINAL converte o sinal eletrico em msg.
+
+EFEITOS INDESEJADOS:
+- ATENUACAO: reduz a intensidade do sinal
+Os mais serios:
+- DISTORCAO: alteracao na forma do sinal devida a uma resposta imperfeita do sistema ao sinal
+- INTERFERENCIA: contaminacao por sinais estranhos de forma similar ao sinal desejado
+- RUIDO: sinais eletricos aleatorios ou imprevisiveis provenientes de causas naturais

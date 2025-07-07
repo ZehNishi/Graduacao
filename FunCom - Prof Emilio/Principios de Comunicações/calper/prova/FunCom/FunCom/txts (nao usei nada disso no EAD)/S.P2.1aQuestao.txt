@@ -1,0 +1,88 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2a. PARCIAL
+-----------------------------
+
+1) 
+
+a) CONCEITUE MODULACAO. CITE 3 RAZOES PARA O USO DA MODULACAO. DESCREVA DETALHADAMENTE CADA UMA DELAS.
+
+
+b) CONSIDERANDO A MODULACAO FM TONAL, CONCEITUE DESVIO DE FREQUENCIA E INDICE DE MODULACAO.
+QUAIS AS UNIDADE ASSOCIADAS A ESTAS QUANTIDADES?
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+=============================
+DESVIO DE FREQUENCIA
+=============================
+
+Deltaf = kf.Am
+
+é o desvio de freqüência: afastamento máximo de fi(t) em relação à fc.
+
+A grandeza Deltaf é chamada de desvio de freqüência e representa a máxima variacao possível para a freqüência instantânea de um sinal FM a partir da freqüência da portadora, fc.
+
+Unidade : Hz
+
+
+=============================
+INDICE DE MODULACAO
+=============================
+
+índice de modulação: afastamento máximo de 0i(t) em relação à 2.p.fc.t.
+
+A razão entre o desvio de freqüência, Df, e a freqüência do sinal modulante, fm, é comumente conhecida como índice de modulação do sinal FM e é denotado por B.
+
+Unidade : admensional, neste caso
+
+
+=============================
+Modulação PM: o desvio de fase é proporcional a amplitude do sinal modulante (não depende da f.).
+Modulação FM: o desvio de freqüência é proporcional a amplitude da tensão modulante.
+
+Uma característica fundamental de um sinal FM é que o desvio de freqüência é proporcional a
+amplitude do sinal modulante e é independente da freqüência de modulação.
+=============================
+
+
+=============================
+MODULACAO: 
+=============================
+Eh a alteracao de alguma característica de um sinal, designada portadora, em função de um segundo sinal chamado como modulante ou mensagem.
+
+Objetivo da modulcao Eh conduzir a informação ou mensagem através de um sinal modulado cujas propriedades sao mais vantajosas ao processo de comunicação.
+
+
+=============================
+2) MODULACAO PARA REDUCAO DE RUIDO E INTERFERENCIA:
+=============================
+
+Determinados tipos de modulação, atraves de suas propriedades, permitem reduzir efeitos causados pela interferência e pelo   ruído.
+
+Porem esta propriedade custa uma largura de faixa maior que a necessaria para transmitir o sinal original.
+
+
+=============================
+4) MODULACAO PARA MULTIPLEXACAO:
+=============================
+
+A transmissão de varios sinais atraves de um mesmo canal é possivel atraves das técnicas de multiplexação. 
+Sendo que cada sinal pode ser separado na recepção do sinal.
+
+
+=============================
+5) MODULACAO PARA SUPERAR LIMITACOES DE PROJETOS:
+=============================
+
+Pode ser utilizada a modulacao para transladar um sinal até uma parte determinada do espectro de freqüência.
+Com o objetivo facilitar as necessidades de projeto.
+
+
+
+
+
+[FIM]."

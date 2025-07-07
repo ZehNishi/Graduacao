@@ -1,0 +1,34 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+5.3 RELAÇÕES SINAL-RUÍDO (SNR)
+
+Usa-se a relação sinal-ruído de saída para avaliar a fidelidade da mensagem recebida (na presença do ruído):
+
+
+
+*SNRo = potencia média da mensagem na saída do receptor / potencia média do ruído na saída do receptor
+
+
+
+Para calcular a SNR para diferentes tipos de modulação-demodulação define-se a relação sinal-ruído de canal:
+
+
+
+*SNRc = potencia média do sinal modulado na entrada do receptor / potencia média do ruído calculada considerando a largura de faixa ocupada pela mensagem na entrada do receptor
+
+
+
+Esta razão pode ser vista como aquela resultante da transmissão em banda base ou da transmissão direta da mensagem sem modulação. Neste caso o receptor consiste simplesmente em um FPB com largura de faixa W. 
+
+Assume-se que (1) a potencia da mensagem na entrada do FPB é igual a potencia do sinal modulado, e (2) que o filtro
+permite a passagem do sinal de mensagem rejeitando o ruído fora-de-faixa. 
+
+Para efeitos de comparação entre diversos sistemas modulados, define-se a Figura de Mérito do receptor como: Fm = SNRo/SNRc. Quanto mais alta a Fm, melhor será o desempenho do receptor frente ao ruído.
+
+
+
+
+[FIM]."

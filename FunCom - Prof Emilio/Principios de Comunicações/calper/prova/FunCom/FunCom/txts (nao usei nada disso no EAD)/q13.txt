@@ -1,0 +1,31 @@
+Um sinal FSK eh transmitido a taxa de 2000 bps por um canal com fase:
+Beta(f)=-2*pi*f*[(alfa*f/2500)-alfa+1,54]*10^-3 [rad]
+onde alfa eh o retardo das freq altas em relacao as freq baixas. Emprega-se a freq f1=2500Hz para representar o bit 1 e f2=5000Hz para o bit0.
+a-Considerando-se alfa=5%,expressar matematicamente e esbocar o sinal presente no destino
+b-A comunicacao eh viavel neste caso?Qual eh a ISI?
+
+alfa=5%
+rb=2000bps
+f1=2.5kHz (bit1)
+f2=5kHz (bit0)
+
+a-
+Tb=1/rb=0,5ms
+Talp=-Beta(f)/(2*pi*fc)
+=[(alfa/2500)*fc-alfa+1,54]*10^-3 [s]
+alfa=0,05
+f1=2,5kHz
+f2=5kHz
+Talp1=1,54ms
+Talp2=1,59ms
+
+[0] cos(2pi5000t)->Sistema->cos[2pi5000(t-1,59ms)]
+[1] cos[2pi2500(t-0,5ms)]->Sistema->cos[2pi5000(t-0,5ms-1,54ms)]
+[0] cos[2pi5000(t-1ms)]->Sistema->cos[2pi5000(t-1ms-1,59ms)]
+
+Grafico de sobreposicao e ausencia de sinal
+
+b-
+ISI=|Talp1-Talp2|*100/Tb=10%
+
+ISI<10% => Aceitavel 

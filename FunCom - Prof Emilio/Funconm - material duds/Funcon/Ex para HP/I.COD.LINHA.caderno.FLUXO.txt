@@ -1,0 +1,49 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+                            rb                           
+seq.Binaria -> [Transmissao] ->
+
+    B          SNR
+-> [CANAL] -> [Recepção] ->
+
+-> Tx.Erro de Bit (BER)
+
+
+Na [Transmissao] temos:
+
+* Espectro do Sinal:
+   - Espectro Concentrado
+   - Ausencia de altas freqs
+   - Ausencia de Baixa Freq.
+
+* Recuperacao de relogio(sincro)
+   - Suficiente n. de transicoes
+       ao longo do tempo
+
+------------------------------
+Manchester, Manchester Diff.
+------------------------------
+- Menor voltagem/banda
+- ocupa mais espectro
+
+------------------------------
+B8ZS, HDB3
+------------------------------
+- Mais potencia
+- menos espectro
+
+------------------------------
+NRZ
+------------------------------
+- ocupa muito mais espectro
+- pot igual AMI
+
+------------------------------
+ AMI
+------------------------------
+- potencia igual media
+- espectro igual HDB3
+
+
+[FIM]."

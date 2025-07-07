@@ -1,0 +1,31 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+--------------------
+2.12 DISTORÇÃO
+--------------------
+
+Quando o sinal de saída de um canal de comunicação é uma réplica do sinal de entrada, exceto por uma possível mudança de amplitude e um atraso de tempo constante, tem-se uma transmissão sem distorção. 
+
+Para isto, a função de transferência do canal deve satisfazer as condições:
+
+a) A resposta em amplitude |H(f)| é constante para todas as freqüências.
+
+  |H(F)| = K
+
+b) A fase B(f) é linear com a freqüência, e passa por um zero ou múltiplo de PI na freqüência zero.
+
+  B(t) = -2PIft0 +- nPI
+
+
+Se o espectro do sinal transmitido é limitado a uma faixa de freqüências, as condições citadas devem ser satisfeitas por esta faixa de freqüências. 
+
+
+Na prática estas condições não são 100% satisfeitas, ou seja, sempre há certa quantidade de distorção no sinal de saída.
+
+
+a) Se |H(f)| não for constante na faixa de interesse, as freqüências que compõem o sinal de entrada serão transmitidas com quantidades diferentes de ganho ou atenuação. -> DISTORCAO DE AMPLITUDE.
+
+b) Se B(f) não for linear na faixa de interesse, as freqüências que compõem o sinal serão transmitidas com diferentes atrasos, resultando em um sinal com forma diferente do sinal de entrada. -> DISTORCAO DE RETARDO.
+
+[FIM]."

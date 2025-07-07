@@ -1,0 +1,174 @@
+clc;
+clear;
+
+% Considere o r´adio CC1100 da Texas Instruments, um r´adio geral (n˜ao segue um padr˜ao espec´ıfico),
+% que pode operar nas faixas de 315, 433, 868 e 915 MHz. A potˆencia de transmiss˜ao
+% varia de -30 a +10 dBm. O r´adio suporta taxas de 1.2 kbps a 500 kbps. A sensibilidade
+% depende da taxa e da frequˆencia de portadora. Por exemplo, para 315 MHz a sensibilidade a
+% 1.2 kbps ´e de -111 dBm e a 500 kbps ´e de -88 dBm. Determine o m´aximo e o m´ınimo alcance
+% para cada uma das frequˆencias de portadora poss´ıveis. Os dados de sensibilidade para as
+% outras frequˆencias precisam ser obtidos do datasheet do r´adio. Assuma espa¸co livre e tamb´em
+% um ambiente com expoente de perda de percurso de n = 4 e d0 = 1 m.
+
+
+n = 4;
+c = 299792458;
+
+
+fc = 315e6;
+lambda = c/fc;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db_min = -30 -111;
+Pr_db_max = -30 -88;
+
+Pt_db_min = -30 -30;
+Pt_db_max = -30 +10;
+
+Rb_min = 1.2e3;
+Rb_max = 500e3;
+
+Rb_db_min = 10*log10(Rb_min);
+Rb_db_max = 10*log10(Rb_max);
+
+
+Plid_db_min = Pt_db_min - Pr_db_max;
+Plid_min = 10^(Plid_db_min/10);
+
+d_min = (Plid_min/Pld0)^(1/n);
+disp("Minimo 315MHz:");
+disp(d_min);
+
+Plid_db_max = Pt_db_max - Pr_db_min;
+Plid_max = 10^(Plid_db_max/10);
+
+d_max = (Plid_max/Pld0)^(1/n);
+disp("Maximo 315MHz:");
+disp(d_max);
+
+
+fc = 433e6;
+lambda = c/fc;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db_min = -30 -110;
+Pr_db_max = -30 -88;
+
+Pt_db_min = -30 -30;
+Pt_db_max = -30 +10;
+
+Rb_min = 1.2e3;
+Rb_max = 500e3;
+
+Rb_db_min = 10*log10(Rb_min);
+Rb_db_max = 10*log10(Rb_max);
+
+
+Plid_db_min = Pt_db_min - Pr_db_max;
+Plid_min = 10^(Plid_db_min/10);
+
+d_min = (Plid_min/Pld0)^(1/n);
+disp("Minimo 433MHz:");
+disp(d_min);
+
+Plid_db_max = Pt_db_max - Pr_db_min;
+Plid_max = 10^(Plid_db_max/10);
+
+d_max = (Plid_max/Pld0)^(1/n);
+disp("Maximo 433MHz:");
+disp(d_max);
+
+
+fc = 868e6;
+lambda = c/fc;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db_min = -30 -111;
+Pr_db_max = -30 -88;
+
+Pt_db_min = -30 -30;
+Pt_db_max = -30 +10;
+
+Rb_min = 1.2e3;
+Rb_max = 500e3;
+
+Rb_db_min = 10*log10(Rb_min);
+Rb_db_max = 10*log10(Rb_max);
+
+
+Plid_db_min = Pt_db_min - Pr_db_max;
+Plid_min = 10^(Plid_db_min/10);
+
+d_min = (Plid_min/Pld0)^(1/n);
+disp("Minimo 868MHz:");
+disp(d_min);
+
+Plid_db_max = Pt_db_max - Pr_db_min;
+Plid_max = 10^(Plid_db_max/10);
+
+d_max = (Plid_max/Pld0)^(1/n);
+disp("Maximo 868MHz:");
+disp(d_max);
+
+fc = 915e6;
+lambda = c/fc;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db_min = -30 -110;
+Pr_db_max = -30 -87;
+
+Pt_db_min = -30 -30;
+Pt_db_max = -30 +10;
+
+Rb_min = 1.2e3;
+Rb_max = 500e3;
+
+Rb_db_min = 10*log10(Rb_min);
+Rb_db_max = 10*log10(Rb_max);
+
+
+Plid_db_min = Pt_db_min - Pr_db_max;
+Plid_min = 10^(Plid_db_min/10);
+
+d_min = (Plid_min/Pld0)^(1/n);
+disp("Minimo 915MHz:");
+disp(d_min);
+
+Plid_db_max = Pt_db_max - Pr_db_min;
+Plid_max = 10^(Plid_db_max/10);
+
+d_max = (Plid_max/Pld0)^(1/n);
+disp("Maximo 915MHz:");
+disp(d_max);
+
+
+
+% Resposta:
+% Minimo 315MHz:
+%     7.7562m
+% 
+% Maximo 315MHz:
+%   291.5078m
+% 
+% Minimo 433MHz:
+%     6.6155m
+% 
+% Maximo 433MHz:
+%   234.7261m
+% 
+% Minimo 868MHz:
+%     4.6725m
+% 
+% Maximo 868MHz:
+%   175.6085m
+% 
+% Minimo 915MHz:
+%     4.2963m
+% 
+% Maximo 915MHz:
+%   161.4711m
+% 

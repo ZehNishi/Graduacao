@@ -1,0 +1,19 @@
+"3) 4 sinais:  Num sistema TDM-PCM sem compressor:
+cos(2.pi.1000.t),cos(2.pi.500.t),cos(2.pi.5000.t),sen(2.pi.500.t)
+a) Determine a menor frequencia de amostragem possivel para o sistema
+b) Qual a largura de espectro apos o multiplexador? Considere a frequencia de a)
+c) Qual a taxa de transmissa em bps, do sistema se o sinal multiplexado eh quantizado em 32 niveis e codificado?
+
+R.a): Criterio de Nyquist para maior freq.: fs = 2.5000 = 10kHz
+
+R.b): Ts = 1/fs = 1/10k = 0.1ms
+tal = Ts/N = 0,1m/4 = 0,025m
+Bmux = 1/tal = 40kHz
+
+R.c): Q = 32 = 2^v -> v = 5
+rb = 1/Tb; Tb = tal/v = 0,025m/5 = 5us
+rb = 200kbps
+
+<<FIM>>
+
+"

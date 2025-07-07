@@ -1,0 +1,15 @@
+"
+33)Um sinal ocupa a faixa de 310kHz à 316kHz. Quais as possiveis frequencias de amostragem no caso?
+R.: fa = 310kHz; fb = 316kHz; fa <= f <= fb;
+Por Nyquist: fs >= 2.W -> fs >= 2.fb -> fs >= 632kHz (1a resposta)
+
+Por teria de amostragem de sinais passa-faixa: fs = 2fb/INT{fb/Bt}
+
+fs = 2.316k/INT{316k/6k} = 12,15kHz (2a resposta)
+
+<<FIM>>
+
+"
+
+
+

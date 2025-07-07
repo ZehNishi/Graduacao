@@ -1,0 +1,44 @@
+Um modulador DSB/SC eh alimentado com um sinal modulante m(t) e por uma portadora c(t) apresentados abaixo,produzindo um sinal modulado s(t). Esse sinal modulado eh, entao, aplicado a um detector coerente composto por um multiplicador, uma portadora local de amplitude unitaria e mesma frequencia de c(t), e um FPB real (funcao de transferencia dad abaixo, onde f3db eh a frequencia de corte do filtro).Pede-se:
+a-A potencia media de S(f).
+b-A expressao do sinal obtido apos o multiplicador.
+c-Um esboco do espectro do sinal do item b(com valores e freq)
+d-Qual deve ser o valor da frequencia de corte do filtro para que as componentes indesejadas do processo de demodulacao sejam atenuados em pelo menos 30dB?
+c(t)=2cos(2*pi*30k*t)
+m(t)=4cos(2*pi*1k*t)+2cos(2*pi*3k*t)
+|H(f)|=1/[1+(fx/f3db)^2]^1/2
+
+a-
+s(t)=2*cos(2*pi*30k*t)*[4*cos(2*pi*3k*t)+2*cos(2*pi*3k*t)]
+=8*cos(2*pi*30k*t)*cos(2*pi*3k*t)+4*cos(2*pi*30k*t)*cos(2*pi*3k*t)
+=4*cos(2*pi*29k*t)+4cos(2*pi*31k*t)+2*cos(2*pi*27k*t)+2cos*(2*pi*33k*t)
+Pot media=(4^2)/2+(4^2)/2+(2^2)/2+(2^2)/2=20W
+
+b-
+s(t)*[c'(t)/2]=4*cos(2*pi*29k*t)*cos(2*pi*30k*t)+4cos(2*pi*31k*t)*cos(2*pi*30k*t)+2*cos(2*pi*27k*t)*cos(2*pi*30k*t)+2cos*(2*pi*33k*t)*cos(2*pi*30k*t)
+=4*cos(2*pi*1k*t)+4*cos(2*pi*59k*t)+4cos(2*pi*1k*t)+4cos(2*pi*61k*t)+2*cos(2*pi*3k*t)+2*cos(2*pi*57k*t)+2cos*(2*pi*3k*t)+2*cos(2*pi*63k*t)
+=8*cos(2*pi*1k*t)+4*cos(2*pi*59k*t)+4cos(2*pi*61k*t)+4*cos(2*pi*3k*t)+2*cos(2*pi*57k*t)+2*cos(2*pi*63k*t)
+Espectro de s(t)*c'(t):
+(*****delta=d*****)
+Espectro de s(t)*c'(t)=4*[d(f+1k)+d(f-1k)]+2*[d(f+59k)+d(f-59k)]+2*[d(f+3k)+d(f-3k)]+[d(f+57k)+d(f-57k)]+[d(f+63k)+d(f-63k)]
+
+c-           | 
+             | 
+           | | |
+   |     | | | | |     |
+_|_|_|___|_|_|_|_|___|_|_|_>
+             0 
+eixo y
+1 | = 1
+2 | = 2 
+3 | = 4
+eixo x
+frequencias dentro dos deltas
+
+d-
+Gdb=20 log G
+30=20 log G
+|H(f)|=G=0,176
+0,176=1/[1+(fx/f3db)^2]^1/2
+fx/f3db=5,59
+como fx=3k
+f3db=536,65Hz

@@ -1,0 +1,52 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+5 EFEITO DO RUÍDO EM MODULAÇOES ANALÓGICAS
+
+Um dos objetivos básicos no estudo dos sistemas modulados é a análise dos efeitos do ruído no desempenho do receptor, e o uso dos resultados desta análise no projeto de sistemas. 
+
+Também é de importância a comparação dos diferentes processos de modulação em termos de seus desempenhos em relação ao ruído. Usa-se a relação sinalruído (SNR) de saída como uma medida para descrever a fidelidade com que o processo de demodulação recupera o sinal de mensagem na presença de ruído. 
+
+Nesta discussão assume-se que o ruído é modelado por um processo aleatório do tipo aditivo, branco e Gaussiano de média zero (AWGN). Esta consideração torna os cálculos tratáveis e, também, corresponde a uma descrição razoável do tipo de ruído presente em muitos sistemas de comunicação.
+
+
+-----------------------------
+5.1 PROCESSOS ALEATÓRIOS
+
+Um processo aleatório é uma extensão natural do conceito de variável aleatória quando consideram-se sinais. 
+
+No modelamento de diversos sinais em telecomunicações é mais apropriado considerá-los como aleatórios e não como determinísticos.
+
+
+-----------------------------
+5.1.1 PROCESSO GAUSSIANO
+
+Corresponde a um sinal aleatório cujas amostras são distribuídas segundo uma distribuição Gaussiana. Tal processo descreve o ruído térmico em dispositivos eletrônicos, pois este é produzido pelo movimento aleatório de elétrons devido à agitação térmica. 
+
+O comportamento Gaussiano pode ser explicado em função da soma de pequenas correntes produzidas por um grande número de fontes (os elétrons). O teorema do limite central garante que a corrente total possui distribuição Gaussiana.
+
+
+-----------------------------
+5.1.2 PROCESSO BRANCO
+
+Em um processo branco todas as componentes em freqüência possuem igual potencia, i.e., a densidade espectral de potencia é constante para todas as freqüências.
+
+
+Obviamente, nenhum processo físico real pode ter potencia infinita; entretanto a mecânica quântica mostra que o ruído térmico tem densidade espectral de potencia dada por:
+
+
+Este espectro tem valor máximo igual a kT/2, e decresce a uma taxa muito lenta.
+Obtém-se 0,9.kT/2 para T=300 K e f=2x1012 Hz (muito acima das freqüências usadas em sistemas convencionais de comunicações). 
+O valor kT é usualmente denotado por N0, assim a densidade espectral de potencia do ruído térmico é dada por Sn(f)=N0/2
+(para propósitos práticos), e chamada densidade espectral bilateral de potencia.
+
+
+
+
+
+
+
+
+[FIM]."

@@ -1,0 +1,151 @@
+|Lab3
+o0 <= PISO8:inst14.SerialOut
+Clear => PISO8:inst14.Clear
+D0 => PISO8:inst14.D0
+D1 => PISO8:inst14.D1
+D2 => PISO8:inst14.D2
+D3 => PISO8:inst14.D3
+D4 => PISO8:inst14.D4
+D5 => PISO8:inst14.D5
+D6 => PISO8:inst14.D6
+D7 => PISO8:inst14.D7
+P11 => Timing_Reference:inst.clk
+LS => PISO8:inst14.L_S
+
+
+|Lab3|PISO8:inst14
+SerialOut <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst7.ACLR
+Clear => inst6.ACLR
+Clear => inst5.ACLR
+Clear => inst4.ACLR
+Clear => inst3.ACLR
+Clear => inst2.ACLR
+Clear => inst1.ACLR
+Clear => inst.ACLR
+Clock => inst7.CLK
+Clock => inst6.CLK
+Clock => inst5.CLK
+Clock => inst4.CLK
+Clock => inst3.CLK
+Clock => inst2.CLK
+Clock => inst1.CLK
+Clock => inst.CLK
+D7 => AouB:inst16.A
+L_S => AouB:inst16.Controle
+L_S => AouB:inst15.Controle
+L_S => AouB:inst14.Controle
+L_S => AouB:inst13.Controle
+L_S => AouB:inst12.Controle
+L_S => AouB:inst11.Controle
+L_S => AouB:inst10.Controle
+D6 => AouB:inst15.A
+D5 => AouB:inst14.A
+D4 => AouB:inst13.A
+D3 => AouB:inst12.A
+D2 => AouB:inst11.A
+D1 => AouB:inst10.A
+D0 => inst.DATAIN
+PreSet => inst.PRESET
+PreSet => inst1.PRESET
+PreSet => inst2.PRESET
+PreSet => inst3.PRESET
+PreSet => inst4.PRESET
+PreSet => inst5.PRESET
+PreSet => inst6.PRESET
+PreSet => inst7.PRESET
+
+
+|Lab3|PISO8:inst14|AouB:inst16
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst15
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst14
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst13
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst12
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst11
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|PISO8:inst14|AouB:inst10
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Lab3|Timing_Reference:inst
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_xHz <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

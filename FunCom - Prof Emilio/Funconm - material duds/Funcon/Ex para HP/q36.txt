@@ -1,0 +1,14 @@
+36)Uma sequencia de digitos binarios, a taxa de 56kbps, deve ser transmitida atraves de um canal limitado em 42kHz. Qual eh o fator de roll-off a ser usado neste caso:
+
+R.: B = ((1+ro)/2).rb -> 42k/56k = (1+ro)/2 -> ro = 0,5
+
+<<FIM>>
+
+
+
+
+
+
+
+
+

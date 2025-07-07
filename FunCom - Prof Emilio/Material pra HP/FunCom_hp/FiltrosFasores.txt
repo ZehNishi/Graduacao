@@ -1,0 +1,28 @@
+ - O sinal de saida tem sua amplitude multiplicada pelo modulo da funcao de transferencia do sistema e sua fase somada a fase da funcao de transferencia
+
+FILTROS:
+Selecionam ou descartam componentes de freq no sinal.
+-FILTRO IDEAL: faixa de passagem plana, faixa de transicao nula, resposta em fase proporcional a freq.
+-FILTRO REAL: faixa de pasagem com ondulacoes, faixa de transicao, resposta em fase nao proporcional a freq.
+
+FASORES:
+
+Q = omega
+x(t) = A cos(2.pi.f0.t + Q) = ½ A .e^( j.Q).e(j.w0.t) + ½ A .e^(-jQ).e^(-j.w0.t)
+
+Amplitudes de 0.5.A, f0 rotacoes por segundo em sentidos opostos e, no t=0, formam um angulo Q em relacao ao eixo real positivo.                                                                          
+Im  |                        / \       <.                                       
+      |                    /          \       . f0
+      |                /                   \     . 
+      |           /                             \                               
+      |      /.                                       \                         
+      |/       .  w0.t +Q                           \
+------------.--------------------------------------- Re       
+      |\                                                 /
+      |      \                                       /
+      |           \                              /
+      |               \                     /  .
+      |                    \          /     .   f0 
+      |	               \/      <.
+
+Fasores para dominio de f: Amplitude fica cada pico de A/2 em -f0 e f0, fase fica um pico -Q em -f0 e Q em f0

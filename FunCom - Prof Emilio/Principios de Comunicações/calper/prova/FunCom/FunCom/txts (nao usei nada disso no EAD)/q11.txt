@@ -1,0 +1,22 @@
+Determine a autocorrelacao e a potencia media p/ x(t)=A*g(t)*cos(2*pi*fc*t), onde g(t) eh real e periodico.
+Dica: 
+2*pi*fc=wo
+int(-To/2 a To/2)g(t)*g(t-lambda)*cos(2*wo*t-wo*lambda)*dt=0
+
+R:
+Rx(lambda)=(1/To)*int(-To/2 a To/2)x(t)*x(t-lambda)*dt
+=(1/To)*int(-To/2 a To/2)A*g(t)*cos(wo*t)*A*g(t-lambda)*cos[wo(t-lambda)]*dt
+
+=(A^2/To)*int(-To/2 a To/2)g(t)*g(t-lambda)*(1/2)*[cos(wo*lambda)+cos(2*wo*t-wo*lambda)]*dt
+
+=[A^2/(2To)]*cos(wo*lambda)*int(-To/2 a To/2)g(t)*g(t-lambda)*dt+[A^2/(2To)]*int(-To/2 a To/2)g(t)*g(t-lambda)*cos(2*wo*t-wo*lambda*dt
+
+mas,
+[A^2/(2To)]*int(-To/2 a To/2)g(t)*g(t-lambda)*cos(2*wo*t-wo*lambda)*dt=0
+
+e,
+[A^2/(2To)]*cos(wo*lambda)*int(-To/2 a To/2)g(t)*g(t-lambda)*dt=Rg(lambda)
+
+entao
+Rx(lambda)=[A^2/2]*cos(wo*lambda)*Rg(lambda)
+Px=Rx(0)=[A^2/2]*Rg(0)=[A^2/2]*Pg

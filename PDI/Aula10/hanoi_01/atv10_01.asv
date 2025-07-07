@@ -1,0 +1,103 @@
+clear;
+clc;
+close all;
+
+
+x1 = 289; y1 = 359;
+x2 = 720; y2 = 540;
+largura = x2 - x1;
+altura = y2 - y1;
+
+imgEx = imread('hanoi_01_33.png');
+
+imagens = {};
+for i = 1:35
+    nomeArquivo = sprintf('hanoi_01_%02d.png', i);
+    if isfile(nomeArquivo)
+        imagens{i} = imread(nomeArquivo);
+        imagens{i} = imrotate(imagens{i}, -32);
+        imagens{i} = imcrop(imagens{i}, [x1 y1 largura altura]);
+    end
+end
+
+cores = [
+    [173, 200, 30];   % Amarelo
+    [230, 20, 20];     % Vermelho
+    [30, 50, 125];     % Azul
+    [0, 110, 25];     % Verde
+    [240, 126, 20]    % Laranja
+];
+
+limiar = 50; 
+
+se = strel('disk', 3); 
+
+imagensBinarias = cell(5, 1);
+
+for i = 1:length(imagens)
+    imagem = imagens{i};
+    if ~isempty(imagem)
+        imagemBinaria = false(size(imagem, 1), size(imagem, 2), 5);
+        
+    for j = 1:5
+        corFiltro = cores(j, :);
+        
+        minCor = corFiltro - limiar;
+        maxCor = corFiltro + limiar;
+
+        filtro = (imagem(:,:,1) >= minCor(1)) & (imagem(:,:,1) <= maxCor(1)) & ...
+                 (imagem(:,:,2) >= minCor(2)) & (imagem(:,:,2) <= maxCor(2)) & ...
+                 (imagem(:,:,3) >= minCor(3)) & (imagem(:,:,3) <= maxCor(3));
+        
+        imagemBinaria(:,:,j) = filtro;
+        imagemBinaria(:,:,j) = imopen(imagemBinaria(:,:,j), se);
+        imagemBinaria(:,:,j) = imclose(imagemBinaria(:,:,j), se);
+    end
+        
+        imagensBinarias{i} = imagemBinaria;
+    end
+end
+
+P1 = [62, 35];
+P2 = [202, 103];
+P3 = [324, 32];
+
+resultado = zeros(35, 5);
+
+for i = 1:35
+    if ~isempty(imagens{i})
+        for j = 1:5
+            imagemBinaria = imagensBinarias{i}(:,:,j);
+            [linhas, colunas] = find(imagemBinaria > 0);
+            if ~isempty(linhas)
+                mediaX = mean(colunas);
+                mediaY = mean(linhas);
+                distP1 = sqrt((mediaX - P1(1))^2 + (mediaY - P1(2))^2);
+                distP2 = sqrt((mediaX - P2(1))^2 + (mediaY - P2(2))^2);
+                distP3 = sqrt((mediaX - P3(1))^2 + (mediaY - P3(2))^2);
+                [~, idx] = min([distP1, distP2, distP3]);
+                resultado(i, j) = idx;
+            end
+        end
+    end
+end
+save('resultado.mat', 'resultado');
+
+figure (1),
+subplot(1, 3, 3);
+for k = 1:5
+    subplot(2, 3, k);
+    imshow(imagensBinarias{33}(:,:,k));
+    title(['Imagem Binária ' num2str(k)]);
+end
+
+
+figure (2),
+subplot(1, 2, 1);
+imshow(imgEx);
+title('Imagem Original');
+
+subplot(1, 2, 2);
+imshow(imagens{33});
+title('Imagem Cortada');
+

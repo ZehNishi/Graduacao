@@ -1,0 +1,51 @@
+Robot for Inspection of Transmission Lines
+	Robô apresentado inicialmente com um motor a combustão, porém a ideia foi descartada pois era impossivel usa-lo em redes vivas com segurança, em seguida foi construido um com motores eletricos. O robô é simples, são apenas 2 rodas, não tem um mecanismo de trava ao cabo nem de superação de obstaculos, se comunicava por radiofrequencia, era controlado por um operador e tinha uma camera para fazer a vistoria.	
+
+Research Status and Development Trend of Obstacle Crossing Mechanism of HV Transmission Line Inspection Robot
+	Conceito de supração de obstaculos, com 2 conjuntos de rodas e um braço para atravessar obstaculos verticais, não muito compridos.
+
+A novel 110 kV power line inspection robot and its climbing ability analysis
+	Robô capaz de escalar jumpers com ângulos de até 80° e superar obstaculos da linha. Mecanismo de superação baseado em um movimento de lagarta e usando uma garra para dar suporte ao movimento.Robô não é autonomo.
+
+Mechanical Design and Research of a Novel Power Lines Inspection Robot 
+	Robô com estrutura capaz de superar obstaculos, com unidades para andar, abrir e fechar, segurar o cabo e rotacionar o robô. Necessidade de um operador para realizar o movimento do robô, inclusive para superar obstaculos.
+
+Research on dual-arm coordination motion control strategy for power cable mobile robot
+	Robô com 2 braços e uma garra com o intuito de trocar amortecedores da linha.
+
+Multi-Robot Cyber Physical System for Sensing Environmental Variables of Transmission Line
+	Robô equipado com sensores RGB, infravermelho e lidar, porjetado para captar informações da linha e superar obstaculos. A principio requer um time para comandar o robô, mas pode ser configurado para funcionar de forma autonoma, porém o projeto não aborda essa parte autonoma. Uso do lidar para obter parametros da vegetação do ambiente e parametros espaciais da linha. Uso de sensor de luz visivel e infrabermelho para analisar a linha.
+
+A Novel Method to Reconstruct Overhead High-Voltage Power Lines Using Cable Inspection Robot LiDAR Data
+	Robô equipado com Lidar para levantar dados de linhas de alta tensão, projetado para percorrer uma linha e montar uma nuvem de pontos usando as leituras do lidar.
+
+
+
+Lidar:
+
+Obstacle Classification by a Line-Crawling Robot: A Rough Neurocomputing Approach
+	O robô foi projetado para rastejar pela linha de alta tensão e detectar obstaculos e então ativar rotinas diferentes para supela-los, o objetivo do projeto foi de treinar uma rede neural que fosse capaz de lidar com os ruidos presentes nas linhas de alta tensão, oriundos dos campos eletromagnéticos presentes nas linhas. Uso de 34 sensores no robô para controlar a navegação, simplificado para 4 sensores de proximidade, 1 para medir a distancia do robô ao cabo e outros 3 para determinar qual obstaculos está na frente dele, a tomada de decisões do robô leva em conta as leituras desses sensores, o trabalho visa usar uma rede neural para que a leitura com as interferencias da linha no sensores ainda seja precisa.
+
+POLIBOT – POwer Lines Inspection RoBOT
+	Proposta de um robô de baixo peso e baixo custo para realizar as inpeções com facil instalação e remoção.Uso de um sensor LIDAR em conjunto com um sensor ultrassonico para superar obstaculos calculando os ângulos de atuação necessários.
+
+LineScout Power Line Robot: Characterization of a UTM-30LX LIDAR System for Obstacle Detection
+	Mostra a perfomace do sensor UTM-30LX sobre diferentes sistuações como temperatura, superficie sendo scaneada, distancia e orientação do sensor. Uso de ângulo de 45° para detectar os osbjetos da linha com o sensor limitado em +-12°, o que resulta em 49 medidas por scan, com o sensor embaixo do robô, com distancia de detecção de, no minimo, 0.9 metros. O código detecta as bordas do objeto de interesse e retorna os valores do diametro do objeto e as distancia média do objeto ao sensor. A sequencia do projeto Introduction of a LIDAR-Based Obstacle Detection System on the LineScout Power Line Robot implementa os resultados e faz testes em uma linha real, chegando a resultados promissores também, usando as infomrações do diametro, distâncias médias e variações das leituras do objetos foi possivivel distinguir os objetos por meio das leituras do sensor, mas nenhum modelo é implementado para lidar com as informações e fazer a classificação.
+
+
+Nuvem de pontos:
+Detecting Inspection Objects of Power Line from Cable Inspection Robot LiDAR Data
+	Uso do sensor LIDAR para criar uma nuvem de pontos da linha de transmissão, uso de informações fisicas das linhas para isolar uma linha. Uso de estatísticas extraidas por vizinhança local e crescimento de região 3D para realizar a classificação dos objetos baseado na distribuição deles na linha. Obteve em média uma acurácia de 90.6% com uma precisão de 98.2% uso do robo de A Novel Method to Reconstruct Overhead High-Voltage Power Lines Using Cable Inspection Robot LiDAR Data
+
+Systematic Comparison of Power Line Classification Methods from ALS and MLS Point Cloud Data
+	Uso do lidar em robôs voadores e móveis para levantar as nuvens de pontos. Uso de métodos de vizinhança local e seleção de features para realizar as classificações. Classificadores utilizados: SVM, Random Forest, Deciosion Tree, Naive Bayes, Discriminant Analysis, Neural Network. Com taxa de qualidade alcançada variando entre modelos, ficando melho em RF e NN, chegando até 98.5%.
+
+
+RGB:
+A Vision-based method for the Broken Spacer Detection
+	Detecção de espaçadores quebrados em linhas de alta tensão usando uma camera RGB, da imagem é extraida uma ROI contendo o espaçador, então a imagem é submetida a processos para isolar a area do espaçador por meio de operações de transformações e morfológicas na imagem, com o espaçador isolado é feita a classificação se está ou não com defeito analisando as conexões da imagem.
+
+Design of Vision-based Obstacle Crossing of High-voltage Line Inspection Robot*
+	Detecção de amortecedores, espaçadores e braçadeireas nas linhas de alta tensão, a imagem passa por processameno de operações de transformações e morfológicas. O modelo utilizado para classificar os dois objetos foi uma SVM com 
+restrições de estruturas chegando a uma acuracia de 96% para a braçadeira, 93.33% para o espaçador e 92.67% para o isolador.
+

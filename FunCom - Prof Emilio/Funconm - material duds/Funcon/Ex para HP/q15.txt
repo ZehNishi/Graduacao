@@ -1,0 +1,16 @@
+"
+15-
+No detector de Lei Quadratica, qual o valor de ka para que a ineterferencia (termo m(t)^2) seja igual a 10% do sinal desejado.(m(t)max = 1V).
+
+Solução
+-------------------------------------------------
+mo(t) = a_2*Ac^2*ka*m(t)+(1/2)*a_2*Ac^2*ka^2*m(t)^2 
+mo(t) = sinal desejado+interferencia
+
+interferencia/desejado = 10%
+
+[(1/2)*a_2*Ac^2*ka^2*m(t)^2]/[a_2*Ac^2*ka*m(t)]=0,1
+
+1/2*ka = 0,1 => ka=0,2
+
+"

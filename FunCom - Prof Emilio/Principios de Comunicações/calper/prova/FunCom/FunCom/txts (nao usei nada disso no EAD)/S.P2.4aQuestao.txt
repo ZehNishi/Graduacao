@@ -1,0 +1,95 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+4) PRETENDE-SE USAR O OSCILADOR HARTLEY ABAIXO PARA PRODUZIR UM SINAL MODULADO FM. O SINAL MODULANTE EH m(t)=1.cos.(2.pi.15k.t). 
+UMA MEDIDA REVELOU QUE OS INDUTORES APRESENTAM L1=L2=89,43nH.
+NA AUSENCIA DO SINAL MODULANTE O OSCILADOR PRODUZ UM SINAL COSSENOIDAL COM 10V DE PICO.
+O DIODO VARICAP USADO NA MONTAGEM TEM UMA CAPACITANCIA, Cv, QUE VARIA COM A TENSAO DE POLARIZACAO REVERSA, Vr, DE ACORDO COM A EXPRESSAO:
+
+Cv=107,25/(1+0,21.Vr)^1/2
+
+Vv EM VOLTS E Cv EM pF
+
+
+DETERMINE:
+
+a) OS VALORES DE fc, kf E B(com unidades)
+
+b) A POTENCIA MEDIA DO SINAL MODULADO (em Watt), E EQUACAO PARA fi(t).
+
+c) A LARGURA DE ESPECTRO DO SINAL MODULADO (Carson e Curva Universal).
+
+d) SUPONDO B=8 DETERMINE O NUMERO DE COMPONENTES ESPECTRAIS QUE DEVEM SER SELECIONADOS P/ SE OBTER 60% DA POTENCIA MEDIA DO SINAL MODULADO. 
+QUAL EH A LARGURA DE ESPECTRO NESTE CASO?
+
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+m(t)=1.cos(2.pi.15k.t)
+Am=1  , fm=15k
+L1=L2=89,43nH
+
+p/4V -> Co=103pF
+
+
+-----------------------------
+a) fc = 1/(2.pi.raiz[2.L1.Co])
+   fc = 37,08MHz!
+
+
+  p/ 3V -> C = 104pF
+  p/ 5V -> C = 102pF
+
+  Kc = DeltaC/DeltaV = -1pF/V!
+
+  Kf =-kc.fo/2.Co = 180KHz!
+
+  B = kf.Am/fm = 12 rad!
+
+
+-----------------------------
+b) 
+
+ Pot = Ac^2/2 = 10^2/2 = 50W
+
+fi(t) = fc + kf.m(t)
+
+fi(t)=37M+180K.cos(2.pi.15k.t)
+
+
+-----------------------------
+c) 
+
+Bt = 2(B+1).fm 
+ Bt = 2(12+1).15k = 390 KHz!
+
+
+Bt/DeltaF = 2,8
+
+  DeltaF = kf.Am
+  
+  Bt = 504KHz!
+
+
+-----------------------------
+d) 
+
+Jo(8)^2+ 2[J1(8)^2+J2(8)^2+..]
+
+  n = 6
+
+  (6.2)+1 = 13 componentes!
+
+
+  BT = 2.n.fm
+  BT = 2.6.15k = 180kHz!
+
+
+
+
+
+[FIM]."

@@ -1,0 +1,52 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+4 MODULAÇÃO ANALÓGICA ANGULAR
+
+-----------------------------
+a) Modulação em fase (PM)
+
+O ângulo 0i varia linearmente com m(t).
+
+
+0i(t) = 2.pi..fc.t + kp.m(t)
+
+
+kp : sensibilidade em fase do modulador [rad/V]
+
+2.p.fc.t : ângulo da portadora não modulada.
+
+
+
+-----------------------------
+b) Modulação em freqüência (FM)
+
+A freqüência instantânea fi(t) varia linearmente com o sinal modulante m(t).
+
+
+fi(t) = fc + kf.m(t)
+
+
+kf : sensibilidade em freqüência do modulador [Hz/V]
+
+fc : frequência da portadora não modulada.
+
+
+          Ac.cos(2.pi.fc.t)
+                    |
+mt->[Intgrdr] -> [Mod.Fase] 
+-> Sinal FM
+
+
+          Ac.cos(2.pi.fc.t)
+                    |
+mt->[Difrcdor] -> [Mod.Freq] 
+-> Sinal PM
+
+
+
+
+
+[FIM]."

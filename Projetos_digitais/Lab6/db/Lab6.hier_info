@@ -1,0 +1,58 @@
+|Lab6
+DS <= Dec53:inst25.D_S
+Entrada => Dec53:inst25.X
+reset => 3jkff:inst.Clear
+Clock => 3jkff:inst.Clock
+A <= 3jkff:inst.A
+B <= 3jkff:inst.B
+C <= 3jkff:inst.C
+
+
+|Lab6|Dec53:inst25
+Ja <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+X => inst256.IN0
+X => inst9.IN0
+X => inst13.IN0
+X => inst15.IN0
+B => inst4.IN1
+B => inst6.IN0
+B => inst2.IN0
+B => inst15.IN2
+C => inst4.IN2
+C => inst5.IN1
+C => inst9.IN2
+C => inst8.IN2
+C => inst10.IN0
+C => inst3.IN0
+Ka <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+Jb <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst9.IN1
+A => inst1.IN0
+A => inst10.IN1
+A => inst12.IN0
+A => inst14.IN0
+A => inst15.IN1
+Kb <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Jc <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Kc <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+D_S <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab6|3jkff:inst
+A <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+Clear => inst25.ACLR
+Clear => inst1.ACLR
+Clear => inst2.ACLR
+Ka => inst25.IN0
+Ja => inst25.IN1
+Clock => inst25.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+B <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Kb => inst1.IN0
+Jb => inst1.IN1
+C <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Kc => inst2.IN0
+Jc => inst2.IN1
+
+

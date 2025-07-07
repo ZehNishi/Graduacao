@@ -1,0 +1,15 @@
+.\rvmdk\uip_task.o: webserver\uIP_Task.c
+.\rvmdk\uip_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\rvmdk\uip_task.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\uip_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\uip_task.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\uip_task.o: .\FreeRTOSConfig.h
+.\rvmdk\uip_task.o: ..\..\Source\include\projdefs.h
+.\rvmdk\uip_task.o: ..\..\Source\include\portable.h
+.\rvmdk\uip_task.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\uip_task.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\uip_task.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\uip_task.o: ..\..\Source\include\task.h
+.\rvmdk\uip_task.o: ..\..\Source\include\list.h
+.\rvmdk\uip_task.o: ..\..\Source\include\semphr.h
+.\rvmdk\uip_task.o: ..\..\Source\include\queue.h

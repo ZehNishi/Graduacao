@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "5as",
+					"strict" : false
+				},
+				{
+					"name" : "5bs",
+					"strict" : false
+				},
+				{
+					"name" : "5cs",
+					"strict" : false
+				},
+				{
+					"name" : "5ds",
+					"strict" : false
+				},
+				{
+					"name" : "5es",
+					"strict" : false
+				},
+				{
+					"name" : "5fs",
+					"strict" : false
+				},
+				{
+					"name" : "5gs",
+					"strict" : false
+				},
+				{
+					"name" : "4as",
+					"strict" : false
+				},
+				{
+					"name" : "4bs",
+					"strict" : false
+				},
+				{
+					"name" : "4cs",
+					"strict" : false
+				},
+				{
+					"name" : "4ds",
+					"strict" : false
+				},
+				{
+					"name" : "4es",
+					"strict" : false
+				},
+				{
+					"name" : "4fs",
+					"strict" : false
+				},
+				{
+					"name" : "4gs",
+					"strict" : false
+				},
+				{
+					"name" : "3as",
+					"strict" : false
+				},
+				{
+					"name" : "3bs",
+					"strict" : false
+				},
+				{
+					"name" : "3cs",
+					"strict" : false
+				},
+				{
+					"name" : "3ds",
+					"strict" : false
+				},
+				{
+					"name" : "3es",
+					"strict" : false
+				},
+				{
+					"name" : "3fs",
+					"strict" : false
+				},
+				{
+					"name" : "3gs",
+					"strict" : false
+				},
+				{
+					"name" : "2as",
+					"strict" : false
+				},
+				{
+					"name" : "2bs",
+					"strict" : false
+				},
+				{
+					"name" : "2cs",
+					"strict" : false
+				},
+				{
+					"name" : "2ds",
+					"strict" : false
+				},
+				{
+					"name" : "2es",
+					"strict" : false
+				},
+				{
+					"name" : "2fs",
+					"strict" : false
+				},
+				{
+					"name" : "2gs",
+					"strict" : false
+				},
+				{
+					"name" : "1as",
+					"strict" : false
+				},
+				{
+					"name" : "1bs",
+					"strict" : false
+				},
+				{
+					"name" : "1cs",
+					"strict" : false
+				},
+				{
+					"name" : "1ds",
+					"strict" : false
+				},
+				{
+					"name" : "1es",
+					"strict" : false
+				},
+				{
+					"name" : "1fs",
+					"strict" : false
+				},
+				{
+					"name" : "1gs",
+					"strict" : false
+				},
+				{
+					"name" : "0as",
+					"strict" : false
+				},
+				{
+					"name" : "0bs",
+					"strict" : false
+				},
+				{
+					"name" : "0cs",
+					"strict" : false
+				},
+				{
+					"name" : "0ds",
+					"strict" : false
+				},
+				{
+					"name" : "0es",
+					"strict" : false
+				},
+				{
+					"name" : "0fs",
+					"strict" : false
+				},
+				{
+					"name" : "0gs",
+					"strict" : false
+				},
+				{
+					"name" : "Placar",
+					"strict" : false
+				},
+				{
+					"name" : "Display",
+					"strict" : false
+				},
+				{
+					"name" : "Inversor",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Set",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

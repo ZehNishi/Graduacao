@@ -1,0 +1,39 @@
+Dado o sinal periodico mostrado abaixo
+a-Calcule a potencia media usando a integral para calcula da potencia
+b-Calcule a potencia media contida no intervalo de freq |n*fo|<=3/pi, utilizando o Teorema de Parceval.
+          ^
+          |  +pi 
+     /|	  |  /|     /|
+    / |   | / |    / | 
+___/__|___|/__|___/__|_>t
+  /   |  /|   |  /
+ /    | / |   | /
+/     |/  |   |/
+     -pi
+
+Periodo da funcao(de -pi a +pi)=2pi
+
+
+Dados:
+cn=(j/n)*cos(n*pi)
+lim(n->0)cn=0
+
+a-
+P=(1/To)*int(-To/2 a +To/2)|gp(t)|^2*dt
+P=[1/(2*pi)]*int(-pi a +pi)t^2*dt=(pi^2)/3 [W]
+
+b-
+P=|co|^2+2*somatorio(1 a inf)|cn|^2
+|n*fo|=3/pi
+fo=1/(2*pi)
+n=6
+__________________
+|n | cn  | |cn|^2 |____________
+|0 | 0   | 0      |x1 | 0      |
+|1 |-j   | 1      |x2 |        |
+|2 |+j/2 | 0,250  |x2 |        |
+|3 |-j/3 | 0,111  |x2 |2,985   |
+|4 |+j/4 | 0,062  |x2 |        |
+|5 |-j/5 | 0,040  |x2 |        |
+|6 |+j/6 | 0,027  |x2 |________|
+                      |P=2.985W|

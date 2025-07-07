@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Avell/Desktop/Projetos_digitais/Lab3Copia/simulation/qsim
+vhard_block
+Z1 !s110 1664229356
+!i10b 1
+!s100 ``D[JM6D_g02OAh=Tol^22
+I?BMUa;XQ8JOa`h7mz13W>2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1664229356
+Z4 8Lab3.vo
+Z5 FLab3.vo
+L0 662
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1664229356.000000
+Z8 !s107 Lab3.vo|
+Z9 !s90 -work|work|Lab3.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLab3
+R1
+!i10b 1
+!s100 _PHA1ZJ8RjGd]FA]4R4KD3
+IjRH@dVOIU[5HF?K@nTkU@2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@lab3
+vLab3_vlg_vec_tst
+R1
+!i10b 1
+!s100 zAEHG=:4J]^>cdZl9O^mh2
+I1L[?feC2UaWKL=b`:^T^70
+R2
+R0
+w1664229355
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@lab3_vlg_vec_tst

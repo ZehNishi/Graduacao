@@ -1,0 +1,19 @@
+clc;  
+clear;  
+close all;  
+
+dados = readtable('amortecedor.csv');
+
+
+figure;
+hold on;  
+for i = 50:100:150
+    linha = dados{i, :}; r
+    plot(linha, '-');    
+end
+
+title('Plot das linhas 10, 20, ..., 150 do arquivo CSV');
+xlabel('Índice da coluna');
+ylabel('Valor');
+grid on;
+hold off;

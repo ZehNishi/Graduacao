@@ -1,0 +1,72 @@
+Determinar Autocorrelacao
+obs: 
+T=tal no grafico
+l=lambda nas formulas
+X=pintado
+.=vezes
+*=conjugado
+
+             ^ gp(t)
+             |
+  _____    __|__A   _____
+_|     |__|  |  |__|  .  |__> t(s)
+        -T/2   T/2   To
+
+To=2*tal 
+Rgp(l)=(1/To).int(-To/2 a To/2)gp(t).gp*(t-l).dt
+
+-Caso1:
+       ^ gp(t)    
+  _____|___  
+_| |X| |   |___> t(s)
+ 1 2 3     4 
+
+1=-(tal/2)+lambda
+2=-(tal/2)
+3=+(tal/2)+lambda
+4=+(tal/2)
+
++(tal/2)+lambda=-tal/2
+lambda=-tal
+
++(tal/2)+lambda=+tal/2
+lambda=0
+
+-p/ -tal<=lambda<=0
+Rgp(t)=(1/To).int[-tal/2 a (tal/2)+l]A.A.dt
+Rgp(t)=[(A^2)/To].(tal+l)
+
+-Caso2:
+       ^ gp(t)    
+    ___|_____  
+___|   | |X| |__> t(s)
+   1     2 3 4 
+
+1=-(tal/2)
+2=-(tal/2)+lambda
+3=+(tal/2)
+4=+(tal/2)+lambda
+
+
++(tal/2)+lambda=tal/2
+lambda=0
+
+-(tal/2)+lambda=tal/2
+lambda=tal
+
+-p/ -tal<=lambda<=0
+Rgp(t)=(1/To).int[-(tal/2)+l a tal/2]A.A.dt
+Rgp(t)=[(A^2)/To].(tal-l)
+
+         ^Rgp(lambda)
+         |
+         |
+         |[(A^2)*tal/To]
+  /\    /|\    /\
+ /  \  / | \  /  \
+/____\/__|__\/____\_>
+   1 2   0  3   4
+1=-To
+2=-tal 
+3=+tal
+4=+To

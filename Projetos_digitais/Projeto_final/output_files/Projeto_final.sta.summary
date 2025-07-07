@@ -1,0 +1,437 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Controle1'
+Slack : -4.585
+TNS   : -98.830
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -3.325
+TNS   : -221.811
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -0.695
+TNS   : -2.445
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -0.693
+TNS   : -2.478
+
+Type  : Slow 1200mV 85C Model Setup 'Frequencia'
+Slack : -0.687
+TNS   : -2.419
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -0.612
+TNS   : -2.540
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -0.593
+TNS   : -2.479
+
+Type  : Slow 1200mV 85C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -0.590
+TNS   : -2.380
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 0.597
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Frequencia'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 0.619
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.640
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Controle1'
+Slack : 1.580
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -1.549
+TNS   : -7.745
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -1.430
+TNS   : -7.150
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -1.398
+TNS   : -6.990
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -1.377
+TNS   : -6.885
+
+Type  : Slow 1200mV 85C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -1.342
+TNS   : -6.710
+
+Type  : Slow 1200mV 85C Model Recovery 'Frequencia'
+Slack : -1.214
+TNS   : -6.070
+
+Type  : Slow 1200mV 85C Model Removal 'Frequencia'
+Slack : 1.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 1.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 1.630
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 1.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 1.762
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 1.767
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Controle1'
+Slack : -3.000
+TNS   : -151.443
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -139.091
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Frequencia'
+Slack : -3.000
+TNS   : -10.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Setup 'Controle1'
+Slack : -4.261
+TNS   : -91.834
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -2.948
+TNS   : -191.585
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -0.545
+TNS   : -1.804
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -0.544
+TNS   : -1.800
+
+Type  : Slow 1200mV 0C Model Setup 'Frequencia'
+Slack : -0.536
+TNS   : -1.762
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -0.468
+TNS   : -1.886
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -0.456
+TNS   : -1.844
+
+Type  : Slow 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -0.444
+TNS   : -1.723
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 0.556
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 0.568
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Frequencia'
+Slack : 0.573
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 0.582
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Controle1'
+Slack : 1.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -1.309
+TNS   : -6.545
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -1.222
+TNS   : -6.110
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -1.178
+TNS   : -5.890
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -1.176
+TNS   : -5.880
+
+Type  : Slow 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -1.137
+TNS   : -5.685
+
+Type  : Slow 1200mV 0C Model Recovery 'Frequencia'
+Slack : -1.009
+TNS   : -5.045
+
+Type  : Slow 1200mV 0C Model Removal 'Frequencia'
+Slack : 1.273
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 1.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 1.500
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 1.519
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 1.615
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 1.623
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Controle1'
+Slack : -3.000
+TNS   : -139.219
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -139.091
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Frequencia'
+Slack : -3.000
+TNS   : -10.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -1.403
+TNS   : -7.015
+
+Type  : Fast 1200mV 0C Model Setup 'Controle1'
+Slack : -1.928
+TNS   : -38.826
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -0.908
+TNS   : -34.666
+
+Type  : Fast 1200mV 0C Model Setup 'Frequencia'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 0.273
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 0.309
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 0.225
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Frequencia'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Controle1'
+Slack : 0.686
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -0.121
+TNS   : -0.605
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -0.053
+TNS   : -0.265
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -0.045
+TNS   : -0.225
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -0.043
+TNS   : -0.215
+
+Type  : Fast 1200mV 0C Model Recovery 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -0.027
+TNS   : -0.135
+
+Type  : Fast 1200mV 0C Model Recovery 'Frequencia'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Frequencia'
+Slack : 0.594
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : 0.678
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : 0.692
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : 0.722
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : 0.727
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -103.145
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Controle1'
+Slack : -3.000
+TNS   : -60.969
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Frequencia'
+Slack : -3.000
+TNS   : -8.170
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10|inst15'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71|inst15'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7|inst15'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9|inst15'
+Slack : -1.000
+TNS   : -5.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst|inst15'
+Slack : -1.000
+TNS   : -5.000
+
+------------------------------------------------------------

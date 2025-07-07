@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -0.798
+TNS   : -0.798
+
+Type  : Slow 1200mV 85C Model Setup 'Cont8jk:inst|inst1'
+Slack : -0.439
+TNS   : -0.439
+
+Type  : Slow 1200mV 85C Model Setup 'Cont8jk:inst|inst'
+Slack : -0.387
+TNS   : -0.387
+
+Type  : Slow 1200mV 85C Model Setup 'Cont8jk:inst|inst2'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Cont8jk:inst|inst2'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Cont8jk:inst|inst'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Cont8jk:inst|inst1'
+Slack : 0.758
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Cont8jk:inst|inst'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Cont8jk:inst|inst1'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Cont8jk:inst|inst2'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -0.606
+TNS   : -0.606
+
+Type  : Slow 1200mV 0C Model Setup 'Cont8jk:inst|inst1'
+Slack : -0.361
+TNS   : -0.361
+
+Type  : Slow 1200mV 0C Model Setup 'Cont8jk:inst|inst'
+Slack : -0.338
+TNS   : -0.338
+
+Type  : Slow 1200mV 0C Model Setup 'Cont8jk:inst|inst2'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Cont8jk:inst|inst2'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Cont8jk:inst|inst'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Cont8jk:inst|inst1'
+Slack : 0.707
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst1'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst2'
+Slack : -1.403
+TNS   : -1.403
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -0.144
+TNS   : -0.144
+
+Type  : Fast 1200mV 0C Model Setup 'Cont8jk:inst|inst1'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Cont8jk:inst|inst'
+Slack : 0.190
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Cont8jk:inst|inst2'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Cont8jk:inst|inst2'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Cont8jk:inst|inst'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Cont8jk:inst|inst1'
+Slack : 0.261
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -4.062
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst1'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Cont8jk:inst|inst2'
+Slack : -1.000
+TNS   : -1.000
+
+------------------------------------------------------------

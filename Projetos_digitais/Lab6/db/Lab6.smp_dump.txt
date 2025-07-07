@@ -1,0 +1,11 @@
+
+State Machine - |Lab6|Detector:inst|estado
+Name estado.s7 estado.s6 estado.s5 estado.s4 estado.s3 estado.s2 estado.s1 estado.s0 
+estado.s0 0 0 0 0 0 0 0 0 
+estado.s1 0 0 0 0 0 0 1 1 
+estado.s2 0 0 0 0 0 1 0 1 
+estado.s3 0 0 0 0 1 0 0 1 
+estado.s4 0 0 0 1 0 0 0 1 
+estado.s5 0 0 1 0 0 0 0 1 
+estado.s6 0 1 0 0 0 0 0 1 
+estado.s7 1 0 0 0 0 0 0 1 

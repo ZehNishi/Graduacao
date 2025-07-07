@@ -1,0 +1,30 @@
+30)Um sinal FM tonal com ß=1 eh aplicado a um demodulador. Sabendo-se que fm = 8kHz, Ac = 2V, e No = 10^-6W/Hz, pede-se:
+a)Qual o valor de SNRc em decibeis?
+b)Qual eh o valor da f0 associada ao sistema pre(de)-enfase se a SNRo minima para funcionamento eh de 35dB?
+
+R.a):SNRc = Ac^2/2.W.No = 4/(2.8k.10^-6) = 250(23,98dB)->RESPOSTA
+
+R.b):SNRominima = 35dB (3162,27)
+
+sem pre enfase
+
+Fm = 1,5.ß^2 -> 1,5.250 = SNRo -> SNRo = 375(25,74dB);
+
+fator de melhora associado
+
+D = SNRo,pd/SNRo = 3162,27/375 = 8,43 = (W/f0)^3/{3[(W/f0)-arctg(W/f0)]};
+
+8,43 = (8k/f0)^3/{3[(8k/f0)-arctg(8k/f0)]};
+
+Testando valores:
+ f0 ----> D
+ 1800 --- 9,45
+ 1850 --- 9,04
+ 1900 --- 8,66
+ 1950 --- 8,31
+ <<FIM>>
+ 
+ 
+ 
+ 
+ 

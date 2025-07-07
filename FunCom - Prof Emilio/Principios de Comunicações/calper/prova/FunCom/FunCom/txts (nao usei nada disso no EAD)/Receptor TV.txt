@@ -1,0 +1,7 @@
++Antena->Amplificador de RF->Mixer->Amplificador de FI->Detector de Envoltoria->Armadilha 4,5Mhz->Amplif de Video->Saida1
++Amplif de Video->Separador Pulso Sinc->Gerador de Varredura-> Saida1 (desenha duas setas uma pra H e outra pra V indo pra saida)
++Detector de Envoltoria->Amplif FI(audio)->Discriminador FM->Amplif de Audio->Saida 2
++Armadilha 4,5 MHz(escrever GAG em cima da seta)->Mesma seta vai para Amplificador de FI e Amplificador de RF
++Oscilador Local(colocar debaixo do mixer)->Mixer
+Linha pontiliada
++Aponta pra cima<-Amplificador der RF-Oscilador Local->Amplificador de FI

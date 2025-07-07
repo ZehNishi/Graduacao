@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="24.8.6">
+  <diagram name="Página-1" id="6Z5COwQtdzWb3gKtMkhj">
+    <mxGraphModel dx="2022" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-4" target="vfeZsChdP4wV7WyZHYyn-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-4" target="vfeZsChdP4wV7WyZHYyn-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="188" y="410" />
+              <mxPoint x="188" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-4" value="ROS Master" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="270" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-9" target="vfeZsChdP4wV7WyZHYyn-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-9" value="Computador" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="160" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-11" target="vfeZsChdP4wV7WyZHYyn-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-11" value="Nó de controle dos motores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="270" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-12" value="Computador" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="350" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-14" target="vfeZsChdP4wV7WyZHYyn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-14" value="Entrada de comandos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="270" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-15" value="Teclado" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-17" value="Motores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="270" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-18" value="Robô" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="540" y="240" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-20" target="vfeZsChdP4wV7WyZHYyn-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-20" value="Nó de configuração do sensores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="460" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-21" value="Computador" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="160" y="430" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-23" value="Nó de leitura dos sensores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="460" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-24" target="vfeZsChdP4wV7WyZHYyn-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="405" y="390" />
+              <mxPoint x="242" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-24" value="Computador" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="350" y="430" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;shape=flexArrow;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="vfeZsChdP4wV7WyZHYyn-26" target="vfeZsChdP4wV7WyZHYyn-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-26" value="Sensores" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="650" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-27" value="Robô" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="160" y="620" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-31" value="Armazenar os dados coletados" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vfeZsChdP4wV7WyZHYyn-32" value="Computador" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="160" y="50" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

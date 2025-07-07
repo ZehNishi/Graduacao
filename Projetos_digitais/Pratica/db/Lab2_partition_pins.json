@@ -1,0 +1,209 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "0Fa",
+					"strict" : false
+				},
+				{
+					"name" : "0Fb",
+					"strict" : false
+				},
+				{
+					"name" : "0Fc",
+					"strict" : false
+				},
+				{
+					"name" : "0Fd",
+					"strict" : false
+				},
+				{
+					"name" : "0Fe",
+					"strict" : false
+				},
+				{
+					"name" : "0Ff",
+					"strict" : false
+				},
+				{
+					"name" : "0Fg",
+					"strict" : false
+				},
+				{
+					"name" : "1Fa",
+					"strict" : false
+				},
+				{
+					"name" : "1Fb",
+					"strict" : false
+				},
+				{
+					"name" : "1Fc",
+					"strict" : false
+				},
+				{
+					"name" : "1Fd",
+					"strict" : false
+				},
+				{
+					"name" : "1Fe",
+					"strict" : false
+				},
+				{
+					"name" : "1Ff",
+					"strict" : false
+				},
+				{
+					"name" : "1Fg",
+					"strict" : false
+				},
+				{
+					"name" : "2Fa",
+					"strict" : false
+				},
+				{
+					"name" : "2Fb",
+					"strict" : false
+				},
+				{
+					"name" : "2Fc",
+					"strict" : false
+				},
+				{
+					"name" : "2Fd",
+					"strict" : false
+				},
+				{
+					"name" : "2Fe",
+					"strict" : false
+				},
+				{
+					"name" : "2Ff",
+					"strict" : false
+				},
+				{
+					"name" : "2Fg",
+					"strict" : false
+				},
+				{
+					"name" : "3Fa",
+					"strict" : false
+				},
+				{
+					"name" : "3Fb",
+					"strict" : false
+				},
+				{
+					"name" : "3Fc",
+					"strict" : false
+				},
+				{
+					"name" : "3Fd",
+					"strict" : false
+				},
+				{
+					"name" : "3Fe",
+					"strict" : false
+				},
+				{
+					"name" : "3Ff",
+					"strict" : false
+				},
+				{
+					"name" : "3Fg",
+					"strict" : false
+				},
+				{
+					"name" : "4Fa",
+					"strict" : false
+				},
+				{
+					"name" : "4Fb",
+					"strict" : false
+				},
+				{
+					"name" : "4Fc",
+					"strict" : false
+				},
+				{
+					"name" : "4Fd",
+					"strict" : false
+				},
+				{
+					"name" : "4Fe",
+					"strict" : false
+				},
+				{
+					"name" : "4Ff",
+					"strict" : false
+				},
+				{
+					"name" : "4Fg",
+					"strict" : false
+				},
+				{
+					"name" : "5Fa",
+					"strict" : false
+				},
+				{
+					"name" : "5Fb",
+					"strict" : false
+				},
+				{
+					"name" : "5Fc",
+					"strict" : false
+				},
+				{
+					"name" : "5Fd",
+					"strict" : false
+				},
+				{
+					"name" : "5Fe",
+					"strict" : false
+				},
+				{
+					"name" : "5Ff",
+					"strict" : false
+				},
+				{
+					"name" : "5Fg",
+					"strict" : false
+				},
+				{
+					"name" : "Ci",
+					"strict" : false
+				},
+				{
+					"name" : "In1",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "CLR",
+					"strict" : false
+				},
+				{
+					"name" : "In2",
+					"strict" : false
+				},
+				{
+					"name" : "In3",
+					"strict" : false
+				},
+				{
+					"name" : "In0",
+					"strict" : false
+				},
+				{
+					"name" : "PB1",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

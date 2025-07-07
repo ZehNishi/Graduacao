@@ -1,0 +1,26 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+ENTITY Contadorx256 IS
+PORT(
+	clock					:IN STD_LOGIC;
+	reset,enable		:IN STD_LOGIC;
+	saida					:OUT STD_LOGIC_VECTOR(7 downto 0);
+end Contadorx256;
+
+architecture i of Contadorx256 is 
+	type count is (x);
+	signal estado	: count;
+	
+	begin
+		process (clock, reset)
+		begin
+			if reset='0' then
+			estado <=s0;
+			elsif (clock'event and clock='1') then
+				
+		
+		
+	end funcionamento;

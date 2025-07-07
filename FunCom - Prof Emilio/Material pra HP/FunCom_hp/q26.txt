@@ -1,0 +1,23 @@
+26) Obter a figura de merito para a modulacao AM-DSB tonal (em funcao de u)
+R.: Fm =  ka^2.Pm/(1+ka^2.Pm) ; 
+
+m(t)=Am.cos(2.pi.fm.t)
+
+Pm = (Am^2)/2;
+
+u = ka.Am; 
+
+ka^2.Pm = (u^2/Am^2).((Am^2)/2) = (u^2)/2;
+
+Fm = 0.5(u^2)/{1+[0.5(u^2)]};
+
+RESPOSTA: Fm = u^2/(2+u^2);
+
+
+<<FIM>>
+
+
+
+
+
+

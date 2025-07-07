@@ -1,0 +1,34 @@
+"
+19-
+O sinal m(t)=cos(2*pi*fm*t) é usado para gerar o seguinte sinal modulado VSB.
+
+s(t)=alfa*cos[2*pi*(fc+fm)t]+(1-alfa)*cos[2*pi*(fc-fm)t],onde alfa<=1
+
+a-Determine as componentes em fase e quadratura de s(t)
+b-nao sei fazer
+
+
+fazendo A=2*pi*fc*t e B=2*pi*fm*t
+
+
+solucao
+-------------------------------------------------
+a-
+
+s(t)=alfa*cos(A+B)+(1-alfa)*cos(A-B)
+
+usando relacoes trigonometricas
+
+s(t)=cos(A)8cos(B)-(alfa-1)*sen(A)*sen(B)
+
+comparando com o sinal modulado VSB
+
+s(t)=Sc(t)*cos(A)-Ss(t)*sen(A)
+
+assim
+
+Sc(t)=cos(B)
+Ss(t)=(alfa-1)*sen(B)
+
+-------------------------------------------------
+"

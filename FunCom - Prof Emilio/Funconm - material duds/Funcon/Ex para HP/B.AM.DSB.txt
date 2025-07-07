@@ -1,0 +1,86 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+3.1 MODULAÇÃO AM-DSB (Double Side Band)
+
+Modulação em amplitude AM-DSB: a amplitude da portadora varia linearmente em torno de um valor médio proporcionalmente à variação de amplitude do sinal modulante.
+
+O espectro do sinal AM-DSB consiste de dois impulsos ponderados por Ac/2 em +fc e –fc, mais dois espectros do sinal de mensagem (M(f)) ponderados por (kc.Ac)/2 e deslocados para +fc e –fc. A largura de espectro, em Hz, do sinal AM-DSB é BT=2W.
+
+
+Ex: Sistema AM Comercial
+
+W = 5 kHz => Bt = 10 kHz
+
+
+-----------------------------
+GERACAO DOS SINAIS AM-DSB
+
+a) Atraves de elementos nao lineares
+
+m(y) -> [Dispositivo nao linear] -> [circuito sintonizado em fc]
+
+
+__[disp.n.linear]_
+|                 |   __
+m(t)             | | |  |
+|                = 8 8 []Rl
+Ac.cos(2pifc)    | | |__|
+|                 |   
+__________________
+
+
+
+b) Modulador por Chaveamento
+
+Considere o circuito abaixo em que a portadora tem grande amplitude. (esta que vai controlar o diodo retificador)
+
+
+ _(~)__>|_
+|         |
+0 m(t)    Rl
+|_________|       
+
+Vantagem que pode ser representado por Serie de Fourier.
+
+
+-----------------------------
+DEMODULACAO DE SINAIS AM-DSB
+
+A demodulacao consiste em recuperar m(t) a partir de s(t).
+
+-----------------------------
+a) DETECTOR DE ENVOLTORIA
+
+Este sistema gera um sinal de saída que segue exatamente a envoltória do sinal de entrada.
+
+
+  __Rs_>|___
+ |       |  |
+s(t)     Rl = C
+ |_______|__| 
+
+Filtro RC - passa baixas
+
+O sinal modulado é retificado pelo diodo e filtrado pelo filtro passa baixas do tipo RC. Para o dimensionamento levam-se em conta as seguintes considerações:
+
+
+Rs.C << 1/fc
+
+A constante de carga do capacitor deve ser pequena se comparada ao período da portadora.
+
+
+1/fc << Rl.C << 1/W
+
+A constante de descarga deve ser grande para descarga lenta entre os picos da portadora; mas não tão grande em modo a acompanhar a envoltória de s(t).
+
+
+-----------------------------
+b) DETECTOR TIPO LEI QUADRATICA
+
+Onde o ultimo termo na saida eh uma interferencia que nao pode ser eliminada.
+
+
+
+[FIM]."

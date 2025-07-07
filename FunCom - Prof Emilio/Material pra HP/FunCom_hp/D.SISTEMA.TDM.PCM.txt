@@ -1,0 +1,82 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+6.5.2 Sistema TDM – PCM
+------------------------------
+Empregado em telefonia para multiplexar sinais. 
+
+Envolve os processos de multiplexação por divisão de tempo (TDM) e modulação por codificação de pulso (PCM). 
+
+No PCM a mensagem (sinal multiplexado) é representada por um grupo de dígitos binários.
+
+
+m(t)
+
+1 -> [FPB]->[amostrador   ->
+              e multiplex]
+2 -> [FPB]->
+...
+
+->[QUANTIZADOR]->[COMPRESSOR]->
+
+->[CODIFICADOR]-> PCM
+
+->[EMISSAO DO SINAL]-> meio ->
+
+->[REGENERADOR] -> meio ->
+
+->[DESTINO] ->
+
+OBS: o sinal digital tem a vantagem de ser regenerado durante ao processo de
+transmissão e retransmitido, pois o sinal PCM só possui dois níveis (alto e baixo), por
+isso sua transmissão é mais confiável que no caso analógico.
+
+------------------------------
+TDM
+------------------------------
+Filtros: limitam a largura de espectro dos sinais para evitar o aliasing.
+
+Amostragem / multiplexação: 
+Retira amostras dos sinais e as distribui no tempo.
+
+------------------------------
+PCM
+------------------------------
+Quantizador: as amplitudes das amostras são referenciadas à Q níveis discretos.
+
+Ex: Amplitudes das amostras de entrada pertence aos Reais; amplitudes das amostras de saída =>
+
+S={..–1.5, -0.5, +0.5, +1.5,..}
+
+------------------------------
+Problemas:
+------------------------------
+1) A representação da amostra pelos níveis discretos introduz um erro de quantização
+(ruído de quantização).
+
+
+2) Amostras de pequena amplitude não são bem representadas na saída do quantizador. 
+Isto representa um problema pois, sinais de áudio apresentam uma proporção maior de sinais de baixa amplitude.
+
+------------------------------
+Solução: 
+------------------------------
+Compressão, para a redução do erro relativo.
+
+Compressão: os intervalos de quantização (q) são menores para sinais de baixa amplitude.
+
+A função de compressão é composta por um conjunto de semi-segmentos. 
+Cada semi-segmento possui o mesmo número de níveis de quantização. 
+Assim obtem-se uma melhor representação para sinais de pequena amplitude.
+
+
+A figura a seguir ilustra o resultado da quantização de dois sinais com amplitudes diferentes (com e sem compressão).
+
+Observa-se à esquerda o processo de quantização sem compressão. 
+
+Embora o sinal de grande amplitude esteja bem representado em níveis quantizados, o mesmo não pode ser afirmado com relação ao sinal de pequena amplitude. 
+
+Na quantização com compressão (não linear) ambos os sinais apresentam bom número de níveis de quantização.
+
+
+[FIM]."

@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Anderson Nakatani, UTFPR, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\Ander\Desktop\microcontrolados\Lab 0 - Copia\Lab 0.uvprojx
+Project File Date:  03/22/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+"Lab0.s", line 6: Error: A1105E: Area directive missing
+    6 00000000 lista_ptr       DCDU     LISTA_START  ; Ponteiro para a lista
+"Lab0.s", line 6: Warning: A1088W: Faking declaration of area AREA |$$$$$$$|
+    6 00000000 lista_ptr       DCDU     LISTA_START  ; Ponteiro para a lista
+"Lab0.s", line 32: Warning: A1488W: PROC/FUNC at line 14 in 'Lab0.s' without matching ENDP/ENDFUNC
+   32 00000020 memcpy          PROC
+"Lab0.s", line 38 (column 17): Error: A1163E: Unknown opcode Loop , expecting opcode or Macro
+   38 00000028                 Loop    CMP     r6, #0
+                               ^
+"Lab0.s", line 45 (column 17): Error: A1163E: Unknown opcode End , expecting opcode or Macro
+   45 00000036                 End     POP     {pc}
+                               ^
+"Lab0.s", line 48: Warning: A1488W: PROC/FUNC at line 32 in 'Lab0.s' without matching ENDP/ENDFUNC
+   48 00000036 encontrar_primos PROC
+"Lab0.s", line 55: Warning: A1488W: PROC/FUNC at line 48 in 'Lab0.s' without matching ENDP/ENDFUNC
+   55 0000003a ordenar_primros PROC
+"Lab0.s", line 60: Warning: A1488W: PROC/FUNC at line 55 in 'Lab0.s' without matching ENDP/ENDFUNC
+   60 0000003e                 END
+3 Errors, 5 Warnings
+assembling Lab0.s...
+linking...
+.\Objects\Lab 0.axf: error: L6002U: Could not open file .\objects\lab0.o: No such file or directory
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning, 0 error and 1 fatal error messages.
+".\Objects\Lab 0.axf" - 1 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/Ander/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C129
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

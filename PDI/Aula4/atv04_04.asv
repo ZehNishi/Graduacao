@@ -1,0 +1,8 @@
+img = imread('flowervaseg.png');
+Masc1 = [0,-1,0;-1,5,-1;0,-1,0];
+Masc2 = [-1,-1,-1;-1,9,-1;-1,-1,-1];
+
+img_Masc1 = conv2(img, Masc1, 'same');
+img_Masc1 = conv2(img, Masc1, 'same');
+
+imshow(img_Masc1);

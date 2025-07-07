@@ -1,0 +1,48 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2.12.1 Atraso de fase e de grupo
+
+O retardo de um sinal ao passar por um sistema de comunicação é importante quando interfere no reconhecimento da informação pelo receptor.
+
+Ex: A transmissão de dados é vulnerável ao atraso, mas a transmissão de áudio não é.
+
+Considere um canal não linear descrito por:
+
+H(f) = k.exp[j.B(f)]
+
+Onde k é constante e a fase b(f) é uma função não linear da freqüência.
+
+Expandindo-se b(f) em série de Taylor, no ponto f = fc e considerando somente os 2 primeiros termos:
+
+B(f) = B(f)+(f-fc). dB(f)/df| f=fc
+
+Pode-se representar:
+
+H(f) = k.exp[-j2.PI.fc.tp - j2PI(f-fc).tp]
+Para f>0
+
+Ao canal é aplicado o sinal:
+
+x(t) = xc(t).cos(2.PI.fc.t)
+
+
+
+Onde xc(t) é um sinal Banda Base , ou seja, um sinal de espectro estreito (|f|<=W), e corresponde a uma informação transmitida.
+
+O sinal de saída do canal será:
+
+y(t) = x(t)*h(t)
+
+y(t) = k.xc.(t-tg).cos[2PI.fc(t-tg)]
+
+tg = 'tal de g'
+
+
+Assim, dois atrasos são produzidos: 
+
+o atraso de fase (tp), para freqüências isoladas (sinais puros cossenoidais); 
+
+e o atraso de grupo (tg), para a informação xc(t).
+
+[FIM]."

@@ -1,0 +1,33 @@
+38)Determine a Densidade Espectral de Potência para os seguintes códigos de linha:
+a) NRZ unipolar
+b) AMI(com retorno a zero)
+c) Manchester
+R.:Espectros de potência 
+· A duração de cada bit é T segundos. 
+· A amplitude dos impulsos, A, normaliza a potência média (valor unitário). 
+· A sequência binária é aleatória e os símbolos 0 e 1 são equiprováveis. 
+
+Sinais unipolares NRZ: S(f) = (A^2.T/4).sinc^2(fT)[1 + delta(f)/T];  (A^2=2)
+
+Sinais polares NRZ: S(f) = A^2.T.sinc^2(fT) (A^2=1)
+
+Sinais unipolares RZ: S(f) = (A^2.T/16).sinc^2(fT/2)[1 + (1/T)*Sum{delta(f - n/T)}];  (A^2=4)
+
+Sinais bipolares(AMI) NRZ: S(f) = A^2.T.sinc^2(fT).sen^2(pi.f.T);  (A^2=1)
+
+Sinais bipolares(AMI) RZ: S(f) = (A^2.T/4)sinc^2(fT/2).sen^2(pi.f.T);  (A^2=4)
+
+Sinais bifásicos(Manchester) RZ: S(f) = A^2.T.sinc^2(fT/2).sen^2(pi.f.T/2);  (A^2=1)
+
+Sinais bifásicos(Manchester) RZ: S(f) = A^2.T.sinc^2(fT/2).sen^2(pi.f.T/2);  (A^2=1)
+
+<<FIM>>
+
+
+
+
+
+
+
+
+

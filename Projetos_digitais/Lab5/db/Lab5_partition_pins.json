@@ -1,0 +1,197 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "fg0",
+					"strict" : false
+				},
+				{
+					"name" : "ff0",
+					"strict" : false
+				},
+				{
+					"name" : "fe0",
+					"strict" : false
+				},
+				{
+					"name" : "fd0",
+					"strict" : false
+				},
+				{
+					"name" : "fc0",
+					"strict" : false
+				},
+				{
+					"name" : "fb0",
+					"strict" : false
+				},
+				{
+					"name" : "fa0",
+					"strict" : false
+				},
+				{
+					"name" : "fg1",
+					"strict" : false
+				},
+				{
+					"name" : "ff1",
+					"strict" : false
+				},
+				{
+					"name" : "fe1",
+					"strict" : false
+				},
+				{
+					"name" : "fd1",
+					"strict" : false
+				},
+				{
+					"name" : "fc1",
+					"strict" : false
+				},
+				{
+					"name" : "fb1",
+					"strict" : false
+				},
+				{
+					"name" : "fa1",
+					"strict" : false
+				},
+				{
+					"name" : "fg2",
+					"strict" : false
+				},
+				{
+					"name" : "ff2",
+					"strict" : false
+				},
+				{
+					"name" : "fe2",
+					"strict" : false
+				},
+				{
+					"name" : "fd2",
+					"strict" : false
+				},
+				{
+					"name" : "fc2",
+					"strict" : false
+				},
+				{
+					"name" : "fb2",
+					"strict" : false
+				},
+				{
+					"name" : "fa2",
+					"strict" : false
+				},
+				{
+					"name" : "fg3",
+					"strict" : false
+				},
+				{
+					"name" : "ff3",
+					"strict" : false
+				},
+				{
+					"name" : "fe3",
+					"strict" : false
+				},
+				{
+					"name" : "fd3",
+					"strict" : false
+				},
+				{
+					"name" : "fc3",
+					"strict" : false
+				},
+				{
+					"name" : "fb3",
+					"strict" : false
+				},
+				{
+					"name" : "fa3",
+					"strict" : false
+				},
+				{
+					"name" : "fg4",
+					"strict" : false
+				},
+				{
+					"name" : "ff4",
+					"strict" : false
+				},
+				{
+					"name" : "fe4",
+					"strict" : false
+				},
+				{
+					"name" : "fd4",
+					"strict" : false
+				},
+				{
+					"name" : "fc4",
+					"strict" : false
+				},
+				{
+					"name" : "fb4",
+					"strict" : false
+				},
+				{
+					"name" : "fa4",
+					"strict" : false
+				},
+				{
+					"name" : "fg5",
+					"strict" : false
+				},
+				{
+					"name" : "ff5",
+					"strict" : false
+				},
+				{
+					"name" : "fe5",
+					"strict" : false
+				},
+				{
+					"name" : "fd5",
+					"strict" : false
+				},
+				{
+					"name" : "fc5",
+					"strict" : false
+				},
+				{
+					"name" : "fb5",
+					"strict" : false
+				},
+				{
+					"name" : "fa5",
+					"strict" : false
+				},
+				{
+					"name" : "Clear",
+					"strict" : false
+				},
+				{
+					"name" : "Frequencia",
+					"strict" : false
+				},
+				{
+					"name" : "Sequencial",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Pause",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

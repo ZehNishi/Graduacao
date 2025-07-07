@@ -1,0 +1,72 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+4a. QUESTAO
+------------------------------
+como eh realizado o controle de ISI nos sistemas de transmissao em banda base?
+Qual o CRITERIO de NYQUIST associado a este problema?
+
+[RESPOSTA 4]
+
+Efeito residual de todos os demais bits transmitidos, este efeito é chamado Interferência Intersimbólica (ISI).
+Os instantes de amostragem são determinados em função do sinal de relógio extraído do sinal recebido. A decisão é realizada comparando-se as amostras com um nível de decisão, em função do grau de ISI podem ocorrer erros de decisão.
+
+PARA MINIMIZAR A ISI EH DIMENSIONADO FILTROS Hr(f) E Hr(f).
+O CONTROLE DA ISI EH FEITO PELA DETERMINACAO DA FORMA (shape) DE p(t), OU NO DOMINIO DA FREQUENCIA ATUANDO SOBRE P(f).
+
+------------------------------
+SOLUCOES:
+------------------------------
+
+I) A ISI EH DESPREZIVEL SE :
+
+B >> 1/Tb  qquer p(t)
+
+
+------------------------------
+II) PULSO SINC
+
+UM PULSO Q PRODUZ ISI NULA EH:
+
+p(t)=sinc(2.BT.t)  
+		C/ BT=1/(2.Tb)
+
+NESTE CASO P(t) TEM AMPLITUDE NULA NOS PONTOS DE AMOSTRAGEM ADJACENTES( SEGUNDO CRITERIO DE NYQUIST PARA ISI NULA).
+E APRESENTA AMPLITUDE MAXIMA NO PONTO DE AMOSTRAGEM.
+
+ISI EH NULO NOS INSTANTES DE AMOSTRAGEM. UTILIZANDO SIN, SEGUNDO NYQUIST.
+
+
+MAS EXISTEM DUAS DIFICULDADES PRATICAS:
+
+i) EXIGE-SE:
+
+      P(f)   1/2BT
+    ___|___  
+   |   |   |         ISSO EH
+   |   |   |       IRREALIZAVEL   
+___|___|___|______
+  -BT      BT    f  
+
+
+ii) EXIGE-SE SINCRONISMO PERFEITO, POIS NAH HA MARGEM DE ERRO PARA OS INSTANTES DE AMOSTRAGEM.
+
+------------------------------
+
+III) ESPECTRO COSSENO DESLOCADO (NYQUIST)
+
+O ESPECTRO P(f) ABAIXO SUPERA AS DIFICULDADES CITADAS.
+
+   (vide form.)
+
+NO DOMINIO DO TEMPO
+p(t)
+
+ASSEGURA O CRITERIO DE NYQUIST 
+
+REDUZ OS ERROS PRODUZIDOS POR VARIACOES NO INSTANTE DE AMOSTRAGEM.
+
+
+
+
+[FIM]."

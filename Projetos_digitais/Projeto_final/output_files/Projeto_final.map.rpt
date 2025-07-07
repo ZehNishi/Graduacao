@@ -1,0 +1,443 @@
+Analysis & Synthesis report for Projeto_final
+Sun Dec 04 15:28:07 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Dec 04 15:28:07 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Projeto_final                               ;
+; Top-level Entity Name              ; Projeto_final                               ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 306                                         ;
+;     Total combinational functions  ; 282                                         ;
+;     Dedicated logic registers      ; 151                                         ;
+; Total registers                    ; 151                                         ;
+; Total pins                         ; 47                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; Projeto_final      ; Projeto_final      ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                       ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
+; Projeto_final.bdf                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Projeto_final.bdf           ;         ;
+; 24_to_1.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/24_to_1.bdf                 ;         ;
+; Contador_frequencimetro.bdf      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Contador_frequencimetro.bdf ;         ;
+; Time_1hz.vhd                     ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1hz.vhd                ;         ;
+; dff_24.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/dff_24.bdf                  ;         ;
+; Time_1khz.vhd                    ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1khz.vhd               ;         ;
+; Time_1Mhz.vhd                    ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1Mhz.vhd               ;         ;
+; 1_or_24.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/1_or_24.bdf                 ;         ;
+; Seletor.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Seletor.bdf                 ;         ;
+; Hex_0_5.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Hex_0_5.bdf                 ;         ;
+; dec7inv.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/dec7inv.bdf                 ;         ;
+; inv7.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/inv7.bdf                    ;         ;
+; decodificador7seg.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/decodificador7seg.bdf       ;         ;
+; 5or.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/5or.bdf                     ;         ;
+; cont_sinc_0_9_co.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/cont_sinc_0_9_co.bdf        ;         ;
+; aoub.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/aoub.bdf                    ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 306         ;
+;                                             ;             ;
+; Total combinational functions               ; 282         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 95          ;
+;     -- 3 input functions                    ; 14          ;
+;     -- <=2 input functions                  ; 173         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 190         ;
+;     -- arithmetic mode                      ; 92          ;
+;                                             ;             ;
+; Total registers                             ; 151         ;
+;     -- Dedicated logic registers            ; 151         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 47          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 97          ;
+; Total fan-out                               ; 1203        ;
+; Average fan-out                             ; 2.28        ;
++---------------------------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                     ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------+-------------------------+--------------+
+; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                  ; Entity Name             ; Library Name ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------+-------------------------+--------------+
+; |Projeto_final                     ; 282 (0)             ; 151 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 47   ; 0            ; 0          ; |Projeto_final                                                       ; Projeto_final           ; work         ;
+;    |Contador_frequencimetro:inst7| ; 42 (0)              ; 30 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7                         ; Contador_frequencimetro ; work         ;
+;       |Cont_sinc_0_9_CO:inst10|    ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst10 ; Cont_sinc_0_9_CO        ; work         ;
+;       |Cont_sinc_0_9_CO:inst11|    ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst11 ; Cont_sinc_0_9_CO        ; work         ;
+;       |Cont_sinc_0_9_CO:inst71|    ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst71 ; Cont_sinc_0_9_CO        ; work         ;
+;       |Cont_sinc_0_9_CO:inst7|     ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst7  ; Cont_sinc_0_9_CO        ; work         ;
+;       |Cont_sinc_0_9_CO:inst9|     ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst9  ; Cont_sinc_0_9_CO        ; work         ;
+;       |Cont_sinc_0_9_CO:inst|      ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst   ; Cont_sinc_0_9_CO        ; work         ;
+;    |Hex_0_5:inst|                  ; 87 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst                                          ; Hex_0_5                 ; work         ;
+;       |Dec7Inv:inst2|              ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst2                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst2|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;       |Dec7Inv:inst3|              ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst3                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst3|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;       |Dec7Inv:inst4|              ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst4                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst4|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;       |Dec7Inv:inst5|              ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst5                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst5|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;       |Dec7Inv:inst6|              ; 14 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst6                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst6|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;       |Dec7Inv:inst7|              ; 15 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst7                            ; Dec7Inv                 ; work         ;
+;          |Decodificador7Seg:inst2| ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Hex_0_5:inst|Dec7Inv:inst7|Decodificador7Seg:inst2    ; Decodificador7Seg       ; work         ;
+;    |Seletor:inst6|                 ; 3 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Seletor:inst6                                         ; Seletor                 ; work         ;
+;       |AouB:inst1|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Seletor:inst6|AouB:inst1                              ; AouB                    ; work         ;
+;       |AouB:inst|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Seletor:inst6|AouB:inst                               ; AouB                    ; work         ;
+;    |Time_1Mhz:inst5|               ; 47 (47)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Time_1Mhz:inst5                                       ; Time_1Mhz               ; work         ;
+;    |Time_1hz:inst3|                ; 53 (53)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Time_1hz:inst3                                        ; Time_1hz                ; work         ;
+;    |Time_1khz:inst4|               ; 50 (50)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|Time_1khz:inst4                                       ; Time_1khz               ; work         ;
+;    |dff_24:inst8|                  ; 0 (0)               ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Projeto_final|dff_24:inst8                                          ; dff_24                  ; work         ;
++------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+----------------------------------------------------------------------+-------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------+--------------------------------------+
+; Register name                         ; Reason for Removal                   ;
++---------------------------------------+--------------------------------------+
+; Time_1hz:inst3|count[0]               ; Merged with Time_1khz:inst4|count[0] ;
+; Time_1hz:inst3|count[1]               ; Merged with Time_1khz:inst4|count[1] ;
+; Total Number of Removed Registers = 2 ;                                      ;
++---------------------------------------+--------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 151   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 54    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; Time_1khz:inst4|count[0]               ; 3       ;
+; Time_1Mhz:inst5|count[0]               ; 2       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 47                          ;
+; cycloneiii_ff         ; 151                         ;
+;     CLR               ; 54                          ;
+;     plain             ; 97                          ;
+; cycloneiii_lcell_comb ; 324                         ;
+;     arith             ; 92                          ;
+;         2 data inputs ; 91                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 232                         ;
+;         1 data inputs ; 52                          ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 95                          ;
+;                       ;                             ;
+; Max LUT depth         ; 4.30                        ;
+; Average LUT depth     ; 3.14                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Sun Dec 04 15:27:54 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto_final -c Projeto_final
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file frequencimetro.vhd
+    Info (12022): Found design unit 1: Frequencimetro-i File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Frequencimetro.vhd Line: 13
+    Info (12023): Found entity 1: Frequencimetro File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Frequencimetro.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file projeto_final.bdf
+    Info (12023): Found entity 1: Projeto_final
+Info (12021): Found 1 design units, including 1 entities, in source file 24_to_1.bdf
+    Info (12023): Found entity 1: 24_to_1
+Info (12021): Found 1 design units, including 1 entities, in source file contador_frequencimetro.bdf
+    Info (12023): Found entity 1: Contador_frequencimetro
+Info (12021): Found 2 design units, including 1 entities, in source file time_1hz.vhd
+    Info (12022): Found design unit 1: Time_1hz-freq_div File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1hz.vhd Line: 11
+    Info (12023): Found entity 1: Time_1hz File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1hz.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file dff_24.bdf
+    Info (12023): Found entity 1: dff_24
+Info (12021): Found 2 design units, including 1 entities, in source file time_1khz.vhd
+    Info (12022): Found design unit 1: Time_1khz-freq_div File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1khz.vhd Line: 11
+    Info (12023): Found entity 1: Time_1khz File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1khz.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file time_1mhz.vhd
+    Info (12022): Found design unit 1: Time_1Mhz-freq_div File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1Mhz.vhd Line: 11
+    Info (12023): Found entity 1: Time_1Mhz File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1Mhz.vhd Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file 1_or_24.bdf
+    Info (12023): Found entity 1: 1_or_24
+Info (12021): Found 1 design units, including 1 entities, in source file seletor.bdf
+    Info (12023): Found entity 1: Seletor
+Info (12021): Found 1 design units, including 1 entities, in source file hex_0_5.bdf
+    Info (12023): Found entity 1: Hex_0_5
+Info (12127): Elaborating entity "Projeto_final" for the top level hierarchy
+Warning (275011): Block or symbol "Time_1khz" of instance "inst4" overlaps another block or symbol
+Info (12128): Elaborating entity "Hex_0_5" for hierarchy "Hex_0_5:inst"
+Warning (12125): Using design file dec7inv.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Dec7Inv
+Info (12128): Elaborating entity "Dec7Inv" for hierarchy "Hex_0_5:inst|Dec7Inv:inst2"
+Warning (12125): Using design file inv7.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Inv7
+Info (12128): Elaborating entity "Inv7" for hierarchy "Hex_0_5:inst|Dec7Inv:inst2|Inv7:inst"
+Warning (12125): Using design file decodificador7seg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Decodificador7Seg
+Info (12128): Elaborating entity "Decodificador7Seg" for hierarchy "Hex_0_5:inst|Dec7Inv:inst2|Decodificador7Seg:inst2"
+Warning (12125): Using design file 5or.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 5or
+Info (12128): Elaborating entity "5or" for hierarchy "Hex_0_5:inst|Dec7Inv:inst2|Decodificador7Seg:inst2|5or:inst51"
+Info (12128): Elaborating entity "dff_24" for hierarchy "dff_24:inst8"
+Info (12128): Elaborating entity "1_or_24" for hierarchy "dff_24:inst8|1_or_24:inst29"
+Info (12128): Elaborating entity "24_to_1" for hierarchy "dff_24:inst8|1_or_24:inst29|24_to_1:inst"
+Warning (275080): Converted elements in bus name "s" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "s[0]" to "s0"
+    Warning (275081): Converted element name(s) from "s[1]" to "s1"
+    Warning (275081): Converted element name(s) from "s[2]" to "s2"
+    Warning (275081): Converted element name(s) from "s[3]" to "s3"
+    Warning (275081): Converted element name(s) from "s[4]" to "s4"
+    Warning (275081): Converted element name(s) from "s[5]" to "s5"
+    Warning (275081): Converted element name(s) from "s[6]" to "s6"
+    Warning (275081): Converted element name(s) from "s[7]" to "s7"
+    Warning (275081): Converted element name(s) from "s[8]" to "s8"
+    Warning (275081): Converted element name(s) from "s[9]" to "s9"
+    Warning (275081): Converted element name(s) from "s[10]" to "s10"
+    Warning (275081): Converted element name(s) from "s[11]" to "s11"
+    Warning (275081): Converted element name(s) from "s[12]" to "s12"
+    Warning (275081): Converted element name(s) from "s[13]" to "s13"
+    Warning (275081): Converted element name(s) from "s[14]" to "s14"
+    Warning (275081): Converted element name(s) from "s[15]" to "s15"
+    Warning (275081): Converted element name(s) from "s[16]" to "s16"
+    Warning (275081): Converted element name(s) from "s[17]" to "s17"
+    Warning (275081): Converted element name(s) from "s[18]" to "s18"
+    Warning (275081): Converted element name(s) from "s[19]" to "s19"
+    Warning (275081): Converted element name(s) from "s[20]" to "s20"
+    Warning (275081): Converted element name(s) from "s[21]" to "s21"
+    Warning (275081): Converted element name(s) from "s[22]" to "s22"
+    Warning (275081): Converted element name(s) from "s[23]" to "s23"
+    Warning (275081): Converted element name(s) from "s[23..0]" to "s23..0"
+Info (12128): Elaborating entity "Contador_frequencimetro" for hierarchy "Contador_frequencimetro:inst7"
+Warning (12125): Using design file cont_sinc_0_9_co.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Cont_sinc_0_9_CO
+Info (12128): Elaborating entity "Cont_sinc_0_9_CO" for hierarchy "Contador_frequencimetro:inst7|Cont_sinc_0_9_CO:inst11"
+Info (12128): Elaborating entity "Seletor" for hierarchy "Seletor:inst6"
+Warning (12125): Using design file aoub.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: AouB
+Info (12128): Elaborating entity "AouB" for hierarchy "Seletor:inst6|AouB:inst1"
+Info (12128): Elaborating entity "Time_1Mhz" for hierarchy "Time_1Mhz:inst5"
+Warning (10492): VHDL Process Statement warning at Time_1Mhz.vhd(28): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1Mhz.vhd Line: 28
+Info (12128): Elaborating entity "Time_1khz" for hierarchy "Time_1khz:inst4"
+Warning (10492): VHDL Process Statement warning at Time_1khz.vhd(28): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1khz.vhd Line: 28
+Info (12128): Elaborating entity "Time_1hz" for hierarchy "Time_1hz:inst3"
+Warning (10492): VHDL Process Statement warning at Time_1hz.vhd(28): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Projeto_final/Time_1hz.vhd Line: 28
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer Seletor:inst6|AouB:inst1|inst2~0
+    Warning (19017): Found clock multiplexer Seletor:inst6|AouB:inst|inst2~0
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 356 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 309 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Sun Dec 04 15:28:07 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
+
+

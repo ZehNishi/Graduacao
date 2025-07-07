@@ -1,0 +1,8 @@
+" 7.3 DIAGRAMA DE OLHO
+ 
+A quantidade de ISI e ruido presentes no sinal recebido pode ser vista com o auxilio de um osciloscopio. Especificamente, pode-se visualizar o sinal recebido na escala vertical com taxa de deflexao horizontal ajustada para 1/T(taxa de simbolos). As formas de onda em sucessivos intervalos de simbolo serao deslocadas (e superpostas) para um (ou dois) intervalo(s) apresentado(s) na tela do osciloscopio. A figura obtida eh chamada diagrama de olho (relembra o olho humano no caso da transmissao binaria). O diagrama de olho permite avaliar (qualitativamente) o desempenho do sistema em questao. A largura do olho fornece o intervalo de tempo no qual o sinal pode ser amostrado sem erros de ISI. O efeito da ISI eh causar o fechamento do olho (aumento na distorcao de pico), como consequencia o sistema apresenta menor margem de ruido. Observa-se, tambem, um aumento na distorcao de cruzamentos por zero. Por fim a sensibilidade a erros de sincronismo eh diretamente proporcional a taxa de subida das bordas do olho.
+
+No caso de sistemas M-arios(multinivel) observam-se (M-1) diagramas de olho justapostos verticalmente. Em um sistema estritamente linear, todos estes diagramas seriam identicos. Na pratica, entretanto, eh possivel observar assimetrias que sao causadas por nao linearidades no canal de transmissao.
+
+<<FIM>>
+"

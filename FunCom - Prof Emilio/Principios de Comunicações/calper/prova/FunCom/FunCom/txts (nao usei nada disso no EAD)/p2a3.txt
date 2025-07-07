@@ -1,0 +1,44 @@
+Dois sinais modulantes m1(t) e m2(t) sao aplicados a dois moduladores AM-DSB(iguais c/ sensibilidade em amplitude Ka=0,4V). A portadora c(t) aplicada aos moduladores eh a mesma. O sinal m2(t) produziu um sinal modulado com potencia media 1,4 vezes maior que a potencia do sinal modulado produzido pelo sinal m1(t). Os sinais sao discriminados abaixo:
+a-Qual eh a potencia media do sinal modulado produzido por m1(t)?Determine Am2.
+b-Esboce o espectro do sinal modulado produzidor por m2(t)(com valores de amplitudo de frequencia)
+c-O sinal modulado produzido por m1(t) eh aplicado a um detector de envoltoria. Determine o valor da capacitancia C de modo a minimizar a distorcao de corte diagonal(Rl=10kohms)
+m1(t)=Am1*cos(2*pi*2k*t)=0,5*cos(2*pi*2k*t)
+m2(t)=Am2*cos(2*pi*4k*t)
+c(t)=10*cos(2*pi*10k*t)
+
+a-
+Mi1=Ka*Am1=0,4*0,5=0,2
+Pm1=[(Ac^2)/2]+[((Ac^2)*(Mi^2))/8]+[((Ac^2)*(Mi^2))/8]=(2+Mi^2)*(Ac/2)^2
+Pm1=(2+0,2^2)*(10/2)^2=51W
+
+Pm2=51*1,4=71,4W
+=(2+Mi2^2)*(10/2)^2=71,4
+Mi2=0,9252
+Mi2=Ka*Am2
+Am2=Mi2/Ka=2,31
+
+
+b-
+s2(t)=10[1+0,9252*cos(2*pi*4k*t)]cos(2*pi*10k*t)
+Esta eq pode ser expressa como:
+s2(t)=Ac*cos(2*pi*fc*t)+(Mi*Ac/2)*cos(2*pi*(fc+fm)*t)+(Mi*Ac/2)*cos(2*pi(fc-fm)*t)
+s2(t)=10*cos(2*pi*10k*t)+(4,626)*cos(2*pi*(14k)*t)+(4,626)*cos(2*pi(6k)*t)
+(****d=delta****)
+S(f)=(Ac/2)*[d(f-fc)+d(f+fc)]+(Mi*Ac/4)[d(f-fc-fm)+d(f+fc+fm)]+(Mi*Ac/4)[d(f-fc+fm)+d(f+fc-fm)]
+S(f)=(5)*[d(f-10k)+d(f+10k)]+(2,313)[d(f-14k)+d(f+14k)]+(2,313)[d(f-6k)+d(f+6k)]
+
+          |
+     |    |    |
+___|_|_|__|__|_|_|__
+          0
+eixo y
+1 | = 2,313
+2 | = 5
+eixo x
+valores das frequencias dentro dos deltas
+
+c-
+fm=2k
+Rl*C<= [(1+(Mi^2))^1/2]/(2*pi*fm*Mi)
+C<= [(1+(0,2^2))^1/2]/(2*pi*2k*0,2*10k)
+C<=40,58nF

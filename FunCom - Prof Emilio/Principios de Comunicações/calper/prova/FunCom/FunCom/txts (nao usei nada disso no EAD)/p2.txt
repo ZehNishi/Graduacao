@@ -1,0 +1,21 @@
+"2) g(t) = 2.cos(60.pi.t).cos(800.pi.t) eh amostrado a taxa de 1000 amostras/seg.
+a) Determine a expressao G(d) e esboce (freq. e amplitude)
+b) Expressao do sinal amostrado Gdelta(f)
+c) Esboce o espectro de Gdelta(f) (p/ n= -1, 0 e 1)
+d) Eh possivel recuperar g(t) usando FPB? Em qual frequencia?
+
+R.a): g(t) = 2.cos(60.pi.t).cos(800.pi.t); 
+g(t) = cos(60.pi.t-800.pi.t).cos(60.pi.t+800.pi.t)
+g(t) = cos(740.pi.t)+cos(860.pi.t)
+G(f) = 0.5[delta(f-370) + delta(f+370) + delta(f-430) + delta(f+430)]
+
+R.b): Gdelta(f) = fs.Sum{G(f-n.fs)}
+Gdelta(f) = 1k/2*[delta(f-370-1k.n) + delta(f+370-1k.n) + delta(f-430-1k.n) + delta(f+430-1k.n)]
+
+Pulsos de 500 em: +-630, +-1370, +-570, +-1430, +-430
+
+R.d): Sim. 430 < f < 570
+
+<<FIM>>"
+
+

@@ -1,0 +1,44 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+1.4 LIMITAÇÕES FUNDAMENTAIS DA COMUNICAÇÃO ELÉTRICA
+
+No projeto de um sistema de comunicação enfrenta-se dois tipos de restrições :
+
+os problemas tecnológicos (fatores de engenharia, práticos), 
+
+e as limitações físicas fundamentais (leis da natureza pertinentes ao problema, que definem o que pode ser alcançado). 
+
+As limitações fundamentais de transmissão da informação por meios elétricos são a LARGURA DE FAIXA e o RUIDO.
+
+
+--------------------
+a) A LIMITACAO DA LARGURA DE FAIXA: 
+
+Nos sistemas físicos uma variação da energia armazenada necessita de um intervalo definido de tempo. 
+
+Não se pode aumentar arbitrariamente a velocidade de sinalização, pois o sistema poderá eventualmente cessar de responder às variações do sinal. 
+
+Em outras palavras, todo sistema tem uma capacidade máxima de resposta às variações do sinal de entrada. 
+
+Se a freqüência do sinal de entrada for maior que a capacidade de resposta, a transmissão torna-se impossível. 
+
+Portanto, a capacidade máxima (largura de faixa de freqüências), que não pode ser modificada (finita e limitada), dita o desempenho que se pode obter do sistema.
+
+
+--------------------
+b) A LIMITACAO DE RUIDO : 
+
+O êxito da comunicação elétrica depende de quão precisamente o receptor pode determinar que sinal foi realmente enviado, distinguindo-o dos sinais que poderiam ter sido enviados. 
+
+Como o ruído sempre está presente em sistemas elétricos (teoria cinética), as perturbações do ruído sobreposto limitam a habilidade de identificar corretamente o sinal enviado, limitando, assim, a transmissão da informação. 
+
+É importante notar que, se a intensidade do sinal é insuficiente, a adiçào de estágios de amplificação não solucionará o problema; pois o ruído será amplificado juntamente com o sinal, ficando inalterada a relação sinal-ruído.
+
+
+--------------------
+Como análise final, dados um sistema e uma relação sinal-ruído fixos, há um limite superior para a taxa de informação (bits por segundo) que pode ser transmitida pelo sistema, limite este chamado CAPACIDADE DE CANAL. 
+
+Sendo a capacidade finita, pode-se afirmar que o projeto de um sistema de comunicaçào é um problema de compromisso entre o tempo de transmissão, a potência transmitida, a largura de faixa e a relação sinal-ruído; compromisso ainda mais restrito pelos problemas tecnológicos.
+
+[FIM]."

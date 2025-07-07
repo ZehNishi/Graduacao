@@ -1,0 +1,9 @@
+PROBLEMAS DA TRANSMISSAO
+
+- Condicoes para transmissao sem distorcao:
+a) Resposta em amplitude |H(f)| constante para todas as freq (distorcao de amplitude):
+		|H(f)| = K
+b) Fase beta(f) linear com a frequencia, passando por zero ou um multiplo de pi na freq = 0(distorcao de atraso).
+		B(f) = -2.pi.f.t0 +-n.pi
+
+Na pratica, sempre ha uma distorcao no sinal de saida.

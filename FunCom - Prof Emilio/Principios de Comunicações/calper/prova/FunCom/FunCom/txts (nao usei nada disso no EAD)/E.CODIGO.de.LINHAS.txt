@@ -1,0 +1,61 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+6.6 REPRESENTAÇÃO SINAIS DIGITAIS 
+(CÓDIGOS DE LINHA)
+------------------------------
+
+De modo a transmitir os dígitos binários PCM através do canal banda base é necessário representá-los por pulsos elétricos. No caso mais simples, existe uma correspondência um-para-um entre bits e pulsos elétricos. 
+
+Se os pulsos têm sempre a mesma polaridade o sinal produzido é dito unipolar. Na representação polar, um estado lógico é representado por um nível de tensão positivo e o outro estado por um nível detensão negativo. 
+
+A taxa de transmissão de dados de um sinal é a taxa, em bits por segundo, com que os dados são transmitidos. A duração ou tempo de bit é a quantidade de tempo que o transmissor emprega para transmitir o bit. 
+
+A taxa de sinalização corresponde à taxa na qual o nível do sinal é alterado (e é expressa em bauds). Tal taxa depende de como é realizada a codificação digital.
+
+Muitos fatores estão relacionados à correta interpretação do sinal recebido. Entre
+eles estão: a relação sinal-ruído, a taxa de transmissão, e a largura de faixa do sistema.
+
+Em termos gerais, um aumento na taxa de transmissão aumenta a taxa de erro de bit (i.e.,
+a probabilidade de que um bit seja trocado); um aumento na relação sinal-ruído
+diminui a taxa de erro de bit; um aumento na largura de faixa permite um aumento na
+taxa de transmissão.
+
+Existe outro fator diretamente ligado ao desempenho do sistema, a técnica de
+codificação de linha; i.e., o mapeamento entre bits e pulsos elétricos. 
+
+
+Na escolha de uma técnica de codificação de linha para uma particular aplicação normalmente levam-se em conta os fatores específicos listados a seguir:
+
+------------------------------
+a) Espectro do Sinal: 
+------------------------------
+Muitos aspectos estão relacionados ao espectro do sinal. Por exemplo, a ausência de componentes em altas freqüências implica em menos largura de faixa para a transmissão. 
+
+A ausência de componente contínua é desejada (assim um aclopamento AC pode ser realizado por meio de transformadores, produzindo excelente isolação elétrica e reduzindo a interferência). 
+
+Um sinal capaz de concentrar a potência transmitida no centro do espectro será menos influenciado por efeitos de distorção que normalmente ocorrem nas bordas (em freqüência) de um canal de comunicação.
+
+------------------------------
+b) Recuperação de Relógio: 
+------------------------------
+Faz-se necessário a determinação do posicionamento de cada bit (tempos de inicio e fim) para a sua correta recuperação. O uso de um sinal de relógio em separado é anti-econômico. 
+Assim deve existir um mecanismo de sincronização baseado na codificação do próprio sinal transmitido. Sem tal mecanismo a transmissão de uma longa seqüência de 1´s (ou 0´s) estará sujeita a uma perda de sincronismo, acarretando erros de detecção.
+
+------------------------------
+c) Detecção de Erros: 
+------------------------------
+Algumas técnicas (p. ex. a codificação AMI) permitem a detecção de erros, de forma automática, sem a introdução de bits adicionais (redundância) na seqüência transmitida.
+
+------------------------------
+d) Imunidade ao Ruído: 
+------------------------------
+As várias técnicas ainda podem ser caracterizadas pela probabilidade de erro de bit versus a relação sinal-ruído. Algumas técnicas exibem melhor desempenho que outras.
+
+------------------------------
+e) Custo e Complexidade: 
+------------------------------
+De forma geral, quanto mais elaborado é o mapeamento usado para a obtenção do sinal a ser transmitido, mais elevada é a complexidade e custo do sistema.
+
+
+[FIM]."

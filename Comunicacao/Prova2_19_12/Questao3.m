@@ -1,0 +1,51 @@
+clear;
+clc;
+
+% Dados do enunciado
+Pt = 1;
+Pt_db = 10*log10(Pt);
+Gt_db = 5;
+Gr_db = 5;
+Pl_db = 120;
+Ma_db = 5;
+Fig_Ruido_db = 5;
+No_db = -204;
+Pb = 1e-03;
+B = 4e6;
+
+% Potencia recebida
+Pr_db = Pt_db - Pl_db + Gr_db + Gt_db - Ma_db - Fig_Ruido_db;
+
+% Modulação 16-PSK
+SNR_db = 14.32; % bertool
+P_No_db = Pr_db - SNR_db;
+Rb_db = P_No_db - No_db;
+Rb = 10^(Rb_db/10);
+% Máxima taxa de bits teórica para 16-PSK:
+disp("Máxima taxa de bits teórica para 16-PSK:");
+disp(Rb);
+
+
+% Modulação 16-QAM
+SNR_db_16qam = 10.5224; % bertool
+P_No_db_16qam = Pr_db - SNR_db_16qam;
+Rb_db_16qam = P_No_db_16qam - No_db;
+Rb_16qam = 10^(Rb_db_16qam/10);
+% Máxima taxa de bits teórica para 16-QAM:
+disp("Máxima taxa de bits teórica para 16-QAM:");
+disp(Rb_16qam);
+
+% Usando Limite de Shannon
+SNR_shannon = B/Rb*(2^(Rb/B)-1);
+Pr_db_shannon = P_No_db + SNR_shannon;
+Pt_db_shannon = Pr_db_shannon + Pl_db - Gt_db - Gr_db + Ma_db + Fig_Ruido_db;
+disp("Redução na pontência de transmissão para 16-PSK de:")
+disp(Pt_db - Pt_db_shannon);
+
+% Modulação 16-QAM
+SNR_shannon_16qam  = B/Rb_16qam *(2^(Rb_16qam /B)-1);
+Pr_db_shannon_16qam  = P_No_db_16qam  + SNR_shannon_16qam;
+Pt_db_shannon_16qam  = Pr_db_shannon_16qam  + Pl_db - Gt_db - Gr_db + Ma_db + Fig_Ruido_db;
+disp("Redução na pontência de transmissão para 16-QAM de:")
+disp(Pt_db - Pt_db_shannon_16qam );
+

@@ -1,0 +1,20 @@
+SINAIS E ESPECTROS
+
+- Em com, usa-se mais dominio da frequencia.
+- LARGURA DE ESPECTRO: faixa de frequencias pertencentes a um sinal
+- LARGURA DE FAIXA: faixa de frequencias que um sinal pode transmitir com fidelidade
+
+Interessante pois estudamos regime estacionario (seria impossivel o contrario), a abordagem por espectro permite tratar de classes inteiras de sinais semelhantes na frequencia e muitos componentes de um sistema de com podem ser lineares e invariantes no tempo.
+
+MODULACAO:
+- ONDA PORTADORA: sinal eletrico de referencia com parametros fixos
+- MODULACAO eh a alteracao sistematica de uma ou mais caracteristicas da onda portadora de acordo com a mensagem. Ou seja, modifica-se uma onda mais conveniente ao meio de transmissao para representar a mensagem.
+
+LIMITACOES DA COM. ELETRICA:
+
+* As limitacoes fundamentais sao a largura de faixa e o ruido.
+- LARGURA DE FAIXA: todo sistema tem uma capacidade maxima de resposta as variacoes do sinal de entrada. Se a freq do sinal de entrada for maior que a capacidade de resposta, a transmissao eh impossibilitada. Assim, a capacidade maxima (LARGURA DE FAIXA de frequencias), que nao pode ser modificada, dita o desempenho maximo do sistema.
+- RUIDO: o exito da com eletrica depende da precisao que o receptor consegue distinguir se recebeu o sinal enviado. O ruido limita a habilidade de identificar o sinal enviado, limitando a transmissao da informacao.
+
+- Um projeto de sistema de com eh um problema de tempo de transmissao, potencia transmitida, largura de faixa e relacao sinal-ruido.
+

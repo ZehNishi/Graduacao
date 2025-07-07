@@ -1,0 +1,4612 @@
+|Placar
+5as <= Seletor7x6:inst40.5ao
+Placar => Seletor7x6:inst40.C
+Placar => Seletor:inst32.controle
+Placar => Seletor:inst33.controle
+Placar => Seletor:inst34.controle
+Placar => Seletor:inst36.controle
+Placar => Seletor:inst37.controle
+Placar => Seletor7x6:inst40.3aa
+Placar => Seletor7x6:inst40.3ag
+Reset => Seletor:inst32.info
+A => inst.IN0
+Set => inst5.IN0
+Set => inst3.IN0
+B => inst1.IN0
+Inversor => Seletor:inst36.info
+Display => Seletor:inst37.info
+Clock => Placar_Basquete:inst39.Clock
+5bs <= Seletor7x6:inst40.5bo
+5cs <= Seletor7x6:inst40.5co
+5ds <= Seletor7x6:inst40.5do
+5es <= Seletor7x6:inst40.5eo
+5fs <= Seletor7x6:inst40.5fo
+5gs <= Seletor7x6:inst40.5go
+4as <= Seletor7x6:inst40.4ao
+4bs <= Seletor7x6:inst40.4bo
+4cs <= Seletor7x6:inst40.4co
+4ds <= Seletor7x6:inst40.4do
+4es <= Seletor7x6:inst40.4eo
+4fs <= Seletor7x6:inst40.4fo
+4gs <= Seletor7x6:inst40.4go
+3as <= Seletor7x6:inst40.3ao
+3bs <= Seletor7x6:inst40.3bo
+3cs <= Seletor7x6:inst40.3co
+3ds <= Seletor7x6:inst40.3do
+3es <= Seletor7x6:inst40.3eo
+3fs <= Seletor7x6:inst40.3fo
+3gs <= Seletor7x6:inst40.3go
+2as <= Seletor7x6:inst40.2ao
+2bs <= Seletor7x6:inst40.2bo
+2cs <= Seletor7x6:inst40.2co
+2ds <= Seletor7x6:inst40.2do
+2es <= Seletor7x6:inst40.2eo
+2fs <= Seletor7x6:inst40.2fo
+2gs <= Seletor7x6:inst40.2go
+1as <= Seletor7x6:inst40.1ao
+1bs <= Seletor7x6:inst40.1bo
+1cs <= Seletor7x6:inst40.1co
+1ds <= Seletor7x6:inst40.1do
+1es <= Seletor7x6:inst40.1eo
+1fs <= Seletor7x6:inst40.1fo
+1gs <= Seletor7x6:inst40.1go
+0as <= Seletor7x6:inst40.0ao
+0bs <= Seletor7x6:inst40.0bo
+0cs <= Seletor7x6:inst40.0co
+0ds <= Seletor7x6:inst40.0do
+0es <= Seletor7x6:inst40.0eo
+0fs <= Seletor7x6:inst40.0fo
+0gs <= Seletor7x6:inst40.0go
+
+
+|Placar|Seletor7x6:inst40
+5ao <= AouBx42:inst.s0
+C => AouBx42:inst.C
+5aa => AouBx42:inst.e0
+5a => AouBx42:inst.e1
+5ab => AouBx42:inst.e2
+5b => AouBx42:inst.e3
+5ac => AouBx42:inst.e4
+5c => AouBx42:inst.e5
+5ad => AouBx42:inst.e6
+5d => AouBx42:inst.e7
+5ae => AouBx42:inst.e8
+5e => AouBx42:inst.e9
+5af => AouBx42:inst.e10
+5f => AouBx42:inst.e11
+5ag => AouBx42:inst.e12
+5g => AouBx42:inst.e13
+4aa => AouBx42:inst.e14
+4a => AouBx42:inst.e15
+4ab => AouBx42:inst.e16
+4b => AouBx42:inst.e17
+4ac => AouBx42:inst.e18
+4c => AouBx42:inst.e19
+4ad => AouBx42:inst.e20
+4d => AouBx42:inst.e21
+4ae => AouBx42:inst.e22
+4e => AouBx42:inst.e23
+4af => AouBx42:inst.e24
+4f => AouBx42:inst.e25
+4ag => AouBx42:inst.e26
+4g => AouBx42:inst.e27
+3aa => AouBx42:inst.e28
+3a => AouBx42:inst.e29
+3ab => AouBx42:inst.e30
+3b => AouBx42:inst.e31
+3ac => AouBx42:inst.e32
+3c => AouBx42:inst.e33
+3ad => AouBx42:inst.e34
+3d => AouBx42:inst.e35
+3ae => AouBx42:inst.e36
+3e => AouBx42:inst.e37
+3af => AouBx42:inst.e38
+3f => AouBx42:inst.e39
+3ag => AouBx42:inst.e40
+3g => AouBx42:inst.e41
+2aa => AouBx42:inst.e42
+2a => AouBx42:inst.e43
+2ab => AouBx42:inst.e44
+2b => AouBx42:inst.e45
+2ac => AouBx42:inst.e46
+2c => AouBx42:inst.e47
+2ad => AouBx42:inst.e48
+2d => AouBx42:inst.e49
+2ae => AouBx42:inst.e50
+2e => AouBx42:inst.e51
+2af => AouBx42:inst.e52
+2f => AouBx42:inst.e53
+2ag => AouBx42:inst.e54
+2g => AouBx42:inst.e55
+1aa => AouBx42:inst.e56
+1a => AouBx42:inst.e57
+1ab => AouBx42:inst.e58
+1b => AouBx42:inst.e59
+1ac => AouBx42:inst.e60
+1c => AouBx42:inst.e61
+1ad => AouBx42:inst.e62
+1d => AouBx42:inst.e63
+1ae => AouBx42:inst.e64
+1e => AouBx42:inst.e65
+1af => AouBx42:inst.e66
+1f => AouBx42:inst.e67
+1ag => AouBx42:inst.e68
+1g => AouBx42:inst.e69
+0aa => AouBx42:inst.e70
+0a => AouBx42:inst.e71
+0ab => AouBx42:inst.e72
+0b => AouBx42:inst.e73
+0ac => AouBx42:inst.e74
+0c => AouBx42:inst.e75
+0ad => AouBx42:inst.e76
+0d => AouBx42:inst.e77
+0ae => AouBx42:inst.e78
+0e => AouBx42:inst.e79
+0af => AouBx42:inst.e80
+0f => AouBx42:inst.e81
+0ag => AouBx42:inst.e82
+0g => AouBx42:inst.e83
+5bo <= AouBx42:inst.s1
+5co <= AouBx42:inst.s2
+5do <= AouBx42:inst.s3
+5eo <= AouBx42:inst.s4
+5fo <= AouBx42:inst.s5
+5go <= AouBx42:inst.s6
+4ao <= AouBx42:inst.s7
+4bo <= AouBx42:inst.s8
+4co <= AouBx42:inst.s9
+4do <= AouBx42:inst.s10
+4eo <= AouBx42:inst.s11
+4fo <= AouBx42:inst.s12
+4go <= AouBx42:inst.s13
+3ao <= AouBx42:inst.s14
+3bo <= AouBx42:inst.s15
+3co <= AouBx42:inst.s16
+3do <= AouBx42:inst.s17
+3eo <= AouBx42:inst.s18
+3fo <= AouBx42:inst.s19
+3go <= AouBx42:inst.s20
+2ao <= AouBx42:inst.s21
+2bo <= AouBx42:inst.s22
+2co <= AouBx42:inst.s23
+2do <= AouBx42:inst.s24
+2eo <= AouBx42:inst.s25
+2fo <= AouBx42:inst.s26
+2go <= AouBx42:inst.s27
+1ao <= AouBx42:inst.s28
+1bo <= AouBx42:inst.s29
+1co <= AouBx42:inst.s30
+1do <= AouBx42:inst.s31
+1eo <= AouBx42:inst.s32
+1fo <= AouBx42:inst.s33
+1go <= AouBx42:inst.s34
+0ao <= AouBx42:inst.s35
+0bo <= AouBx42:inst.s36
+0co <= AouBx42:inst.s37
+0do <= AouBx42:inst.s38
+0eo <= AouBx42:inst.s39
+0fo <= AouBx42:inst.s40
+0go <= AouBx42:inst.s41
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst
+s0 <= AouB:inst.Out
+e0 => AouB:inst.A
+C => AouB:inst.Controle
+C => AouB:inst1.Controle
+C => AouB:inst2.Controle
+C => AouB:inst3.Controle
+C => AouB:inst4.Controle
+C => AouB:inst5.Controle
+C => AouB:inst6.Controle
+C => AouB:inst7.Controle
+C => AouB:inst8.Controle
+C => AouB:inst9.Controle
+C => AouB:inst10.Controle
+C => AouB:inst11.Controle
+C => AouB:inst12.Controle
+C => AouB:inst13.Controle
+C => AouB:inst14.Controle
+C => AouB:inst15.Controle
+C => AouB:inst16.Controle
+C => AouB:inst17.Controle
+C => AouB:inst18.Controle
+C => AouB:inst19.Controle
+C => AouB:inst20.Controle
+C => AouB:inst21.Controle
+C => AouB:inst22.Controle
+C => AouB:inst23.Controle
+C => AouB:inst25.Controle
+C => AouB:inst24.Controle
+C => AouB:inst26.Controle
+C => AouB:inst27.Controle
+C => AouB:inst28.Controle
+C => AouB:inst29.Controle
+C => AouB:inst30.Controle
+C => AouB:inst31.Controle
+C => AouB:inst33.Controle
+C => AouB:inst32.Controle
+C => AouB:inst34.Controle
+C => AouB:inst35.Controle
+C => AouB:inst36.Controle
+C => AouB:inst37.Controle
+C => AouB:inst38.Controle
+C => AouB:inst39.Controle
+C => AouB:inst40.Controle
+C => AouB:inst41.Controle
+e1 => AouB:inst.B
+s1 <= AouB:inst1.Out
+e2 => AouB:inst1.A
+e3 => AouB:inst1.B
+s2 <= AouB:inst2.Out
+e4 => AouB:inst2.A
+e5 => AouB:inst2.B
+s3 <= AouB:inst3.Out
+e6 => AouB:inst3.A
+e7 => AouB:inst3.B
+s4 <= AouB:inst4.Out
+e8 => AouB:inst4.A
+e9 => AouB:inst4.B
+s5 <= AouB:inst5.Out
+e10 => AouB:inst5.A
+e11 => AouB:inst5.B
+s6 <= AouB:inst6.Out
+e12 => AouB:inst6.A
+e13 => AouB:inst6.B
+s7 <= AouB:inst7.Out
+e14 => AouB:inst7.A
+e15 => AouB:inst7.B
+s8 <= AouB:inst8.Out
+e16 => AouB:inst8.A
+e17 => AouB:inst8.B
+s9 <= AouB:inst9.Out
+e18 => AouB:inst9.A
+e19 => AouB:inst9.B
+s10 <= AouB:inst10.Out
+e20 => AouB:inst10.A
+e21 => AouB:inst10.B
+s11 <= AouB:inst11.Out
+e22 => AouB:inst11.A
+e23 => AouB:inst11.B
+s12 <= AouB:inst12.Out
+e24 => AouB:inst12.A
+e25 => AouB:inst12.B
+s13 <= AouB:inst13.Out
+e26 => AouB:inst13.A
+e27 => AouB:inst13.B
+s14 <= AouB:inst14.Out
+e28 => AouB:inst14.A
+e29 => AouB:inst14.B
+s15 <= AouB:inst15.Out
+e30 => AouB:inst15.A
+e31 => AouB:inst15.B
+s16 <= AouB:inst16.Out
+e32 => AouB:inst16.A
+e33 => AouB:inst16.B
+s17 <= AouB:inst17.Out
+e34 => AouB:inst17.A
+e35 => AouB:inst17.B
+s18 <= AouB:inst18.Out
+e36 => AouB:inst18.A
+e37 => AouB:inst18.B
+s19 <= AouB:inst19.Out
+e38 => AouB:inst19.A
+e39 => AouB:inst19.B
+s20 <= AouB:inst20.Out
+e40 => AouB:inst20.A
+e41 => AouB:inst20.B
+s21 <= AouB:inst21.Out
+e42 => AouB:inst21.A
+e43 => AouB:inst21.B
+s22 <= AouB:inst22.Out
+e44 => AouB:inst22.A
+e45 => AouB:inst22.B
+s23 <= AouB:inst23.Out
+e46 => AouB:inst23.A
+e47 => AouB:inst23.B
+s25 <= AouB:inst25.Out
+e50 => AouB:inst25.A
+e51 => AouB:inst25.B
+s24 <= AouB:inst24.Out
+e48 => AouB:inst24.A
+e49 => AouB:inst24.B
+s26 <= AouB:inst26.Out
+e52 => AouB:inst26.A
+e53 => AouB:inst26.B
+s27 <= AouB:inst27.Out
+e54 => AouB:inst27.A
+e55 => AouB:inst27.B
+s28 <= AouB:inst28.Out
+e56 => AouB:inst28.A
+e57 => AouB:inst28.B
+s29 <= AouB:inst29.Out
+e58 => AouB:inst29.A
+e59 => AouB:inst29.B
+s30 <= AouB:inst30.Out
+e60 => AouB:inst30.A
+e61 => AouB:inst30.B
+s31 <= AouB:inst31.Out
+e62 => AouB:inst31.A
+e63 => AouB:inst31.B
+s33 <= AouB:inst33.Out
+e66 => AouB:inst33.A
+e67 => AouB:inst33.B
+s32 <= AouB:inst32.Out
+e64 => AouB:inst32.A
+e65 => AouB:inst32.B
+s34 <= AouB:inst34.Out
+e68 => AouB:inst34.A
+e69 => AouB:inst34.B
+s35 <= AouB:inst35.Out
+e70 => AouB:inst35.A
+e71 => AouB:inst35.B
+s36 <= AouB:inst36.Out
+e72 => AouB:inst36.A
+e73 => AouB:inst36.B
+s37 <= AouB:inst37.Out
+e74 => AouB:inst37.A
+e75 => AouB:inst37.B
+s38 <= AouB:inst38.Out
+e76 => AouB:inst38.A
+e77 => AouB:inst38.B
+s39 <= AouB:inst39.Out
+e78 => AouB:inst39.A
+e79 => AouB:inst39.B
+s40 <= AouB:inst40.Out
+e80 => AouB:inst40.A
+e81 => AouB:inst40.B
+s41 <= AouB:inst41.Out
+e82 => AouB:inst41.A
+e83 => AouB:inst41.B
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst1
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst6
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst7
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst8
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst9
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst10
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst11
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst12
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst13
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst14
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst15
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst16
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst17
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst18
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst19
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst20
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst21
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst22
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst23
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst25
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst24
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst26
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst27
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst28
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst29
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst30
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst31
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst33
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst32
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst34
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst35
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst36
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst37
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst38
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst39
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst40
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst41
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38
+5a <= AorB_Dec7:inst12.OFa
+Display => AorB_Dec7:inst12.Controle
+Display => Seletor:inst.controle
+Display => Seletor:inst2.controle
+Display => AorB_Dec7:inst13.Controle
+Display => AorB_Dec7:inst14.Controle
+Display => Seletor:inst1.controle
+Display => AorB_Dec7:inst15.Controle
+Display => AorB_Dec7:inst16.Controle
+A => Seletor:inst.info
+Reset => Seletor:inst2.info
+Inversor => Contadorx99:inst3.inverter
+Inversor => Contadorx3:inst9.inverter
+Inversor => Contadorx99:inst4.inverter
+Inversor => Contadorx3:inst10.inverter
+Inversor => Contadorx5:inst8.inverter
+5b <= AorB_Dec7:inst12.OFb
+5c <= AorB_Dec7:inst12.OFc
+5d <= AorB_Dec7:inst12.Ofd
+5e <= AorB_Dec7:inst12.OFe
+5f <= AorB_Dec7:inst12.OFf
+5g <= AorB_Dec7:inst12.Ofg
+4a <= AorB_Dec7:inst13.OFa
+4b <= AorB_Dec7:inst13.OFb
+4c <= AorB_Dec7:inst13.OFc
+4d <= AorB_Dec7:inst13.Ofd
+4e <= AorB_Dec7:inst13.OFe
+4f <= AorB_Dec7:inst13.OFf
+4g <= AorB_Dec7:inst13.Ofg
+1a <= AorB_Dec7:inst14.OFa
+B => Seletor:inst1.info
+1b <= AorB_Dec7:inst14.OFb
+1c <= AorB_Dec7:inst14.OFc
+1d <= AorB_Dec7:inst14.Ofd
+1e <= AorB_Dec7:inst14.OFe
+1f <= AorB_Dec7:inst14.OFf
+1g <= AorB_Dec7:inst14.Ofg
+0a <= AorB_Dec7:inst15.OFa
+0b <= AorB_Dec7:inst15.OFb
+0c <= AorB_Dec7:inst15.OFc
+0d <= AorB_Dec7:inst15.Ofd
+0e <= AorB_Dec7:inst15.OFe
+0f <= AorB_Dec7:inst15.OFf
+0g <= AorB_Dec7:inst15.Ofg
+3a <= AorB_Dec7:inst16.OFa
+Set => Contadorx5:inst8.clock
+3b <= AorB_Dec7:inst16.OFb
+3c <= AorB_Dec7:inst16.OFc
+3d <= AorB_Dec7:inst16.Ofd
+3e <= AorB_Dec7:inst16.OFe
+3f <= AorB_Dec7:inst16.OFf
+3g <= AorB_Dec7:inst16.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst12|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|TransVetor:inst5
+s[0] <= e[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= e[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= e[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= e[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= e[4].DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= e[5].DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= e[6].DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= e[7].DB_MAX_OUTPUT_PORT_TYPE
+e[0] => s[0].DATAIN
+e[1] => s[1].DATAIN
+e[2] => s[2].DATAIN
+e[3] => s[3].DATAIN
+e[4] => s[4].DATAIN
+e[5] => s[5].DATAIN
+e[6] => s[6].DATAIN
+e[7] => s[7].DATAIN
+
+
+|Placar|Placar_Volei:inst38|Contadorx99:inst3
+clock => contagem1[0].CLK
+clock => contagem1[1].CLK
+clock => contagem1[2].CLK
+clock => contagem1[3].CLK
+clock => contagem1[4].CLK
+clock => contagem1[5].CLK
+clock => contagem1[6].CLK
+clock => contagem1[7].CLK
+clock => contagem1[8].CLK
+clock => contagem1[9].CLK
+clock => contagem1[10].CLK
+clock => contagem1[11].CLK
+clock => contagem1[12].CLK
+clock => contagem1[13].CLK
+clock => contagem1[14].CLK
+clock => contagem1[15].CLK
+clock => contagem1[16].CLK
+clock => contagem1[17].CLK
+clock => contagem1[18].CLK
+clock => contagem1[19].CLK
+clock => contagem1[20].CLK
+clock => contagem1[21].CLK
+clock => contagem1[22].CLK
+clock => contagem1[23].CLK
+clock => contagem1[24].CLK
+clock => contagem1[25].CLK
+clock => contagem1[26].CLK
+clock => contagem1[27].CLK
+clock => contagem1[28].CLK
+clock => contagem1[29].CLK
+clock => contagem1[30].CLK
+clock => contagem1[31].CLK
+clock => contagem0[0].CLK
+clock => contagem0[1].CLK
+clock => contagem0[2].CLK
+clock => contagem0[3].CLK
+clock => contagem0[4].CLK
+clock => contagem0[5].CLK
+clock => contagem0[6].CLK
+clock => contagem0[7].CLK
+clock => contagem0[8].CLK
+clock => contagem0[9].CLK
+clock => contagem0[10].CLK
+clock => contagem0[11].CLK
+clock => contagem0[12].CLK
+clock => contagem0[13].CLK
+clock => contagem0[14].CLK
+clock => contagem0[15].CLK
+clock => contagem0[16].CLK
+clock => contagem0[17].CLK
+clock => contagem0[18].CLK
+clock => contagem0[19].CLK
+clock => contagem0[20].CLK
+clock => contagem0[21].CLK
+clock => contagem0[22].CLK
+clock => contagem0[23].CLK
+clock => contagem0[24].CLK
+clock => contagem0[25].CLK
+clock => contagem0[26].CLK
+clock => contagem0[27].CLK
+clock => contagem0[28].CLK
+clock => contagem0[29].CLK
+clock => contagem0[30].CLK
+clock => contagem0[31].CLK
+reset => contagem1[0].ACLR
+reset => contagem1[1].ACLR
+reset => contagem1[2].ACLR
+reset => contagem1[3].ACLR
+reset => contagem1[4].ACLR
+reset => contagem1[5].ACLR
+reset => contagem1[6].ACLR
+reset => contagem1[7].ACLR
+reset => contagem1[8].ACLR
+reset => contagem1[9].ACLR
+reset => contagem1[10].ACLR
+reset => contagem1[11].ACLR
+reset => contagem1[12].ACLR
+reset => contagem1[13].ACLR
+reset => contagem1[14].ACLR
+reset => contagem1[15].ACLR
+reset => contagem1[16].ACLR
+reset => contagem1[17].ACLR
+reset => contagem1[18].ACLR
+reset => contagem1[19].ACLR
+reset => contagem1[20].ACLR
+reset => contagem1[21].ACLR
+reset => contagem1[22].ACLR
+reset => contagem1[23].ACLR
+reset => contagem1[24].ACLR
+reset => contagem1[25].ACLR
+reset => contagem1[26].ACLR
+reset => contagem1[27].ACLR
+reset => contagem1[28].ACLR
+reset => contagem1[29].ACLR
+reset => contagem1[30].ACLR
+reset => contagem1[31].ACLR
+reset => contagem0[0].ACLR
+reset => contagem0[1].ACLR
+reset => contagem0[2].ACLR
+reset => contagem0[3].ACLR
+reset => contagem0[4].ACLR
+reset => contagem0[5].ACLR
+reset => contagem0[6].ACLR
+reset => contagem0[7].ACLR
+reset => contagem0[8].ACLR
+reset => contagem0[9].ACLR
+reset => contagem0[10].ACLR
+reset => contagem0[11].ACLR
+reset => contagem0[12].ACLR
+reset => contagem0[13].ACLR
+reset => contagem0[14].ACLR
+reset => contagem0[15].ACLR
+reset => contagem0[16].ACLR
+reset => contagem0[17].ACLR
+reset => contagem0[18].ACLR
+reset => contagem0[19].ACLR
+reset => contagem0[20].ACLR
+reset => contagem0[21].ACLR
+reset => contagem0[22].ACLR
+reset => contagem0[23].ACLR
+reset => contagem0[24].ACLR
+reset => contagem0[25].ACLR
+reset => contagem0[26].ACLR
+reset => contagem0[27].ACLR
+reset => contagem0[28].ACLR
+reset => contagem0[29].ACLR
+reset => contagem0[30].ACLR
+reset => contagem0[31].ACLR
+inverter => process_0.IN1
+inverter => contagem1[0].OUTPUTSELECT
+inverter => contagem1[1].OUTPUTSELECT
+inverter => contagem1[2].OUTPUTSELECT
+inverter => contagem1[3].OUTPUTSELECT
+inverter => contagem1[4].OUTPUTSELECT
+inverter => contagem1[5].OUTPUTSELECT
+inverter => contagem1[6].OUTPUTSELECT
+inverter => contagem1[7].OUTPUTSELECT
+inverter => contagem1[8].OUTPUTSELECT
+inverter => contagem1[9].OUTPUTSELECT
+inverter => contagem1[10].OUTPUTSELECT
+inverter => contagem1[11].OUTPUTSELECT
+inverter => contagem1[12].OUTPUTSELECT
+inverter => contagem1[13].OUTPUTSELECT
+inverter => contagem1[14].OUTPUTSELECT
+inverter => contagem1[15].OUTPUTSELECT
+inverter => contagem1[16].OUTPUTSELECT
+inverter => contagem1[17].OUTPUTSELECT
+inverter => contagem1[18].OUTPUTSELECT
+inverter => contagem1[19].OUTPUTSELECT
+inverter => contagem1[20].OUTPUTSELECT
+inverter => contagem1[21].OUTPUTSELECT
+inverter => contagem1[22].OUTPUTSELECT
+inverter => contagem1[23].OUTPUTSELECT
+inverter => contagem1[24].OUTPUTSELECT
+inverter => contagem1[25].OUTPUTSELECT
+inverter => contagem1[26].OUTPUTSELECT
+inverter => contagem1[27].OUTPUTSELECT
+inverter => contagem1[28].OUTPUTSELECT
+inverter => contagem1[29].OUTPUTSELECT
+inverter => contagem1[30].OUTPUTSELECT
+inverter => contagem1[31].OUTPUTSELECT
+inverter => contagem0[0].OUTPUTSELECT
+inverter => contagem0[1].OUTPUTSELECT
+inverter => contagem0[2].OUTPUTSELECT
+inverter => contagem0[3].OUTPUTSELECT
+inverter => contagem0[4].OUTPUTSELECT
+inverter => contagem0[5].OUTPUTSELECT
+inverter => contagem0[6].OUTPUTSELECT
+inverter => contagem0[7].OUTPUTSELECT
+inverter => contagem0[8].OUTPUTSELECT
+inverter => contagem0[9].OUTPUTSELECT
+inverter => contagem0[10].OUTPUTSELECT
+inverter => contagem0[11].OUTPUTSELECT
+inverter => contagem0[12].OUTPUTSELECT
+inverter => contagem0[13].OUTPUTSELECT
+inverter => contagem0[14].OUTPUTSELECT
+inverter => contagem0[15].OUTPUTSELECT
+inverter => contagem0[16].OUTPUTSELECT
+inverter => contagem0[17].OUTPUTSELECT
+inverter => contagem0[18].OUTPUTSELECT
+inverter => contagem0[19].OUTPUTSELECT
+inverter => contagem0[20].OUTPUTSELECT
+inverter => contagem0[21].OUTPUTSELECT
+inverter => contagem0[22].OUTPUTSELECT
+inverter => contagem0[23].OUTPUTSELECT
+inverter => contagem0[24].OUTPUTSELECT
+inverter => contagem0[25].OUTPUTSELECT
+inverter => contagem0[26].OUTPUTSELECT
+inverter => contagem0[27].OUTPUTSELECT
+inverter => contagem0[28].OUTPUTSELECT
+inverter => contagem0[29].OUTPUTSELECT
+inverter => contagem0[30].OUTPUTSELECT
+inverter => contagem0[31].OUTPUTSELECT
+saida0[0] <= contagem0[0].DB_MAX_OUTPUT_PORT_TYPE
+saida0[1] <= contagem0[1].DB_MAX_OUTPUT_PORT_TYPE
+saida0[2] <= contagem0[2].DB_MAX_OUTPUT_PORT_TYPE
+saida0[3] <= contagem0[3].DB_MAX_OUTPUT_PORT_TYPE
+saida1[0] <= contagem1[0].DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= contagem1[1].DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= contagem1[2].DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= contagem1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|Seletor:inst
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|Seletor:inst2
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|Contadorx3:inst9
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+clock => contagem[4].CLK
+clock => contagem[5].CLK
+clock => contagem[6].CLK
+clock => contagem[7].CLK
+clock => contagem[8].CLK
+clock => contagem[9].CLK
+clock => contagem[10].CLK
+clock => contagem[11].CLK
+clock => contagem[12].CLK
+clock => contagem[13].CLK
+clock => contagem[14].CLK
+clock => contagem[15].CLK
+clock => contagem[16].CLK
+clock => contagem[17].CLK
+clock => contagem[18].CLK
+clock => contagem[19].CLK
+clock => contagem[20].CLK
+clock => contagem[21].CLK
+clock => contagem[22].CLK
+clock => contagem[23].CLK
+clock => contagem[24].CLK
+clock => contagem[25].CLK
+clock => contagem[26].CLK
+clock => contagem[27].CLK
+clock => contagem[28].CLK
+clock => contagem[29].CLK
+clock => contagem[30].CLK
+clock => contagem[31].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => contagem[4].ACLR
+reset => contagem[5].ACLR
+reset => contagem[6].ACLR
+reset => contagem[7].ACLR
+reset => contagem[8].ACLR
+reset => contagem[9].ACLR
+reset => contagem[10].ACLR
+reset => contagem[11].ACLR
+reset => contagem[12].ACLR
+reset => contagem[13].ACLR
+reset => contagem[14].ACLR
+reset => contagem[15].ACLR
+reset => contagem[16].ACLR
+reset => contagem[17].ACLR
+reset => contagem[18].ACLR
+reset => contagem[19].ACLR
+reset => contagem[20].ACLR
+reset => contagem[21].ACLR
+reset => contagem[22].ACLR
+reset => contagem[23].ACLR
+reset => contagem[24].ACLR
+reset => contagem[25].ACLR
+reset => contagem[26].ACLR
+reset => contagem[27].ACLR
+reset => contagem[28].ACLR
+reset => contagem[29].ACLR
+reset => contagem[30].ACLR
+reset => contagem[31].ACLR
+inverter => process_0.IN1
+inverter => process_0.IN1
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst14|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|TransVetor:inst6
+s[0] <= e[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= e[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= e[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= e[3].DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= e[4].DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= e[5].DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= e[6].DB_MAX_OUTPUT_PORT_TYPE
+s[7] <= e[7].DB_MAX_OUTPUT_PORT_TYPE
+e[0] => s[0].DATAIN
+e[1] => s[1].DATAIN
+e[2] => s[2].DATAIN
+e[3] => s[3].DATAIN
+e[4] => s[4].DATAIN
+e[5] => s[5].DATAIN
+e[6] => s[6].DATAIN
+e[7] => s[7].DATAIN
+
+
+|Placar|Placar_Volei:inst38|Contadorx99:inst4
+clock => contagem1[0].CLK
+clock => contagem1[1].CLK
+clock => contagem1[2].CLK
+clock => contagem1[3].CLK
+clock => contagem1[4].CLK
+clock => contagem1[5].CLK
+clock => contagem1[6].CLK
+clock => contagem1[7].CLK
+clock => contagem1[8].CLK
+clock => contagem1[9].CLK
+clock => contagem1[10].CLK
+clock => contagem1[11].CLK
+clock => contagem1[12].CLK
+clock => contagem1[13].CLK
+clock => contagem1[14].CLK
+clock => contagem1[15].CLK
+clock => contagem1[16].CLK
+clock => contagem1[17].CLK
+clock => contagem1[18].CLK
+clock => contagem1[19].CLK
+clock => contagem1[20].CLK
+clock => contagem1[21].CLK
+clock => contagem1[22].CLK
+clock => contagem1[23].CLK
+clock => contagem1[24].CLK
+clock => contagem1[25].CLK
+clock => contagem1[26].CLK
+clock => contagem1[27].CLK
+clock => contagem1[28].CLK
+clock => contagem1[29].CLK
+clock => contagem1[30].CLK
+clock => contagem1[31].CLK
+clock => contagem0[0].CLK
+clock => contagem0[1].CLK
+clock => contagem0[2].CLK
+clock => contagem0[3].CLK
+clock => contagem0[4].CLK
+clock => contagem0[5].CLK
+clock => contagem0[6].CLK
+clock => contagem0[7].CLK
+clock => contagem0[8].CLK
+clock => contagem0[9].CLK
+clock => contagem0[10].CLK
+clock => contagem0[11].CLK
+clock => contagem0[12].CLK
+clock => contagem0[13].CLK
+clock => contagem0[14].CLK
+clock => contagem0[15].CLK
+clock => contagem0[16].CLK
+clock => contagem0[17].CLK
+clock => contagem0[18].CLK
+clock => contagem0[19].CLK
+clock => contagem0[20].CLK
+clock => contagem0[21].CLK
+clock => contagem0[22].CLK
+clock => contagem0[23].CLK
+clock => contagem0[24].CLK
+clock => contagem0[25].CLK
+clock => contagem0[26].CLK
+clock => contagem0[27].CLK
+clock => contagem0[28].CLK
+clock => contagem0[29].CLK
+clock => contagem0[30].CLK
+clock => contagem0[31].CLK
+reset => contagem1[0].ACLR
+reset => contagem1[1].ACLR
+reset => contagem1[2].ACLR
+reset => contagem1[3].ACLR
+reset => contagem1[4].ACLR
+reset => contagem1[5].ACLR
+reset => contagem1[6].ACLR
+reset => contagem1[7].ACLR
+reset => contagem1[8].ACLR
+reset => contagem1[9].ACLR
+reset => contagem1[10].ACLR
+reset => contagem1[11].ACLR
+reset => contagem1[12].ACLR
+reset => contagem1[13].ACLR
+reset => contagem1[14].ACLR
+reset => contagem1[15].ACLR
+reset => contagem1[16].ACLR
+reset => contagem1[17].ACLR
+reset => contagem1[18].ACLR
+reset => contagem1[19].ACLR
+reset => contagem1[20].ACLR
+reset => contagem1[21].ACLR
+reset => contagem1[22].ACLR
+reset => contagem1[23].ACLR
+reset => contagem1[24].ACLR
+reset => contagem1[25].ACLR
+reset => contagem1[26].ACLR
+reset => contagem1[27].ACLR
+reset => contagem1[28].ACLR
+reset => contagem1[29].ACLR
+reset => contagem1[30].ACLR
+reset => contagem1[31].ACLR
+reset => contagem0[0].ACLR
+reset => contagem0[1].ACLR
+reset => contagem0[2].ACLR
+reset => contagem0[3].ACLR
+reset => contagem0[4].ACLR
+reset => contagem0[5].ACLR
+reset => contagem0[6].ACLR
+reset => contagem0[7].ACLR
+reset => contagem0[8].ACLR
+reset => contagem0[9].ACLR
+reset => contagem0[10].ACLR
+reset => contagem0[11].ACLR
+reset => contagem0[12].ACLR
+reset => contagem0[13].ACLR
+reset => contagem0[14].ACLR
+reset => contagem0[15].ACLR
+reset => contagem0[16].ACLR
+reset => contagem0[17].ACLR
+reset => contagem0[18].ACLR
+reset => contagem0[19].ACLR
+reset => contagem0[20].ACLR
+reset => contagem0[21].ACLR
+reset => contagem0[22].ACLR
+reset => contagem0[23].ACLR
+reset => contagem0[24].ACLR
+reset => contagem0[25].ACLR
+reset => contagem0[26].ACLR
+reset => contagem0[27].ACLR
+reset => contagem0[28].ACLR
+reset => contagem0[29].ACLR
+reset => contagem0[30].ACLR
+reset => contagem0[31].ACLR
+inverter => process_0.IN1
+inverter => contagem1[0].OUTPUTSELECT
+inverter => contagem1[1].OUTPUTSELECT
+inverter => contagem1[2].OUTPUTSELECT
+inverter => contagem1[3].OUTPUTSELECT
+inverter => contagem1[4].OUTPUTSELECT
+inverter => contagem1[5].OUTPUTSELECT
+inverter => contagem1[6].OUTPUTSELECT
+inverter => contagem1[7].OUTPUTSELECT
+inverter => contagem1[8].OUTPUTSELECT
+inverter => contagem1[9].OUTPUTSELECT
+inverter => contagem1[10].OUTPUTSELECT
+inverter => contagem1[11].OUTPUTSELECT
+inverter => contagem1[12].OUTPUTSELECT
+inverter => contagem1[13].OUTPUTSELECT
+inverter => contagem1[14].OUTPUTSELECT
+inverter => contagem1[15].OUTPUTSELECT
+inverter => contagem1[16].OUTPUTSELECT
+inverter => contagem1[17].OUTPUTSELECT
+inverter => contagem1[18].OUTPUTSELECT
+inverter => contagem1[19].OUTPUTSELECT
+inverter => contagem1[20].OUTPUTSELECT
+inverter => contagem1[21].OUTPUTSELECT
+inverter => contagem1[22].OUTPUTSELECT
+inverter => contagem1[23].OUTPUTSELECT
+inverter => contagem1[24].OUTPUTSELECT
+inverter => contagem1[25].OUTPUTSELECT
+inverter => contagem1[26].OUTPUTSELECT
+inverter => contagem1[27].OUTPUTSELECT
+inverter => contagem1[28].OUTPUTSELECT
+inverter => contagem1[29].OUTPUTSELECT
+inverter => contagem1[30].OUTPUTSELECT
+inverter => contagem1[31].OUTPUTSELECT
+inverter => contagem0[0].OUTPUTSELECT
+inverter => contagem0[1].OUTPUTSELECT
+inverter => contagem0[2].OUTPUTSELECT
+inverter => contagem0[3].OUTPUTSELECT
+inverter => contagem0[4].OUTPUTSELECT
+inverter => contagem0[5].OUTPUTSELECT
+inverter => contagem0[6].OUTPUTSELECT
+inverter => contagem0[7].OUTPUTSELECT
+inverter => contagem0[8].OUTPUTSELECT
+inverter => contagem0[9].OUTPUTSELECT
+inverter => contagem0[10].OUTPUTSELECT
+inverter => contagem0[11].OUTPUTSELECT
+inverter => contagem0[12].OUTPUTSELECT
+inverter => contagem0[13].OUTPUTSELECT
+inverter => contagem0[14].OUTPUTSELECT
+inverter => contagem0[15].OUTPUTSELECT
+inverter => contagem0[16].OUTPUTSELECT
+inverter => contagem0[17].OUTPUTSELECT
+inverter => contagem0[18].OUTPUTSELECT
+inverter => contagem0[19].OUTPUTSELECT
+inverter => contagem0[20].OUTPUTSELECT
+inverter => contagem0[21].OUTPUTSELECT
+inverter => contagem0[22].OUTPUTSELECT
+inverter => contagem0[23].OUTPUTSELECT
+inverter => contagem0[24].OUTPUTSELECT
+inverter => contagem0[25].OUTPUTSELECT
+inverter => contagem0[26].OUTPUTSELECT
+inverter => contagem0[27].OUTPUTSELECT
+inverter => contagem0[28].OUTPUTSELECT
+inverter => contagem0[29].OUTPUTSELECT
+inverter => contagem0[30].OUTPUTSELECT
+inverter => contagem0[31].OUTPUTSELECT
+saida0[0] <= contagem0[0].DB_MAX_OUTPUT_PORT_TYPE
+saida0[1] <= contagem0[1].DB_MAX_OUTPUT_PORT_TYPE
+saida0[2] <= contagem0[2].DB_MAX_OUTPUT_PORT_TYPE
+saida0[3] <= contagem0[3].DB_MAX_OUTPUT_PORT_TYPE
+saida1[0] <= contagem1[0].DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= contagem1[1].DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= contagem1[2].DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= contagem1[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|Seletor:inst1
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|Contadorx3:inst10
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+clock => contagem[4].CLK
+clock => contagem[5].CLK
+clock => contagem[6].CLK
+clock => contagem[7].CLK
+clock => contagem[8].CLK
+clock => contagem[9].CLK
+clock => contagem[10].CLK
+clock => contagem[11].CLK
+clock => contagem[12].CLK
+clock => contagem[13].CLK
+clock => contagem[14].CLK
+clock => contagem[15].CLK
+clock => contagem[16].CLK
+clock => contagem[17].CLK
+clock => contagem[18].CLK
+clock => contagem[19].CLK
+clock => contagem[20].CLK
+clock => contagem[21].CLK
+clock => contagem[22].CLK
+clock => contagem[23].CLK
+clock => contagem[24].CLK
+clock => contagem[25].CLK
+clock => contagem[26].CLK
+clock => contagem[27].CLK
+clock => contagem[28].CLK
+clock => contagem[29].CLK
+clock => contagem[30].CLK
+clock => contagem[31].CLK
+reset => contagem[0].ACLR
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => contagem[4].ACLR
+reset => contagem[5].ACLR
+reset => contagem[6].ACLR
+reset => contagem[7].ACLR
+reset => contagem[8].ACLR
+reset => contagem[9].ACLR
+reset => contagem[10].ACLR
+reset => contagem[11].ACLR
+reset => contagem[12].ACLR
+reset => contagem[13].ACLR
+reset => contagem[14].ACLR
+reset => contagem[15].ACLR
+reset => contagem[16].ACLR
+reset => contagem[17].ACLR
+reset => contagem[18].ACLR
+reset => contagem[19].ACLR
+reset => contagem[20].ACLR
+reset => contagem[21].ACLR
+reset => contagem[22].ACLR
+reset => contagem[23].ACLR
+reset => contagem[24].ACLR
+reset => contagem[25].ACLR
+reset => contagem[26].ACLR
+reset => contagem[27].ACLR
+reset => contagem[28].ACLR
+reset => contagem[29].ACLR
+reset => contagem[30].ACLR
+reset => contagem[31].ACLR
+inverter => process_0.IN1
+inverter => process_0.IN1
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|AorB_Dec7:inst16|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Volei:inst38|Contadorx5:inst8
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+clock => contagem[4].CLK
+clock => contagem[5].CLK
+clock => contagem[6].CLK
+clock => contagem[7].CLK
+clock => contagem[8].CLK
+clock => contagem[9].CLK
+clock => contagem[10].CLK
+clock => contagem[11].CLK
+clock => contagem[12].CLK
+clock => contagem[13].CLK
+clock => contagem[14].CLK
+clock => contagem[15].CLK
+clock => contagem[16].CLK
+clock => contagem[17].CLK
+clock => contagem[18].CLK
+clock => contagem[19].CLK
+clock => contagem[20].CLK
+clock => contagem[21].CLK
+clock => contagem[22].CLK
+clock => contagem[23].CLK
+clock => contagem[24].CLK
+clock => contagem[25].CLK
+clock => contagem[26].CLK
+clock => contagem[27].CLK
+clock => contagem[28].CLK
+clock => contagem[29].CLK
+clock => contagem[30].CLK
+clock => contagem[31].CLK
+reset => contagem[0].PRESET
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => contagem[4].ACLR
+reset => contagem[5].ACLR
+reset => contagem[6].ACLR
+reset => contagem[7].ACLR
+reset => contagem[8].ACLR
+reset => contagem[9].ACLR
+reset => contagem[10].ACLR
+reset => contagem[11].ACLR
+reset => contagem[12].ACLR
+reset => contagem[13].ACLR
+reset => contagem[14].ACLR
+reset => contagem[15].ACLR
+reset => contagem[16].ACLR
+reset => contagem[17].ACLR
+reset => contagem[18].ACLR
+reset => contagem[19].ACLR
+reset => contagem[20].ACLR
+reset => contagem[21].ACLR
+reset => contagem[22].ACLR
+reset => contagem[23].ACLR
+reset => contagem[24].ACLR
+reset => contagem[25].ACLR
+reset => contagem[26].ACLR
+reset => contagem[27].ACLR
+reset => contagem[28].ACLR
+reset => contagem[29].ACLR
+reset => contagem[30].ACLR
+reset => contagem[31].ACLR
+inverter => process_0.IN1
+inverter => process_0.IN1
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Seletor:inst32
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Seletor:inst33
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Seletor:inst34
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Seletor:inst36
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Seletor:inst37
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39
+5a <= AorB_Dec7:inst18.OFa
+Display => AorB_Dec7:inst18.Controle
+Display => Seletor:inst.controle
+Display => Seletor:inst6.controle
+Display => AorB_Dec7:inst19.Controle
+Display => AorB_Dec7:inst22.Controle
+Display => Seletor:inst4.controle
+Display => AorB_Dec7:inst23.Controle
+Display => AorB_Dec7:inst20.Controle
+Display => AorB_Dec7:inst21.Controle
+A => Seletor:inst.info
+Reset => Seletor:inst6.info
+Inversor => Contadorx4:inst12.inverter
+Inversor => Contadorx999:inst9.inverter
+Inversor => Contadorx999:inst10.inverter
+5b <= AorB_Dec7:inst18.OFb
+5c <= AorB_Dec7:inst18.OFc
+5d <= AorB_Dec7:inst18.Ofd
+5e <= AorB_Dec7:inst18.OFe
+5f <= AorB_Dec7:inst18.OFf
+5g <= AorB_Dec7:inst18.Ofg
+4a <= AorB_Dec7:inst19.OFa
+4b <= AorB_Dec7:inst19.OFb
+4c <= AorB_Dec7:inst19.OFc
+4d <= AorB_Dec7:inst19.Ofd
+4e <= AorB_Dec7:inst19.OFe
+4f <= AorB_Dec7:inst19.OFf
+4g <= AorB_Dec7:inst19.Ofg
+1a <= AorB_Dec7:inst22.OFa
+Clock => Timing_Reference:inst7.clk
+B => Seletor:inst4.info
+1b <= AorB_Dec7:inst22.OFb
+1c <= AorB_Dec7:inst22.OFc
+1d <= AorB_Dec7:inst22.Ofd
+1e <= AorB_Dec7:inst22.OFe
+1f <= AorB_Dec7:inst22.OFf
+1g <= AorB_Dec7:inst22.Ofg
+0a <= AorB_Dec7:inst23.OFa
+0b <= AorB_Dec7:inst23.OFb
+0c <= AorB_Dec7:inst23.OFc
+0d <= AorB_Dec7:inst23.Ofd
+0e <= AorB_Dec7:inst23.OFe
+0f <= AorB_Dec7:inst23.OFf
+0g <= AorB_Dec7:inst23.Ofg
+3a <= AorB_Dec7:inst20.OFa
+3b <= AorB_Dec7:inst20.OFb
+3c <= AorB_Dec7:inst20.OFc
+3d <= AorB_Dec7:inst20.Ofd
+3e <= AorB_Dec7:inst20.OFe
+3f <= AorB_Dec7:inst20.OFf
+3g <= AorB_Dec7:inst20.Ofg
+2a <= AorB_Dec7:inst21.OFa
+2b <= AorB_Dec7:inst21.OFb
+2c <= AorB_Dec7:inst21.OFc
+2d <= AorB_Dec7:inst21.Ofd
+2e <= AorB_Dec7:inst21.OFe
+2f <= AorB_Dec7:inst21.OFf
+2g <= AorB_Dec7:inst21.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|Contadorx4:inst12
+clock => contagem[0].CLK
+clock => contagem[1].CLK
+clock => contagem[2].CLK
+clock => contagem[3].CLK
+clock => contagem[4].CLK
+clock => contagem[5].CLK
+clock => contagem[6].CLK
+clock => contagem[7].CLK
+clock => contagem[8].CLK
+clock => contagem[9].CLK
+clock => contagem[10].CLK
+clock => contagem[11].CLK
+clock => contagem[12].CLK
+clock => contagem[13].CLK
+clock => contagem[14].CLK
+clock => contagem[15].CLK
+clock => contagem[16].CLK
+clock => contagem[17].CLK
+clock => contagem[18].CLK
+clock => contagem[19].CLK
+clock => contagem[20].CLK
+clock => contagem[21].CLK
+clock => contagem[22].CLK
+clock => contagem[23].CLK
+clock => contagem[24].CLK
+clock => contagem[25].CLK
+clock => contagem[26].CLK
+clock => contagem[27].CLK
+clock => contagem[28].CLK
+clock => contagem[29].CLK
+clock => contagem[30].CLK
+clock => contagem[31].CLK
+reset => contagem[0].PRESET
+reset => contagem[1].ACLR
+reset => contagem[2].ACLR
+reset => contagem[3].ACLR
+reset => contagem[4].ACLR
+reset => contagem[5].ACLR
+reset => contagem[6].ACLR
+reset => contagem[7].ACLR
+reset => contagem[8].ACLR
+reset => contagem[9].ACLR
+reset => contagem[10].ACLR
+reset => contagem[11].ACLR
+reset => contagem[12].ACLR
+reset => contagem[13].ACLR
+reset => contagem[14].ACLR
+reset => contagem[15].ACLR
+reset => contagem[16].ACLR
+reset => contagem[17].ACLR
+reset => contagem[18].ACLR
+reset => contagem[19].ACLR
+reset => contagem[20].ACLR
+reset => contagem[21].ACLR
+reset => contagem[22].ACLR
+reset => contagem[23].ACLR
+reset => contagem[24].ACLR
+reset => contagem[25].ACLR
+reset => contagem[26].ACLR
+reset => contagem[27].ACLR
+reset => contagem[28].ACLR
+reset => contagem[29].ACLR
+reset => contagem[30].ACLR
+reset => contagem[31].ACLR
+inverter => process_0.IN1
+inverter => process_0.IN1
+saida[0] <= contagem[0].DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= contagem[1].DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= contagem[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Seletor:inst
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Seletor:inst6
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Contadorx999:inst9
+clock => contagem2[0].CLK
+clock => contagem2[1].CLK
+clock => contagem2[2].CLK
+clock => contagem2[3].CLK
+clock => contagem2[4].CLK
+clock => contagem2[5].CLK
+clock => contagem2[6].CLK
+clock => contagem2[7].CLK
+clock => contagem2[8].CLK
+clock => contagem2[9].CLK
+clock => contagem2[10].CLK
+clock => contagem2[11].CLK
+clock => contagem2[12].CLK
+clock => contagem2[13].CLK
+clock => contagem2[14].CLK
+clock => contagem2[15].CLK
+clock => contagem2[16].CLK
+clock => contagem2[17].CLK
+clock => contagem2[18].CLK
+clock => contagem2[19].CLK
+clock => contagem2[20].CLK
+clock => contagem2[21].CLK
+clock => contagem2[22].CLK
+clock => contagem2[23].CLK
+clock => contagem2[24].CLK
+clock => contagem2[25].CLK
+clock => contagem2[26].CLK
+clock => contagem2[27].CLK
+clock => contagem2[28].CLK
+clock => contagem2[29].CLK
+clock => contagem2[30].CLK
+clock => contagem2[31].CLK
+clock => contagem1[0].CLK
+clock => contagem1[1].CLK
+clock => contagem1[2].CLK
+clock => contagem1[3].CLK
+clock => contagem1[4].CLK
+clock => contagem1[5].CLK
+clock => contagem1[6].CLK
+clock => contagem1[7].CLK
+clock => contagem1[8].CLK
+clock => contagem1[9].CLK
+clock => contagem1[10].CLK
+clock => contagem1[11].CLK
+clock => contagem1[12].CLK
+clock => contagem1[13].CLK
+clock => contagem1[14].CLK
+clock => contagem1[15].CLK
+clock => contagem1[16].CLK
+clock => contagem1[17].CLK
+clock => contagem1[18].CLK
+clock => contagem1[19].CLK
+clock => contagem1[20].CLK
+clock => contagem1[21].CLK
+clock => contagem1[22].CLK
+clock => contagem1[23].CLK
+clock => contagem1[24].CLK
+clock => contagem1[25].CLK
+clock => contagem1[26].CLK
+clock => contagem1[27].CLK
+clock => contagem1[28].CLK
+clock => contagem1[29].CLK
+clock => contagem1[30].CLK
+clock => contagem1[31].CLK
+clock => contagem0[0].CLK
+clock => contagem0[1].CLK
+clock => contagem0[2].CLK
+clock => contagem0[3].CLK
+clock => contagem0[4].CLK
+clock => contagem0[5].CLK
+clock => contagem0[6].CLK
+clock => contagem0[7].CLK
+clock => contagem0[8].CLK
+clock => contagem0[9].CLK
+clock => contagem0[10].CLK
+clock => contagem0[11].CLK
+clock => contagem0[12].CLK
+clock => contagem0[13].CLK
+clock => contagem0[14].CLK
+clock => contagem0[15].CLK
+clock => contagem0[16].CLK
+clock => contagem0[17].CLK
+clock => contagem0[18].CLK
+clock => contagem0[19].CLK
+clock => contagem0[20].CLK
+clock => contagem0[21].CLK
+clock => contagem0[22].CLK
+clock => contagem0[23].CLK
+clock => contagem0[24].CLK
+clock => contagem0[25].CLK
+clock => contagem0[26].CLK
+clock => contagem0[27].CLK
+clock => contagem0[28].CLK
+clock => contagem0[29].CLK
+clock => contagem0[30].CLK
+clock => contagem0[31].CLK
+reset => contagem2[0].ACLR
+reset => contagem2[1].ACLR
+reset => contagem2[2].ACLR
+reset => contagem2[3].ACLR
+reset => contagem2[4].ACLR
+reset => contagem2[5].ACLR
+reset => contagem2[6].ACLR
+reset => contagem2[7].ACLR
+reset => contagem2[8].ACLR
+reset => contagem2[9].ACLR
+reset => contagem2[10].ACLR
+reset => contagem2[11].ACLR
+reset => contagem2[12].ACLR
+reset => contagem2[13].ACLR
+reset => contagem2[14].ACLR
+reset => contagem2[15].ACLR
+reset => contagem2[16].ACLR
+reset => contagem2[17].ACLR
+reset => contagem2[18].ACLR
+reset => contagem2[19].ACLR
+reset => contagem2[20].ACLR
+reset => contagem2[21].ACLR
+reset => contagem2[22].ACLR
+reset => contagem2[23].ACLR
+reset => contagem2[24].ACLR
+reset => contagem2[25].ACLR
+reset => contagem2[26].ACLR
+reset => contagem2[27].ACLR
+reset => contagem2[28].ACLR
+reset => contagem2[29].ACLR
+reset => contagem2[30].ACLR
+reset => contagem2[31].ACLR
+reset => contagem1[0].ACLR
+reset => contagem1[1].ACLR
+reset => contagem1[2].ACLR
+reset => contagem1[3].ACLR
+reset => contagem1[4].ACLR
+reset => contagem1[5].ACLR
+reset => contagem1[6].ACLR
+reset => contagem1[7].ACLR
+reset => contagem1[8].ACLR
+reset => contagem1[9].ACLR
+reset => contagem1[10].ACLR
+reset => contagem1[11].ACLR
+reset => contagem1[12].ACLR
+reset => contagem1[13].ACLR
+reset => contagem1[14].ACLR
+reset => contagem1[15].ACLR
+reset => contagem1[16].ACLR
+reset => contagem1[17].ACLR
+reset => contagem1[18].ACLR
+reset => contagem1[19].ACLR
+reset => contagem1[20].ACLR
+reset => contagem1[21].ACLR
+reset => contagem1[22].ACLR
+reset => contagem1[23].ACLR
+reset => contagem1[24].ACLR
+reset => contagem1[25].ACLR
+reset => contagem1[26].ACLR
+reset => contagem1[27].ACLR
+reset => contagem1[28].ACLR
+reset => contagem1[29].ACLR
+reset => contagem1[30].ACLR
+reset => contagem1[31].ACLR
+reset => contagem0[0].ACLR
+reset => contagem0[1].ACLR
+reset => contagem0[2].ACLR
+reset => contagem0[3].ACLR
+reset => contagem0[4].ACLR
+reset => contagem0[5].ACLR
+reset => contagem0[6].ACLR
+reset => contagem0[7].ACLR
+reset => contagem0[8].ACLR
+reset => contagem0[9].ACLR
+reset => contagem0[10].ACLR
+reset => contagem0[11].ACLR
+reset => contagem0[12].ACLR
+reset => contagem0[13].ACLR
+reset => contagem0[14].ACLR
+reset => contagem0[15].ACLR
+reset => contagem0[16].ACLR
+reset => contagem0[17].ACLR
+reset => contagem0[18].ACLR
+reset => contagem0[19].ACLR
+reset => contagem0[20].ACLR
+reset => contagem0[21].ACLR
+reset => contagem0[22].ACLR
+reset => contagem0[23].ACLR
+reset => contagem0[24].ACLR
+reset => contagem0[25].ACLR
+reset => contagem0[26].ACLR
+reset => contagem0[27].ACLR
+reset => contagem0[28].ACLR
+reset => contagem0[29].ACLR
+reset => contagem0[30].ACLR
+reset => contagem0[31].ACLR
+inverter => process_0.IN1
+inverter => contagem2[0].OUTPUTSELECT
+inverter => contagem2[1].OUTPUTSELECT
+inverter => contagem2[2].OUTPUTSELECT
+inverter => contagem2[3].OUTPUTSELECT
+inverter => contagem2[4].OUTPUTSELECT
+inverter => contagem2[5].OUTPUTSELECT
+inverter => contagem2[6].OUTPUTSELECT
+inverter => contagem2[7].OUTPUTSELECT
+inverter => contagem2[8].OUTPUTSELECT
+inverter => contagem2[9].OUTPUTSELECT
+inverter => contagem2[10].OUTPUTSELECT
+inverter => contagem2[11].OUTPUTSELECT
+inverter => contagem2[12].OUTPUTSELECT
+inverter => contagem2[13].OUTPUTSELECT
+inverter => contagem2[14].OUTPUTSELECT
+inverter => contagem2[15].OUTPUTSELECT
+inverter => contagem2[16].OUTPUTSELECT
+inverter => contagem2[17].OUTPUTSELECT
+inverter => contagem2[18].OUTPUTSELECT
+inverter => contagem2[19].OUTPUTSELECT
+inverter => contagem2[20].OUTPUTSELECT
+inverter => contagem2[21].OUTPUTSELECT
+inverter => contagem2[22].OUTPUTSELECT
+inverter => contagem2[23].OUTPUTSELECT
+inverter => contagem2[24].OUTPUTSELECT
+inverter => contagem2[25].OUTPUTSELECT
+inverter => contagem2[26].OUTPUTSELECT
+inverter => contagem2[27].OUTPUTSELECT
+inverter => contagem2[28].OUTPUTSELECT
+inverter => contagem2[29].OUTPUTSELECT
+inverter => contagem2[30].OUTPUTSELECT
+inverter => contagem2[31].OUTPUTSELECT
+inverter => contagem1[0].OUTPUTSELECT
+inverter => contagem1[1].OUTPUTSELECT
+inverter => contagem1[2].OUTPUTSELECT
+inverter => contagem1[3].OUTPUTSELECT
+inverter => contagem1[4].OUTPUTSELECT
+inverter => contagem1[5].OUTPUTSELECT
+inverter => contagem1[6].OUTPUTSELECT
+inverter => contagem1[7].OUTPUTSELECT
+inverter => contagem1[8].OUTPUTSELECT
+inverter => contagem1[9].OUTPUTSELECT
+inverter => contagem1[10].OUTPUTSELECT
+inverter => contagem1[11].OUTPUTSELECT
+inverter => contagem1[12].OUTPUTSELECT
+inverter => contagem1[13].OUTPUTSELECT
+inverter => contagem1[14].OUTPUTSELECT
+inverter => contagem1[15].OUTPUTSELECT
+inverter => contagem1[16].OUTPUTSELECT
+inverter => contagem1[17].OUTPUTSELECT
+inverter => contagem1[18].OUTPUTSELECT
+inverter => contagem1[19].OUTPUTSELECT
+inverter => contagem1[20].OUTPUTSELECT
+inverter => contagem1[21].OUTPUTSELECT
+inverter => contagem1[22].OUTPUTSELECT
+inverter => contagem1[23].OUTPUTSELECT
+inverter => contagem1[24].OUTPUTSELECT
+inverter => contagem1[25].OUTPUTSELECT
+inverter => contagem1[26].OUTPUTSELECT
+inverter => contagem1[27].OUTPUTSELECT
+inverter => contagem1[28].OUTPUTSELECT
+inverter => contagem1[29].OUTPUTSELECT
+inverter => contagem1[30].OUTPUTSELECT
+inverter => contagem1[31].OUTPUTSELECT
+inverter => contagem0[0].OUTPUTSELECT
+inverter => contagem0[1].OUTPUTSELECT
+inverter => contagem0[2].OUTPUTSELECT
+inverter => contagem0[3].OUTPUTSELECT
+inverter => contagem0[4].OUTPUTSELECT
+inverter => contagem0[5].OUTPUTSELECT
+inverter => contagem0[6].OUTPUTSELECT
+inverter => contagem0[7].OUTPUTSELECT
+inverter => contagem0[8].OUTPUTSELECT
+inverter => contagem0[9].OUTPUTSELECT
+inverter => contagem0[10].OUTPUTSELECT
+inverter => contagem0[11].OUTPUTSELECT
+inverter => contagem0[12].OUTPUTSELECT
+inverter => contagem0[13].OUTPUTSELECT
+inverter => contagem0[14].OUTPUTSELECT
+inverter => contagem0[15].OUTPUTSELECT
+inverter => contagem0[16].OUTPUTSELECT
+inverter => contagem0[17].OUTPUTSELECT
+inverter => contagem0[18].OUTPUTSELECT
+inverter => contagem0[19].OUTPUTSELECT
+inverter => contagem0[20].OUTPUTSELECT
+inverter => contagem0[21].OUTPUTSELECT
+inverter => contagem0[22].OUTPUTSELECT
+inverter => contagem0[23].OUTPUTSELECT
+inverter => contagem0[24].OUTPUTSELECT
+inverter => contagem0[25].OUTPUTSELECT
+inverter => contagem0[26].OUTPUTSELECT
+inverter => contagem0[27].OUTPUTSELECT
+inverter => contagem0[28].OUTPUTSELECT
+inverter => contagem0[29].OUTPUTSELECT
+inverter => contagem0[30].OUTPUTSELECT
+inverter => contagem0[31].OUTPUTSELECT
+saida0[0] <= contagem0[0].DB_MAX_OUTPUT_PORT_TYPE
+saida0[1] <= contagem0[1].DB_MAX_OUTPUT_PORT_TYPE
+saida0[2] <= contagem0[2].DB_MAX_OUTPUT_PORT_TYPE
+saida0[3] <= contagem0[3].DB_MAX_OUTPUT_PORT_TYPE
+saida1[0] <= contagem1[0].DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= contagem1[1].DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= contagem1[2].DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= contagem1[3].DB_MAX_OUTPUT_PORT_TYPE
+saida2[0] <= contagem2[0].DB_MAX_OUTPUT_PORT_TYPE
+saida2[1] <= contagem2[1].DB_MAX_OUTPUT_PORT_TYPE
+saida2[2] <= contagem2[2].DB_MAX_OUTPUT_PORT_TYPE
+saida2[3] <= contagem2[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst19|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|Cronometro10min:inst16
+clock => contagem3[0].CLK
+clock => contagem3[1].CLK
+clock => contagem3[2].CLK
+clock => contagem3[3].CLK
+clock => contagem3[4].CLK
+clock => contagem3[5].CLK
+clock => contagem3[6].CLK
+clock => contagem3[7].CLK
+clock => contagem3[8].CLK
+clock => contagem3[9].CLK
+clock => contagem3[10].CLK
+clock => contagem3[11].CLK
+clock => contagem3[12].CLK
+clock => contagem3[13].CLK
+clock => contagem3[14].CLK
+clock => contagem3[15].CLK
+clock => contagem3[16].CLK
+clock => contagem3[17].CLK
+clock => contagem3[18].CLK
+clock => contagem3[19].CLK
+clock => contagem3[20].CLK
+clock => contagem3[21].CLK
+clock => contagem3[22].CLK
+clock => contagem3[23].CLK
+clock => contagem3[24].CLK
+clock => contagem3[25].CLK
+clock => contagem3[26].CLK
+clock => contagem3[27].CLK
+clock => contagem3[28].CLK
+clock => contagem3[29].CLK
+clock => contagem3[30].CLK
+clock => contagem3[31].CLK
+clock => contagem2[0].CLK
+clock => contagem2[1].CLK
+clock => contagem2[2].CLK
+clock => contagem2[3].CLK
+clock => contagem2[4].CLK
+clock => contagem2[5].CLK
+clock => contagem2[6].CLK
+clock => contagem2[7].CLK
+clock => contagem2[8].CLK
+clock => contagem2[9].CLK
+clock => contagem2[10].CLK
+clock => contagem2[11].CLK
+clock => contagem2[12].CLK
+clock => contagem2[13].CLK
+clock => contagem2[14].CLK
+clock => contagem2[15].CLK
+clock => contagem2[16].CLK
+clock => contagem2[17].CLK
+clock => contagem2[18].CLK
+clock => contagem2[19].CLK
+clock => contagem2[20].CLK
+clock => contagem2[21].CLK
+clock => contagem2[22].CLK
+clock => contagem2[23].CLK
+clock => contagem2[24].CLK
+clock => contagem2[25].CLK
+clock => contagem2[26].CLK
+clock => contagem2[27].CLK
+clock => contagem2[28].CLK
+clock => contagem2[29].CLK
+clock => contagem2[30].CLK
+clock => contagem2[31].CLK
+clock => contagem1[0].CLK
+clock => contagem1[1].CLK
+clock => contagem1[2].CLK
+clock => contagem1[3].CLK
+clock => contagem1[4].CLK
+clock => contagem1[5].CLK
+clock => contagem1[6].CLK
+clock => contagem1[7].CLK
+clock => contagem1[8].CLK
+clock => contagem1[9].CLK
+clock => contagem1[10].CLK
+clock => contagem1[11].CLK
+clock => contagem1[12].CLK
+clock => contagem1[13].CLK
+clock => contagem1[14].CLK
+clock => contagem1[15].CLK
+clock => contagem1[16].CLK
+clock => contagem1[17].CLK
+clock => contagem1[18].CLK
+clock => contagem1[19].CLK
+clock => contagem1[20].CLK
+clock => contagem1[21].CLK
+clock => contagem1[22].CLK
+clock => contagem1[23].CLK
+clock => contagem1[24].CLK
+clock => contagem1[25].CLK
+clock => contagem1[26].CLK
+clock => contagem1[27].CLK
+clock => contagem1[28].CLK
+clock => contagem1[29].CLK
+clock => contagem1[30].CLK
+clock => contagem1[31].CLK
+clock => contagem0[0].CLK
+clock => contagem0[1].CLK
+clock => contagem0[2].CLK
+clock => contagem0[3].CLK
+clock => contagem0[4].CLK
+clock => contagem0[5].CLK
+clock => contagem0[6].CLK
+clock => contagem0[7].CLK
+clock => contagem0[8].CLK
+clock => contagem0[9].CLK
+clock => contagem0[10].CLK
+clock => contagem0[11].CLK
+clock => contagem0[12].CLK
+clock => contagem0[13].CLK
+clock => contagem0[14].CLK
+clock => contagem0[15].CLK
+clock => contagem0[16].CLK
+clock => contagem0[17].CLK
+clock => contagem0[18].CLK
+clock => contagem0[19].CLK
+clock => contagem0[20].CLK
+clock => contagem0[21].CLK
+clock => contagem0[22].CLK
+clock => contagem0[23].CLK
+clock => contagem0[24].CLK
+clock => contagem0[25].CLK
+clock => contagem0[26].CLK
+clock => contagem0[27].CLK
+clock => contagem0[28].CLK
+clock => contagem0[29].CLK
+clock => contagem0[30].CLK
+clock => contagem0[31].CLK
+reset => contagem3[0].PRESET
+reset => contagem3[1].ACLR
+reset => contagem3[2].ACLR
+reset => contagem3[3].ACLR
+reset => contagem3[4].ACLR
+reset => contagem3[5].ACLR
+reset => contagem3[6].ACLR
+reset => contagem3[7].ACLR
+reset => contagem3[8].ACLR
+reset => contagem3[9].ACLR
+reset => contagem3[10].ACLR
+reset => contagem3[11].ACLR
+reset => contagem3[12].ACLR
+reset => contagem3[13].ACLR
+reset => contagem3[14].ACLR
+reset => contagem3[15].ACLR
+reset => contagem3[16].ACLR
+reset => contagem3[17].ACLR
+reset => contagem3[18].ACLR
+reset => contagem3[19].ACLR
+reset => contagem3[20].ACLR
+reset => contagem3[21].ACLR
+reset => contagem3[22].ACLR
+reset => contagem3[23].ACLR
+reset => contagem3[24].ACLR
+reset => contagem3[25].ACLR
+reset => contagem3[26].ACLR
+reset => contagem3[27].ACLR
+reset => contagem3[28].ACLR
+reset => contagem3[29].ACLR
+reset => contagem3[30].ACLR
+reset => contagem3[31].ACLR
+reset => contagem2[0].ACLR
+reset => contagem2[1].ACLR
+reset => contagem2[2].ACLR
+reset => contagem2[3].ACLR
+reset => contagem2[4].ACLR
+reset => contagem2[5].ACLR
+reset => contagem2[6].ACLR
+reset => contagem2[7].ACLR
+reset => contagem2[8].ACLR
+reset => contagem2[9].ACLR
+reset => contagem2[10].ACLR
+reset => contagem2[11].ACLR
+reset => contagem2[12].ACLR
+reset => contagem2[13].ACLR
+reset => contagem2[14].ACLR
+reset => contagem2[15].ACLR
+reset => contagem2[16].ACLR
+reset => contagem2[17].ACLR
+reset => contagem2[18].ACLR
+reset => contagem2[19].ACLR
+reset => contagem2[20].ACLR
+reset => contagem2[21].ACLR
+reset => contagem2[22].ACLR
+reset => contagem2[23].ACLR
+reset => contagem2[24].ACLR
+reset => contagem2[25].ACLR
+reset => contagem2[26].ACLR
+reset => contagem2[27].ACLR
+reset => contagem2[28].ACLR
+reset => contagem2[29].ACLR
+reset => contagem2[30].ACLR
+reset => contagem2[31].ACLR
+reset => contagem1[0].ACLR
+reset => contagem1[1].ACLR
+reset => contagem1[2].ACLR
+reset => contagem1[3].ACLR
+reset => contagem1[4].ACLR
+reset => contagem1[5].ACLR
+reset => contagem1[6].ACLR
+reset => contagem1[7].ACLR
+reset => contagem1[8].ACLR
+reset => contagem1[9].ACLR
+reset => contagem1[10].ACLR
+reset => contagem1[11].ACLR
+reset => contagem1[12].ACLR
+reset => contagem1[13].ACLR
+reset => contagem1[14].ACLR
+reset => contagem1[15].ACLR
+reset => contagem1[16].ACLR
+reset => contagem1[17].ACLR
+reset => contagem1[18].ACLR
+reset => contagem1[19].ACLR
+reset => contagem1[20].ACLR
+reset => contagem1[21].ACLR
+reset => contagem1[22].ACLR
+reset => contagem1[23].ACLR
+reset => contagem1[24].ACLR
+reset => contagem1[25].ACLR
+reset => contagem1[26].ACLR
+reset => contagem1[27].ACLR
+reset => contagem1[28].ACLR
+reset => contagem1[29].ACLR
+reset => contagem1[30].ACLR
+reset => contagem1[31].ACLR
+reset => contagem0[0].ACLR
+reset => contagem0[1].ACLR
+reset => contagem0[2].ACLR
+reset => contagem0[3].ACLR
+reset => contagem0[4].ACLR
+reset => contagem0[5].ACLR
+reset => contagem0[6].ACLR
+reset => contagem0[7].ACLR
+reset => contagem0[8].ACLR
+reset => contagem0[9].ACLR
+reset => contagem0[10].ACLR
+reset => contagem0[11].ACLR
+reset => contagem0[12].ACLR
+reset => contagem0[13].ACLR
+reset => contagem0[14].ACLR
+reset => contagem0[15].ACLR
+reset => contagem0[16].ACLR
+reset => contagem0[17].ACLR
+reset => contagem0[18].ACLR
+reset => contagem0[19].ACLR
+reset => contagem0[20].ACLR
+reset => contagem0[21].ACLR
+reset => contagem0[22].ACLR
+reset => contagem0[23].ACLR
+reset => contagem0[24].ACLR
+reset => contagem0[25].ACLR
+reset => contagem0[26].ACLR
+reset => contagem0[27].ACLR
+reset => contagem0[28].ACLR
+reset => contagem0[29].ACLR
+reset => contagem0[30].ACLR
+reset => contagem0[31].ACLR
+pause => process_0.IN1
+saida0[0] <= contagem0[0].DB_MAX_OUTPUT_PORT_TYPE
+saida0[1] <= contagem0[1].DB_MAX_OUTPUT_PORT_TYPE
+saida0[2] <= contagem0[2].DB_MAX_OUTPUT_PORT_TYPE
+saida0[3] <= contagem0[3].DB_MAX_OUTPUT_PORT_TYPE
+saida1[0] <= contagem1[0].DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= contagem1[1].DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= contagem1[2].DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= contagem1[3].DB_MAX_OUTPUT_PORT_TYPE
+saida2[0] <= contagem2[0].DB_MAX_OUTPUT_PORT_TYPE
+saida2[1] <= contagem2[1].DB_MAX_OUTPUT_PORT_TYPE
+saida2[2] <= contagem2[2].DB_MAX_OUTPUT_PORT_TYPE
+saida2[3] <= contagem2[3].DB_MAX_OUTPUT_PORT_TYPE
+saida3[0] <= contagem3[0].DB_MAX_OUTPUT_PORT_TYPE
+saida3[1] <= contagem3[1].DB_MAX_OUTPUT_PORT_TYPE
+saida3[2] <= contagem3[2].DB_MAX_OUTPUT_PORT_TYPE
+saida3[3] <= contagem3[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Timing_Reference:inst7
+clk => tmp.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => count[8].CLK
+clk => count[9].CLK
+clk => count[10].CLK
+clk => count[11].CLK
+clk => count[12].CLK
+clk => count[13].CLK
+clk => count[14].CLK
+clk => count[15].CLK
+clk => count[16].CLK
+clk => count[17].CLK
+clk => count[18].CLK
+clk => count[19].CLK
+clk => count[20].CLK
+clk => count[21].CLK
+clk => count[22].CLK
+clk => count[23].CLK
+clk => count[24].CLK
+clk => count[25].CLK
+clk => count[26].CLK
+clk => count[27].CLK
+clk => count[28].CLK
+clk => count[29].CLK
+clk => count[30].CLK
+clk => count[31].CLK
+clk_xHz <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Seletor:inst4
+Controle1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+info => inst.IN0
+info => inst1.IN0
+controle => inst.IN1
+controle => inst2.IN0
+Controle0 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|Contadorx999:inst10
+clock => contagem2[0].CLK
+clock => contagem2[1].CLK
+clock => contagem2[2].CLK
+clock => contagem2[3].CLK
+clock => contagem2[4].CLK
+clock => contagem2[5].CLK
+clock => contagem2[6].CLK
+clock => contagem2[7].CLK
+clock => contagem2[8].CLK
+clock => contagem2[9].CLK
+clock => contagem2[10].CLK
+clock => contagem2[11].CLK
+clock => contagem2[12].CLK
+clock => contagem2[13].CLK
+clock => contagem2[14].CLK
+clock => contagem2[15].CLK
+clock => contagem2[16].CLK
+clock => contagem2[17].CLK
+clock => contagem2[18].CLK
+clock => contagem2[19].CLK
+clock => contagem2[20].CLK
+clock => contagem2[21].CLK
+clock => contagem2[22].CLK
+clock => contagem2[23].CLK
+clock => contagem2[24].CLK
+clock => contagem2[25].CLK
+clock => contagem2[26].CLK
+clock => contagem2[27].CLK
+clock => contagem2[28].CLK
+clock => contagem2[29].CLK
+clock => contagem2[30].CLK
+clock => contagem2[31].CLK
+clock => contagem1[0].CLK
+clock => contagem1[1].CLK
+clock => contagem1[2].CLK
+clock => contagem1[3].CLK
+clock => contagem1[4].CLK
+clock => contagem1[5].CLK
+clock => contagem1[6].CLK
+clock => contagem1[7].CLK
+clock => contagem1[8].CLK
+clock => contagem1[9].CLK
+clock => contagem1[10].CLK
+clock => contagem1[11].CLK
+clock => contagem1[12].CLK
+clock => contagem1[13].CLK
+clock => contagem1[14].CLK
+clock => contagem1[15].CLK
+clock => contagem1[16].CLK
+clock => contagem1[17].CLK
+clock => contagem1[18].CLK
+clock => contagem1[19].CLK
+clock => contagem1[20].CLK
+clock => contagem1[21].CLK
+clock => contagem1[22].CLK
+clock => contagem1[23].CLK
+clock => contagem1[24].CLK
+clock => contagem1[25].CLK
+clock => contagem1[26].CLK
+clock => contagem1[27].CLK
+clock => contagem1[28].CLK
+clock => contagem1[29].CLK
+clock => contagem1[30].CLK
+clock => contagem1[31].CLK
+clock => contagem0[0].CLK
+clock => contagem0[1].CLK
+clock => contagem0[2].CLK
+clock => contagem0[3].CLK
+clock => contagem0[4].CLK
+clock => contagem0[5].CLK
+clock => contagem0[6].CLK
+clock => contagem0[7].CLK
+clock => contagem0[8].CLK
+clock => contagem0[9].CLK
+clock => contagem0[10].CLK
+clock => contagem0[11].CLK
+clock => contagem0[12].CLK
+clock => contagem0[13].CLK
+clock => contagem0[14].CLK
+clock => contagem0[15].CLK
+clock => contagem0[16].CLK
+clock => contagem0[17].CLK
+clock => contagem0[18].CLK
+clock => contagem0[19].CLK
+clock => contagem0[20].CLK
+clock => contagem0[21].CLK
+clock => contagem0[22].CLK
+clock => contagem0[23].CLK
+clock => contagem0[24].CLK
+clock => contagem0[25].CLK
+clock => contagem0[26].CLK
+clock => contagem0[27].CLK
+clock => contagem0[28].CLK
+clock => contagem0[29].CLK
+clock => contagem0[30].CLK
+clock => contagem0[31].CLK
+reset => contagem2[0].ACLR
+reset => contagem2[1].ACLR
+reset => contagem2[2].ACLR
+reset => contagem2[3].ACLR
+reset => contagem2[4].ACLR
+reset => contagem2[5].ACLR
+reset => contagem2[6].ACLR
+reset => contagem2[7].ACLR
+reset => contagem2[8].ACLR
+reset => contagem2[9].ACLR
+reset => contagem2[10].ACLR
+reset => contagem2[11].ACLR
+reset => contagem2[12].ACLR
+reset => contagem2[13].ACLR
+reset => contagem2[14].ACLR
+reset => contagem2[15].ACLR
+reset => contagem2[16].ACLR
+reset => contagem2[17].ACLR
+reset => contagem2[18].ACLR
+reset => contagem2[19].ACLR
+reset => contagem2[20].ACLR
+reset => contagem2[21].ACLR
+reset => contagem2[22].ACLR
+reset => contagem2[23].ACLR
+reset => contagem2[24].ACLR
+reset => contagem2[25].ACLR
+reset => contagem2[26].ACLR
+reset => contagem2[27].ACLR
+reset => contagem2[28].ACLR
+reset => contagem2[29].ACLR
+reset => contagem2[30].ACLR
+reset => contagem2[31].ACLR
+reset => contagem1[0].ACLR
+reset => contagem1[1].ACLR
+reset => contagem1[2].ACLR
+reset => contagem1[3].ACLR
+reset => contagem1[4].ACLR
+reset => contagem1[5].ACLR
+reset => contagem1[6].ACLR
+reset => contagem1[7].ACLR
+reset => contagem1[8].ACLR
+reset => contagem1[9].ACLR
+reset => contagem1[10].ACLR
+reset => contagem1[11].ACLR
+reset => contagem1[12].ACLR
+reset => contagem1[13].ACLR
+reset => contagem1[14].ACLR
+reset => contagem1[15].ACLR
+reset => contagem1[16].ACLR
+reset => contagem1[17].ACLR
+reset => contagem1[18].ACLR
+reset => contagem1[19].ACLR
+reset => contagem1[20].ACLR
+reset => contagem1[21].ACLR
+reset => contagem1[22].ACLR
+reset => contagem1[23].ACLR
+reset => contagem1[24].ACLR
+reset => contagem1[25].ACLR
+reset => contagem1[26].ACLR
+reset => contagem1[27].ACLR
+reset => contagem1[28].ACLR
+reset => contagem1[29].ACLR
+reset => contagem1[30].ACLR
+reset => contagem1[31].ACLR
+reset => contagem0[0].ACLR
+reset => contagem0[1].ACLR
+reset => contagem0[2].ACLR
+reset => contagem0[3].ACLR
+reset => contagem0[4].ACLR
+reset => contagem0[5].ACLR
+reset => contagem0[6].ACLR
+reset => contagem0[7].ACLR
+reset => contagem0[8].ACLR
+reset => contagem0[9].ACLR
+reset => contagem0[10].ACLR
+reset => contagem0[11].ACLR
+reset => contagem0[12].ACLR
+reset => contagem0[13].ACLR
+reset => contagem0[14].ACLR
+reset => contagem0[15].ACLR
+reset => contagem0[16].ACLR
+reset => contagem0[17].ACLR
+reset => contagem0[18].ACLR
+reset => contagem0[19].ACLR
+reset => contagem0[20].ACLR
+reset => contagem0[21].ACLR
+reset => contagem0[22].ACLR
+reset => contagem0[23].ACLR
+reset => contagem0[24].ACLR
+reset => contagem0[25].ACLR
+reset => contagem0[26].ACLR
+reset => contagem0[27].ACLR
+reset => contagem0[28].ACLR
+reset => contagem0[29].ACLR
+reset => contagem0[30].ACLR
+reset => contagem0[31].ACLR
+inverter => process_0.IN1
+inverter => contagem2[0].OUTPUTSELECT
+inverter => contagem2[1].OUTPUTSELECT
+inverter => contagem2[2].OUTPUTSELECT
+inverter => contagem2[3].OUTPUTSELECT
+inverter => contagem2[4].OUTPUTSELECT
+inverter => contagem2[5].OUTPUTSELECT
+inverter => contagem2[6].OUTPUTSELECT
+inverter => contagem2[7].OUTPUTSELECT
+inverter => contagem2[8].OUTPUTSELECT
+inverter => contagem2[9].OUTPUTSELECT
+inverter => contagem2[10].OUTPUTSELECT
+inverter => contagem2[11].OUTPUTSELECT
+inverter => contagem2[12].OUTPUTSELECT
+inverter => contagem2[13].OUTPUTSELECT
+inverter => contagem2[14].OUTPUTSELECT
+inverter => contagem2[15].OUTPUTSELECT
+inverter => contagem2[16].OUTPUTSELECT
+inverter => contagem2[17].OUTPUTSELECT
+inverter => contagem2[18].OUTPUTSELECT
+inverter => contagem2[19].OUTPUTSELECT
+inverter => contagem2[20].OUTPUTSELECT
+inverter => contagem2[21].OUTPUTSELECT
+inverter => contagem2[22].OUTPUTSELECT
+inverter => contagem2[23].OUTPUTSELECT
+inverter => contagem2[24].OUTPUTSELECT
+inverter => contagem2[25].OUTPUTSELECT
+inverter => contagem2[26].OUTPUTSELECT
+inverter => contagem2[27].OUTPUTSELECT
+inverter => contagem2[28].OUTPUTSELECT
+inverter => contagem2[29].OUTPUTSELECT
+inverter => contagem2[30].OUTPUTSELECT
+inverter => contagem2[31].OUTPUTSELECT
+inverter => contagem1[0].OUTPUTSELECT
+inverter => contagem1[1].OUTPUTSELECT
+inverter => contagem1[2].OUTPUTSELECT
+inverter => contagem1[3].OUTPUTSELECT
+inverter => contagem1[4].OUTPUTSELECT
+inverter => contagem1[5].OUTPUTSELECT
+inverter => contagem1[6].OUTPUTSELECT
+inverter => contagem1[7].OUTPUTSELECT
+inverter => contagem1[8].OUTPUTSELECT
+inverter => contagem1[9].OUTPUTSELECT
+inverter => contagem1[10].OUTPUTSELECT
+inverter => contagem1[11].OUTPUTSELECT
+inverter => contagem1[12].OUTPUTSELECT
+inverter => contagem1[13].OUTPUTSELECT
+inverter => contagem1[14].OUTPUTSELECT
+inverter => contagem1[15].OUTPUTSELECT
+inverter => contagem1[16].OUTPUTSELECT
+inverter => contagem1[17].OUTPUTSELECT
+inverter => contagem1[18].OUTPUTSELECT
+inverter => contagem1[19].OUTPUTSELECT
+inverter => contagem1[20].OUTPUTSELECT
+inverter => contagem1[21].OUTPUTSELECT
+inverter => contagem1[22].OUTPUTSELECT
+inverter => contagem1[23].OUTPUTSELECT
+inverter => contagem1[24].OUTPUTSELECT
+inverter => contagem1[25].OUTPUTSELECT
+inverter => contagem1[26].OUTPUTSELECT
+inverter => contagem1[27].OUTPUTSELECT
+inverter => contagem1[28].OUTPUTSELECT
+inverter => contagem1[29].OUTPUTSELECT
+inverter => contagem1[30].OUTPUTSELECT
+inverter => contagem1[31].OUTPUTSELECT
+inverter => contagem0[0].OUTPUTSELECT
+inverter => contagem0[1].OUTPUTSELECT
+inverter => contagem0[2].OUTPUTSELECT
+inverter => contagem0[3].OUTPUTSELECT
+inverter => contagem0[4].OUTPUTSELECT
+inverter => contagem0[5].OUTPUTSELECT
+inverter => contagem0[6].OUTPUTSELECT
+inverter => contagem0[7].OUTPUTSELECT
+inverter => contagem0[8].OUTPUTSELECT
+inverter => contagem0[9].OUTPUTSELECT
+inverter => contagem0[10].OUTPUTSELECT
+inverter => contagem0[11].OUTPUTSELECT
+inverter => contagem0[12].OUTPUTSELECT
+inverter => contagem0[13].OUTPUTSELECT
+inverter => contagem0[14].OUTPUTSELECT
+inverter => contagem0[15].OUTPUTSELECT
+inverter => contagem0[16].OUTPUTSELECT
+inverter => contagem0[17].OUTPUTSELECT
+inverter => contagem0[18].OUTPUTSELECT
+inverter => contagem0[19].OUTPUTSELECT
+inverter => contagem0[20].OUTPUTSELECT
+inverter => contagem0[21].OUTPUTSELECT
+inverter => contagem0[22].OUTPUTSELECT
+inverter => contagem0[23].OUTPUTSELECT
+inverter => contagem0[24].OUTPUTSELECT
+inverter => contagem0[25].OUTPUTSELECT
+inverter => contagem0[26].OUTPUTSELECT
+inverter => contagem0[27].OUTPUTSELECT
+inverter => contagem0[28].OUTPUTSELECT
+inverter => contagem0[29].OUTPUTSELECT
+inverter => contagem0[30].OUTPUTSELECT
+inverter => contagem0[31].OUTPUTSELECT
+saida0[0] <= contagem0[0].DB_MAX_OUTPUT_PORT_TYPE
+saida0[1] <= contagem0[1].DB_MAX_OUTPUT_PORT_TYPE
+saida0[2] <= contagem0[2].DB_MAX_OUTPUT_PORT_TYPE
+saida0[3] <= contagem0[3].DB_MAX_OUTPUT_PORT_TYPE
+saida1[0] <= contagem1[0].DB_MAX_OUTPUT_PORT_TYPE
+saida1[1] <= contagem1[1].DB_MAX_OUTPUT_PORT_TYPE
+saida1[2] <= contagem1[2].DB_MAX_OUTPUT_PORT_TYPE
+saida1[3] <= contagem1[3].DB_MAX_OUTPUT_PORT_TYPE
+saida2[0] <= contagem2[0].DB_MAX_OUTPUT_PORT_TYPE
+saida2[1] <= contagem2[1].DB_MAX_OUTPUT_PORT_TYPE
+saida2[2] <= contagem2[2].DB_MAX_OUTPUT_PORT_TYPE
+saida2[3] <= contagem2[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21
+OFa <= Dec7Inv:inst.OFa
+A3 => AouB:inst2.A
+Controle => AouB:inst2.Controle
+Controle => AouB:inst3.Controle
+Controle => AouB:inst4.Controle
+Controle => AouB:inst5.Controle
+B3 => AouB:inst2.B
+A2 => AouB:inst3.A
+B2 => AouB:inst3.B
+A1 => AouB:inst4.A
+B1 => AouB:inst4.B
+A0 => AouB:inst5.A
+B0 => AouB:inst5.B
+OFb <= Dec7Inv:inst.OFb
+OFc <= Dec7Inv:inst.OFc
+Ofd <= Dec7Inv:inst.Ofd
+OFe <= Dec7Inv:inst.OFe
+OFf <= Dec7Inv:inst.OFf
+Ofg <= Dec7Inv:inst.Ofg
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst
+OFa <= Inv7:inst.O1
+In3 => Decodificador7Seg:inst2.A
+In2 => Decodificador7Seg:inst2.B
+In1 => Decodificador7Seg:inst2.C
+In0 => Decodificador7Seg:inst2.D
+OFb <= Inv7:inst.O2
+OFc <= Inv7:inst.O3
+Ofd <= Inv7:inst.O4
+OFe <= Inv7:inst.O5
+OFf <= Inv7:inst.O6
+Ofg <= Inv7:inst.O7
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Inv7:inst
+O1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+1 => inst.IN0
+O2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+2 => inst1.IN0
+O3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+3 => inst2.IN0
+O4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+4 => inst3.IN0
+O5 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst4.IN0
+O6 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+6 => inst5.IN0
+O7 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+7 => inst6.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2
+Fa <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst6.IN0
+A => inst.IN0
+A => inst16.IN3
+A => inst13.IN0
+A => inst26.IN0
+A => inst32.IN0
+A => inst36.IN0
+A => inst37.IN0
+A => inst42.IN0
+A => inst43.IN0
+A => inst48.IN0
+A => inst49.IN0
+B => inst1.IN0
+B => inst5.IN1
+B => inst9.IN0
+B => inst16.IN2
+B => inst25.IN1
+B => inst30.IN0
+B => inst31.IN0
+B => inst37.IN1
+B => inst39.IN1
+B => inst41.IN0
+B => inst45.IN1
+C => inst2.IN0
+C => inst8.IN1
+C => inst9.IN1
+C => inst16.IN1
+C => inst12.IN1
+C => inst29.IN1
+C => inst31.IN1
+C => inst36.IN1
+C => inst35.IN0
+C => inst43.IN1
+C => inst46.IN1
+C => inst47.IN0
+D => inst3.IN0
+D => inst5.IN2
+D => inst16.IN0
+D => inst12.IN2
+D => inst13.IN2
+D => inst23.IN1
+D => inst24.IN1
+D => inst29.IN2
+D => inst30.IN2
+D => inst49.IN1
+Fb <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+Fc <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+Fd <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Fe <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+Ff <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+Fg <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst52
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst53
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst54
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst55
+Out <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+5 => inst2.IN0
+4 => inst2.IN1
+2 => inst.IN0
+3 => inst.IN1
+1 => inst.IN2
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst2
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst3
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst4
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+
+|Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst5
+Out <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Controle => inst3.IN0
+Controle => inst.IN1
+B => inst1.IN1
+A => inst.IN0
+
+

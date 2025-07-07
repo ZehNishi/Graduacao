@@ -1,0 +1,19 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2.3 FASORES E ESPECTROS
+
+A conversão de funções cossenoidais em exponenciais também introduz a noção e interpretação do domínio da freqüência pelo método dos diagramas fasoriais. 
+
+Relembrando a relação :
+
+x(t) = A cos(2pf0t + q) = ½ A .e j q.e jw0t + ½ A .e -j q.e -jw0t
+
+O termo à direita é a representação em fasores conjugados, visto que os dois termos são complexos conjugados entre si. Pode-se identificar dois fasores girantes em um plano complexo cujos eixos são as partes real e imaginária de x(t). Os fasores tem amplitudes iguais a ½A, taxas iguais a f0 rotações por segundo em sentidos opostos e, no instante t = 0, formam um angulo q em relação ao eixo real positivo (fig. a). A soma em qualquer instante é igual a x(t) e sempre cai sobre o eixo real (uma vez que x(t) é real).
+
+Para descrever estes fasores no domínio da freqüência deve-se associar as amplitudes e fases correspondentes as freqüências +f0 e -f0. Assim, uma descrição conveniente no domínio da freqüência seria o espectro de linhas bilateral da fig. b, que
+consiste em dois gráficos, amplitude versus freqüência e fase versus freqüência. Devese ressaltar que, sob certos aspectos, o espectro de amplitude é mais importante do que o espectro de fase. É claro que ambas as partes são necessárias para definir um sinal sem ambigüidades no domínio do tempo, porém o espectro de amplitudes por si só indica quais freqüências estão presentes e em quais proporções, isto é, informa sobre o conteúdo de freqüências.
+
+Os espectros de sinais mais complexos podem ser obtidos com o auxilio da Análise de Fourier; mais especificamente, espectros para sinais periódicos são obtidos com as Séries de Fourier e espectros para sinais aperiódicos são obtidos com a Transformada de Fourier, descritas a seguir.
+
+[FIM]."

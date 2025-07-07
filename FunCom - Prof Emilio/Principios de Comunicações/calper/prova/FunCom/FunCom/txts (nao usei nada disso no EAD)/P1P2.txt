@@ -1,0 +1,40 @@
+2- Um sinal modulado AM-DSB tonal é aplicado ao ponto A do sistema mostrado na figura. Este sinal tem as seguintes caracteristicas: Ac=2V, Am=1V,fc=100khz, fm=3khz e potencia media P=2,49W.
+No ponto B é aplicada a portadora local c(t)=1.cos(2pi.300.k.t). O FPF ideal tem largura de faixa B=20khz, frequencia central=400khz e ganho unitario. Em D obtem-se um segundo sinal modulado
+AM-DSB. Pede-se:
+a) Um esboco do sinal modulado (no tempo) no ponto A, com valores de amplitude maximo e minimo da envoltoria.
+b) A expressao do sinal obtido (no tempo) no ponto C.
+c) O valor da potencia media do sinal no ponto D.
+
+
+Resposta:
+a) Ac=2V, Am=1V, fc=100khz, fm=3khz, P=2,49W
+c(t)=1cos(2pi.300.k.t)   B=20khz, f=400khz
+
+s(t)=Ac[1+k.a.m(t)].cos(2pi.fc.t)
+m=Am.cos(2pi.fm.t)
+s(t)=Ac[1+ka.Am.cos(2pi.fm.t)]cos(2pi.fc.t)
+P=Ac^2/2+u^2.Ac^2/8+u^2.Ac^2/2=Ac^2/2+u^2.Ac^2/4
+(P-(Ac^2/2).4/Ac^2)^(1/2)=u=((2,49-4/2).4/4)^(1/2)=0,7
+s=2[1+0,7cos(2pi.3000t)].cos(2pi.100000t)
+Amax=2[1+0,7]=3,4V
+u=Amax-Amin/Amax+Amin
+u.Amax+u.Amin=Amax-Amin
+u.Amin+Amin=Amax-u.Amax
+Amin=Amax-u.Amax/1+u=3,4-0,7x3,4/1+0,7=0,6
+
+Esboçar o sinal.
+
+b)C=AxB
+C=s(t).c(t)
+C=2[1+0,7cos(2pi.3000t)]cos(2pi.100000t).1cos(2pi.300000t)
+cos(a).cos(b)=cos(a-b)+cos(a+b)/2
+C=2[1+0,7cos(2pi.3000t)][cos(2pi.300000t-2pi.100000t)+cos(2pi.300000t+2pi.100000t)/2]
+C=2[1+0,7cos(2pi.3000t)][cos(2pi.200000t)+cos(2pi.400000t)/2]
+C=2[1+0,7cos(2pi.3000t)]cos(2pi.200000t)/2+2[1+0,7cos(2pi.3000t)]cos(2pi.400000t)/2
+C=cos(2pi.200000t)+0,7cos(2pi.200000t)cos(2pi.300000t)+cos(2pi.400000t)+cos(2pi.300000t)cos(2pi.400000t)
+C=cos(2pi.200000t)+0,7/2.cos(2pi.200000t)+0,7/2.cos(2pi.197000t)+cos(2pi.400000t)+0,7/2.cos(2pi.397000t)+0,7/2.cos(2pi.403000t)
+C=cos(2pi.400000t)+0,35cos(2pi.397000t)+0,35cos(2pi.403000t)
+
+c)Ac=1
+u.Ac/2=0,35 -> u=0,7
+P=Ac^2/2+u^2.Ac^2/4=1/2+0,7^2/4=0,6225W

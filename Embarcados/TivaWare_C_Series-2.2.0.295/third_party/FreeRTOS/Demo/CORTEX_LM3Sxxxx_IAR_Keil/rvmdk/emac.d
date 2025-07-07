@@ -1,0 +1,15 @@
+.\rvmdk\emac.o: webserver\emac.c
+.\rvmdk\emac.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\emac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\emac.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\emac.o: .\FreeRTOSConfig.h
+.\rvmdk\emac.o: ..\..\Source\include\projdefs.h
+.\rvmdk\emac.o: ..\..\Source\include\portable.h
+.\rvmdk\emac.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\emac.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\emac.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\emac.o: ..\..\Source\include\semphr.h
+.\rvmdk\emac.o: ..\..\Source\include\queue.h
+.\rvmdk\emac.o: ..\..\Source\include\task.h
+.\rvmdk\emac.o: ..\..\Source\include\list.h
+.\rvmdk\emac.o: webserver\emac.h

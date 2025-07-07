@@ -1,0 +1,32 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+4.5 RECEPTOR DE RÁDIO FM
+
+Utiliza a faixa de freqüências de 88 a 108 MHz para transmissão de voz e música.
+
+As freqüências portadoras estão espaçadas de 200 KHz. O sinal de mensagem é limitado em 15 KHz e o desvio de freqüência é fixo em 75 KHz. O receptor é do tipo super-heteródino. 
+
+E é formado por: uma antena, um amplificador sintonizado de radio freqüência (RF), um mixer, um oscilador local, um amplificador de freqüência intermediaria (FI), um detetor de envoltória, um sistema automático de controle de freqüência, um amplificador de áudio, e um auto-falante.
+
+
+
+antena
+ |
+ \/
+[AmplifRF]->[Mixer] -> [AmplifcFI]
+-> [Limitador] - [Discriminador]
+-> [De-enfaseAmplif de Audio]
+-> [FPB] -> som!
+
+
+
+Uma sintonia comum entre o amplificador de RF e o oscilador local permite que o mixer posicione a estação sintonizada FM na faixa de FI (10,7 MHz com faixa de 200KHz). 
+
+O limitador elimina variações de amplitude que resultariam em ruído. O discriminador faz a demodulação do sinal. Ressalta-se que o amplificador de áudio também faz a de-ênfase. O FPB elimina o ruído fora da faixa de áudio. 
+
+O controle automático de freqüência (CAF) ajusta, com base em m(t), a freqüência do oscilador local para que fLO – fRF = fIF.
+
+[FIM]."

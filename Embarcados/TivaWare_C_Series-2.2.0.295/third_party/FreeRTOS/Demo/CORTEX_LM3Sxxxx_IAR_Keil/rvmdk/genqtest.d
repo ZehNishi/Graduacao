@@ -1,0 +1,16 @@
+.\rvmdk\genqtest.o: ..\Common\Minimal\GenQTest.c
+.\rvmdk\genqtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\rvmdk\genqtest.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\genqtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\genqtest.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\genqtest.o: .\FreeRTOSConfig.h
+.\rvmdk\genqtest.o: ..\..\Source\include\projdefs.h
+.\rvmdk\genqtest.o: ..\..\Source\include\portable.h
+.\rvmdk\genqtest.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\genqtest.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\genqtest.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\genqtest.o: ..\..\Source\include\task.h
+.\rvmdk\genqtest.o: ..\..\Source\include\list.h
+.\rvmdk\genqtest.o: ..\..\Source\include\queue.h
+.\rvmdk\genqtest.o: ..\..\Source\include\semphr.h
+.\rvmdk\genqtest.o: ..\Common\include\GenQTest.h

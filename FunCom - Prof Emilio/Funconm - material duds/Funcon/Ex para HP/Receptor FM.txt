@@ -1,0 +1,4 @@
++Antena->Amplificador de RF->Mixer->Amplificador de DI->Limitador->Discriminador->De-enfase amplif de audio->FPG->saida
++Discriminador->Controle Aut. de Freq->Oscilador->Mixer
+Linha pontiliada
+Aponta pro cima<-Amplificador de RF-Oscilador Local->Amplificador de FI

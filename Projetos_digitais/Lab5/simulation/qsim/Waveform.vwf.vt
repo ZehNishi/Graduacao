@@ -1,0 +1,109 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/24/2022 19:56:32"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Lab5
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Lab5_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Clear;
+reg Clock;
+// wires                                               
+wire S0;
+wire S1;
+wire S2;
+wire S3;
+wire S4;
+wire S5;
+wire S6;
+wire S7;
+wire S8;
+wire S9;
+wire S10;
+wire S11;
+wire S12;
+wire S13;
+wire S14;
+wire S15;
+wire S16;
+wire S17;
+wire S18;
+wire S19;
+wire S20;
+wire S21;
+wire S22;
+wire S23;
+
+// assign statements (if any)                          
+Lab5 i1 (
+// port map - connection between master ports and signals/registers   
+	.Clear(Clear),
+	.Clock(Clock),
+	.S0(S0),
+	.S1(S1),
+	.S2(S2),
+	.S3(S3),
+	.S4(S4),
+	.S5(S5),
+	.S6(S6),
+	.S7(S7),
+	.S8(S8),
+	.S9(S9),
+	.S10(S10),
+	.S11(S11),
+	.S12(S12),
+	.S13(S13),
+	.S14(S14),
+	.S15(S15),
+	.S16(S16),
+	.S17(S17),
+	.S18(S18),
+	.S19(S19),
+	.S20(S20),
+	.S21(S21),
+	.S22(S22),
+	.S23(S23)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// Clear
+initial
+begin
+	Clear = 1'b0;
+end 
+
+// Clock
+always
+begin
+	Clock = 1'b0;
+	Clock = #4 1'b1;
+	#4;
+end 
+endmodule
+

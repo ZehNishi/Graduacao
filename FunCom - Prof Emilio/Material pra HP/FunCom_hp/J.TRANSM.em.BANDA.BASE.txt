@@ -1,0 +1,41 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+7 TRANSM DE DADOS EM BANDA BASE
+------------------------------
+
+Na transmissão de dados em banda base a informação a ser transmitida é uma sequencia digital (bits). 
+
+Ao contrário dos procedimentos de modulação, que realizam uma transposição do espectro do sinal através do uso de uma portadora, a transmissão de dados em banda base caracteriza-se pela preservação do espectro na faixa original da informação transmitida.
+
+
+7.1 MODELO DE SISTEMA DE TRANSMISSÃO DE DADOS
+
+bits->
+
+->[Ger.PULSOS]->[FILTRO       ->
+       ^         Transm.HT(F)]
+       |  
+     clock
+
+
+-> [CANAL] -> [Filtro         ->
+               Recepcao HR(f)]
+
+
+->[Amostr]->[Circuito Decisao]->
+|    ^               ^
+|    |               | 
+|_>[Recup. clock]    |
+                     |
+                     |
+               Nivel de Decisao
+
+------------------------------
+Os instantes de amostragem são determinados em função do sinal de relógio extraído do sinal recebido. 
+
+A decisão é realizada comparando-se as amostras com um nível de decisão, em função do grau de ISI podem ocorrer erros de decisão.
+
+
+
+[FIM]."

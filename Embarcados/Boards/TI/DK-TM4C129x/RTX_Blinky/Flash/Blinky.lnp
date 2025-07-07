@@ -1,0 +1,11 @@
+--cpu=Cortex-M4.fp.sp
+".\flash\led.o"
+".\flash\blinky.o"
+".\flash\rtx_conf_cm.o"
+"..\..\..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib"
+".\flash\startup_tm4c129.o"
+".\flash\system_tm4c129.o"
+--strict --scatter ".\Flash\Blinky.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Flash\Blinky.map" -o .\Flash\Blinky.axf

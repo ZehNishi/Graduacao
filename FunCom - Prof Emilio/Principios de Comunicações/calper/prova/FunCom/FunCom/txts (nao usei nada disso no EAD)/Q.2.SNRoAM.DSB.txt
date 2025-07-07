@@ -1,0 +1,62 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+antes fazer ex.23
+Caderno
+-----------------------------
+
+Ex) Um receptor AM-DSB, operando com modulante cossenoidal a 80% de modulacao, tem um SNRo=30dB. Pede-se:
+
+a) Qual eh a SNRc?
+
+b) De qtos dBs pode-se diminuir a SNRc de modo que o sistema esteja operando acima do Limiar?
+
+obs: SNR(dB) = 10 log(SNR)
+
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+
+Am-DSB  80% ->  u=0,8
+SNRc = 30dB
+
+
+-----------------------------
+a) SNRc?
+
+Fm = u^2/ (2 + u^2) = 0,242
+
+Fm = SNRo/SNRc
+
+30dB = 10.log(SNRo)
+SNRo = 1000!
+
+SNRc = SNRo/Fm = 1000/0.242
+ = 4132 = 36dB!
+
+
+-----------------------------
+b)
+ 
+ |      / /
+ |     / /
+ |    / /
+ |   / /
+ |  / /
+ | / /
+ |/__|_________|_  SNRc
+    6,6       36
+     
+     |-> funcional
+       
+     |---------|
+        29,4dB
+
+
+
+
+
+[FIM]."

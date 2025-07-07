@@ -1,0 +1,39 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed.all;
+
+ENTITY Contadorx99 IS
+PORT(
+	clock					:IN STD_LOGIC;
+	reset,enable		:IN STD_LOGIC;
+	saida0					:OUT STD_LOGIC_VECTOR(3 downto 0);
+	saida1					:OUT STD_LOGIC_VECTOR(3 downto 0));
+end Contadorx99;
+
+architecture i of Contadorx99 is 
+
+	begin
+		process (clock, reset)
+		variable contagem0		:integer;
+		variable contagem1		:integer;
+		begin
+			if reset='1' then
+				contagem0:=0;
+				contagem1:=0;
+			elsif (clock'event and clock='1') then
+				if (enable='1') then
+					contagem0:=contagem0 + 1;
+				end if;
+				if contagem0=10 then 
+					contagem0:=0;
+					contagem1:=contagem1 + 1;
+				end if;
+				if contagem1=10 then
+					contagem1:=0;
+				end if;
+			end if;
+			saida0<= conv_std_logic_vector(contagem0,4);
+			saida1<= conv_std_logic_vector(contagem1,4);
+		end process;		
+	end i;

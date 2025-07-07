@@ -1,0 +1,44 @@
+"
+27) Um receptor AM-DSB, operando com modulante cossenoidal a 80% de modulacao, tem um SNRo = 30dB. Sabendo-se que fm = 2,4kHz, e No=10^-6 W/Hz, pede-se:
+
+a) Qual o valor da SNRc em decibeis?
+b) Qual e a potencia media do sinal AM-DSB recebido?
+c) De quantos decibeis se pode diminuir a SNRc sem que o sistema deixe de funcionar?
+R.a): Indice(fator) de modulacao: u = 0,8(80%) = Ka.Am;
+
+Fm = Ka^2.Pm/(1+Ka^2.Pm) = 0.5u^2/(1+0.5u^2) = 0.2424;
+
+ou
+
+Fm = =u^2/2+u^2 = 0.8^2/2+0.8^2
+
+Fm = SNRo/SNRc = 0.2424 ->30dB = 10.log(SNRo)->SNRo = 1000;
+
+RESPOSTA: SNRc = 1000/0.2424 = 4125,41(~36dB)
+
+R.b):Potencia media do sinal recebido = Pr
+
+SNRc = Pr/(W.No)->Pr = 4125,41.10^-6.2,4k = RESPOSTA: 9,9W
+
+R.c)
+
+36,3-6.6dB
+
+	SNRo
+	|
+	|          /  /
+	|        /  /  
+	|      /  / 
+	|   /    |
+	|/      |
+	------|-----------|--------SNRc
+	      6.6dB       36dB
+		  |-  29,4dB -|
+<<FIM>>		
+
+"
+
+
+
+
+  

@@ -1,0 +1,11 @@
+Determine a Transformada de Hilbert do sinal g(t)=cos(2*pi*fx*t)
+OBS:
+G com circunflexo=G do Hilbert=GG
+g com circunflexo=g do Hilbert=gg
+
+G(f)=(1/2)*[impulso(f-fc)+impulso(f+fc)]
+GG(f)=-j*sgn(f)*(1/2)*[impulso(f-fc)+impulso(f+fc)]
+GG(f)=-j*(1/2)*[impulso(f-fc)-impulso(f+fc)]
+-j=1/j
+GG(f)=[1/(2*j)]*[impulso(f-fc)-impulso(f+fc)]
+gg(t)=sen(2*pi*fc*t)

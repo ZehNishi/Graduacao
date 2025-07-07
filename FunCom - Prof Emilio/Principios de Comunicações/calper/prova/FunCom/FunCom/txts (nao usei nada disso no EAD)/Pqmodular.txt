@@ -1,0 +1,10 @@
+POR QUE MODULAR?
+- MODULACAO PARA FACILIDADE DE IRRADIACAO: A irradiacao eletromagnetica para ser eficiente precisa de antenas com dimensoes fisicas da ordem de meio comprimento de onda. Alguns sinais de audio possuem componentes de frequencia baixa necessitando de antenas de grande dimensao para uma irradiacao direta. Com a propriedade da translacao em frequencia da modulacao, estes sinais podem ser sobrepostos em uma portadora de alta frequencia, com consequente reducao no tamanho da  mesma.
+
+- MODULACAO PARA REDUCAO DE RUIDO E INTERFERENCIA: alguns tipos de modulacao reduzem efeitos de ruido e interferencia. Isso depende, no entanto, de uma largura de faixa para a transmissao do sinal maior que a necessaria para o sinal original
+
+- MODULACAO PARA DESIGNACAO DE FREQUENCIA: é possivel selecionar estaçoes de radio pois cada uma tem uma diferente frequencia portadora de designacao(atribuida), evitando superposiçao de sinais interferentes.
+
+- MODULACAO PARA MULTIPLEXACAO: as tecnicas de multiplexacao, que sao formas de modulacao, permitem a transmissao de multiplos sinais por um mesmo canal, podendo cada sinal ser separado no extremo da recepcao
+
+- MODULACAO PARA SUPERAR LIMITACOES DE PROJETOS: pode-se usar a modulacao para transladar um sinal ate a porcao do espectro de frequencia onde as necessidades de projeto sejam atendidas mais facilmente.

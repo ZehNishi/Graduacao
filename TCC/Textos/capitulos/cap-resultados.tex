@@ -1,0 +1,309 @@
+\chapter{Resultados e Discussões}
+\label{ch:resultados_discussoes}
+
+Todos os resultados detalhados obtidos neste projeto encontram-se compilados no \textbf{Apêndice A}. Neste apêndice, para cada modelo de aprendizado de máquina e para cada conjunto de dados avaliado, foram registrados todos os resultados de cada teste, incluindo os valores para cada dobra de validação e métricas como acurácia, tempo de validação, além da época e perda final, quando aplicáveis a cada algoritmo.
+
+Este trabalho teve como um de seus eixos centrais a avaliação do uso de um sensor multimodal, composto por uma câmera de profundidade RealSense D415 e um sensor LiDAR RPLIDAR A1, para a classificação de objetos em linhas de transmissão. Uma vertente crucial foi a análise da portabilidade desta solução para diferentes topologias robóticas. Conforme detalhado no Apêndice A, a primeira grande seção de resultados (Seção A.1) apresenta o desempenho dos modelos quando treinados e avaliados utilizando dados do robô principal do projeto (tanto simulados quanto reais), empregando a técnica de validação cruzada. Subsequentemente, a Seção A.2 explora a robustez e a capacidade de generalização dos modelos: são apresentados os resultados de quando os modelos, treinados com os dados adquiridos pelo robô principal, foram validados com dados provenientes de duas topologias robóticas secundárias simuladas. Esta segunda análise visa determinar a viabilidade da aplicação do conceito do sensor multimodal em diferentes plataformas robóticas.
+
+O presente capítulo, portanto, não replicará a totalidade desses dados, mas se concentrará na análise e interpretação dos principais achados. O foco será em discutir como a utilização dos dados de cada sensor individualmente (RealSense e LiDAR), das \textit{features} extraídas de cada um, e da combinação multimodal de informações afeta o desempenho da classificação. Adicionalmente, será analisado como os diferentes modelos de aprendizado de máquina são impactados pelas mudanças nas topologias robóticas.
+
+Para guiar esta discussão, o capítulo está estruturado da seguinte forma: inicialmente, será realizado um comparativo geral do desempenho médio dos modelos de aprendizado de máquina, considerando sua acurácia e tempo de validação em todos os testes realizados. Em seguida, será feita uma análise comparativa entre o uso de dados brutos versus \textit{features} processadas, e o impacto da fusão sensorial. A eficácia de cada sensor (RealSense e LiDAR) para as finalidades do projeto também será discutida. Posteriormente, a análise se aprofundará por cenário experimental, começando pelos resultados do robô principal, onde se comparará o desempenho com dados simulados e reais. Na sequência, serão abordados os testes de portabilidade do sensor multimodal, analisando o comportamento dos modelos frente aos dados dos robôs secundários e discutindo a capacidade de generalização dos modelos para cada tipo de dado. Serão destacados os melhores achados, identificando as configurações ótimas para o robô principal e para os robôs secundários. Uma análise das matrizes de confusão permitirá confrontar os resultados esperados com os efetivamente observados. A discussão também abrangerá a viabilidade de embarcar os modelos propostos, considerando não apenas o tempo de validação, mas também o uso de dados e possíveis casos de sobreajuste (\textit{overfitting}). Finalmente, será avaliado o impacto da extração de \textit{features} no desempenho global dos classificadores.
+
+\section{Comparativo Geral do Desempenho dos Modelos}
+
+A Tabela~\ref{tab:resumo_geral_desempenho} a seguir apresenta um resumo consolidado do desempenho médio dos modelos de aprendizado de máquina avaliados neste trabalho. Os valores de acurácia média e tempo de validação médio foram calculados a partir dos resultados detalhados apresentados no Apêndice A, buscando oferecer uma visão comparativa entre os diferentes algoritmos e cenários de teste.
+
+Para o cenário "Principal", que engloba os testes com dados do robô principal (tanto simulados quanto reais), a "Acurácia Média" e o "Tempo de Validação Médio" de cada modelo (k-Vizinhos mais próximos, Naive Bayes, Rede Neural e Floresta Aleatória) representam a média aritmética dos desempenhos médios obtidos em oito configurações distintas de dados (quatro tipos de datasets simulados e quatro tipos de datasets reais: dados brutos do LiDAR, features extraídas das imagens, features extraídas do LiDAR e features combinadas). A SqueezeNet foi avaliada em duas (imagens brutas simuladas e reais). Cada uma dessas configurações individuais foi, por sua vez, avaliada utilizando validação cruzada de 5 dobras, onde cada dobra de validação continha 120 amostras (30 amostras por cada uma das quatro classes).
+
+No cenário "Multimodal", que corresponde aos testes de portabilidade para os robôs secundários, os valores apresentados para cada modelo (k-Vizinhos mais próximos, Árvore de Decisão, Naive Bayes, Rede Neural e Floresta Aleatória) também são a média aritmética dos desempenhos obtidos em oito configurações distintas: quatro tipos de datasets (dados brutos do LiDAR, features extraídas das imagens, features extraídas do LiDAR e features combinadas) para o primeiro robô secundário, e as mesmas quatro para o segundo robô secundário. Para a SqueezeNet, a média no cenário multimodal considera os resultados com imagens brutas para cada um dos dois robôs secundários.
+
+É importante ressaltar uma diferença fundamental no cálculo e interpretação do tempo de validação entre os cenários. Enquanto no cenário "Principal", o tempo de validação médio de cada configuração de dados é derivado de testes em dobras contendo 120 amostras cada (30 para cada classe), nos testes de portabilidade do cenário "Multimodal", os modelos (treinados com dados do robô principal) foram validados utilizando o conjunto de dados completo de cada robô secundário. Cada um desses conjuntos de validação dos robôs secundários totaliza 600 amostras (150 amostras por cada uma das quatro classes). Portanto, o "Tempo de Validação Médio" reportado na Tabela~\ref{tab:resumo_geral_desempenho} para o cenário "Multimodal" reflete o processamento de um volume de dados de validação cinco vezes maior em cada teste individual que compõe a média, em comparação com cada dobra do cenário "Principal". Contudo, uma relação direta entre o tempo de validação e a quantidade de amostras não pode ser estabelecida de forma simplista, já que diversos outros fatores influenciam o tempo de processamento dos modelos. Dentre eles, destacam-se a complexidade intrínseca de cada algoritmo (por exemplo, a busca por vizinhos no k-NN versus as operações matriciais em redes neurais), a eficiência da implementação do modelo na biblioteca utilizada (scikit-learn ou PyTorch), e a própria natureza dos dados de entrada (dados brutos versus \textit{features} processadas, que podem ter dimensionalidades e tipos diferentes). Além disso, o estado do sistema computacional no momento da execução do teste, como carga de processamento de outras tarefas ou variações no acesso a recursos, também pode introduzir pequenas variações no tempo de validação que não são diretamente proporcionais ao número de amostras. Dessa forma, a comparação direta dos valores absolutos do 'Tempo de Validação Médio' entre os cenários 'Principal' e 'Multimodal' para um mesmo modelo pode ser menos informativa do que a análise comparativa dos tempos de validação entre os diferentes modelos dentro de um mesmo cenário. A avaliação da eficiência temporal, portanto, deve ser contextualizada preferencialmente dentro de cada cenário experimental específico.
+
+
+
+\begin{table}[!ht]
+\caption{Resumo da Acurácia Média e Tempo de Validação Médio por Modelo e Cenário.}
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Modelo} & \textbf{Cenário} & \textbf{Acurácia Média (\%)} & \textbf{Tempo de Validação Médio (s)} \\
+\hline
+k-NN                     & Principal & 97.15 & 0.003055 \\
+                         & Multimodal & 74.25 & 0.013950 \\
+\hline
+\textbf{Árvore de Decisão}        & Principal & 99.17 & \textbf{0.000128} \\
+                         & Multimodal & 67.17 & \textbf{0.000174} \\
+\hline
+Naive Bayes              & Principal & 95.52 & 0.000244 \\
+                         & Multimodal & 54.08 & 0.000399 \\
+\hline
+Rede Neural              & Principal & 94.59 & 0.003588 \\
+                         & Multimodal & 77.00 & 0.014177 \\
+\hline
+Floresta Aleatória       & Principal & 99.36 & 0.005717 \\
+                         & Multimodal & 69.35 & 0.007775 \\
+\hline
+\textbf{SqueezeNet }              & Principal & \textbf{100.00} & 0.659450 \\
+                         & Multimodal & \textbf{97.67} & 3.356276 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nos dados do Apêndice A}
+\label{tab:resumo_geral_desempenho}
+\end{table}
+
+Observando a Tabela~\ref{tab:resumo_geral_desempenho}, que consolida o desempenho médio dos modelos, percebe-se que para o cenário \textbf{"Principal"} todos os modelos alcançaram uma acurácia média elevada, indicando que, de maneira geral, seriam capazes de realizar a classificação dos objetos de forma satisfatória para os propósitos do projeto. Este desempenho sugere também que os \textit{datasets} construídos a partir do robô principal conseguiram representar adequadamente os objetos de interesse, permitindo aos modelos aprenderem padrões distintivos.
+
+A diferença mais notável entre os modelos neste cenário reside no tempo médio de validação. A Árvore de Decisão consistentemente apresentou o menor tempo, o que se deve à sua simplicidade computacional após o treinamento. Uma vez construída, a classificação envolve uma série de comparações diretas de atributos com valores limiares, que são operações computacionalmente leves. As árvores geradas, em sua maioria, não necessitaram de mais do que quatro níveis para classificar os objetos, o que contribui para essa rapidez.
+
+Em contraste, a rede convolucional SqueezeNet registrou o maior tempo de validação. Diversos fatores contribuem para isso: primeiramente, os dados de entrada consistem em imagens de $224 \times 224$ pixels, representando um volume de dados consideravelmente maior por amostra em comparação com os vetores de \textit{features} ou dados brutos do LiDAR utilizados pelos outros modelos. Essas imagens são então processadas por múltiplas camadas convolucionais, que realizam operações matriciais intensivas para extrair hierarquias de \textit{features} e efetuar a classificação. A natureza custosa dessas operações é evidenciada ao comparar o tempo de validação entre os cenários "Principal" e "Multimodal" para a SqueezeNet: um aumento de cinco vezes no número de amostras de validação (de 120 para 600) resultou em um aumento quase proporcional no tempo de validação. Isso demonstra que o principal gargalo para este modelo é, de fato, a complexidade das operações realizadas em cada imagem.
+
+Os demais modelos (k-Vizinhos mais próximos, Naive Bayes, Rede Neural MLP e Floresta Aleatória) apresentaram tempos de validação relativamente baixos no cenário "Principal". Excluindo a SqueezeNet, todos os outros modelos demonstraram tempos de validação que, teoricamente, permitiriam sua execução em taxas compatíveis com a frequência de captura dos sensores (10 Hz), o que é um indicativo positivo para uma eventual implementação embarcada.
+
+Ao analisar os resultados do cenário "Multimodal" apresentados na Tabela~\ref{tab:resumo_geral_desempenho}, observa-se uma queda considerável na acurácia média da maioria dos modelos em comparação com o cenário "Principal". Com exceção da SqueezeNet, os demais classificadores (k-Vizinhos mais próximos, Árvore de Decisão, Naive Bayes, Rede Neural MLP e Floresta Aleatória) apresentaram um desempenho que, em média, poderia não ser considerado satisfatório para a aplicação robusta em diferentes topologias robóticas sem um novo treinamento ou ajuste fino.
+
+Essa redução na performance pode ser, em parte, atribuída ao fenômeno de sobreajuste dos modelos mais simples aos dados da topologia do robô principal, utilizada para o treinamento. Como os dados de validação no cenário multimodal provêm de topologias robóticas distintas daquela usada no treinamento, os modelos, que podem ter se ajustado excessivamente às particularidades e à distribuição específica dos dados do robô principal, encontram dificuldade em generalizar para as novas configurações. Essa questão do sobreajuste e da capacidade de generalização será explorada com maior profundidade em seções posteriores deste capítulo, ao analisarmos os resultados dos robôs secundário individualmente.
+
+É notável que a SqueezeNet não apresentou uma queda tão acentuada em sua acurácia média no cenário multimodal, mantendo um desempenho elevado. Este comportamento pode ser creditado à sua arquitetura de rede neural convolucional, especialmente se utilizada com pesos pré-treinados em grandes volumes de dados, que possui uma capacidade intrínseca superior de extrair \textit{features} robustas e generalizáveis diretamente das imagens. Mesmo diante de variações de angulação, distância ou pequenas diferenças na perspectiva do sensor causadas pela mudança de topologia robótica, a rede consegue identificar padrões relevantes. Esse resultado, embora positivo, era de certa forma esperado, considerando o maior custo computacional associado ao processamento de imagens pela SqueezeNet, conforme discutido anteriormente.
+
+Quanto ao tempo de validação dos modelos no cenário "Multimodal", aplicam-se as mesmas considerações sobre a complexidade relativa de cada algoritmo feitas para o cenário "Principal". Observa-se um aumento no tempo médio de validação para todos os modelos, o que é esperado devido ao aumento no número de amostras utilizadas para a validação neste cenário (600 amostras por \textit{dataset} de robô secundário, em contraste com as 120 amostras por dobra da validação cruzada no cenário "Principal"). No entanto, é interessante notar que o aumento no tempo de validação não foi estritamente proporcional ao aumento no volume de amostras para todos os modelos, sugerindo que outros fatores, como a eficiência de processamento em lote e a natureza dos dados, também influenciam a escalabilidade temporal dos algoritmos.
+
+\subsection{Análise Detalhada no Cenário Principal Simulado}
+
+Aprofundando a análise do desempenho dos modelos no cenário do robô principal com dados simulados, a Tabela~\ref{tab:resumo_principal_simulado_tipodado} apresenta um resumo das médias de acurácia e tempo de validação para cada um dos cinco modelos de aprendizado de máquina analisados (k-Vizinhos mais próximos, Árvore de Decisão, Naive Bayes, Rede Neural e Floresta Aleatória), considerando os diferentes tipos de \textit{datasets} utilizados: dados brutos do LiDAR, \textit{features} extraídas das imagens, \textit{features} extraídas do LiDAR e a combinação de \textit{features} de ambas as fontes. Estes valores foram calculados a partir das médias de validação cruzada de 5 dobras detalhadas no Apêndice A.1.1, excluindo-se a SqueezeNet, que foi avaliada separadamente com imagens brutas. Esta análise permite observar mais de perto como cada tipo de representação dos dados impactou o desempenho de cada classificador neste ambiente controlado.
+
+\begin{table}[!ht]
+\caption{Acurácia Média e Tempo de Validação Médio por Modelo e Tipo de Dado (Robô Principal - Simulado).}
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Modelo} & \textbf{Tipo de Dado} & \textbf{Acurácia Média (\%)} & \textbf{Tempo de Validação Médio (s)} \\
+\hline
+k-NN                     & LiDAR bruto & 97.33 & 0.003360 \\
+                         & Features Imagem & 100.00 & 0.003300 \\
+                         & Features LiDAR & 95.83 & 0.002800 \\
+                         & Features Combinadas & 100.00 & 0.002820 \\
+\hline
+\textbf{Árvore de Decisão}        & LiDAR bruto & 99.50 & 0.000100 \\
+                         & \textbf{Features Imagem} & \textbf{100.00} & \textbf{0.000127} \\
+                         & Features LiDAR & 98.17 & 0.000100 \\
+                         & Features Combinadas & 100.00 & 0.000136 \\
+\hline
+Naive Bayes              & LiDAR bruto & 96.60 & 0.000300 \\
+                         & Features Imagem & 99.83 & 0.000208 \\
+                         & Features LiDAR & 93.67 & 0.000260 \\
+                         & Features Combinadas & 99.83 & 0.000210 \\
+\hline
+Rede Neural              & LiDAR bruto & 96.73 & 0.003500 \\
+                         & Features Imagem & 99.83 & 0.004200 \\
+                         & Features LiDAR & 93.90 & 0.003770 \\
+                         & Features Combinadas & 99.67 & 0.003600 \\
+\hline
+Floresta Aleatória       & LiDAR bruto & 99.70 & 0.006000 \\
+                         & Features Imagem & 100.00 & 0.005400 \\
+                         & Features LiDAR & 97.50 & 0.005660 \\
+                         & Features Combinadas & 100.00 & 0.005600 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nas Tabelas do Apêndice A.1.1}
+\label{tab:resumo_principal_simulado_tipodado}
+\end{table}
+
+Analisando a Tabela~\ref{tab:resumo_principal_simulado_tipodado}, que apresenta os resultados para o robô principal em ambiente simulado, observa-se que o tipo de dado utilizado nos modelos não causou um impacto drasticamente negativo nas acurácias médias. Com exceção das \textit{features} do LiDAR, que levaram a acurácias ligeiramente inferiores para kNN, Naive Bayes e Rede Neural, a maioria das abordagens manteve um desempenho muito alto, frequentemente atingindo 100\% ou valores próximos. Isso sugere que, para este cenário simulado e controlado, a utilização de dados de apenas um dos sensores (processados como \textit{features} de imagem ou mesmo dados brutos do LiDAR para alguns modelos) já poderia ser suficiente para realizar a classificação dos objetos com alta eficácia.
+
+Dentre as configurações avaliadas para os modelos neste cenário simulado, a combinação que se destacou com o melhor equilíbrio entre máxima acurácia e menor tempo de validação foi a Árvore de Decisão utilizando \textit{features} extraídas das imagens de profundidade. Conforme detalhado na Tabela~\ref{tab:tree_feat_img_simu} do Apêndice A, este modelo alcançou 100\% de acurácia em todas as cinco dobras da validação cruzada, com um tempo de validação médio de apenas 0.000127 segundos (ou 0.127 ms).
+
+\subsection{Análise Detalhada no Cenário Principal Real}
+
+Prosseguindo com a análise do desempenho no cenário do robô principal, esta subseção foca nos resultados obtidos com dados reais, coletados em ambiente de laboratório. A Tabela~\ref{tab:resumo_principal_real_tipodado} sumariza as médias de acurácia e tempo de validação para os cinco modelos de aprendizado de máquina (k-Vizinhos mais próximos, Árvore de Decisão, Naive Bayes, Rede Neural e Floresta Aleatória). Estes dados são apresentados de acordo com os diferentes tipos de \textit{datasets} utilizados: dados brutos do LiDAR, \textit{features} extraídas das imagens, \textit{features} extraídas do LiDAR e a combinação de \textit{features} de ambas as fontes. Os valores compilados foram calculados a partir das médias de validação cruzada de 5 dobras, detalhadas na seção A.1.2 do Apêndice, que trata dos dados reais (excluindo-se a SqueezeNet, avaliada separadamente com imagens brutas). O objetivo desta análise é identificar como cada forma de representação dos dados, agora sob a influência das imperfeições e ruídos do mundo real, impactou o desempenho de cada classificador.
+
+\begin{table}[!ht]
+\caption{Acurácia Média e Tempo de Validação Médio por Modelo e Tipo de Dado (Robô Principal - Real).}
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Modelo} & \textbf{Tipo de Dado} & \textbf{Acurácia Média (\%)} & \textbf{Tempo de Validação Médio (s)} \\
+\hline
+k-Vizinhos mais próximos & LiDAR bruto & 90.90 & 0.003460 \\
+                         & Features Imagem & 100.00 & 0.003000 \\
+                         & Features LiDAR & 93.17 & 0.002800 \\
+                         & Features Combinadas & 100.00 & 0.002900 \\
+\hline
+\textbf{Árvore de Decisão}        & LiDAR bruto & 99.37 & 0.000159 \\
+                         & \textbf{Features Imagem} & \textbf{99.67} & \textbf{0.000137} \\
+                         & Features LiDAR & 97.50 & 0.000134 \\
+                         & Features Combinadas & 99.5 & 0.000134 \\ 
+\hline
+\textbf{Naive Bayes}     & \textbf{LiDAR bruto} & \textbf{81.33} & \textbf{0.000276} \\
+                         & Features Imagem & 99.33 & 0.000236 \\
+                         & Features LiDAR & 93.90 & 0.000244 \\
+                         & Features Combinadas & 99.67 & 0.000214 \\
+\hline
+Rede Neural              & LiDAR bruto & 93.17 & 0.003855 \\
+                         & Features Imagem & 87.84 & 0.003025 \\
+                         & Features LiDAR & 95.00 & 0.003295 \\
+                         & Features Combinadas & 90.60 & 0.003456 \\
+\hline
+Floresta Aleatória       & LiDAR bruto & 100.00 & 0.005957 \\
+                         & Features Imagem & 99.67 & 0.005623 \\
+                         & Features LiDAR & 98.33 & 0.005730 \\
+                         & Features Combinadas & 99.67 & 0.005763 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nas tabelas do Apêndice A.1.2}
+\label{tab:resumo_principal_real_tipodado}
+\end{table}
+
+Ao analisar a Tabela~\ref{tab:resumo_principal_real_tipodado}, que detalha o desempenho com dados reais do robô principal, percebe-se que as acurácias médias dos modelos clássicos permanecem, em geral, bastante elevadas. Mesmo o pior caso observado, o modelo Naive Bayes utilizando dados brutos do LiDAR, que alcançou 81.33\% de acurácia, ainda pode ser considerado um resultado relativamente decente para uma linha de base. Este panorama geral sugere que os modelos, mesmo diante das imperfeições e ruídos inerentes aos dados reais, mantêm uma boa capacidade de classificação.
+
+Com a análise dos dados reais, um comportamento curioso emerge nos resultados da Rede Neural (MLP). Intuitivamente, seria esperado que um maior volume de informações ou a combinação de diferentes fontes de dados (como imagens e LiDAR) levasse a um desempenho superior ou, no mínimo, equivalente. No entanto, observa-se que ao utilizar as \textit{features} extraídas das imagens da câmera de profundidade, a acurácia média do modelo (87.84\%) foi inferior à obtida com as \textit{features} do LiDAR (95.00\%) e até mesmo com os dados brutos do LiDAR (93.17\%). Isso sugere que, para a arquitetura de MLP utilizada, os dados processados da câmera podem ter introduzido ruído ou informações menos discriminatórias que os dados do LiDAR, ou que a combinação desses dados não foi otimizada pela rede da forma esperada. Este comportamento não se repetiu de forma tão evidente nos outros modelos, o que levanta a discussão sobre como a arquitetura específica da rede neural e a natureza dos dados de entrada devem ser cuidadosamente consideradas e ajustadas para evitar impactos negativos no desempenho.
+
+Apesar do bom desempenho geral de várias configurações, se buscarmos a melhor combinação em termos de acurácia e tempo de validação com dados reais para os modelos clássicos listados na Tabela~\ref{tab:resumo_principal_real_tipodado}, a Árvore de Decisão com \textit{features} das imagens de profundidade novamente se apresenta como a melhor candidata, alcançando 99.67\% de acurácia com um tempo de validação médio extremamente baixo (0.000137s). Contudo, é importante notar que o k-Vizinhos mais próximos e a Floresta Aleatória também atingiram 100\% de acurácia com \textit{features} de imagem e \textit{features} combinadas em alguns casos, embora com tempos de validação ligeiramente superiores aos da Árvore de Decisão.
+
+\subsection{Análise dos Testes de Portabilidade no Primeiro Robô Secundário}
+
+A Tabela~\ref{tab:resumo_robo1_secundario_tipodado} compila os resultados de desempenho dos modelos de aprendizado de máquina quando treinados com dados do robô principal e validados com dados provenientes da primeira topologia de robô secundário, em ambiente simulado. Esta análise visa avaliar a capacidade de generalização e portabilidade do sensor multimodal e dos modelos para uma configuração robótica distinta daquela utilizada no treinamento. Os dados apresentados são as métricas de acurácia e tempo de validação para cada um dos cinco modelos, considerando os quatro tipos de \textit{datasets}: dados brutos do LiDAR, \textit{features} extraídas das imagens, \textit{features} extraídas do LiDAR e a combinação de \textit{features}. A SqueezeNet, avaliada com imagens brutas, não está incluída nesta tabela resumo. Os valores aqui apresentados são extraídos diretamente das tabelas correspondentes na seção A.2.1 do Apêndice.
+
+\begin{table}[!ht]
+\caption{Acurácia e Tempo de Validação por Modelo e Tipo de Dado (Primeiro Robô Secundário - Multimodal).}
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Modelo} & \textbf{Tipo de Dado} & \textbf{Acurácia (\%)} & \textbf{Tempo de Validação (s)} \\
+\hline
+k-Vizinhos mais próximos & LiDAR bruto & 47.83 & 0.019270 \\
+                         & Features Imagem & 70.33 & 0.012015 \\
+                         & Features LiDAR & 79.83 & 0.012294 \\
+                         & Features Combinadas & 70.33 & 0.011850 \\
+\hline
+Árvore de Decisão        & LiDAR bruto & 46.00 & 0.000213 \\
+                         & Features Imagem & 69.67 & 0.000170 \\
+                         & Features LiDAR & 79.00 & 0.000156 \\
+                         & Features Combinadas & 69.67 & 0.000151 \\
+\hline
+Naive Bayes              & LiDAR bruto & 25.00 & 0.000745 \\
+                         & Features Imagem & 69.83 & 0.000264 \\
+                         & Features LiDAR & 63.00 & 0.000232 \\
+                         & Features Combinadas & 69.83 & 0.000245 \\
+\hline
+\textbf{Rede Neural}            & LiDAR bruto & 25.00 & 0.000745 \\ 
+                         & Features Imagem & 75.00 & 0.015986 \\ 
+                         & Features LiDAR & 69.17 & 0.015490 \\ 
+                         & \textbf{Features Combinadas} & \textbf{100.00} & \textbf{0.016043} \\
+\hline
+Floresta Aleatória       & LiDAR bruto & 46.67 & 0.007682 \\
+                         & Features Imagem & 69.67 & 0.007539 \\
+                         & Features LiDAR & 80.33 & 0.008353 \\
+                         & Features Combinadas & 70.33 & 0.007828 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nas tabelas do Apêndice A.2.1}
+\label{tab:resumo_robo1_secundario_tipodado}
+\end{table}
+
+Ao analisar a Tabela~\ref{tab:resumo_robo1_secundario_tipodado}, que apresenta os resultados dos testes de portabilidade para o primeiro robô secundário, evidencia-se uma queda significativa no desempenho da maioria dos modelos. Em muitos casos, as acurácias médias registradas ficaram abaixo de 80\%, atingindo patamares tão baixos quanto 25\% para o Naive Bayes e a Rede Neural com dados brutos do LiDAR. Uma acurácia de 25\% em um problema de quatro classes sugere que o modelo não conseguiu aprender a diferenciar as classes, indicando que, nessas configurações específicas, os modelos não seriam sequer capazes de realizar as classificações desejadas em uma nova topologia robótica sem retreinamento.
+
+A Árvore de Decisão manteve-se como o modelo com o menor tempo de validação, uma característica consistente com sua simplicidade. No entanto, mesmo em sua melhor configuração para este cenário (utilizando \textit{features} do LiDAR), a acurácia atingiu 79.00\%, o que pode não ser considerado um nível de classificação robusto o suficiente para aplicações críticas.
+
+O destaque neste cenário de teste de portabilidade foi a Rede Neural (MLP) quando utilizada com \textit{features} combinadas, alcançando 100\% de acurácia. Este resultado é particularmente interessante, pois sugere uma maior capacidade de adaptação e generalização deste modelo para cenários não vistos durante o treinamento, especialmente quando alimentado com um conjunto mais rico e diversificado de \textit{features}. Isso contrasta com seu desempenho inferior utilizando apenas dados brutos do LiDAR nesta mesma topologia.
+
+\subsection{Análise dos Testes de Portabilidade no Segundo Robô Secundário}
+
+A Tabela~\ref{tab:resumo_robo2_secundario_tipodado} apresenta os resultados de desempenho dos modelos de aprendizado de máquina quando treinados com dados do robô principal e validados com dados provenientes da segunda topologia de robô secundário, também em ambiente simulado. Similarmente à análise anterior, o objetivo é avaliar a capacidade de generalização e portabilidade do sensor multimodal e dos modelos para esta outra configuração robótica distinta. São apresentadas as métricas de acurácia e tempo de validação para cada um dos cinco modelos clássicos, considerando os quatro tipos de \textit{datasets}: dados brutos do LiDAR, \textit{features} extraídas das imagens, \textit{features} extraídas do LiDAR e a combinação de \textit{features}. A SqueezeNet, avaliada com imagens brutas, não está incluída nesta tabela resumo. Os valores aqui apresentados são extraídos diretamente das tabelas correspondentes na seção A.2.2 do Apêndice.
+
+\begin{table}[!ht]
+\caption{Acurácia e Tempo de Validação por Modelo e Tipo de Dado (Segundo Robô Secundário - Multimodal).}
+\centering
+\begin{tabular}{llcc}
+\hline
+\textbf{Modelo} & \textbf{Tipo de Dado} & \textbf{Acurácia (\%)} & \textbf{Tempo de Validação (s)} \\
+\hline
+k-Vizinhos mais próximos & LiDAR bruto & 78.00 & 0.019251 \\
+                         & Features Imagem & 86.67 & 0.011986 \\
+                         & Features LiDAR & 74.33 & 0.013072 \\
+                         & Features Combinadas & 86.67 & 0.011865 \\
+\hline
+Árvore de Decisão        & LiDAR bruto & 52.67 & 0.000230 \\
+                         & Features Imagem & 61.17 & 0.000149 \\
+                         & Features LiDAR & 74.50 & 0.000177 \\
+                         & Features Combinadas & 84.67 & 0.000149 \\
+\hline
+Naive Bayes              & LiDAR bruto & 36.50 & 0.000785 \\
+                         & Features Imagem & 47.33 & 0.000305 \\
+                         & Features LiDAR & 71.67 & 0.000255 \\
+                         & Features Combinadas & 49.50 & 0.000358 \\
+\hline
+\textbf{Rede Neural}              & LiDAR bruto & 76.33 & 0.015708 \\
+                         & Features Imagem & 88.50 & 0.017994 \\
+                         & \textbf{Features LiDAR} & \textbf{93.50} & \textbf{0.015820} \\
+                         & Features Combinadas & 88.50 & 0.015628 \\
+\hline
+Floresta Aleatória       & LiDAR bruto & 77.50 & 0.007995 \\
+                         & Features Imagem & 64.83 & 0.008024 \\
+                         & Features LiDAR & 80.67 & 0.007872 \\
+                         & Features Combinadas & 64.83 & 0.006904 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nas Tabelas~\ref{tab:modelos_lidar_bruto_robo2} a \ref{tab:modelos_featcomb_robo2} do Apêndice A.2.2.}
+\label{tab:resumo_robo2_secundario_tipodado}
+\end{table}
+
+Ao examinar a Tabela~\ref{tab:resumo_robo2_secundario_tipodado}, que sumariza o desempenho dos modelos na segunda topologia de robô secundário, nota-se que, diferente da primeira topologia secundária, não houve casos em que os modelos falharam completamente em classificar os dados (ou seja, acurácias de 25\%). Contudo, a acurácia média geral para a maioria das configurações permaneceu abaixo de 88\%, o que ainda indica desafios na portabilidade direta dos modelos treinados com o robô principal.
+
+Uma exceção notável é o modelo Naive Bayes, que, com exceção do uso de \textit{features} do LiDAR (71.67\%), apresentou acurácias consistentemente abaixo de 50\% para os demais tipos de dados nesta topologia. Este resultado sugere que, para o segundo robô secundário, o Naive Bayes não demonstrou ser uma escolha adequada para uma classificação confiável na maioria dos cenários de dados testados.
+
+A Árvore de Decisão manteve sua característica de apresentar o menor tempo de validação. Seu melhor desempenho em termos de acurácia para esta topologia foi de 84.67\% utilizando \textit{features} combinadas. Embora este valor seja um pouco superior ao seu melhor caso na primeira topologia secundária (79.00\% com \textit{features} do LiDAR), o ganho não é substancial a ponto de destacá-la como a melhor opção geral para este cenário de portabilidade.
+
+Novamente, a Rede Neural (MLP) demonstrou um desempenho superior, apresentando a melhor combinação de acurácia para esta topologia ao utilizar as \textit{features} extraídas do LiDAR, alcançando 93.50\%. Isso reforça a observação anterior de que a Rede Neural, mesmo com uma arquitetura simples, possui uma boa capacidade de generalização quando alimentada com representações de dados mais processadas e potencialmente mais discriminatórias, como as \textit{features} do LiDAR. Curiosamente, o uso de \textit{features} combinadas resultou em uma leve queda na acurácia (88.50\%) em comparação com o uso exclusivo das \textit{features} do LiDAR, evidenciando mais uma vez a importância da seleção e combinação criteriosa dos dados de entrada durante a construção e treinamento de redes neurais, pois a simples adição de mais dados nem sempre se traduz em melhor desempenho.
+
+\section{Análise da Influência do Tipo de Dado}
+
+Para aprofundar a análise da influência dos diferentes tipos de dados e da fusão sensorial no desempenho da classificação, a Tabela~\ref{tab:resumo_cenario_tipodado_acuracia} apresenta um resumo consolidado. Para cada um dos quatro cenários experimentais avaliados neste trabalho — Robô Principal em ambiente Simulado, Robô Principal em ambiente Real, testes de portabilidade com o Primeiro Robô Secundário (simulado) e com o Segundo Robô Secundário (simulado) — a tabela exibe a acurácia média obtida com cada tipo de representação de dados. Foram considerados os seguintes tipos de dados: Imagens Brutas (utilizadas exclusivamente pela rede SqueezeNet), Dados Brutos do LiDAR, \textit{Features} extraídas das Imagens, \textit{Features} extraídas do LiDAR e \textit{Features} Combinadas (fusão das \textit{features} de imagem e LiDAR). Os valores apresentados para os \textit{datasets} que não utilizam a SqueezeNet (ou seja, todos exceto "Imagens Brutas") representam a média de desempenho dos cinco modelos clássicos (k-Vizinhos mais próximos, Árvore de Decisão, Naive Bayes, Rede Neural e Floresta Aleatória) para aquele tipo de dado específico dentro do cenário correspondente, conforme detalhado no Apêndice A. Para o tipo de dado "Imagens Brutas", os valores referem-se ao desempenho da SqueezeNet.
+
+\begin{table}[H]
+\caption{Acurácia Média por Cenário e Tipo de Dado.}
+\centering
+\begin{tabular}{llc}
+\hline
+\textbf{Cenário} & \textbf{Tipo de Dado} & \textbf{Acurácia Média (\%)} \\
+\hline
+\multirow{5}{*}{Robô Principal (Simulado)} & Imagens Brutas (SqueezeNet) & 100.00 \\
+                                          & LiDAR bruto (Média Modelos) & 97.97 \\
+                                          & Features Imagem (Média Modelos) & 99.93 \\
+                                          & Features LiDAR (Média Modelos) & 95.81 \\
+                                          & Features Combinadas (Média Modelos) & 99.90 \\
+\hline
+\multirow{5}{*}{Robô Principal (Real)} & Imagens Brutas (SqueezeNet) & 100.00 \\
+                                       & LiDAR bruto (Média Modelos) & 92.95 \\
+                                       & Features Imagem (Média Modelos) & 97.30 \\
+                                       & Features LiDAR (Média Modelos) & 95.58 \\
+                                       & Features Combinadas (Média Modelos) & 97.49 \\
+\hline
+\multirow{5}{*}{Robôs Secundários} & Imagens Brutas (SqueezeNet) & 97.67 \\
+                                                    & LiDAR bruto (Média Modelos) & 51.15 \\
+                                                    & Features Imagem (Média Modelos) & 70.30 \\
+                                                    & Features LiDAR (Média Modelos) & 76.60 \\
+                                                    & Features Combinadas (Média Modelos) & 75.43 \\
+\hline
+\end{tabular}
+\fonte{Autoria própria (2025), com base nos dados do Apêndice A}
+\label{tab:resumo_cenario_tipodado_acuracia}
+\end{table}
+
+Ao analisar os dados consolidados na Tabela~\ref{tab:resumo_cenario_tipodado_acuracia}, algumas tendências gerais são observadas. A rede SqueezeNet, de fato, apresenta as acurácias mais elevadas em todos os cenários avaliados, incluindo os testes de portabilidade com as topologias secundárias. Mesmo quando os modelos demonstram uma queda brusca de desempenho neste último cenário, a SqueezeNet mantém uma acurácia robusta (97.67\%), reforçando sua capacidade superior de generalização a partir de imagens brutas.
+
+Considerando o robô principal, tanto no ambiente simulado quanto no real, observa-se que a origem dos dados (simulada ou real) e o tipo de dado utilizado para treinamento e validação (LiDAR bruto, features de imagem, features de LiDAR ou features combinadas) não resultaram em impactos dramaticamente negativos nas acurácias finais dos modelos clássicos, que geralmente se mantiveram altas. Isso indica que, quando os dados de treinamento e validação provêm da mesma topologia robótica (ou de uma representação fiel, como no caso da simulação do robô principal), os modelos conseguem aprender padrões consistentes e realizar a classificação de forma satisfatória. Esses resultados sugerem que ambos os sensores, são capazes de fornecer informações úteis para a classificação dos objetos, tanto individualmente quanto em combinação.
+
+Nos testes de portabilidade para as topologias secundárias (cenário "Robôs Secundários"), a maior queda de desempenho médio dos modelos clássicos ocorreu com os dados brutos do LiDAR, onde a acurácia média (51.15\%) foi consideravelmente inferior à observada no cenário do robô principal (97.97\% para simulado e 92.95\% para real). Essa sensibilidade pode ser atribuída ao fato de que as leituras brutas do sensor LiDAR são altamente dependentes da posição e orientação relativas entre o sensor e o objeto. Pequenas variações na topologia do robô podem alterar significativamente os ângulos e as distâncias registradas para um mesmo objeto. Utilizando o modelo de Árvore de Decisão como exemplo, que classifica com base em limiares para valores de \textit{features} específicas (neste caso, uma distância em um determinado ângulo), uma mudança na posição do sensor pode fazer com que a \textit{feature} crucial apareça em um ângulo diferente, confundindo o modelo e levando a erros de classificação.
+
+Esperava-se que a extração de \textit{features} dos dados do LiDAR pudesse mitigar esse problema, tornando a representação dos dados mais generalizável. De fato, observa-se um ganho significativo de acurácia ao comparar a média dos modelos clássicos com dados brutos do LiDAR (51.15\%) com a média utilizando \textit{features} extraídas do LiDAR (76.60\%) no cenário multimodal dos robôs secundários, um aumento de aproximadamente 25\%. Nvo cenário do robô principal, a diferença entre usar dados brutos do LiDAR e \textit{features} do LiDAR não foi tão pronunciada (cerca de 2\% ou menos de diferença na acurácia média). Isso pode ser explicado pela coleta de dados altamente controlada para o robô principal, onde as variações de ângulo e posicionamento entre o sensor e os objetos foram minimizadas. Tal controle, no entanto, pode não refletir as condições operacionais reais, onde a orientação exata do sensor em relação aos objetos não pode ser garantida. Em suma, a extração de \textit{features} demonstra ser particularmente importante para o sensor LiDAR em contextos de portabilidade, pois tende a normalizar as informações relevantes de forma mais independente da posição espacial exata do sensor e do objeto.
+
+Analisando as \textit{features} extraídas das imagens no cenário das topologias secundárias, nota-se que, em média, seu desempenho (70.30\%) foi inferior ao das \textit{features} do LiDAR (76.60\%) e das \textit{features} combinadas (75.43\%). Isso sugere que as \textit{features} de imagem extraídas neste trabalho, embora computacionalmente eficientes, podem não ter capturado as características dos objetos de forma tão robusta a variações de perspectiva quanto as \textit{features} do LiDAR, o que não era inicialmente esperado, dado o volume de informação potencialmente maior nas imagens de profundidade. Isso indica que as \textit{features} específicas extraídas das imagens podem ser menos generalizáveis para diferentes capturas ou topologias em comparação com as \textit{features} derivadas do LiDAR.
+
+\section{Análise das Matrizes de Confusão}
+% Discussão sobre padrões de erro, acertos esperados, surpresas.
+% Confronto: esperado vs. observado.
+
+\section{Viabilidade para Implementação Embarcada}
+% Análise do tempo de validação.
+% Considerações sobre volume de dados.
+% Discussão sobre overfitting e impacto em solução embarcada.

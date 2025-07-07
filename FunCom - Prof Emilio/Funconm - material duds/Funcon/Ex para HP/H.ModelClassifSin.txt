@@ -1,0 +1,40 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2 MODELOS E FERRAMENTAS MATEMÁTICAS
+
+O primeiro passo para o estudo de qualquer sistema é o de escrever equações que representam os vários sinais presentes. 
+
+Porém, não se deve esquecer que tais equações são somente modelos matemáticos de grandezas físicas, normalmente modelos
+imperfeitos. 
+
+De fato, uma descrição completa e perfeita do mais simples sinal ou componente seria proibitivamente complexa em sua forma matemática e, consequentemente, inútil para as finalidades de engenharia. Por isso, os modelos utilizados são aqueles que representam, com complexidade mínima, todas as propriedades importantes do problema considerado. 
+
+Isto leva algumas vezes à construção de vários modelos diferentes para o mesmo problema, de acordo com a necessidade. 
+Portanto, dado um problema particular, a escolha do modelo a ser utilizado é baseada no entendimento dos fenômenos físicos envolvidos e das limitações da matemática; em poucas palavras é engenharia.
+
+
+--------------------
+2.1 CLASSIFICAÇÃO DE SINAIS E SISTEMAS
+
+
+--------------------
+Um sinal pode ser classificado como : 
+
+(1) DETERMINISTICO quando não há incerteza com relação a seu valor em qualquer instante de tempo, 
+(2) ALEATORIO quando existe certo grau de incerteza antes que ele realmente ocorra; 
+(3) CONTINUO quando é definido para todos os instantes de tempo, 
+(4) DISCRETO quando é definido para instantes discretos de tempo; 
+(5) PERIODICO quando repete-se regularmente a cada quantidade de tempo dita período, e 
+(6) APERIODICO quando não apresenta padrões de repetição.
+
+
+--------------------
+Um sistema pode ser classificado como : 
+
+(1) LINEAR quando obedece ao princípio da superposição, 
+(2) NAO LINEAR quando não obedece; 
+(3) INVARIANTE NO TEMPO quando o sistema não impõe atraso entre excitação e resposta, e 
+(4) VARIANTE NO TEMPO quando o sistema impõe certo atraso entre excitação e resposta.
+
+[FIM]."

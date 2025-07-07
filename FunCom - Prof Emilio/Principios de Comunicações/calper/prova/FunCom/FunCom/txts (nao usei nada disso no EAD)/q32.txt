@@ -1,0 +1,16 @@
+"
+
+32)Um sinal, com espectro limitado a 100Hz, eh amostrado por um trem de pulsos de largura 1ms, amplitude 5V e frequencia fundamental 200Hz, pede-se:
+a)Determine a expressao matematica e esboce o espectro do sinal amostrado.
+b)Eh possivel recuperar o sinal original g(t)? Como?
+
+R.a): S(f) = (T.A/Ts).Sum{sinc(n.1m/5m).G(f-200n)} = 5.1m.200.Sum{sinc(0,2n).G(f-200n)}
+Grafico: Pulsos triangulares decrescentes com picos a partir de 0 (sinc(0)) até 800(sinc(0,8))
+
+R.b):FPB com f3db = 100Hz.
+
+<<FIM>>
+
+
+
+"

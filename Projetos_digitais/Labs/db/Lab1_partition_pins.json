@@ -1,0 +1,145 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "AFa",
+					"strict" : false
+				},
+				{
+					"name" : "AFb",
+					"strict" : false
+				},
+				{
+					"name" : "AFc",
+					"strict" : false
+				},
+				{
+					"name" : "AFd",
+					"strict" : false
+				},
+				{
+					"name" : "AFe",
+					"strict" : false
+				},
+				{
+					"name" : "AFf",
+					"strict" : false
+				},
+				{
+					"name" : "AFg",
+					"strict" : false
+				},
+				{
+					"name" : "BFa",
+					"strict" : false
+				},
+				{
+					"name" : "BFb",
+					"strict" : false
+				},
+				{
+					"name" : "BFc",
+					"strict" : false
+				},
+				{
+					"name" : "BFd",
+					"strict" : false
+				},
+				{
+					"name" : "BFe",
+					"strict" : false
+				},
+				{
+					"name" : "BFf",
+					"strict" : false
+				},
+				{
+					"name" : "BFg",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fa",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fb",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fc",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fd",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fe",
+					"strict" : false
+				},
+				{
+					"name" : "S0Ff",
+					"strict" : false
+				},
+				{
+					"name" : "S0Fg",
+					"strict" : false
+				},
+				{
+					"name" : "S1Fa",
+					"strict" : false
+				},
+				{
+					"name" : "S1Fd",
+					"strict" : false
+				},
+				{
+					"name" : "S1Fe",
+					"strict" : false
+				},
+				{
+					"name" : "S1Ff",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "B1",
+					"strict" : false
+				},
+				{
+					"name" : "B2",
+					"strict" : false
+				},
+				{
+					"name" : "B3",
+					"strict" : false
+				},
+				{
+					"name" : "B0",
+					"strict" : false
+				},
+				{
+					"name" : "Ci",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

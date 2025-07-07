@@ -1,0 +1,63 @@
+clc, clear, close all
+
+img1 = imread('L/L01.png');
+img2 = imread('L/L02.png');
+img3 = imread('L/L03.png');
+img4 = imread('L/L04.png');
+img5 = imread('L/L05.png');
+img6 = imread('L/L06.png');
+img7 = imread('L/L07.png');
+img8 = imread('L/L08.png');
+
+
+images = {img1, img2, img3, img4, img5, img6, img7, img8};
+
+eccentricities_mean = zeros(8, 1);
+labels = strings(8, 1);
+Euler_numbers = zeros(8, 1);
+
+se = strel('square', 4);
+
+for i = 1:8
+
+    binary_img = ~imbinarize(images{i});
+    binary_img = imclose(binary_img,se);
+
+    cc = bwconncomp(binary_img);
+
+    props = regionprops(cc, 'Eccentricity', 'EulerNumber');
+    
+    eccentricity_values = [props.Eccentricity];
+    Euler_number = [props.EulerNumber];
+    eccentricities_mean(i) = max(eccentricity_values);
+    Euler_numbers(i) = min(Euler_number);
+
+    if Euler_numbers(i) == -1
+        labels(i) = "Bispo";
+    elseif Euler_numbers(i) == 0
+        labels(i) = "Estrela";
+    elseif eccentricities_mean(i) >= 0.98
+        labels(i) = "Retângulo";
+    else
+        labels(i) = "Quadrado";
+    end
+
+
+    
+end
+
+for i = 1:8
+    subplot(2, 4, i); % Organiza as imagens em uma grade 2x4
+    imshow(images{i}); % Exibe a imagem
+    title(sprintf('L%02d: %s', i, labels(i))); % Adiciona o título com o rótulo
+end
+
+
+% Img1 : eccentricity = 0.8660; Euler = 0 -> estrela
+% Img2 : eccentricity = 0.9478; Euler = -1 -> bispo
+% Img3 : eccentricity = 0.9840; Euler = 1 -> retangulo
+% Img4 : eccentricity = 0.8660; Euler = 1 -> quadrado
+% Img5 : eccentricity = 0.7303; Euler = 0 -> estrela
+% Img6 : eccentricity = 0.9843; Euler = 1 -> retangulo
+% Img7 : eccentricity = 0.9416; Euler = -1 -> bispo
+% Img8 : eccentricity = 0.2678; Euler = 1 -> quadrado

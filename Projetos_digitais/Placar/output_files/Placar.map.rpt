@@ -1,0 +1,624 @@
+Analysis & Synthesis report for Placar
+Mon Dec 12 17:07:44 2022
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Dec 12 17:07:44 2022       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; Placar                                      ;
+; Top-level Entity Name              ; Placar                                      ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 1,869                                       ;
+;     Total combinational functions  ; 1,868                                       ;
+;     Dedicated logic registers      ; 579                                         ;
+; Total registers                    ; 579                                         ;
+; Total pins                         ; 50                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; Placar             ; Placar             ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                          ; Library ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+; Placar.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Placar.bdf            ;         ;
+; Contadorx99.vhd                  ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd       ;         ;
+; Contadorx5.vhd                   ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd        ;         ;
+; Contadorx3.vhd                   ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd        ;         ;
+; TransVetor.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/TransVetor.bdf        ;         ;
+; Seletor.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Seletor.bdf           ;         ;
+; Placar_Volei.bdf                 ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Placar_Volei.bdf      ;         ;
+; AorB_Dec7.bdf                    ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/AorB_Dec7.bdf         ;         ;
+; Cronometro10min.vhd              ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd   ;         ;
+; Contadorx999.vhd                 ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd      ;         ;
+; Contadorx4.vhd                   ; yes             ; User VHDL File                           ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd        ;         ;
+; Placar_Basquete.bdf              ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Placar_Basquete.bdf   ;         ;
+; AouBx42.bdf                      ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/AouBx42.bdf           ;         ;
+; Seletor7x6.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/Seletor7x6.bdf        ;         ;
+; aoub.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/aoub.bdf              ;         ;
+; dec7inv.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/dec7inv.bdf           ;         ;
+; inv7.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/inv7.bdf              ;         ;
+; decodificador7seg.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/decodificador7seg.bdf ;         ;
+; 5or.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/5or.bdf               ;         ;
+; timing_reference.vhd             ; yes             ; Auto-Found VHDL File                     ; C:/Users/Avell/Desktop/Projetos_digitais/Placar/timing_reference.vhd  ;         ;
++----------------------------------+-----------------+------------------------------------------+-----------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 1,869        ;
+;                                             ;              ;
+; Total combinational functions               ; 1868         ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 878          ;
+;     -- 3 input functions                    ; 195          ;
+;     -- <=2 input functions                  ; 795          ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 1000         ;
+;     -- arithmetic mode                      ; 868          ;
+;                                             ;              ;
+; Total registers                             ; 579          ;
+;     -- Dedicated logic registers            ; 579          ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 50           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; Placar~input ;
+; Maximum fan-out                             ; 350          ;
+; Total fan-out                               ; 7988         ;
+; Average fan-out                             ; 3.14         ;
++---------------------------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                  ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                  ; Entity Name       ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
+; |Placar                               ; 1868 (1)            ; 579 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 50   ; 0            ; 0          ; |Placar                                                                              ;                   ;              ;
+;    |Placar_Basquete:inst39|           ; 1037 (1)            ; 355 (1)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39                                                       ; Placar_Basquete   ; work         ;
+;       |AorB_Dec7:inst18|              ; 3 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst18                                      ; AorB_Dec7         ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst3                           ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst4                           ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst18|AouB:inst5                           ; AouB              ; work         ;
+;       |AorB_Dec7:inst20|              ; 7 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20                                      ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst2                           ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst3                           ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|AouB:inst5                           ; AouB              ; work         ;
+;          |Dec7Inv:inst|               ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst                         ; Dec7Inv           ; work         ;
+;             |Decodificador7Seg:inst2| ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst20|Dec7Inv:inst|Decodificador7Seg:inst2 ; Decodificador7Seg ; work         ;
+;       |AorB_Dec7:inst21|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst21                                      ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst2                           ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst3                           ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst4                           ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst21|AouB:inst5                           ; AouB              ; work         ;
+;       |AorB_Dec7:inst22|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst22                                      ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst2                           ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst3                           ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst4                           ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst22|AouB:inst5                           ; AouB              ; work         ;
+;       |AorB_Dec7:inst23|              ; 4 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst23                                      ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst2                           ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst3                           ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst4                           ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|AorB_Dec7:inst23|AouB:inst5                           ; AouB              ; work         ;
+;       |Contadorx4:inst12|             ; 47 (47)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Contadorx4:inst12                                     ; Contadorx4        ; work         ;
+;       |Contadorx999:inst10|           ; 354 (354)           ; 96 (96)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10                                   ; Contadorx999      ; work         ;
+;       |Contadorx999:inst9|            ; 354 (354)           ; 96 (96)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9                                    ; Contadorx999      ; work         ;
+;       |Cronometro10min:inst16|        ; 197 (197)           ; 97 (97)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Cronometro10min:inst16                                ; Cronometro10min   ; work         ;
+;       |Seletor:inst4|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Seletor:inst4                                         ; Seletor           ; work         ;
+;       |Seletor:inst6|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Seletor:inst6                                         ; Seletor           ; work         ;
+;       |Seletor:inst|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Seletor:inst                                          ; Seletor           ; work         ;
+;       |Timing_Reference:inst7|        ; 56 (56)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Basquete:inst39|Timing_Reference:inst7                                ; Timing_Reference  ; work         ;
+;    |Placar_Volei:inst38|              ; 688 (0)             ; 224 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38                                                          ; Placar_Volei      ; work         ;
+;       |AorB_Dec7:inst13|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13                                         ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst2                              ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst3                              ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst4                              ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|AouB:inst5                              ; AouB              ; work         ;
+;          |Dec7Inv:inst|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst                            ; Dec7Inv           ; work         ;
+;             |Decodificador7Seg:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst13|Dec7Inv:inst|Decodificador7Seg:inst2    ; Decodificador7Seg ; work         ;
+;       |AorB_Dec7:inst15|              ; 5 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15                                         ; AorB_Dec7         ; work         ;
+;          |AouB:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst2                              ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst3                              ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst4                              ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|AouB:inst5                              ; AouB              ; work         ;
+;          |Dec7Inv:inst|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst                            ; Dec7Inv           ; work         ;
+;             |Decodificador7Seg:inst2| ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|AorB_Dec7:inst15|Dec7Inv:inst|Decodificador7Seg:inst2    ; Decodificador7Seg ; work         ;
+;       |Contadorx3:inst10|             ; 46 (46)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Contadorx3:inst10                                        ; Contadorx3        ; work         ;
+;       |Contadorx3:inst9|              ; 46 (46)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Contadorx3:inst9                                         ; Contadorx3        ; work         ;
+;       |Contadorx5:inst8|              ; 45 (45)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Contadorx5:inst8                                         ; Contadorx5        ; work         ;
+;       |Contadorx99:inst3|             ; 268 (268)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Contadorx99:inst3                                        ; Contadorx99       ; work         ;
+;       |Contadorx99:inst4|             ; 267 (267)           ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Contadorx99:inst4                                        ; Contadorx99       ; work         ;
+;       |Seletor:inst1|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Seletor:inst1                                            ; Seletor           ; work         ;
+;       |Seletor:inst2|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Seletor:inst2                                            ; Seletor           ; work         ;
+;       |Seletor:inst|                  ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Placar_Volei:inst38|Seletor:inst                                             ; Seletor           ; work         ;
+;    |Seletor7x6:inst40|                ; 139 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40                                                            ; Seletor7x6        ; work         ;
+;       |AouBx42:inst|                  ; 139 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst                                               ; AouBx42           ; work         ;
+;          |AouB:inst10|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst10                                   ; AouB              ; work         ;
+;          |AouB:inst11|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst11                                   ; AouB              ; work         ;
+;          |AouB:inst12|                ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst12                                   ; AouB              ; work         ;
+;          |AouB:inst13|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst13                                   ; AouB              ; work         ;
+;          |AouB:inst14|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst14                                   ; AouB              ; work         ;
+;          |AouB:inst15|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst15                                   ; AouB              ; work         ;
+;          |AouB:inst16|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst16                                   ; AouB              ; work         ;
+;          |AouB:inst17|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst17                                   ; AouB              ; work         ;
+;          |AouB:inst18|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst18                                   ; AouB              ; work         ;
+;          |AouB:inst19|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst19                                   ; AouB              ; work         ;
+;          |AouB:inst1|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst1                                    ; AouB              ; work         ;
+;          |AouB:inst20|                ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst20                                   ; AouB              ; work         ;
+;          |AouB:inst21|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst21                                   ; AouB              ; work         ;
+;          |AouB:inst22|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst22                                   ; AouB              ; work         ;
+;          |AouB:inst23|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst23                                   ; AouB              ; work         ;
+;          |AouB:inst24|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst24                                   ; AouB              ; work         ;
+;          |AouB:inst25|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst25                                   ; AouB              ; work         ;
+;          |AouB:inst26|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst26                                   ; AouB              ; work         ;
+;          |AouB:inst27|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst27                                   ; AouB              ; work         ;
+;          |AouB:inst28|                ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst28                                   ; AouB              ; work         ;
+;          |AouB:inst29|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst29                                   ; AouB              ; work         ;
+;          |AouB:inst2|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst2                                    ; AouB              ; work         ;
+;          |AouB:inst30|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst30                                   ; AouB              ; work         ;
+;          |AouB:inst31|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst31                                   ; AouB              ; work         ;
+;          |AouB:inst32|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst32                                   ; AouB              ; work         ;
+;          |AouB:inst33|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst33                                   ; AouB              ; work         ;
+;          |AouB:inst34|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst34                                   ; AouB              ; work         ;
+;          |AouB:inst35|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst35                                   ; AouB              ; work         ;
+;          |AouB:inst36|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst36                                   ; AouB              ; work         ;
+;          |AouB:inst37|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst37                                   ; AouB              ; work         ;
+;          |AouB:inst38|                ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst38                                   ; AouB              ; work         ;
+;          |AouB:inst39|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst39                                   ; AouB              ; work         ;
+;          |AouB:inst3|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst3                                    ; AouB              ; work         ;
+;          |AouB:inst40|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst40                                   ; AouB              ; work         ;
+;          |AouB:inst41|                ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst41                                   ; AouB              ; work         ;
+;          |AouB:inst4|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst4                                    ; AouB              ; work         ;
+;          |AouB:inst5|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst5                                    ; AouB              ; work         ;
+;          |AouB:inst6|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst6                                    ; AouB              ; work         ;
+;          |AouB:inst7|                 ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst7                                    ; AouB              ; work         ;
+;          |AouB:inst8|                 ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst8                                    ; AouB              ; work         ;
+;          |AouB:inst9|                 ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst9                                    ; AouB              ; work         ;
+;          |AouB:inst|                  ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor7x6:inst40|AouBx42:inst|AouB:inst                                     ; AouB              ; work         ;
+;    |Seletor:inst36|                   ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor:inst36                                                               ; Seletor           ; work         ;
+;    |Seletor:inst37|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |Placar|Seletor:inst37                                                               ; Seletor           ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                      ;
++----------------------------------------------------------------+----------------------------------------+
+; Register name                                                  ; Reason for Removal                     ;
++----------------------------------------------------------------+----------------------------------------+
+; Placar_Basquete:inst39|Cronometro10min:inst16|contagem3[1..31] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 31                         ;                                        ;
++----------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 579   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 56    ;
+; Number of registers using Asynchronous Clear ; 546   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 420   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------+
+; Inverted Register Statistics                                         ;
++------------------------------------------------------------+---------+
+; Inverted Register                                          ; Fan out ;
++------------------------------------------------------------+---------+
+; Placar_Basquete:inst39|Contadorx4:inst12|contagem[0]       ; 5       ;
+; Placar_Basquete:inst39|Cronometro10min:inst16|contagem3[0] ; 6       ;
+; Placar_Volei:inst38|Contadorx5:inst8|contagem[0]           ; 10      ;
+; Placar_Basquete:inst39|inst13                              ; 6       ;
+; Placar_Basquete:inst39|Timing_Reference:inst7|count[0]     ; 2       ;
+; Total number of inverted registers = 5                     ;         ;
++------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9|contagem2[2]   ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10|contagem2[8]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst3|contagem1[13]      ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst4|contagem1[10]      ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9|contagem0[2]   ;
+; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9|contagem1[12]  ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst3|contagem0[25]      ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10|contagem0[28] ;
+; 5:1                ; 30 bits   ; 90 LEs        ; 60 LEs               ; 30 LEs                 ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10|contagem1[11] ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst4|contagem0[16]      ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst3|contagem1[0]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst4|contagem1[31]      ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9|contagem0[0]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst9|contagem1[31]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst3|contagem0[0]       ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10|contagem0[31] ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |Placar|Placar_Basquete:inst39|Contadorx999:inst10|contagem1[0]  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |Placar|Placar_Volei:inst38|Contadorx99:inst4|contagem0[0]       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 50                          ;
+; cycloneiii_ff         ; 579                         ;
+;     CLR               ; 126                         ;
+;     ENA CLR           ; 364                         ;
+;     ENA CLR SLD       ; 56                          ;
+;     plain             ; 33                          ;
+; cycloneiii_lcell_comb ; 1868                        ;
+;     arith             ; 868                         ;
+;         2 data inputs ; 736                         ;
+;         3 data inputs ; 132                         ;
+;     normal            ; 1000                        ;
+;         1 data inputs ; 26                          ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 63                          ;
+;         4 data inputs ; 878                         ;
+;                       ;                             ;
+; Max LUT depth         ; 18.10                       ;
+; Average LUT depth     ; 7.81                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Dec 12 17:07:31 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Placar -c Placar
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12019): Can't analyze file -- file Contadorx9.vhd is missing
+Info (12021): Found 1 design units, including 1 entities, in source file placar.bdf
+    Info (12023): Found entity 1: Placar
+Info (12021): Found 2 design units, including 1 entities, in source file contadorx99.vhd
+    Info (12022): Found design unit 1: Contadorx99-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 14
+    Info (12023): Found entity 1: Contadorx99 File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contadorx5.vhd
+    Info (12022): Found design unit 1: Contadorx5-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd Line: 13
+    Info (12023): Found entity 1: Contadorx5 File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contadorx3.vhd
+    Info (12022): Found design unit 1: Contadorx3-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 13
+    Info (12023): Found entity 1: Contadorx3 File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
+    Info (12022): Found design unit 1: Comparador-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Comparador.vhd Line: 14
+    Info (12023): Found entity 1: Comparador File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Comparador.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file transvetor.bdf
+    Info (12023): Found entity 1: TransVetor
+Info (12021): Found 1 design units, including 1 entities, in source file seletor.bdf
+    Info (12023): Found entity 1: Seletor
+Info (12021): Found 1 design units, including 1 entities, in source file placar_volei.bdf
+    Info (12023): Found entity 1: Placar_Volei
+Info (12021): Found 1 design units, including 1 entities, in source file aorb_dec7.bdf
+    Info (12023): Found entity 1: AorB_Dec7
+Info (12021): Found 2 design units, including 1 entities, in source file cronometro10min.vhd
+    Info (12022): Found design unit 1: Cronometro10min-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 16
+    Info (12023): Found entity 1: Cronometro10min File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contadorx999.vhd
+    Info (12022): Found design unit 1: Contadorx999-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 15
+    Info (12023): Found entity 1: Contadorx999 File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file contadorx4.vhd
+    Info (12022): Found design unit 1: Contadorx4-i File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd Line: 13
+    Info (12023): Found entity 1: Contadorx4 File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file placar_basquete.bdf
+    Info (12023): Found entity 1: Placar_Basquete
+Info (12021): Found 1 design units, including 1 entities, in source file aoubx42.bdf
+    Info (12023): Found entity 1: AouBx42
+Info (12021): Found 1 design units, including 1 entities, in source file seletor7x6.bdf
+    Info (12023): Found entity 1: Seletor7x6
+Info (12127): Elaborating entity "Placar" for the top level hierarchy
+Info (12128): Elaborating entity "Seletor7x6" for hierarchy "Seletor7x6:inst40"
+Info (12128): Elaborating entity "AouBx42" for hierarchy "Seletor7x6:inst40|AouBx42:inst"
+Warning (12125): Using design file aoub.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: AouB
+Info (12128): Elaborating entity "AouB" for hierarchy "Seletor7x6:inst40|AouBx42:inst|AouB:inst"
+Info (12128): Elaborating entity "Placar_Volei" for hierarchy "Placar_Volei:inst38"
+Warning (275011): Block or symbol "AorB_Dec7" of instance "inst14" overlaps another block or symbol
+Warning (275085): Found inconsistent dimensions for element "A"
+Warning (275085): Found inconsistent dimensions for element "B"
+Warning (275080): Converted elements in bus name "a" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "a[7..0]" to "a7..0"
+    Warning (275081): Converted element name(s) from "a[5]" to "a5"
+    Warning (275081): Converted element name(s) from "a[4]" to "a4"
+    Warning (275081): Converted element name(s) from "a[3]" to "a3"
+    Warning (275081): Converted element name(s) from "a[2]" to "a2"
+    Warning (275081): Converted element name(s) from "a[1]" to "a1"
+    Warning (275081): Converted element name(s) from "a[0]" to "a0"
+    Warning (275081): Converted element name(s) from "a[6]" to "a6"
+    Warning (275081): Converted element name(s) from "a[7]" to "a7"
+Warning (275080): Converted elements in bus name "b" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "b[7..0]" to "b7..0"
+    Warning (275081): Converted element name(s) from "b[7]" to "b7"
+    Warning (275081): Converted element name(s) from "b[6]" to "b6"
+    Warning (275081): Converted element name(s) from "b[5]" to "b5"
+    Warning (275081): Converted element name(s) from "b[4]" to "b4"
+    Warning (275081): Converted element name(s) from "b[3]" to "b3"
+    Warning (275081): Converted element name(s) from "b[2]" to "b2"
+    Warning (275081): Converted element name(s) from "b[1]" to "b1"
+    Warning (275081): Converted element name(s) from "b[0]" to "b0"
+Info (12128): Elaborating entity "AorB_Dec7" for hierarchy "Placar_Volei:inst38|AorB_Dec7:inst12"
+Warning (12125): Using design file dec7inv.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Dec7Inv
+Info (12128): Elaborating entity "Dec7Inv" for hierarchy "Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst"
+Warning (12125): Using design file inv7.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Inv7
+Info (12128): Elaborating entity "Inv7" for hierarchy "Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Inv7:inst"
+Warning (12125): Using design file decodificador7seg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Decodificador7Seg
+Info (12128): Elaborating entity "Decodificador7Seg" for hierarchy "Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2"
+Warning (12125): Using design file 5or.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: 5or
+Info (12128): Elaborating entity "5or" for hierarchy "Placar_Volei:inst38|AorB_Dec7:inst12|Dec7Inv:inst|Decodificador7Seg:inst2|5or:inst51"
+Info (12128): Elaborating entity "TransVetor" for hierarchy "Placar_Volei:inst38|TransVetor:inst5"
+Info (12128): Elaborating entity "Contadorx99" for hierarchy "Placar_Volei:inst38|Contadorx99:inst3"
+Warning (10492): VHDL Process Statement warning at Contadorx99.vhd(24): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at Contadorx99.vhd(33): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 33
+Info (12128): Elaborating entity "Seletor" for hierarchy "Placar_Volei:inst38|Seletor:inst"
+Info (12128): Elaborating entity "Contadorx3" for hierarchy "Placar_Volei:inst38|Contadorx3:inst9"
+Warning (10492): VHDL Process Statement warning at Contadorx3.vhd(21): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at Contadorx3.vhd(23): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 23
+Info (12128): Elaborating entity "Contadorx5" for hierarchy "Placar_Volei:inst38|Contadorx5:inst8"
+Warning (10492): VHDL Process Statement warning at Contadorx5.vhd(21): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at Contadorx5.vhd(23): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd Line: 23
+Info (12128): Elaborating entity "Placar_Basquete" for hierarchy "Placar_Basquete:inst39"
+Warning (275011): Block or symbol "JKFF" of instance "inst13" overlaps another block or symbol
+Warning (275085): Found inconsistent dimensions for element "A"
+Warning (275085): Found inconsistent dimensions for element "B"
+Warning (275080): Converted elements in bus name "a" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "a[3..0]" to "a3..0"
+    Warning (275081): Converted element name(s) from "a[3]" to "a3"
+    Warning (275081): Converted element name(s) from "a[2]" to "a2"
+    Warning (275081): Converted element name(s) from "a[1]" to "a1"
+    Warning (275081): Converted element name(s) from "a[0]" to "a0"
+Warning (275080): Converted elements in bus name "b" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "b[3..0]" to "b3..0"
+    Warning (275081): Converted element name(s) from "b[2]" to "b2"
+    Warning (275081): Converted element name(s) from "b[1]" to "b1"
+    Warning (275081): Converted element name(s) from "b[3]" to "b3"
+    Warning (275081): Converted element name(s) from "b[0]" to "b0"
+Info (12128): Elaborating entity "Contadorx4" for hierarchy "Placar_Basquete:inst39|Contadorx4:inst12"
+Warning (10492): VHDL Process Statement warning at Contadorx4.vhd(21): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at Contadorx4.vhd(23): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd Line: 23
+Info (12128): Elaborating entity "Contadorx999" for hierarchy "Placar_Basquete:inst39|Contadorx999:inst9"
+Warning (10492): VHDL Process Statement warning at Contadorx999.vhd(27): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at Contadorx999.vhd(37): signal "inverter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 37
+Info (12128): Elaborating entity "Cronometro10min" for hierarchy "Placar_Basquete:inst39|Cronometro10min:inst16"
+Warning (12125): Using design file timing_reference.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: Timing_Reference-freq_div File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/timing_reference.vhd Line: 11
+    Info (12023): Found entity 1: Timing_Reference File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/timing_reference.vhd Line: 5
+Info (12128): Elaborating entity "Timing_Reference" for hierarchy "Placar_Basquete:inst39|Timing_Reference:inst7"
+Warning (10492): VHDL Process Statement warning at timing_reference.vhd(27): signal "tmp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/timing_reference.vhd Line: 27
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst3|contagem1[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem2[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem1[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx3:inst9|contagem[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 19
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst3|contagem0[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem0[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem2[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem2[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst4|contagem1[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem1[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem1[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx3:inst10|contagem[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 19
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst4|contagem0[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem0[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem0[0] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst3|contagem0[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst3|contagem1[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx4:inst12|contagem[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx4.vhd Line: 19
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem1[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem2[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst9|contagem0[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx3:inst9|contagem[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 19
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem3[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem1[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem2[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Basquete:inst39|Cronometro10min:inst16|contagem0[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Cronometro10min.vhd Line: 25
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx5:inst8|contagem[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx5.vhd Line: 19
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem1[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem2[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Basquete:inst39|Contadorx999:inst10|contagem0[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx999.vhd Line: 23
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst4|contagem0[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx99:inst4|contagem1[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx99.vhd Line: 21
+    Critical Warning (18010): Register Placar_Volei:inst38|Contadorx3:inst10|contagem[31] will power up to Low File: C:/Users/Avell/Desktop/Projetos_digitais/Placar/Contadorx3.vhd Line: 19
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1919 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 42 output pins
+    Info (21061): Implemented 1869 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Mon Dec 12 17:07:44 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:25
+
+

@@ -1,0 +1,37 @@
+%------------------------------------------------------------%
+
+\chapter{Introdução}
+\label{cap:trabalhos:introducao}
+
+\section{Inspeções e Classificação de Objetos em Linhas de Transmissão}
+
+As inspeções periódicas em linhas de transmissão de alta tensão, pertencentes ao Sistema Elétrico de Potência (SEP), são essenciais para a manutenção da confiabilidade e segurança de todo o sistema, evitando acidentes e interrupções no fornecimento de energia elétrica. Essas estruturas operam em ambientes adversos e estão sujeitas a danos causados por condições climáticas extremas e objetos estranhos na fiação. \par
+Existem diferentes métodos com finalidades específicas para a realização da inspeção, seja de modo preventivo ou corretivo. Tradicionalmente, o serviço é executado por equipes que escalam torres ou utilizam drones. Embora drones cubram grandes áreas com agilidade e baixo custo, enfrentam limitações como autonomia reduzida, dependência de visibilidade e menor precisão em detalhes complexos. Já a inspeção manual, apesar de precisa, apresenta altos custos, riscos operacionais, riscos de vida e baixa escalabilidade. \par
+Com o avanço das tecnologias de inspeção, os métodos tradicionais aplicados em instalações de energia têm se mostrado insuficientes para atender às demandas atuais do setor, principalmente devido à baixa eficiência das inspeções manuais, aos altos riscos envolvidos e à detecção limitada de falhas potenciais. Nesse cenário, observa-se um crescente interesse na automação dessas tarefas por meio de sistemas robóticos embarcados, capazes de percorrer fisicamente os cabos das linhas de transmissão e realizar inspeções de forma autônoma e contínua. Tais sistemas podem ser equipados com sensores capazes de capturar informações detalhadas dos componentes da linha, mesmo em condições adversas. Entre os sensores, destacam-se as câmeras de profundidade, como a RealSense D415, e os sensores LiDAR, como o RPLIDAR A1, que permitem a obtenção de dados tridimensionais da cena com alta precisão. \par
+Este trabalho investiga o uso de modelos de aprendizado de máquina para a classificação de objetos em linhas de transmissão, com dados de sensores em ambientes simulados e reais. A análise considera dados da RealSense, do LiDAR e a combinação dos dois, com foco na eficiência, no processamento embarcado e em técnicas de pré-processamento e extração de \textit{features}. Os objetos de interesse foram alguns dos mais populares presentes nas linhas: sinalizadores, amortecedores e isoladores.
+
+\section{Justificativa}
+
+Para que robôs autônomos de inspeção possam realizar rotinas de superação de obstáculos, existe a necessidade de classificação dos objetos presentes em linhas de transmissão. A identificação assertiva possibilita que o sistema opere de forma mais adequada àquela situação, uma vez que cada objeto possui diferentes dimensões, pontos de fixação e funcionalidades. Este trabalho consiste na interpretação de dados recebidos pelos sensores e seus respectivos tratamentos via modelos de aprendizado de máquina, buscando comparações de resultados e desempenho.
+
+\section{Objetivos}
+\subsection{Objetivos Gerais}
+
+Avaliar o uso de sensores LiDAR 360º e RealSense para classificação de objetos em linhas de transmissão e avaliar os resultados com base no desempenho medido por métricas como acurácia, tempo de processamento e quantidade de informações utilizadas.
+
+\subsection{Objetivos Específicos}
+
+Desenvolvimento de Códigos de Configuração e Acionamento dos Sensores: Criar os scripts necessários para configurar e acionar os sensores, utilizando Python para controlar a captura dos dados. O processo envolverá o desenvolvimento de códigos para coletar imagens de profundidade e dados do LiDAR, com armazenamento em arquivos CSV e imagens.
+
+Sensor multimodal: Desenvolver o projeto com a flexibilidade necessária para permitir sua integração em diferentes topologias, incluindo robôs terrestres, aéreos e aqueles que se locomovem diretamente no cabo de linhas de transmissão.
+
+Montagem de Cenas Simuladas no CoppeliaSim: Criar cenas simuladas no CoppeliaSim, onde os sensores serão acoplados ao robô, que percorrerá a linha de transmissão. O robô será posicionado entre duas torres, com um cabo rígido esticado entre elas, e os sensores de profundidade e LiDAR 360º serão usados para coletar dados enquanto o robô se move ao longo do cabo. As cenas levarão em consideração o movimento do robô, com acionamento dos motores para simular a coleta de dados em tempo real.
+
+Montagem de Ambientes Controlados no Laboratório: Construir ambientes controlados no laboratório, com os sensores presos a mecanismos que simulem diferentes ângulos e distâncias, onde os sensores não estarão no robô. Além disso, será montada uma pequena cena com um cabo pendurado, contendo objetos encontrados em linhas de alta tensão onde o robô será preso ao cabo, com os sensores fixados a ele, e percorrerá o trajeto enquanto coleta dados sobre os objetos presentes no cabo.
+
+Treinamento de Modelos de Aprendizado de Máquina: Utilizar os dados coletados para treinar diferentes modelos de aprendizado de máquina, com o objetivo de avaliar a capacidade dos modelos em classificar os objetos presentes nas linhas de transmissão. Para isso, serão montados diferentes datasets, considerando separadamente as informações do LiDAR, da câmera de profundidade e a combinação de ambos, permitindo a análise do impacto de cada sensor na performance dos modelos.
+
+Avaliação de Desempenho: Avaliar o desempenho dos modelos treinados, utilizando métricas de performance como acurácia, precisão, recall e tempo de processamento para comparar os resultados obtidos pelos diferentes sensores e modelos.
+
+%-----------------------------------------------------------%
+

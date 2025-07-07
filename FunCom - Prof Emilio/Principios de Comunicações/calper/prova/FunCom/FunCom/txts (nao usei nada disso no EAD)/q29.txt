@@ -1,0 +1,54 @@
+"
+
+29)Projete um sistema FM tonal com SNR na saida do receptor igual a 40dB e que necessite de uma quantidade minima de potencia transmitida. Considere: canal com largura de faixa B = 120kHz, sinal modulante com fm = 10kHz, fator No = 10^-8 W/Hz. Pergunta-se: qual eh a potencia de transmissao necessaria se o sinal eh atenuado em 40dB no canal de transmissao?
+               Pt=?                      SNRo
+     Transmissor--->Canal--->Receptor--->
+
+SNR0 	= 40dB
+Bt	= 120 kHz
+fm	= 10kHz
+No	= 
+
+	 
+R.:
+
+Bt = B; 
+
+Bt = 2.(ß+1).fm = B ->2(ß+1).10k = 120k; ß = 5;
+
+SNRo = 40db = 10^4; 
+
+SNRc = SNRlimiar  
+
+Fm = SNRo/SNRc;
+
+SNRo/Fm = 20(ß+1) 
+
+SNR0/[(3/2).ß^2] = 20(ß+1)
+
+ßmax = 6.6.Logo, ß=5(OK!)
+
+Calculo de SNRc
+
+Fm = SNR0/SNRc = (3/2).Beta^2  => SNRc =10000/[(3/2).5^2] = 266,6
+
+Calculo da potencia do sinal recebido 
+
+
+Pr = (Ac^2)/2 e SNRc = (Ac^2)/2.W.No
+
+SNRc = Pr/W.No
+
+Pr = 2,66.10^-2[W](-15,74dB);
+
+calculo da potencia do sinal transmitido
+
+Pr = Pt - Atenuacao -> Pt = -15,74+40 = RESPOSTA: 24,26dB(266,7[W])
+<<FIM>>
+
+
+ou
+
+Fm=SNR0/SNRc = 3
+
+"

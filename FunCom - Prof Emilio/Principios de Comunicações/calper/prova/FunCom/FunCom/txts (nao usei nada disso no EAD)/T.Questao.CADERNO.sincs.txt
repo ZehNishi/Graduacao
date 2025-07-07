@@ -1,0 +1,34 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+------------------------------
+Ex.27) Um sinal, com espectro limitado a 100Hz, eh amostrado por um trem de pulsos de largura 1ms, amplitude 5V, e freq. fundam 200Hz, pede-se:
+
+a) Determ. e esboce o espectro do sinal amostrado.
+b) Eh possível recuperar o sinal original g(t)? Como?
+
+[SOLUCAO]
+
+   G(f)
+    /\
+   /  \
+  /    \
+_/______\__f
+    0   100
+
+Ts = 1/200
+f = 200Hz
+
+S(f)=T.A/ Ts SOMAT sinc(n.T/Ts).
+           G(f-n/Ts)
+
+=(10^-3).200 SOMAT 
+ sinc( (n.10^-3).200).G(f-n.200)
+
+= SOMAT sinc(0.2*n).G(f-200n)
+
+
+Sim. Eh possivel, 
+   com FPB Ideal f3db = 100Hz.
+------------------------------
+
+[FIM]."

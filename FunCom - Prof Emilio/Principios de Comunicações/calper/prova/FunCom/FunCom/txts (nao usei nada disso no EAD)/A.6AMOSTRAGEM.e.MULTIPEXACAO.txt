@@ -1,0 +1,50 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+-----------------------------
+6 AMOSTRAGEM E MULTIPLEXAÇÃO
+-----------------------------
+
+A amostragem eh a base para a conversão analógico-digital, multiplexação no tempo,
+e para a modulação analógica de pulsos.
+
+Na amostragem, representa-se um sinal g(t) por amostras tomadas periodicamente no tempo. 
+
+O sinal amostrado substitui, então, o sinal original. 
+
+Desejase determinar as condições que devem ser satisfeitas para recuperar g(t) a partir do
+sinal amostrado.
+
+
+6.1 AMOSTRAGEM IDEAL
+
+Por observação, conclui-se que para recuperar g(t) deve-se usar um FPB, mas deve-se impor a condição de não sobreposição das réplicas de G(f), ou seja, fs>=2W.
+
+Obs: A quantidade fs = 2W é conhecida como de Taxa de Nyquist.
+
+No caso em que fs < 2W ocorre sobreposição de espectros:
+
+ Gy(f)
+ |
+ |   /\  /\  /\  /\
+ |  /  \/  \/  \/  \
+ | /   /\  /\ |/\ | \
+ ----------------------- f
+    -W   W   fs  2fs
+
+
+Neste caso o sinal original não pode ser recuperado pois sofre interferência.
+
+-----------------------------
+ ALIASING
+-----------------------------
+Quando fs < 2W, um sinal de frequencia acima de fs/2 é visto como um sinal de frequencia abaixo de fs/2. 
+
+Em outras palavras, devido à escolha incorreta de fs, componentes de frequência elevada do sinal original são deslocadas incorretamente para uma região de baixas frequências no espectro (confusão de frequências).
+
+Ex: Pneu de um F-1
+
+
+[FIM]."
+
+
+

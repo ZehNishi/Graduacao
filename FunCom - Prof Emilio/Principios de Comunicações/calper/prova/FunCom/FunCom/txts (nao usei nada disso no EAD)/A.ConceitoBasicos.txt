@@ -1,0 +1,42 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+1 CONCEITOS BÁSICOS
+
+1.1 MODELO DE UM SISTEMA DE COMUNICAÇÕES
+
+Define-se comunicação como o processo pelo qual a informação é transmitida de forma confiável de um ponto, no espaço e no tempo, denominado fonte, para outro ponto, o destino. 
+
+A MENSAGEM corresponde as manifestações físicas da informação produzida pela fonte. Um sinal é uma grandeza elétrica variável no tempo tal como uma corrente ou tensão, e representa a mensagem. Um sistema corresponde a um elemento físico que modifica os sinais a ele aplicados.
+
+A finalidade de um sistema de comunicação é fornecer uma réplica aceitável da mensagem no destino. A figura a seguir mostra os elementos fundamentais de um sistema completo. O transdutor converte a mensagem em um sinal elétrico. 
+
+O TRANSMISSOR acopla o sinal ao CANAL de transmissão. Para fins de transmissão efetiva e eficiente, algumas operações de processamento de sinal devem ser realizadas. 
+
+A mais comum e importante é a MODULACAO. O canal é a ligação elétrica entre transmissor e receptor, cobrindo a distância desde a fonte até o destino. 
+
+A função do RECEPTOR é extrair o sinal desejado do canal e fornecê-lo ao transdutor de saída. Sua operação principal é a DEMODULACAO. O transdutor final converte o sinal elétrico em mensagem.
+
+
+[Fonte + transdutor]->
+
+->[transmissor]->
+
+[Canal] <- [(Ruído + interf. + distor.)]
+
+->[Receptor]->
+
+->[Transdutor+ destino]
+
+
+Ao longo da transmissão de um sinal pelo canal ocorrem alguns efeitos indesejados. 
+
+Um deles é a ATENUACAO, que reduz a intensidade do sinal; mais sérios, entretanto, são a DISTORCAO, a INTERFERENCIA e o RUIDO, que aparecem como alterações da forma do sinal. 
+
+A DISTORCAO é uma alteração do sinal devida a uma resposta imperfeita do sistema ao sinal. 
+
+A INTERFERENCIA é a contaminação por sinais estranhos, normalmente feitos pelo homem, de forma similar ao sinal desejado.
+
+Finalmente, por RUIDO interpretam-se os sinais elétricos aleatórios ou imprevisíveis provenientes de causas naturais, tanto internos quanto externos ao sistema.
+
+[FIM]."

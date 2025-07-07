@@ -1,0 +1,56 @@
+"
+18-
+Determine a expressão do sinal modulado U-ssB para modulação tonal.
+
+observações: 
+
+^m(t) o acento esta sobre o m(t) e não antes
+
+transformada de Hilbert ^g(t)=-j*sgn(f)*G(f)
+
+modulação tonal=> m(t)=Am*cos(2*pi*fm*t) 
+
+Solução
+-------------------------------------------------
+expressão do sinal modulado
+
+s(t)=Ac/2*[m(t)*cos(2*pi*fc*t)- ^m(t)*sen(2*pi*fc*t)]
+
+-------------------------------------------------
+para calcular a transformada de Hilbert de m(t),^m(t),precisamos seguir os seguintes passos
+
+1- fazer a transformada de laplace de m(t)
+2- calcular a transformada de Hilbert de M(f)
+3- voltar para o diminio do tempo 
+
+-------------------------------------------------
+transformada de Hilbert
+
+^m(t) = -j*sgn(f)*M(f)
+
+-------------------------------------------------
+assim a transformada de laplace do sinal m(t)
+
+M(f)=(Am/2)*[d(f-fm)+d(f+fm)]
+
+-------------------------------------------------
+e a transformada de Hilbert de M(f) fica
+
+^M(f)=(-j*Am/2)*[d(f-fm)-d(f+fm)]
+
+multiplica em cima e embaixo por j
+
+^M(f)=(Am/2*j)*[d(f-fm)-d(f+fm)]
+
+-------------------------------------------------
+voltando para o dominio do tempo
+
+^m(t)=Am*sen(2*pi*fm*t)
+
+-------------------------------------------------
+substituir na expressão do sinal modulado
+
+s(t)=Ac/2*[m(t)*cos(2*pi*fc*t)-Am*sen(2*pi*fm*t)*sen(2*pi*fc*t)]
+
+-------------------------------------------------
+"

@@ -1,0 +1,16 @@
+CLASSIFICACAO DE SINAIS
+- DETERMINISTICO: nao ha incerteza com relacao a seu valor em qualquer instante de tempo
+- ALEATORIO: existe certo grau de incerteza antes que ele realmente ocorra
+- CONTINUO: definido para todos os instantes de tempo
+- DISCRETO: definido para instantes discretos de tempo
+- PERIODICO: repete-se regularmante a cada quantidade de tempo dita periodo
+- APERIODICO: nao apresenta padrao de repeticao
+
+CLASSIFICACAO DE SISTEMAS
+-LINEAR: obedece ao principio da superposicao
+-NAO LINEAR: nao obedece
+-INVARIANTE NO TEMPO: nao impoe atraso entre excitacao e resposta
+-VARIANTE NO TEMPO: impoe
+
+Funcao sinal (sgn): -1,t<0 ;  +1,t>0 ; 0,t=0 ;
+Funcao sinc(t) = sen(pi.t)/pi.t

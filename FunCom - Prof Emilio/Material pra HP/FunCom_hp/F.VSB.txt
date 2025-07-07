@@ -1,0 +1,29 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+3.5 MODULAÇÃO AM-VSB (Vestigial Side Band)
+
+A modulação SSB é ideal para a transmissão de voz, pois existe um intervalo no espectro de voz entre zero e algumas centenas de Hertz.
+
+Quando m(t) contém componentes significativas em baixa freqüência, a modulação SSB não é apropriada devido às dificuldades em isolar uma das bandas laterais. 
+
+Por outro lado, a modulação AM-DSB/SC não utiliza eficientemente o espectro.
+
+A modulação AM-VSB é um compromisso entre AM-SSB e o sinal AMDSB/SC. Neste sistema, uma banda lateral permanece quase completamente no espectro, assim como um vestígio da outra banda lateral.
+
+
+
+O vestígio compensa a quantidade da banda lateral principal removida.
+
+A largura do espectro é f W B v T + = onde fv é a largura da banda lateral vestigial.
+
+O sinal AM-VSB é gerado aplicando-se um sinal AM-DSB/SC a um filtro com função de transferência H(f) apropriada.
+
+
+
+Aplicacao : Transmissao de TV
+
+
+
+[FIM]."

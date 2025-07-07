@@ -1,0 +1,27 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+
+-----------------------------
+3.6 RECEPTOR DE TV PRETO–E-BRANCO
+
+A transmissão de um sinal de vídeo é feita focalizando-se a imagem a ser transmitida sobre a tela foto-sensível da câmera de TV. Esta tela é varrida por um feixe eletrônico de modo que a corrente elétrica é diretamente proporcional à intensidade
+luminosa em cada ponto varrido. O movimento da imagem é captado como no cinema.
+
+Porém, no caso da televisão, são transmitidos 30 quadros (varreduras completas da tela) por segundo. A projeção de uma seqüência de quadros no écran do receptor de TV nos dá a impressão de movimento continuo, devido à característica de persistência da visão humana.
+
+No Brasil é adotado o padrão M onde um quadro é composto por 525 linhas, das quais 495 linhas úteis, usadas para a transmissão efetiva de imagem e 30 linhas que são apagadas no intervalo de tempo para o retorno do feixe eletrônico ao inicio da tela, para iniciar nova varredura. 
+
+Como tem-se 30 quadros por segundo e 525 linhas por quadro, a duração de cad alinha é de 1/(30 × 525) » 63,5 µs, sendo 53,4 µs de tempo útil (imagem efetiva) e 10 µs em que a linha é apagada (retorno do feixe). 
+
+
+Para uma definição satisfatória de imagem verificou-se que, em cada linha, é necessário que se possam distinguir 425 elementos de imagem. Assim, o máximo número de transições ao longo de uma linha seria uma seqüência de elementos de imagem alternadamente pretos (corrente mínima) e brancos (corrente máxima). 
+
+Isso corresponde a uma onda quadrada com período de 2 × (53,5 µs/425) » 0,25 µs. Portanto, uma imagem de TV requer a transmissão de componentes de freqüência desde 30 Hz (freqüência  de varredura de quadro) até 4 MHz (primeira harmônica do sinal com numero máximo de transições em uma linha).
+
+Para radio-difusão de TV, assim como para radio-difusão sonora, interessa simplificar os receptores, isto levou à criação do sistema AM-VSB (economia de espectro, resposta em baixa freqüência, simplicidade de demodulação/sincronismo). 
+
+A figura a seguir mostra o espectro do sinal de vídeo (AM-VSB + portadora) e áudio (modulação FM) de um canal de televisão. Por exemplo, para o canal 4 a freqüência fc é igual a 67,25 Mhz.
+
+
+[FIM]."

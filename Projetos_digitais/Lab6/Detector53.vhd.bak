@@ -1,0 +1,13 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_signed all;
+
+ENTITY Detector IS
+PORT(
+	clok		:IN STD_LOGIC;
+	entrada	:IN STD_LOGIC;
+	reset		:IN STD_LOGIC;
+	saida		:OUT STD_LOGIC_VECTOR(2 downto 0);
+	d_s		:OUT STD_LOGIC;
+END Detector;

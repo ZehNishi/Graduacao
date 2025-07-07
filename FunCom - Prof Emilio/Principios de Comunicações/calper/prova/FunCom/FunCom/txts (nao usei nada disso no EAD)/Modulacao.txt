@@ -1,0 +1,5 @@
+MODULACAO EM AMPLITUDE AM-DSB: varia a amplitude da portadora linearmente em torno de um valor medio proporcionalmente a variacao de amplitude do sinal modulante.
+
+- Se |ka.m(t)| nao for menor q 1, havera sobremodulacao, onde ocorre reversao de fase quando a envoltoria vale zero.
+
+- MODULACAO TONAL: é quando m(t) =  Am.cos(2.pi.fm.t)

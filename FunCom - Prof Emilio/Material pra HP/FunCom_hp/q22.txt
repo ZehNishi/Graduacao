@@ -1,0 +1,43 @@
+"
+22- verificar
+Dada uma onda portadora de 12Vpp e frequencia de 1MHz e uma modulante cossenoidal de 5Vpp e 5kHz, considerando kf=1kHz/v,determine:
+
+a- A expressap do sinalmodulado
+b- Um esboco do espectro do sinal modulado
+c- A potencia media do sinal modulado
+d- A largura de espectro do sinal modulado(por carson e curva universal)
+
+observacao
+
+Ac=6
+fc=1MHz
+modulante cossenoidal
+Am=2,5
+fm=5
+kf=1k
+
+solucao
+-------------------------------------------------
+a-expressao
+
+beta=kf*Am/f=0,5 (modulacao FM banda estreita)
+
+s(t)=Ac*cos(2*pi*fc*t)+beta*Ac/2{cos(2*pi*(fc+fm)*t)-cos(2*pi*(fc-fm)*t)}
+
+-------------------------------------------------
+b-espectro
+
+s(f)=(Ac/2)*[d(f-fc)+d(f+fc)]+(beta*Ac/4)*{[d(f-fc-fm)+d(f+fc+fm)]-[d(f-fc+fm)+d(f+fc-fm)]}
+
+-------------------------------------------------
+c-potencia
+
+P=(Ac^2)/2=18
+
+-------------------------------------------------
+d-largura banda estreita
+
+Bt= 2*fm=10khz
+
+
+"

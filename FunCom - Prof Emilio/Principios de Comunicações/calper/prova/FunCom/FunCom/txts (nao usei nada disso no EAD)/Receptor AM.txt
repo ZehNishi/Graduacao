@@ -1,0 +1,5 @@
++Antena->Amplificador de RF->Mixer->Amplificador de FI->Detector de Envoltoria->Amplific de Audio->Saida
++Detector de envoltoria(escrever Controle automatico de volume embaixo da seta)->amplificador de FI
+Oscilador Local(colocar debaixo do mixer)->mixer
+Linha pontiliada:
++Seta aponta pra cima<-Amplificador de RF-Oscilador Local->Amplificador de FI

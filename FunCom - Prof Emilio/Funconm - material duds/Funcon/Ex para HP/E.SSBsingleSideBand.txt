@@ -1,0 +1,62 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+3.4 MODULAÇÃO AM-SSB (Single Side Band)
+
+Se a portadora e uma banda lateral são suprimidas no transmissor, nenhuma informação é perdida. 
+
+Isto dá origem ao sistema de modulação SSB, cujas vantagens são: largura de espectro reduzida e eliminação da portadora de alta potência. 
+
+As desvantagens são: complexidade e custo.
+
+No domínio da freqüência é possível visualizar o modulador SSB como sendo o modulador AM-DSB/SC com uma das bandas laterais suprimida.
+
+Para descrever o sinal SSB no domínio do tempo usa-se a representação na forma canônica.
+
+
+-----------------------------
+3.4.1 GERAÇÃO DO SINAL AM-SSB
+
+Não é interessante para video e imagem
+
+-----------------------------
+a) Método da discriminação em freqüência
+
+O sistema para obtenção do sinal SSB consiste em um modulador tipo produto mais um filtro projetado para rejeitar uma das bandas laterais. 
+
+Neste método a menor freqüência do sinal modulante (fm’) deve ser maior que zero para a correta atuação de filtro FPF de alta seletividade. 
+
+Obs: Por este motivo a modulação SSB não é utilizada na transmissão de sinais que possuem componentes significativas de baixa freqüência.
+
+
+m(t)->[Mod.Produt]->[FPB]->
+           ^
+           |		
+    Ac.cos(2.pi.fc.t)
+
+
+-----------------------------
+b) Método da discriminação em fase
+
+
+
+-----------------------------
+3.4.2 DEMODULAÇÃO DE SINAIS SSB
+
+É necessário deslocar (em direção à origem) o espectro U-SSB ou L-SSB para recuperar o sinal original, usando-se um detector coerente:
+
+sng SSB
+s(t)-->[Mod.Produt]->[FPB]->
+            ^
+            |		
+     Ac.cos(2.pi.fc.t)
+
+
+
+
+
+
+
+
+[FIM]."

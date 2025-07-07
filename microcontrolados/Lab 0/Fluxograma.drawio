@@ -1,0 +1,228 @@
+<mxfile host="app.diagrams.net" modified="2023-03-27T18:22:10.809Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="JhK53BQppXtazb7PzJpA" version="21.1.1" type="device">
+  <diagram name="Página-1" id="jfcmFfA6s4BJe40DHKDf">
+    <mxGraphModel dx="1257" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-1" target="3Eomk8FeLwfdxHTlExN2-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-1" value="Recebe a lista de números aleatórios" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-2" target="3Eomk8FeLwfdxHTlExN2-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-2" value="Grava os números a partir do endereço de memória 0X20000D00" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-3" target="3Eomk8FeLwfdxHTlExN2-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-3" value="Divide o número por 2 e arredonda o resultado para baixo em um valor inteiro&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="150" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-4" target="3Eomk8FeLwfdxHTlExN2-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-4" value="Realiza o cálculo: Número - (resultado da divisão * divisor)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="290" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-6" value="É diferente de zero?" style="rhombus;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;horizontal=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="460" y="155" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-8" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="559" y="176" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-9" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="470" y="257" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="3Eomk8FeLwfdxHTlExN2-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="380" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-12" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="486" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-12" target="3Eomk8FeLwfdxHTlExN2-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-12" value="O divisor é igual ao numero analisado?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="421" y="410" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-13" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="371" y="445" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-14" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="730" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-16" target="3Eomk8FeLwfdxHTlExN2-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-16" value="Recebe 1 número da memória a partir de 0X2000D00" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="10" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-18" target="3Eomk8FeLwfdxHTlExN2-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-18" value="Divide o número pelo divisor e arredonda o resultado para baixo em um valor inteiro" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-28" value="Grava o número primo a partir do endereço de memória 0X20000E00" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-29" target="3Eomk8FeLwfdxHTlExN2-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-29" target="3Eomk8FeLwfdxHTlExN2-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-29" value="É primo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="580" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-30" target="3Eomk8FeLwfdxHTlExN2-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-30" value="Não é primo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-31" value="Incrementa o divisor em 1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="431" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-33" target="3Eomk8FeLwfdxHTlExN2-16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="780" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="790" />
+              <mxPoint x="70" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-33" value="Acabou a lista de números?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="630" y="405" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-37" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="515" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aO9PiUwXQ0VkNVPVgtez-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3Eomk8FeLwfdxHTlExN2-41" target="aO9PiUwXQ0VkNVPVgtez-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-41" value="Recebe o endereço de 1 número da lista de primos gravado a partir de 0X20000E00" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="800" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-42" target="3Eomk8FeLwfdxHTlExN2-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-42" target="3Eomk8FeLwfdxHTlExN2-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-42" value="O número atual é maior do que o número comparado?" style="rhombus;whiteSpace=wrap;html=1;textDirection=ltr;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="420" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-43" target="3Eomk8FeLwfdxHTlExN2-53" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-43" value="Os números trocam de posição" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1105" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-44" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="390" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-47" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1223" y="437" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-48" target="3Eomk8FeLwfdxHTlExN2-42" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1613" y="530" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1600" y="460" />
+              <mxPoint x="1600" y="540" />
+              <mxPoint x="1165" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-48" value="Incrementa-se o endereço do número comparado&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1460" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-53" target="3Eomk8FeLwfdxHTlExN2-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-53" target="3Eomk8FeLwfdxHTlExN2-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-53" value="O número comparado é o ultimo da lista?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1350" y="260" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-59" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1440" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-60" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1390" y="227" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-68" target="3Eomk8FeLwfdxHTlExN2-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=-0.015;entryY=0.571;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-68" target="3Eomk8FeLwfdxHTlExN2-74" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1443" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-68" value="O endereço analisado é o penúltimo da lista?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1200" y="160" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-71" value="Não" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1140" y="176" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-72" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="110" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3Eomk8FeLwfdxHTlExN2-74" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="130" as="targetPoint" />
+            <mxPoint x="1563" y="120" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1570" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-74" value="Números ordenados a partir da memória 0X20000E00" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1380" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-76" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;FIM&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1560" y="115" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3Eomk8FeLwfdxHTlExN2-77" value="Sim" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="475" y="526" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aO9PiUwXQ0VkNVPVgtez-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="aO9PiUwXQ0VkNVPVgtez-1" target="3Eomk8FeLwfdxHTlExN2-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aO9PiUwXQ0VkNVPVgtez-1" value="Compara com o número presente no próximo endereço" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,31 @@
+Box_Filter = ones(3, 3) / 9;
+
+
+
+figure;
+bar3(Box_Filter);
+title('Máscara de Convolução do Filtro da Média 3x3');
+xlabel('Colunas');
+ylabel('Linhas');
+zlabel('Valores');
+
+
+
+
+sigma = 1;
+Masc_Gaussiana = zeros(5, 5);
+
+for x = 1:5
+    for y = 1:5
+        Masc_Gaussiana(x, y) = (1 / (2 * pi * sigma^2)) * exp(-((x-3)^2 + (y-3)^2) / (2 * sigma^2));
+    end
+end
+Masc_Gaussiana = Masc_Gaussiana / sum(Masc_Gaussiana(:));
+
+figure;
+bar3(Masc_Gaussiana);
+title('Máscara de Convolução do Filtro Gaussiano 5x5 com \sigma=1');
+xlabel('Colunas');
+ylabel('Linhas');
+zlabel('Valores');
+

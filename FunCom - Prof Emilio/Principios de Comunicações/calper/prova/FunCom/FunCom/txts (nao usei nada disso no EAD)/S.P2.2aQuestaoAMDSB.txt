@@ -1,0 +1,95 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+-----------------------------
+2) UM SINAL MODULADO AM-DSB EH APLICADO A UM DEMODULADOR TIPO DETETOR DE ENVOLTORIA. 
+SABE-SE QUE A POTENCIA DA PORTADORA EH DE 8W, E A POTENCIA DE UMA DAS BANDAS LATERAIS EH DE 0,5W.
+SABE-SE, TAMBEM, QUE PORTADORA E MODULANTE SAO COSSENOIDAIS COM Fc=100KHz E fm=5KHz.
+
+PEDE-SE:
+
+a) A EXPRESSAO DO SINAL MODULADO AM-DSB(no tempo)
+
+b) UM ESBOCO DO SINAL MODULADO (no tempo) COM VALORES MAX. E MIN. DA AMPLITUDE DA ENVOLTORIA.
+
+c) UM ESBOCO DO ESPECTRO DO SINAL MODULADO (com valores de amplitude e frequencia).
+
+d) A POTENCIA MEDIA DO SINAL MODULANTE. (ka=10)
+
+e) O VALOR DO CAPACITOR NO FPB PARA REDUZIR A DISTORCAO DE CORTE DIAGONAL(RL=10K Ohm)
+
+
+
+-----------------------------
+:: solucao ::
+-----------------------------
+
+
+P=8W        fc=100 KHz
+Pbl=0,5     fm=5KHz
+(Banda larga)
+
+
+-----------------------------
+a) Por=Ac^2/2
+
+Ac = raiz(8.2) = 4V!
+
+
+Potbl=u^2.Ac^2/8
+ 0,5=u^2.4^2/8 
+   u=0,5!
+
+
+s(t) = 4.cos(2.pi.100k.t) + 
+cos(2.pi.96k.t) + cos(2.pi.105.t)!
+
+
+-----------------------------
+b)
+Amax = 4.1+1+1 = 6
+
+u = Amax-Amin/Amax+Amin
+
+0,5 = 6-Amin/6+Amin
+
+Amin=2!
+
+
+-----------------------------
+c)
+d= delta (impulso)
+
+s(f)=2.[d(f-100k) + d(f+100k)]
++ 1/2[d(f-105k) + d(f+105k)]
++ 1/2[d(f-95k) + d(f+95k)]
+
+
+            | 
+      2     | 
+  .5  ^     |     ^
+   ^  |  ^  |  ^  |  ^
+___|__|__|__|__|__|__|______
+ -105   -95   95    105
+    -100         100
+
+
+-----------------------------
+d)
+Potm=(Am^2)/2 = 1/2(u/ka)^2
+
+Potm=1/2(.5/10)^2 = 1,25mW!
+
+
+-----------------------------
+e)
+RL.C <= raiz(1+u^2)/2.pi.fm.u
+
+RL.C <= raiz(1+.5^2)/2.pi.5k..5
+
+c <= 7,12 nF!
+
+
+
+
+[FIM]."

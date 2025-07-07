@@ -1,0 +1,77 @@
+clc;
+clear;
+
+% O artigo em [1] apresenta os seguintes parˆametros de c´alculo de enlace para um sistema 6G:
+            % Parˆametro Valor
+            % EIRP 62 dBm
+            % PSD do ru´ıdo -174 dBm/Hz
+            % Largura de banda 100 MHz
+            % GR 6 dB
+            % Figura de ru´ıdo 5 dB
+% Assuma que uma SNR de 10 dB seja necess´aria para um enlace confi´avel. Trˆes frequˆencias
+% podem ser utilizadas para comunica¸c˜ao: 1,8 GHz, 3,5 GHz e 7 GHz. Levando em conta os
+% parˆametros de c´alculo de enlace e para cada uma destas frequˆencias:
+
+EIRP_db = 32;
+B = 100e6;
+FigRuido = 5;
+P_No_db = -204 + 10*log10(B) + FigRuido;% No = kT = PSD*Banda
+Gr_db = 6;
+Eb_No_db = 10;
+
+c = 299792458;
+
+% (a) Calcule a sensibilidade deste receptor, ou seja, a m´ınima potˆencia de recep¸c˜ao para obter
+% a SNR desejada.
+% (b) Levando em conta a sensibilidade calculada no item anterior, qual a distˆancia m´axima
+% entre transmissor e receptor que pode ser utilizada considerando o modelo logdistˆancia
+% em um ambiente urbano?
+
+fc = 1.8e9;
+lambda = c/fc;
+n = 4;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db = P_No_db + Eb_No_db - Gr_db;
+Pr_dbm = Pr_db + 30;
+disp(Pr_dbm);
+
+Plid_db = EIRP_db - Pr_db;
+Plid = 10^(Plid_db/10);
+
+d = (Plid/Pld0)^(1/n);
+disp(d);
+% Resposta: Pr minimo de -105dB e distância máxima de 544.7148m.
+
+fc = 3.5e9;
+lambda = c/fc;
+n = 4;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db = P_No_db + Eb_No_db - Gr_db;
+
+Plid_db = EIRP_db - Pr_db;
+Plid = 10^(Plid_db/10);
+
+d = (Plid/Pld0)^(1/n);
+disp(d);
+
+% Resposta: Pr minimo de -105dB e distância máxima de 390.6352m.
+
+fc = 7e9;
+lambda = c/fc;
+n = 4;
+Pld0 = 16*pi^2/(lambda^2);
+Pld0_db = 10*log10(Pld0);
+
+Pr_db = P_No_db + Eb_No_db - Gr_db;
+
+Plid_db = EIRP_db - Pr_db;
+Plid = 10^(Plid_db/10);
+
+d = (Plid/Pld0)^(1/n);
+disp(d);
+
+% Resposta: Pr minimo de -105dB e distância máxima de 276.2208m.

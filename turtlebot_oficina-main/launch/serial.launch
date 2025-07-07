@@ -1,0 +1,8 @@
+<!-- Estabelece comunicação serial -->
+
+<launch>
+    <arg name="tcp" />
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" output="screen" args="tcp">
+    </node>
+
+</launch>

@@ -1,0 +1,94 @@
+Introdução
+Contexto: 
+Por que realizar inspeções;
+Métodos de realizar inspeções;
+Evolução das topologias de robôs de inspeção;
+Chegar em robôs que consigam superar obstáculos;
+
+1.1.   Justificativa
+Necessário realizar a classificação dos objetos presentes em linhas para realizar rotinas de superação de obstáculos para que robôs de inspeção possam funcionar de forma autônoma;
+
+1.2.   Objetivos
+Objetivos Específicos
+Desenvolvimento de Códigos de Configuração e Acionamento dos Sensores: Criar os scripts necessários para configurar e acionar os sensores, utilizando Python para controlar a captura dos dados. O processo envolverá o desenvolvimento de códigos para coletar imagens de profundidade e dados do LiDAR, com armazenamento em arquivos CSV e imagens.
+
+Sensor multimodal: Desenvolver o projeto com a flexibilidade necessária para permitir sua integração em diferentes topologias, incluindo robôs terrestres, aéreos e aqueles que se locomovem diretamente no cabo de linhas de transmissão.
+
+Montagem de Cenas Simuladas no CoppeliaSim: Criar cenas simuladas no CoppeliaSim, onde os sensores serão acoplados ao robô, que percorrerá a linha de transmissão. O robô será posicionado entre duas torres, com um cabo rígido esticado entre elas, e os sensores de profundidade e LiDAR 360º serão usados para coletar dados enquanto o robô se move ao longo do cabo. As cenas levarão em consideração o movimento do robô, com acionamento dos motores para simular a coleta de dados em tempo real.
+
+Montagem de Ambientes Controlados no Laboratório: Construir ambientes controlados no laboratório, com os sensores presos a mecanismos que simulem diferentes ângulos e distâncias, onde os sensores não estarão no robô. Além disso, será montada uma pequena cena com um cabo pendurado, contendo objetos encontrados em linhas de alta tensão onde o robô será preso ao cabo, com os sensores fixados a ele, e percorrerá o trajeto enquanto coleta dados sobre os objetos presentes no cabo.
+
+Treinamento de Modelos de Aprendizado de Máquina: Utilizar os dados coletados para treinar diferentes modelos de aprendizado de máquina, com o objetivo de avaliar a capacidade dos modelos em classificar os objetos presentes nas linhas de transmissão. Para isso, serão montados diferentes datasets, considerando separadamente as informações do LiDAR, da câmera de profundidade e a combinação de ambos, permitindo a análise do impacto de cada sensor na performance dos modelos.
+
+Avaliação de Desempenho: Avaliar o desempenho dos modelos treinados, utilizando métricas de performance como acurácia, precisão, recall e tempo de processamento para comparar os resultados obtidos pelos diferentes sensores e modelos.
+
+1.3.   Diagrama de funcionamento
+Explicar o funcionamento total aqui?
+Integração do ros com e os sensores ;
+
+1.4.   Estrutura do Documento
+
+Revisão Bibliográfica
+2.1.   Trabalhos de classificação de objetos em linha de transmissão, rgb e lidar provavelmente
+
+2.2.   Sensores para inspeção autônoma
+Vir antes dos trabalhos relacionados?
+Sensores de profundidade:câmera,lidar e ultrasom.
+Rgb
+
+2.3.   Modelos de aprendizado de máquina aplicados à classificação de objetos
+
+2.4.   Tecnologias embarcadas e protocolos de comunicação
+Talvez tirar essa sessão, não tem muita importância
+
+Metodologia
+3.1.   Configuração dos Sensores
+Jogar para o próximo capítulo talvez, junto com os sensores selecionados
+
+3.2.   Aquisição de Dados
+Feitas em Cenas Simuladas e no laboratório 
+
+3.3.   Construção das Cenas Simuladas
+3.4.   Construção das Cenas no Laboratório
+3.5    Treinamento e Avaliação dos Modelos
+
+Desenvolvimento
+4.1.   Hardware
+4.1.1.   Estrutura Mecânica
+Protótipo de robô utilizado no laboratório, explicar sobre ele, citar o trabalho dele
+Protótipos simulados de outros 2 robôs, para testar o sensor multimodal em outras topologias 
+
+4.1.2.   Sensores Utilizados
+Lidar e realsense, trazer dados deles aqui
+Justificar o uso deles devido ao segundo uso deles, o lidar para levantar objetos próximos à linha e a realsense para analisar objetos danificados na linha 
+
+4.1.3.  Sistemas de Controle e Comunicação
+
+4.1.   Firmware e Software
+4.1.1.   Controle do Robô via ROS
+Explicação detalhada do ros, sistema de master e slave
+
+4.1.2.   Processamento de Dados
+Técnicas de pdi utilizadas e tratamento dos dados do lidar
+
+4.1.3.  Implementação dos Modelos de Classificação
+Uso do Python e bibliotecas como tensorflow e keras
+
+Testes e Resultados
+5.1.   Avaliação em ambiente real 
+Uso dos dados levantados para o teste, análise de uma topologia
+
+5.2.   Avaliação no Simulação 
+Uso dos dados levantados para os modelos e análise em outras 2 topologias
+
+Discussões e Conclusões
+5.1.   Análise dos Resultados Obtidos
+Comparação entre Simulação e Realidade
+5.2.   Limitações do Projeto
+5.3.   Conclusões Finais
+
+Perspectivas para Trabalhos Futuros
+Melhorias no hardware do robô
+Otimização dos algoritmos de classificação
+Testes em ambiente operacional real
+Expansão do sistema para inspeção completa da linha de transmissão

@@ -1,0 +1,46 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+2.2 SINAIS E FUNÇÃO DE TRANSFERÊNCIA
+
+Suponha-se um sistema à cuja entrada é aplicado o sinal x(t) produzindo um sinal de saída y(t). O sinal x(t) é um sinal cossenoidal se :
+
+x(t) = Ax cos(2pf0t + qx ) -µ £ t £ +µ
+
+onde Ax é a amplitude (em volts ou amperes), f0 é a freqüência cíclica (em hertz) e qx é a fase (em radianos ou graus). Também é conveniente introduzir a freqüência angular w0 = 2pf0 (em radianos por segundo), de modo que o período do sinal (em segundos) é T0 = 1/f0. Obviamente, nenhum sinal real existe para sempre, mas o modelo é conveniente e útil para representar um sinal cossenoidal de duração finita se esta duração é muito maior que o período.
+
+Considerando o sistema linear e invariante no tempo, o sinal y(t) será cossenoidal na mesma freqüência da entrada, diferindo somente na amplitude e no angulo de fase, isto é :
+
+y(t) =Ay cos(2pf0t + qy )
+
+Portanto, conhecidos os parâmetros do sinal de entrada e as características do sistema, precisa-se apenas determinar a amplitude e a fase para descrever completamente o sinal de saída.
+
+Sabe-se que tais problemas são mais rápida e facilmente resolvidos por meio de funções exponenciais no tempo da forma ejwt em vez de funções cossenoidais. Portanto, x(t) pode ser reescrita como :
+
+x(t) = 1/2 Ax .e j qx .e jw0t + 1/2 Ax .e -j qx .e -jw0t
+
+Definindo a função de transferencia H(jw) do sistema tal que y(t) = H(jw).ejwt quando x(t) = ejwt , pode-se obter o sinal de saída y(t) :
+
+y(t) = 1/2 Ax .H(jw0) .e j qx .e jw0t + 1/2 Ax .H(-jw0) .e -j qx .e -jw0t
+
+Este resultado pode ser modificado para explicitar mais claramente suas características. Primeiro, visto que a função de transferencia é em geral uma grandeza complexa, pode-se exprimi-la na forma polar :
+
+H(jw) = |H(jw)| .e j arg[H(jw)]
+
+Onde |H(jw)| é o módulo e arg[H(jw)] é o angulo de fase. Segundo, embora H(jw) seja complexa, y(t) deve ser uma função real no tempo já que x(t) é real; isto somente será verdade se :
+
+H(-jw) = H*(jw)
+
+onde H*(jw) é o complexo conjugado de H(jw).
+
+Substituindo e simplificando convenientemente obtém-se :
+
+y(t) = Ax.|H(jw0)|.cos(2pf0t + qx + arg[H(jw0)])
+
+onde se identifica
+
+Ay = Ax.|H(jw0)| e qy = qx + arg[H(jw0)]
+
+Ou seja, o sinal de saída tem sua amplitude multiplicada pelo módulo da função de transferência do sistema e sua fase somada a fase da função de transferência.
+
+[FIM]."

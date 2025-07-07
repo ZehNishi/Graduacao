@@ -1,0 +1,37 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+==============================
+Na codificação CMI 
+(Coded Mark Inversion)
+==============================
+O bit 1 é representado por pulsos alternadamente positivos e negativos durante todo o tempo de bit. O bit 0 é representado por uma transição ascendente no meio do intervalo. A taxa de sinalização é o dobro da taxa de transmissão.
+
+[Conclusão:] o CMI é usado nas interfaces elétricas digitais com taxas de 139.264 kbps
+até 155.520 kbps.
+
+------------------------------
+d) Técnicas com Substituição
+------------------------------
+As elevadas taxas de sinalização das técnicas Bi-fase são indesejadas para
+aplicações de longa distancia. 
+
+Uma abordagem diferente consiste em substituir seqüências que resultariam em níveis constantes de tensão por seqüências capazes de manter o sincronismo. Tais seqüências devem ser reconhecidas no receptor e trocadas pela seqüência original (sem alteração na taxa de bits).
+
+A codificação HDB3 (High–Density Bipolar – 3 zeros) corresponde a um sinal Pseudo-Ternário com regra de alternância de polaridade como no AMI. 
+
+No HDB3, seqüências de quatro zeros são substituídas por seqüências contendo 1 ou 2 pulsos, 000V ou B00V, onde B é um pulso representando o bit 1 e V é uma violação à regra alternância de polaridade. Para assegurar que violações sucessivas tenham polaridades opostas em modo a eliminar a componente contínua usa-se a Regra de Codificação.
+
+
+Nesta técnica sempre ocorrem duas violações de polaridade. 
+O receptor reconhece o padrão e o substitui com zeros.
+
+[Vantagens:] não existe componente contínua, não existe perda de sincronismo, espectro
+de energia concentrado e centralizado.
+
+[Desvantagens:] maior complexidade do codificador/decodificador.
+
+[Conclusão:] o HDB3 é usado nas interfaces elétricas digitais com taxas de 2048 kbps até
+34.368 kbps.
+
+
+[FIM]."

@@ -1,0 +1,31 @@
+"
+
+31)O sinal g(t) = cos(40.pi.t) eh amostrado de forma ideal com frequencia de amostragem igual a 60Hz, pede-se:
+a)Determine a expressao matematica e esboce o espectro do sinal amostrado na faixa |f|<=150Hz
+b)Eh possivel recuperar o sinal original g(t)? Como?
+c)Determine o menor valor da frequencia de amostragem para a recuperacao de g(t) com o uso de um FPB tipo Butterworth de 1ªordem. As componentes indesejadas devem ser atenuadas em pelo menos 20dB. Considere f3db = 30Hz.
+
+R.a): Gdelta(f)= fs.Sum{G(f- n.fs)}; G(f) = 0,5.delta(f-20)+0,5.delta(f+20);
+
+Gdelta(f) = fs.Sum{0,5.delta(f-n.fs-20)+0,5.delta(f-n.fs+20)};
+
+Gdelta(f) = 60.Sum{0,5.delta(f-60n-20)+0,5.(f-60n+20)};
+
+Grafico: pulsos em +-20, +-80, +-140 e +-40,+-100. Coloca-se um FPB entre 20 e 40.
+
+R.b): Sim, pois fs é maior que 2W(Nyquist), basta aplicar um FPB c/ freq. de corte maior que 20Hz e menor que 40Hz.
+
+R.c): -20db = 20log(G) -> G = 0,1 = |H(fx)| ; 0.1 = 1/[sqrt(1+(fx/f3db)^2)]
+
+0,01 + 0,01.fx^2/f3db^2 = 1 -> fx^2 = 99.f3db^2 -> fx ~ 10f3db = 300Hz
+
+RESPOSTA: fs = fx + 20 = 320Hz
+
+fx= frequencia de atenuação buscada.
+
+<<FIM>>
+
+
+
+
+"

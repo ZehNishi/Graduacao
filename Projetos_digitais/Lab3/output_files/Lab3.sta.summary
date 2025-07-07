@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'P11'
+Slack : -4.737
+TNS   : -67.887
+
+Type  : Slow 1200mV 85C Model Setup 'Timing_Reference:inst13|tmp'
+Slack : -0.378
+TNS   : -0.722
+
+Type  : Slow 1200mV 85C Model Setup 'PB0'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'PB1'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PB0'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PB1'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Timing_Reference:inst13|tmp'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'P11'
+Slack : 0.645
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'P11'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Timing_Reference:inst13|tmp'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Slow 1200mV 0C Model Setup 'P11'
+Slack : -4.309
+TNS   : -58.572
+
+Type  : Slow 1200mV 0C Model Setup 'Timing_Reference:inst13|tmp'
+Slack : -0.263
+TNS   : -0.296
+
+Type  : Slow 1200mV 0C Model Setup 'PB0'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'PB1'
+Slack : 0.362
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PB0'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PB1'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Timing_Reference:inst13|tmp'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'P11'
+Slack : 0.596
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'P11'
+Slack : -3.000
+TNS   : -49.299
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Timing_Reference:inst13|tmp'
+Slack : -1.403
+TNS   : -33.672
+
+Type  : Fast 1200mV 0C Model Setup 'P11'
+Slack : -1.520
+TNS   : -9.651
+
+Type  : Fast 1200mV 0C Model Setup 'Timing_Reference:inst13|tmp'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PB0'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'PB1'
+Slack : 0.694
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Timing_Reference:inst13|tmp'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PB0'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PB1'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'P11'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'P11'
+Slack : -3.000
+TNS   : -37.122
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PB0'
+Slack : -3.000
+TNS   : -4.072
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PB1'
+Slack : -3.000
+TNS   : -4.067
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Timing_Reference:inst13|tmp'
+Slack : -1.000
+TNS   : -24.000
+
+------------------------------------------------------------

@@ -1,0 +1,16 @@
+.\rvmdk\main.o: main.c
+.\rvmdk\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\rvmdk\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\rvmdk\main.o: ..\..\Source\include\FreeRTOS.h
+.\rvmdk\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\rvmdk\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\rvmdk\main.o: .\FreeRTOSConfig.h
+.\rvmdk\main.o: ..\..\Source\include\projdefs.h
+.\rvmdk\main.o: ..\..\Source\include\portable.h
+.\rvmdk\main.o: ..\..\Source\include\deprecated_definitions.h
+.\rvmdk\main.o: ..\..\Source\include\../../Source/portable/RVDS/ARM_CM3/portmacro.h
+.\rvmdk\main.o: ..\..\Source\include\mpu_wrappers.h
+.\rvmdk\main.o: ..\..\Source\include\task.h
+.\rvmdk\main.o: ..\..\Source\include\list.h
+.\rvmdk\main.o: ..\..\Source\include\queue.h
+.\rvmdk\main.o: ..\..\Source\include\semphr.h

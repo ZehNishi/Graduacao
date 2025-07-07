@@ -1,0 +1,45 @@
+%%HP: T(1)A(D)F(.);
+"[INICIO]
+
+1) Quais as limitacoes fundamentais da comunicacao eletrica?
+Descreva detalhadamente cada uma delas.
+
+[Resposta]
+
+LIMITACAO DA LARGURA DE FAIXA 
+e
+A LIMITACAO DE RUIDO
+
+--------------------------
+LIMITACAO DA LARGURA DE FAIXA de Frequencias
+
+Nos sistemas físicos uma variação da energia armazenada necessita de um intervalo de tempo definido.
+
+A transmissao poderah tornar-se impossível se a freqüência do sinal de entrada for maior que a capacidade de resposta.
+
+O sistema poderah parar de responder as variações do sinal caso aumente arbitrariamente a velocidade de sinalização.
+
+Todo sistema possui uma capacidade máxima de resposta as variacoes do sinal de entrada.
+
+A capacidade máxima (largura de faixa), que não pode ser modificada, dita o desempenho que se pode ter do sistema.
+
+
+--------------------
+A LIMITACAO DE RUIDO : 
+
+O sucesso na comunicacao eletrica depende de quao precisamente o receptor pode decidir que sinal foi enviado, distinguindo-o dos sinais que talvez poderiam ter sido enviados. 
+
+O ruido estah sempre  presente nos sistemas eletricos.
+Os disurbios do ruido sobreposto restrigem a capacidade de identificar corretamente o sinal enviado.
+
+Consequemente tambem limitando a transmissão da informacao. 
+
+Caso a intensidade do sinal seja insuficiente, a amplificacao deste sinal nao solucionarah o problema.
+
+Porque o ruido tambem serah amplificado junto com o sinal. 
+
+Neste caso a relacao sinal-ruido fica inalterada.
+
+
+
+[FIM]."
