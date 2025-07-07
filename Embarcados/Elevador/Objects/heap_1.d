@@ -1,0 +1,25 @@
+./objects/heap_1.o: \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\portable\MemMang\heap_1.c \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\FreeRTOS.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  RTE\RTOS\FreeRTOSConfig.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\core_cm4.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_version.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\cmsis_compiler.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS\6.0.0\CMSIS\Core\Include\.\m-profile\cmsis_armclang_m.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\CMSIS\RTOS2\FreeRTOS\Include\freertos_evr.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  RTE\_EK-TM4C1294XL\RTE_Components.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\projdefs.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\portable.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\deprecated_definitions.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\portable\GCC\ARM_CM4F\portmacro.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\mpu_wrappers.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\task.h \
+  C:\Users\Jose\AppData\Local\Arm\Packs\ARM\CMSIS-FreeRTOS\10.0.1\Source\include\list.h
