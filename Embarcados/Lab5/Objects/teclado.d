@@ -1,0 +1,10 @@
+.\objects\teclado.o: teclado.c
+.\objects\teclado.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\teclado.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\teclado.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\inc/hw_ints.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\driverlib/debug.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\driverlib/gpio.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\driverlib/interrupt.h
+.\objects\teclado.o: ..\TivaWare_C_Series-2.2.0.295\driverlib/pin_map.h
